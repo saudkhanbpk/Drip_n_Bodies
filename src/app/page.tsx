@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import OurServices from "@/components/OurServices";
+import ScheduleConsultation from "@/components/ScheduleConsultation";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,8 @@ export default function Home() {
     <>
     <HeroSection  />
     <OurServices />
+    <ScheduleConsultation/>
+    
     </>
 
   );
