@@ -21,10 +21,10 @@ const SurgeryRecovery = () => {
               <p className="text-7xl font-bold ">Convenience</p>
             </div>
             <div className="my-10 w-auto h-[43px] flex ">
-              <button className="font-montserrat text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+              <button className=" text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
                 View Packages
               </button>
-              <p className="mx-6 font-montserrat  text-sm font-bold leading-6 uppercase   px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat  ">
+              <p className="mx-6  text-sm font-bold leading-6 uppercase   px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat  ">
                 View Group Packages
               </p>
             </div>
