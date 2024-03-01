@@ -4,9 +4,9 @@ import about1 from "../images/about1.png";
 import about2 from "../images/about2.png";
 import about3 from "../images/about3.png";
 import ashley from "../images/Ashley.png";
-import anika from "../images/anika.png";
+import anika from "../images/Anika.png";
 import thereal from "../images/thereal.png";
-import recoverynurses from "../images/recoverynurses.png";
+import recoverynurses from "../images/RecoveryNurses.png";
 
 const AboutUs = () => {
   return (

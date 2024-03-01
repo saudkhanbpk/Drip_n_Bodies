@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import surg1 from "../images/surg1.png";
-import recoverynurses from "../images/recoverynurses.png";
+import recoverynurses from "../images/RecoveryNurses.png";
 
 const SurgeryRecovery = () => {
   return (
