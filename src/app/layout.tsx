@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import ScheduleConsultation from "@/components/ScheduleConsultation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,13 +19,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"  />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Niconne&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className={inter.className}>
-      <Navbar/>
+        <Navbar />
 
         {children}
+    <ScheduleConsultation/>
         <Footer/>
-
-        </body>
+      </body>
     </html>
   );
 }

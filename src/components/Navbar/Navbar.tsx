@@ -14,13 +14,13 @@ const Navbar: React.FC  = () => {
     <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto justify-end mx-4">
       <div className="text-sm lg:flex-grow flex justify-end">
         <Link
-          href="#about"
+          href="about"
           className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs "
         >
           About Us
         </Link>
         <Link
-          href="#surgery"
+          href="surgery"
           className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs "
         >
           Surgery Recovery

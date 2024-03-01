@@ -91,7 +91,7 @@ const HeroSection = () => {
           <Image src={heroimg1} alt="Logo" className=" w-[606px] h-[580px]" />
         </div>
       </div>
-      <div className="w-full  ">
+      {/* <div className="w-full  ">
         <div className="border-4 py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
           <div className="flex justify-center items-center w-auto h-[27px]">
             <Image src={thereal} alt="real" />
@@ -100,7 +100,7 @@ const HeroSection = () => {
       </div>
       <div className="w-[full] h-[810px]">
         <Image src={realnurses} alt='nurses' className="w-full h-full"/>
-      </div>
+      </div> */}
     </>
   );
 };
