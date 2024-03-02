@@ -92,7 +92,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="w-full  ">
-        <div className="border-4 py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+        <div className="border-none py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
           <div className="flex justify-center items-center w-auto h-[27px]">
             <Image src={thereal} alt="real" />
           </div>
