@@ -51,7 +51,7 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="w-[200px] h-[43px]">
-                <button className="font-montserrat text-black text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
+                <button className=" text-black text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
                   Book Free Consult
                 </button>
               </div>
@@ -83,7 +83,7 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="w-[200px] h-[43px]">
-                <button className="font-montserrat text-white text-sm font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
                   Book IV Drips
                 </button>
               </div>
@@ -122,7 +122,7 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="w-[200px] h-[43px]">
-                <button className="font-montserrat text-black text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
+                <button className=" text-black text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
                   Book Massages
                 </button>
               </div>
@@ -157,7 +157,7 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="w-[200px] h-[43px]">
-                <button className="font-montserrat text-white text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-black-300 mt-4 lg:mt-0 bg-[#000000] text-center font-montserrat  ">
+                <button className=" text-white text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-black-300 mt-4 lg:mt-0 bg-[#000000] text-center font-montserrat  ">
                 Book Treatments
                 </button>
               </div>

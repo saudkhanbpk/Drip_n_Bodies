@@ -44,14 +44,14 @@ const Navbar: React.FC  = () => {
           Calendar
         </Link>
       </div>
-      <div>
+      <Link href="customerrecovery">
         <button
         
           className="uppercase px-4 py-2 leading-none border rounded text-black  hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat text-xs font-bold "
         >
           Book Free Consult
         </button>
-      </div>
+      </Link>
     </div>
   </nav>
 );

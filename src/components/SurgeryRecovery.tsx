@@ -241,10 +241,10 @@ const SurgeryRecovery = () => {
         <div className=" w-full">
           <div className="my-6 items-center w-[800px] flex flex-col justify-center mx-auto">
             <div className="my-10 w-auto h-[43px] flex ">
-              <button className="font-montserrat text-black text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
+              <button className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
                 View Group Packages
               </button>
-              <p className="mx-6 font-montserrat  text-sm font-bold leading-6  underline   px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat  ">
+              <p className="mx-6   text-sm font-bold leading-6  underline   px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat  ">
                 View Addons
               </p>
             </div>
@@ -253,7 +253,7 @@ const SurgeryRecovery = () => {
 
         <div className=" w-full">
           <div className="my-6 items-center w-[800px] flex flex-col justify-center mx-auto">
-            <p className=" py-2 font-montserrat  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
+            <p className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
               Surgery Sisters
             </p>
             <p className="w-full flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
@@ -279,7 +279,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
-                <button className="w-[146px] font-montserrat text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className="w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -311,7 +311,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
-                <button className="w-[146px] font-montserrat text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className="w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -335,7 +335,7 @@ const SurgeryRecovery = () => {
 
         <div className=" w-full">
           <div className="my-6 items-center w-[800px] flex flex-col justify-center mx-auto">
-            <p className=" py-2 font-montserrat  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
+            <p className=" py-2   leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
               Fine Print
             </p>
             <p className="w-full flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
@@ -349,14 +349,186 @@ const SurgeryRecovery = () => {
         <div className=" w-full">
           <div className="my-6 items-center w-[800px] flex flex-col justify-center mx-auto">
             <div className="my-10 w-auto h-[43px] flex ">
-              <button className="font-montserrat text-black text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
-              View Solo Packages
+              <button className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
+                View Solo Packages
               </button>
-              <p className="mx-6 font-montserrat  text-sm font-bold leading-6  underline   px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat  ">
+              <p className="mx-6  text-sm font-bold leading-6  underline   px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat  ">
                 View Addons
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className=" w-full">
+        <div className="my-6 items-center w-[800px] flex flex-col justify-center mx-auto">
+          <p className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
+            Surgery Recovery Addons
+          </p>
+          <p className="w-full flex justify-center text-center font-montserrat text-black text-base font-normal leading-normal ">
+            Can add these to a recovery package
+          </p>
+        </div>
+      </div>
+
+      <div className=" w-full my-8">
+        <div className="border border-[#3BAFBF] w-[1229px] h-auto items-center justify-center flex  mx-auto">
+          <div className="w-1/2  ">
+            <div className="flex  justify-between items-center my-5 mx-10 border-b-[1px] py-[4px] ">
+              <div className="">
+                <p className=" py-2 text-black font-Montserrat text-[24px] font-bold  leading-[27px] ">
+                  Recovery Day (12 hrs)
+                </p>
+                <p className="w-full flex justify-center text-start font-montserrat text-base  text-black font-Montserrat text-16 italic font-normal leading-[27px] ">
+                  Additional day of overnight CNA care, for 12 hours
+                </p>
+              </div>
+              <div>
+                <p className="text-teal-400 text-right font-niconne text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                  $300
+                </p>
+              </div>
+            </div>
+            <div className="flex  justify-between items-center my-5 mx-10 border-b-[1px] py-[4px] ">
+              <div>
+                <p className=" py-2 text-black font-Montserrat text-[24px] font-bold  leading-[27px] ">
+                Iron Infusion
+                </p>
+                <p className="w-full flex justify-center text-start font-montserrat text-base  text-black font-Montserrat text-16 italic font-normal leading-[27px] ">
+                Boost your iron level with an iron infusion
+                </p>
+              </div>
+              <div>
+                <p className="text-teal-400 text-right font-niconne text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                  $379
+                </p>
+              </div>
+            </div>
+            <div className="flex  justify-between items-center my-5 mx-10 border-b-[1px] py-[4px] ">
+              <div>
+                <p className=" py-2 text-black font-Montserrat text-[24px] font-bold  leading-[27px] ">
+                Pre-Op Infusion
+                </p>
+                <p className="w-full flex justify-center text-start font-montserrat text-base  text-black font-Montserrat text-16 italic font-normal leading-[27px] ">
+                Get an IV drip before your surgery
+                </p>
+              </div>
+              <div>
+                <p className="text-teal-400 text-right font-niconne text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                $299
+                </p>
+              </div>
+            </div>
+            <div className="flex  justify-between items-center my-5 mx-10 border-b-[1px] py-[4px] ">
+              <div>
+                <p className=" py-2 text-black font-Montserrat text-[24px] font-bold  leading-[27px] ">
+                Shower & Faja Assistance
+                </p>
+                <p className="w-full flex justify-center text-start font-montserrat text-base  text-black font-Montserrat text-16 italic font-normal leading-[27px] ">
+                Get shower and faja assistance from a CNA
+                </p>
+              </div>
+              <div>
+                <p className="text-teal-400 text-right font-niconne text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                  $200
+                </p>
+              </div>
+            </div>
+            <div className="flex  justify-between items-center my-5 mx-10 py-[4px]">
+              <div>
+                <p className=" py-2 text-black font-Montserrat text-[24px] font-bold  leading-[27px] ">
+                Seroma Aspirations
+                </p>
+                <p className="w-full flex justify-center text-start font-montserrat text-base  text-black font-Montserrat text-16 italic font-normal leading-[27px] ">
+                Seroma pain relief and fluid leak prevention
+                </p>
+              </div>
+              <div>
+                <p className="text-teal-400 text-right font-niconne text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                $199
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2  ">
+            <div className="flex  justify-between items-center my-5 mx-10 border-b-[1px] py-[4px] ">
+              <div>
+                <p className=" py-2 text-black font-Montserrat text-[24px] font-bold  leading-[27px] ">
+                Transportation
+                </p>
+                <p className="w-full flex justify-center text-start font-montserrat text-base  text-black font-Montserrat text-16 italic font-normal leading-[27px] ">
+                Add post-op, pre-op, or follow up transportation
+                </p>
+              </div>
+              <div>
+                <p className="text-teal-400 text-right font-niconne text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                $140
+                </p>
+              </div>
+            </div>
+            <div className="flex  justify-between items-center my-5 mx-10 border-b-[1px] py-[4px] ">
+              <div>
+                <p className=" py-2 text-black font-Montserrat text-[24px] font-bold  leading-[27px] ">
+                Suture Removal
+                </p>
+                <p className="w-full flex justify-center text-start font-montserrat text-base  text-black font-Montserrat text-16 italic font-normal leading-[27px] ">
+                CNA assistance for removing sutures
+                </p>
+              </div>
+              <div>
+                <p className="text-teal-400 text-right font-niconne text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                  $229
+                </p>
+              </div>
+            </div>
+            <div className="flex  justify-between items-center my-5 mx-10 border-b-[1px] py-[4px] ">
+              <div>
+                <p className=" py-2 text-black font-Montserrat text-[24px] font-bold  leading-[27px] ">
+                Drain Removal
+                </p>
+                <p className="w-full flex justify-center text-start font-montserrat text-base  text-black font-Montserrat text-16 italic font-normal leading-[27px] ">
+                Assistance draining excess fluids from incisions
+                </p>
+              </div>
+              <div>
+                <p className="text-teal-400 text-right font-niconne text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                $189
+                </p>
+              </div>
+            </div>
+            <div className="   my-5 mx-10 border-b-[1px] py-[4px] ">
+              <div className="flex justify-between">
+                <p className=" py-2 text-black font-Montserrat text-[24px] font-bold  leading-[27px] ">
+                Lymphatic Massages
+                </p>
+                <p className="text-teal-400 text-right font-niconne text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                starts at $130
+                </p>
+              </div>
+              <div>
+                <p className="w-full flex justify-start text-start font-montserrat text-base  text-black font-Montserrat text-16 italic font-normal leading-[27px] ">
+                Add packages of 1, 3, 5, and 10 lymphatic massages
+                </p>
+              </div>
+            </div>
+            <div className="   my-5 mx-10  py-[4px] ">
+              <div className="flex justify-between">
+                <p className=" py-2 text-black font-Montserrat text-[24px] font-bold  leading-[27px] ">
+                Surgery Sisters
+                </p>
+                <p className="text-teal-400 text-right font-niconne text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                see above
+                </p>
+              </div>
+              <div>
+                <p className="w-full flex justify-start text-start font-montserrat text-base  text-black font-Montserrat text-16 italic font-normal leading-[27px] ">
+                Recover with a group of 2 or more friends at a discounted rate
+                </p>
+              </div>
+            </div>
+            
+          </div>
+          
         </div>
       </div>
     </>

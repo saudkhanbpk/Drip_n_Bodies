@@ -26,12 +26,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Niconne&display=swap"
           rel="stylesheet"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
       </head>
       <body className={inter.className}>
         <Navbar />
 
         {children}
-    <ScheduleConsultation/>
+    {/* <ScheduleConsultation/> */}
         <Footer/>
       </body>
     </html>
