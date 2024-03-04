@@ -397,12 +397,12 @@ export default function IVInfusions() {
                 <div className='w-[330px] flex flex-col items-center justify-center space-y-2 '>
                     <p className='font-thin text-7xl font-montserrat'>1</p>
                     <p className='text-base font-bold'>Choose a Formula</p>
-                    <p className='text-base font-normal'>Are you feeling under the weather, hungover, or dehydrated? Choose one of our specialty cocktails tailored to your body's needs!</p>
+                    <p className='text-base font-normal'>Are you feeling under the weather, hungover, or dehydrated? Choose one of our specialty cocktails tailored to your body&apos;s needs!</p>
                 </div>
                 <div className='w-[330px] flex flex-col items-center justify-center space-y-2 '>
                     <p className='font-thin text-7xl font-montserrat'>2</p>
                     <p className='text-base font-bold'>Schedule Your Appointment</p>
-                    <p className='text-base font-normal'>Select a time and date that is convenient for you. We'll send our drip expert wherever you are!</p>
+                    <p className='text-base font-normal'>Select a time and date that is convenient for you. We&apos;ll send our drip expert wherever you are!</p>
                 </div>
                 <div className='w-[330px] flex flex-col items-center justify-center space-y-2 '>
                     <p className='font-thin text-7xl font-montserrat'>3</p>
