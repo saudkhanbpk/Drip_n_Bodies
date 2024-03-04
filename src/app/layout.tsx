@@ -31,7 +31,7 @@ export default function RootLayout({
         <Navbar />
 
         {children}
-    <ScheduleConsultation/>
+    {/* <ScheduleConsultation/> */}
         <Footer/>
       </body>
     </html>

@@ -9,15 +9,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-<<<<<<< HEAD
-    <ScheduleConsultation/>
-    
-=======
      <HeroSection  /> 
      <OurServices /> 
      {/* <IVInfusions /> */}
      <ScheduleConsultation/>
->>>>>>> c6018039f089351f71268e4fc21bc57aa5dc0f34
     </>
 
   );
