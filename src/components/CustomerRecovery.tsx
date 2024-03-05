@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import surg1 from "../images/surg1.png";
+import cr1 from "../images/cr1.png";
 import recoverynurses from "../images/RecoveryNurses.png";
 import serv1 from "../images/serv1.png";
 import serv2 from "../images/serv2.png";
@@ -46,15 +46,69 @@ function SamplePrevArrow(props: SliderArrowProps) {
     </div>
   );
 }
+const CustomDot = ({ onClick, index, active }:any) => (
+  <span
+    onClick={onClick}
+    style={{
+      display: 'inline-block',
+      width: '26px',
+      height: '10px',
+      background: active ? 'gray' : '#F4B5D9',
+      // margin: '0 15px',
+      cursor: 'pointer',
+      position:'absolute',
+      top:'80px'
+    }}
+
+  />
+);
 
 const CustomerRecovery: React.FC = () => {
   var settings = {
     dots: true,
     infinite: false,
     speed: 500,
+    dotsClass: 'slick-dots',
+    customPaging: (i:any) => <CustomDot index={i}  />,
     slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
+
+    // appendDots: (dots:any) => (
+    //   <div
+    //     style={{
+    //       borderRadius: "10px",
+    //       padding: "10px"
+    //     }}
+    //   >
+    //     <ul style={{ margin: "0px" }}> {dots} </ul>
+    //   </div>
+    // ),
+    // customPaging: (i:any) => (
+    //   <div
+
+    //     className=""
+    //   >
+    //    <div className="mr-2 bg-red-600 w-[40px]"> {i+1}</div>
+    //   </div>
+    // ),
+    // customPaging: (i: any) => (
+
+    //     <div style={{
+    //       width: "90px",
+    //       height: "10px",
+    //       color: "red",
+    //       marginRight: "5px",
+    //       gap:'10px',
+    //       backgroundColor: '#F4B5D9',
+    //       display: "inline-block" ,
+    //       zIndex : "10px",
+    //       position:'absolute',
+    //       top:'80px'
+    //     }}>
+    //     </div>
+
+    // ),
 
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -62,8 +116,8 @@ const CustomerRecovery: React.FC = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           dots: true,
         },
@@ -89,64 +143,79 @@ const CustomerRecovery: React.FC = () => {
     <>
       <div
         className=""
-        // style={{
-        //   background:
-        //     "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
-        // }}
+
       >
-        <div className=" w-full flex justify-between ">
-          <div className="w-auto px-10 m-10 pt-16 ml-22">
-            <div className="  flex flex-col gap-8 ">
-              <p className="text-7xl font-bold">Custom </p>
-              <p className="text-7xl font-bold ">Recovery </p>
-              <p className="text-7xl font-bold text-[#3BAFBF]"> Experience! </p>
+        <div className="">
+        <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
+          <div className="w-auto lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 ">
+            <div className="flex flex-col lg:gap-2">
+              <p className="text-4xl lg:text-7xl xl:text-7xl font-bold">
+                Custom{" "}
+              </p>
+              <p className="text-4xl lg:text-7xl font-bold ">Recovery </p>
+              <p className="text-4xl lg:text-7xl font-bold text-[#3BAFBF] ">
+                {" "}
+                Experience!{" "}
+              </p>
             </div>
-            <div className="my-10 w-auto h-[43px] flex ">
-              <button className=" text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+            <div className="my-6 md:my-5 lg:my-10 w-full lg:w-auto h-[43px] flex flex-col lg:flex-row">
+              <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2 rounded hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
                 Book an IV Drip
               </button>
-              <p className="mx-6  text-sm font-bold leading-6 uppercase   px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat  ">
+              <p className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat">
                 View Premium Infusions
               </p>
             </div>
           </div>
-          <div className=" w-auto flex justify-end items-center">
+          <div className="  lg:w-auto flex ">
             <Image
-              src={surg1}
+              src={cr1}
               alt="Logo"
-              className=" w-[656px] mix-blend-multiply  object-cover  h-[580px]"
+              className="w-full md:w-[80vw] lg:w-[656px] lg:mix-blend-multiply object-cover "
             />
           </div>
         </div>
-        <div className="w-full  relative -top-14 ">
+        <div className="w-full  ">
           <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center items-center w-auto h-[27px]">
-              <p className="text-blue-500 text-center font-niconne text-6xl font-normal">
+              <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
                 Miami Mobile Post-Op Recovery Nurses
               </p>
             </div>
           </div>
         </div>
-
-        <div className=" w-full">
-          <div className="my-6 items-center w-[1218px] flex flex-col justify-center mx-auto">
-            <p className=" py-2   leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
+        <div className="w-full">
+          <div className="my-6 w-full xl:w-[1218px] mx-auto">
+            <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
               Concierge Recovery Nurse Services
             </p>
-            <p className="w-full flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
-              Drip N Bodied is a concierge IV hydration and post-operative care
-              company that services clients in South Florida s tri-county area
-              in the comfort of their home, office, or hotel. We are known for
-              providing luxury IV therapy for clients that want to feel
-              rehydrated, build up their immunity, or in desperate need of a
-              hang-over cure! We also provide concierge post-operative services
-              to clients having cosmetic surgery such as Brazilian Butt Lifts,
-              Mommy Makeovers, Lipo 360, and more! At Drip N Bodied, we take
-              pride in assisting our clients with a speedy and safe recovery
-              after cosmetic surgery.
+            <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
+              {/* Your text content here */}
             </p>
           </div>
         </div>
+        {/* Add responsive design for other sections */}
+      </div>
+
+      <div className="w-full">
+        <div className="my-6 w-full xl:w-[1218px] mx-auto p-4">
+          <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-lg md:text-xl">
+            Concierge Recovery Nurse Services
+          </p>
+          <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
+            Drip N Bodied is a concierge IV hydration and post-operative care
+            company that services clients in South Florida's tri-county area in
+            the comfort of their home, office, or hotel. We are known for
+            providing luxury IV therapy for clients that want to feel
+            rehydrated, build up their immunity, or in desperate need of a
+            hang-over cure! We also provide concierge post-operative services to
+            clients having cosmetic surgery such as Brazilian Butt Lifts, Mommy
+            Makeovers, Lipo 360, and more! At Drip N Bodied, we take pride in
+            assisting our clients with a speedy and safe recovery after cosmetic
+            surgery.
+          </p>
+        </div>
+      </div>
 
         <div className=" my-12 items-center w-[1218px] flex flex-col justify-center mx-auto">
           <div className=" items-center w-full flex gap-8 justify-between mx-auto">
@@ -182,7 +251,6 @@ const CustomerRecovery: React.FC = () => {
             </div>
           </div>
         </div>
-        
 
         <div className=" my-12 items-center w-[1218px] flex flex-col justify-center mx-auto">
           <div className=" items-center w-full flex gap-8 justify-between mx-auto">
@@ -271,7 +339,6 @@ const CustomerRecovery: React.FC = () => {
         </div>
         </div>
 
-
       <div className=" w-full mt-24">
         <div className="my-6 items-center w-[800px] flex flex-col justify-center mx-auto">
           <p className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
@@ -313,7 +380,7 @@ const CustomerRecovery: React.FC = () => {
           <p className="pt-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
           30 minute radius of Miami International Airport
           </p>
-         
+
         </div>
       </div>
       <div className="w-[560px] h-[440px]">
@@ -348,7 +415,7 @@ const CustomerRecovery: React.FC = () => {
           <p className=" py-2   leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
             Customer Reviews
           </p>
-          <p className="w-full flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
+          <p className="w-full py-10 flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
             Drip N Bodied is a concierge IV hydration and post-operative care
             company that services clients in South Florida’s tri-county area in
             the comfort of their home, office, or hotel. We are known for
@@ -360,10 +427,11 @@ const CustomerRecovery: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full border-4 bg-no-repeat bg-[url('../images/barbg.png')] h-[500px]">
-        <div className=" border border-red-500 w-2/3 ml-auto mx-auto h-full">
+      <div className="w-full flex bg-no-repeat bg-[url('../images/barbg.png')] h-[540px]"
+      style={{backgroundSize:'41%'}}>
+        <div className="  w-4/5 ml-auto mx-auto h-full">
           <div className="slider-container">
-            <Slider {...settings} className="mt-10">
+            <Slider {...settings} className="mt-14   gap-6 mx-28">
               <div>
                 <div className="gap-0 mt-10 p-6 border-2 border-[#F4B5D9] bg-white w-[360px] h-[305px]">
                   <div className=" flex justify-between">
@@ -544,8 +612,74 @@ const CustomerRecovery: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
+              <div>
+                <div className="gap-0 mt-10 p-6 border-2 border-[#F4B5D9] bg-white w-[360px] h-[305px]">
+                  <div className=" flex justify-between">
+                    <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
+                      <Image src={barq1} alt="quote" />
+                    </span>
+                    <div className="flex justify-center items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="90"
+                        height="18"
+                        viewBox="0 0 90 18"
+                        fill="none"
+                      >
+                        <path
+                          d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M27 0L29.0206 6.21885H35.5595L30.2694 10.0623L32.2901 16.2812L27 12.4377L21.7099 16.2812L23.7306 10.0623L18.4405 6.21885H24.9794L27 0Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M45 0L47.0206 6.21885H53.5595L48.2694 10.0623L50.2901 16.2812L45 12.4377L39.7099 16.2812L41.7306 10.0623L36.4405 6.21885H42.9794L45 0Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M63 0L65.0206 6.21885H71.5595L66.2694 10.0623L68.2901 16.2812L63 12.4377L57.7099 16.2812L59.7306 10.0623L54.4405 6.21885H60.9794L63 0Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M81 0L83.0206 6.21885H89.5595L84.2694 10.0623L86.2901 16.2812L81 12.4377L75.7099 16.2812L77.7306 10.0623L72.4405 6.21885H78.9794L81 0Z"
+                          fill="#FFC700"
+                        />
+                      </svg>
+                    </div>
+                    <div></div>
+                  </div>
+                  <p className=" text-black font-montserrat text-base font-normal  w-[320px] h-180px]">
+                    Ashley and her team were incredibly caring and really made
+                    sure I was comfortable post surgery. She communicated with
+                    me through the whole process leading up to post op care, and
+                    checked up on me after as well. I can’t recommend Drop N
+                    Bodied enough. You will be in the best hands with their
+                    care.
+                  </p>
+                  <div className="flex my-2 items-center justify-between w-full">
+                    <div className="flex items-center">
+                      <p className="font-montserrat text-black text-base font-bold leading-27">
+                        Jane Doe
+                      </p>
+                    </div>
+                    <div>
+                      <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
+                        <Image src={barq2} alt="quote" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </Slider>
+          </div>
+          <div className="flex my-8 justify-center items-center">
+          <p className="text-[#3BAFBF] text-center font-montserrat text-base font-normal leading-[27px]">
+          See all of our Google reviews
+          </p>
           </div>
         </div>
       </div>
@@ -554,3 +688,6 @@ const CustomerRecovery: React.FC = () => {
 };
 
 export default CustomerRecovery;
+
+
+
