@@ -23,15 +23,15 @@
 //                             <button className='bg-[#3BAFBF] px-2 py-1 text-base font-bold'>VIEW POST-OP DRIPS</button>
 //                             <a href="" className=' text-[#3BAFBF] text-base font-bold'>View Post-op Recovery Addons</a>
 //                         </div>
-          
-          
+
+
 //           <div className="my-8">
 //             {/* <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black text-center ">“</span>
 //             <p className="font-montserrat text-base font-normal w-[500px] h-[40px]">
 //               Drip N Bodied absolutely amazing. Hands down one of the best
 //               service I have ever received.
 //             </p> */}
-            
+
 //           </div>
 //         </div>
 //         <div className="w-auto flex justify-end items-center">
@@ -353,39 +353,39 @@ import realnurses from "../images/realnurses.svg";
 export default function IVInfusions() {
     return (
         <>
-        <div className="w-full flex justify-between ">
-        <div className="w-auto px-10  pt-16 ml-22">
-          <div className="  flex flex-col gap-8 ">
-            <p className="text-7xl font-bold">Come</p>
-            <p className="text-7xl font-bold">Experience</p>
-            <p className="text-7xl font-bold ">The <span className='text-pink-300'>Drip Effect</span></p>
-          </div>
-          <div className='flex items-center justify-center  space-x-8 pt-6'>
-                            <button className='bg-[#3BAFBF] px-2 py-1 text-base font-bold'>VIEW POST-OP DRIPS</button>
-                            <a href="" className=' text-[#3BAFBF] text-base font-bold'>View Post-op Recovery Addons</a>
-                        </div>
-          
-          
-          <div className="my-8">
-            {/* <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black text-center ">“</span>
+            <div className="w-full flex justify-between ">
+                <div className="w-auto px-10  pt-16 ml-22">
+                    <div className="  flex flex-col gap-8 ">
+                        <p className="text-7xl font-bold">Come</p>
+                        <p className="text-7xl font-bold">Experience</p>
+                        <p className="text-7xl font-bold ">The <span className='text-pink-300'>Drip Effect</span></p>
+                    </div>
+                    <div className='flex items-center justify-center  space-x-8 pt-6'>
+                        <button className='bg-[#3BAFBF] px-2 py-1 text-base font-bold'>VIEW POST-OP DRIPS</button>
+                        <a href="" className=' text-[#3BAFBF] text-base font-bold'>View Post-Op Treatments</a>
+                    </div>
+
+
+                    <div className="my-8">
+                        {/* <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black text-center ">“</span>
             <p className="font-montserrat text-base font-normal w-[500px] h-[40px]">
               Drip N Bodied absolutely amazing. Hands down one of the best
               service I have ever received.
             </p> */}
-            
-          </div>
-        </div>
-        <div className="w-auto flex justify-end items-center">
-          <Image src={img2} alt="Logo" className=" w-[606px] h-[580px]" />
-        </div>
-      </div>
-      <div className="w-full relative -top-16 ">
-        <div className=" py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
-          <div className="flex justify-center items-center w-auto h-[27px]">
-            <Image src={thereal} alt="real" />
-          </div>
-        </div>
-      </div>
+
+                    </div>
+                </div>
+                <div className="w-auto flex justify-end items-center">
+                    <Image src={img2} alt="Logo" className=" w-[606px] h-[580px]" />
+                </div>
+            </div>
+            <div className="w-full relative -top-16 ">
+                <div className=" py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+                    <div className="flex justify-center items-center w-auto h-[27px]">
+                        <Image src={thereal} alt="real" />
+                    </div>
+                </div>
+            </div>
             <div className='w-full flex justify-center items-center '>
                 <div className='w-[55vw] flex flex-col space-y-2 items-center justify-center'>
                     <p className='text-2xl font-bold'>The Drip “3 Step” Process</p>
@@ -672,6 +672,6 @@ export default function IVInfusions() {
 
             </div>
 
-        </>
-    )
+        </>
+    )
 }

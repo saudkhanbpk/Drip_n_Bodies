@@ -11,12 +11,12 @@ import { IoStar } from "react-icons/io5";
 const HeroSection = () => {
   return (
     <>
-      <div className="w-full flex justify-between ">
+      <div className="w-full flex flex-col lg:flex-row justify-between  ">
         <div className="w-auto px-10  pt-16 ml-22">
-          <div className="  flex flex-col gap-8 ">
-            <p className="text-7xl font-bold">IV Therapy,</p>
-            <p className="text-7xl font-bold">Recovery Nurses.</p>
-            <p className="text-7xl font-bold text-[#3BAFBF]">Drip N Bodied</p>
+          <div className="  md:flex flex flex-col gap-8 ">
+            <p className="md:text-7xl text-5xl font-bold">IV Therapy,</p>
+            <p className="md:text-7xl text-5xl font-bold">Recovery Nurses.</p>
+            <p className="md:text-7xl text-5xl font-bold text-[#3BAFBF]">Drip N Bodied</p>
           </div>
           <div className="my-8">
             {/* <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black text-center ">“</span>
@@ -29,12 +29,14 @@ const HeroSection = () => {
                 <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
                   <Image src={quote1} alt="quote" />
                 </span>
-                <p className="font-montserrat text-base font-normal w-[500px] leading-normal flex flex-col">
+                <p className="font-montserrat text-base font-normal md:w-[500px] leading-normal flex flex-col">
                   <span>Drip N Bodied absolutely amazing.</span>
                   Hands down one of the best service I have ever received.
                 </p>
-                <div className="flex items-center justify-between w-[450px]">
-                  <div className="flex items-center">
+                <div className="md:flex items-center justify-between md:w-[450px]">
+                  <div className="md:flex items-center">
+                    <div className="flex">
+
                     <p className="font-montserrat text-black text-lg font-bold leading-27">
                       5.0
                     </p>
@@ -73,7 +75,9 @@ const HeroSection = () => {
                         />
                       </svg>
                     </div>
-                    <p className=" mt-1 text-center font-montserrat text-blue-500 text-lg font-normal leading-27">
+
+                    </div>
+                    <p className=" mt-1 md:text-center font-montserrat text-blue-500 text-lg font-normal leading-27">
                       47 Google reviews
                     </p>
                   </div>
