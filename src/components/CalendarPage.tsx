@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from "next/image";
 import Calendar from 'react-calendar';
-import CalendarHeaderPic from "./../images/Calendar/calendarHeaderPic.png";
-import MeetUpPic from "./../images/Calendar/MeetupPic.png";
-import LocationPic from "./../images/Calendar/LocationPic.png";
-import DripsCalendar from "./../images/Calendar/Drip N Bodied Calendar.png";
+import CalendarHeaderPic from "../images/Calendar/CalendarHeaderPic.png";
+import MeetUpPic from "../images/Calendar/MeetupPic.png";
+import LocationPic from "../images/Calendar/LocationPic.png";
+import DripsCalendar from "../images/Calendar/Drip N Bodied Calendar.png";
 const CalendarPage = () => {
     return (
         <>
