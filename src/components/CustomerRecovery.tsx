@@ -204,7 +204,7 @@ const CustomerRecovery: React.FC = () => {
           </p>
           <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
             Drip N Bodied is a concierge IV hydration and post-operative care
-            company that services clients in South Florida's tri-county area in
+            company that services clients in South Florida&apos;s tri-county area in
             the comfort of their home, office, or hotel. We are known for
             providing luxury IV therapy for clients that want to feel
             rehydrated, build up their immunity, or in desperate need of a

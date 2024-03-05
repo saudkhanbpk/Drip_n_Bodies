@@ -101,7 +101,7 @@ const Massage = () => {
                 <div className=' flex justify-center gap-4 flex-wrap'>
 
                     {massagePackages.map((data: any, index: any) => (
-                        <div className='flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4'>
+                        <div key={index} className='flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4'>
                             <Image src={data.imageSrc} alt='fitness' width={100} height={100} className='w-[270px] h-[142px] relative bottom-10' />
                             <p className='text-2xl font-bold'>{data.title}</p>
                             <p className='text-5xl font-normal text-[#3BAFBF] font-niconne '>{data.price}</p>
