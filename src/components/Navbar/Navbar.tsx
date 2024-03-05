@@ -38,7 +38,7 @@ const Navbar: React.FC  = () => {
           Massages & Treatments
         </Link>
         <Link
-          href="#about"
+          href="calendar"
           className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
         >
           Calendar
