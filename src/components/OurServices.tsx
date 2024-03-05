@@ -13,8 +13,8 @@ import fb from "../images/fb.png";
 const OurServices = () => {
   return (
     <>
-      <div className="my-12  w-full">
-        <div className=" my-16 items-center w-[1218px] flex flex-col justify-center mx-auto">
+      <div className="my-12  w-[90%] mx-auto">
+        <div className=" my-16 items-center w-full flex flex-col justify-center mx-auto">
           <p className="text-center py-6 font-montserrat text-black text-3xl font-bold leading-normal text">
             Our Services
           </p>
@@ -26,7 +26,7 @@ const OurServices = () => {
           </p>
         </div>
 
-        <div className=" my-12 items-center w-[1218px] flex flex-col justify-center mx-auto">
+        <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
           <div className=" items-center w-full flex gap-8 justify-between mx-auto">
             <div className=" w-[600px] h-[360px] ">
               <Image src={serv1} alt="service1" className="w-full h-full" />
@@ -51,7 +51,7 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="w-[200px] h-[43px]">
-                <button className=" text-black text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
+                <button className=" text-black text-sm font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
                   Book Free Consult
                 </button>
               </div>
@@ -61,7 +61,7 @@ const OurServices = () => {
           </div>
         </div>
 
-        <div className=" my-12 items-center w-[1218px] flex flex-col justify-center mx-auto">
+        <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
           <div className=" items-center w-full flex gap-8 justify-between mx-auto">
             <div className=" w-[600px] p-6 h-[360px] bg-[#3BAFBF] bg-opacity-50 ">
               <div className="my-2">
@@ -97,7 +97,7 @@ const OurServices = () => {
           </div>
         </div>
 
-        <div className=" my-12 items-center w-[1218px] flex flex-col justify-center mx-auto">
+        <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
           <div className=" items-center w-full flex gap-8 justify-between mx-auto">
             <div className=" w-[600px] h-[360px] ">
               <Image src={serv4} alt="service1" className="w-full h-full" />
@@ -132,7 +132,7 @@ const OurServices = () => {
           </div>
         </div>
 
-        <div className=" my-12 items-center w-[1218px] flex flex-col justify-center mx-auto">
+        <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
           <div className=" items-center w-full flex gap-8 justify-between mx-auto">
             
             <div className=" w-[600px] p-6 h-[360px] bg-[#000000] bg-opacity-25 ">
@@ -170,23 +170,23 @@ const OurServices = () => {
           </div>
         </div>
 
-        <div className=" my-8 items-center w-[1218px] flex flex-col justify-center mx-auto">
+        <div className=" my-8 items-center w-full flex flex-col justify-center mx-auto">
           <p className="text-center font-montserrat text-[#3BAFBF] text-base font-bold leading-6 uppercase">
           View surgery recovery packages
           </p>
         </div>
 
-        <div className=" my-12 items-center w-[1218px] flex flex-col justify-center mx-auto">
+        <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
           <p className="text-center  font-montserrat text-black text-3xl font-bold leading-5">
           Follow Us On Social Media
           </p>
         </div>
 
-        <div className="my-8  gap-8  w-[1218px] flex  mx-auto">
+        <div className="my-8  gap-8 md:flex md:w-full w-full  mx-auto">
             <div className="">
                 <Image src={bbl} alt="bbl-img" />
             </div>
-            <div className=" gap-8 flex flex-col justify-start items-start ">
+            <div className=" gap-8  flex flex-col justify-start items-start ">
                 <div className="">
                     <div className="flex items-center justify-normal">
                         <Image src={insta} alt="bbl-img" />
