@@ -13,48 +13,85 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    
-    <nav className="flex items-center justify-between flex-wrap bg-white ">
-    <div className="flex items-center flex-shrink-0 text-black mr-6">
-      <Image src={tempImagefaFymn} alt="Logo" className="h-12 w-16" />
-      
-    </div>
-    <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto justify-end mx-4">
-      <div className="text-sm lg:flex-grow flex justify-end">
-        <Link
-          href="about"
-          className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs "
-        >
-          About Us
+    <nav className="flex items-center justify-between flex-wrap bg-white p-6">
+      <div className='flex items-center w-full'>
+
+      <div className="flex items-center flex-shrink-0 text-black mr-6">
+        <Image src={tempImagefaFymn} alt="Logo" className="h-12 w-16" />
+      </div>
+
+      <div className={`w-full  items-center md:flex hidden `}>
+        <div className="text-sm flex-grow flex justify-end">
+          <Link href="about" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+
+            About Us
+          </Link>
+          <Link href="surgery" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+            Surgery Recovery
+
+          </Link>
+          <Link href="ivinfusion" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+           
+              IV Infusions
+            
+          </Link>
+          <Link href="#about" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+              Massages & Treatments
+          
+          </Link>
+          <Link href="faq" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+              Calendar
+           
+          </Link>
+        </div>
+
+        <Link href="/customerrecovery" passHref>
+          <button
+            className="uppercase md:px-6 px-14 py-2 leading-none border rounded text-white hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat text-xs font-bold"
+          >
+            Book Free Consult
+          </button>
         </Link>
-        <Link
-          href="surgery"
-          className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs "
-        >
-          Surgery Recovery
-        </Link>
-        <Link
-          href="ivinfusion"
-          className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs "
-        >
-          IV Infusions
-        </Link>
-        <Link
-          href="#about"
-          className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs "
-        >
-          Massages & Treatments
-        </Link>
-        <Link
-          href="calendar"
-          className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-        >
-          Calendar
-        </Link>
+      </div>
       </div>
 
 
-      <div className="lg:hidden">
+
+      <div className={`w-full block md:hidden items-center ${menuOpen ? "block" : "hidden"} `}>
+        <div className="text-sm flex-grow block justify-end">
+          <Link href="about" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+
+            About Us
+          </Link>
+          <Link href="surgery" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+            Surgery Recovery
+
+          </Link>
+          <Link href="ivinfusion" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+           
+              IV Infusions
+            
+          </Link>
+          <Link href="#about" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+              Massages & Treatments
+          
+          </Link>
+          <Link href="faq" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+              Calendar
+           
+          </Link>
+        </div>
+
+        <Link href="/customerrecovery" passHref>
+          <button
+            className="uppercase md:px-6 block mx-auto px-14 py-2 leading-none border rounded text-white hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat text-xs font-bold"
+          >
+            Book Free Consult
+          </button>
+        </Link>
+      </div>
+
+      <div className="md:hidden">
         <button onClick={toggleMenu} className="text-black focus:outline-none">
           {menuOpen ? (
             <div className='absolute top-10 right-4'>
@@ -70,7 +107,8 @@ const Navbar: React.FC = () => {
           )}
         </button>
       </div>
-      </div>
+      
+    
     </nav>
   );
 };

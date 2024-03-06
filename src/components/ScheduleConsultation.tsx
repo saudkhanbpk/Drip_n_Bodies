@@ -11,7 +11,7 @@ const ScheduleConsultation = () => {
 
                         </div>
                         <hr />
-                        <p className='pt-2 my-2 text-white'>Schedule A Free Consultation!</p>
+                        <p className='pt-2 my-2  text-white'>Schedule A Free Consultation!</p>
                         <p className='pt-2  text-white text-sm'>Talk one on one with your Drip N Bodied nurse babe! </p>
                         <p className='pt-2  text-white text-sm'>We are ready and willing to answer questions related to surgery, nursing or business start ups.</p>
                         <button className='p-2 mt-12 text-white bg-[#3BAFBF]'>SCHEDULE A CONSULT CALL</button>
