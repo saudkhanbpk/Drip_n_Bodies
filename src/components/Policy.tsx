@@ -53,13 +53,15 @@ const Policy = () => {
         </div>
       </div>
 
-      <div className="w-full relative -top-24 ">
-        <div className="py-6 md:py-12 w-full h-[141px] md:h-[191px] lg:bg-cover lg:bg-no-repeat bg-center md:bg-[url('../images/realmiami.png')]">
-          <div className="flex justify-center items-center w-auto h-[27px] md:h-[37px] lg:h-[47px]">
-            <Image src={policyy} alt="real" />
+      <div className="w-full relative md:-top-24 ">
+          <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+            <div className="flex justify-center items-center w-auto h-[27px]">
+              <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
+              Post Cosmetic Surgery Questions
+              </p>
+            </div>
           </div>
         </div>
-      </div>
       <div className='mb-10 text-sm font-bold flex justify-center text-md'>
         <p className='text-[18px]'>Read our policy</p>
       </div>

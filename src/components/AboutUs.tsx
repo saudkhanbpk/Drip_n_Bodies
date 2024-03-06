@@ -22,7 +22,7 @@ const AboutUs = () => {
             <p className="text-7xl font-bold text-[#F4B5D9]">Of Miami®</p>
           </div>
           <div className="my-10 w-auto h-[43px]">
-            <button className="font-montserrat text-white text-sm font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+            <button className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
               Book Free Consultation
             </button>
           </div>

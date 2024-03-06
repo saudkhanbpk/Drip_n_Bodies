@@ -184,24 +184,14 @@ const CustomerRecovery: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full">
-          <div className="my-6 w-full xl:w-[1218px] mx-auto">
-            <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
-              Concierge Recovery Nurse Services
-            </p>
-            <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
-              {/* Your text content here */}
-            </p>
-          </div>
-        </div>
-        {/* Add responsive design for other sections */}
+        
       </div>
 
       <div className="w-full">
-        <div className="my-6 w-full xl:w-[1218px] mx-auto p-4">
-          <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-lg md:text-xl">
-            Concierge Recovery Nurse Services
-          </p>
+        <div className="my-6 w-[90%]  mx-auto p-4">
+        <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+              Concierge Recovery Nurse Services
+            </p>
           <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
             Drip N Bodied is a concierge IV hydration and post-operative care
             company that services clients in South Florida&apos;s tri-county area in
@@ -217,19 +207,21 @@ const CustomerRecovery: React.FC = () => {
         </div>
       </div>
 
-        <div className=" my-12 items-center w-[1218px] flex flex-col justify-center mx-auto">
-          <div className=" items-center w-full flex gap-8 justify-between mx-auto">
-            <div className=" w-[600px] h-[360px] ">
+        <div className="w-full">
+        <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto">
+          <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
+            <div className=" w-full md:w-1/2 lg:h-[360px] h-full ">
               <Image src={serv1} alt="service1" className="w-full h-full" />
             </div>
-            <div className=" w-[600px] p-6 h-[360px] bg-[#FFC700] bg-opacity-25 ">
-              <div className="my-2">
-                <p className="font-montserrat  text-black text-3xl font-bold leading-7">
-                  Cosmetic Surgery Recovery Services
+            
+            <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#FFC700] bg-opacity-25 ">
+              <div className="lg:my-2">
+                <p className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
+                Cosmetic Surgery Recovery Services
                 </p>
               </div>
-              <div className="  w-[540px] h-auto my-4 flex-shrink-0">
-                <p className="font-montserrat text-black text-base font-normal leading-6">
+              <div className="  w-full h-auto my-2 xl:my-4 flex-shrink-0">
+                <p className="font-montserrat text-black text-sm lg:text-[16px] xl:text-base font-normal leading-4 xl:leading-6">
                   Drip N Bodied is a concierge IV hydration and post-operative
                   care company that services clients in South Florida’s
                   tri-county area in the comfort of their home, office, or
@@ -241,9 +233,9 @@ const CustomerRecovery: React.FC = () => {
                   360, and more! At Drip N Bodied, we take pride in assisting.
                 </p>
               </div>
-              <div className="w-[200px] h-[43px]">
-                <button className=" text-black text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-yellow-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
-                  Book A Package
+              <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
+                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  rounded   hover:bg-yellow-300 mt-2 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
+                Book A Package
                 </button>
               </div>
 
@@ -252,17 +244,17 @@ const CustomerRecovery: React.FC = () => {
           </div>
         </div>
 
-        <div className=" my-12 items-center w-[1218px] flex flex-col justify-center mx-auto">
-          <div className=" items-center w-full flex gap-8 justify-between mx-auto">
-            <div className=" w-[600px] p-6 h-[360px] bg-[#3BAFBF] bg-opacity-50 ">
-              <div className="my-2">
-                <p className="font-montserrat  text-black text-3xl font-bold leading-7">
-                  Mobile IV Infusions
+        <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto">
+          <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
+          <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#3BAFBF] bg-opacity-25 ">
+              <div className="lg:my-2">
+                <p className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
+                Mobile IV Infusions
                 </p>
               </div>
-              <div className="  w-[540px] h-auto my-4 flex-shrink-0">
-                <p className="font-montserrat text-black text-base font-normal leading-6">
-                  Drip N Bodied is a concierge IV hydration and post-operative
+              <div className="  w-full h-auto my-2 xl:my-4 flex-shrink-0">
+                <p className="font-montserrat text-black text-sm lg:text-[16px] xl:text-base font-normal leading-4 xl:leading-6">
+                Drip N Bodied is a concierge IV hydration and post-operative
                   care company that services clients in South Florida’s
                   tri-county area in the comfort of their home, office, or
                   hotel. We are known for providing luxury IV therapy for
@@ -273,34 +265,34 @@ const CustomerRecovery: React.FC = () => {
                   360, and more! At Drip N Bodied, we take pride in assisting .
                 </p>
               </div>
-              <div className="w-[200px] h-[43px]">
-                <button className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
-                  Book IV Drips
+              <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
+                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  rounded   hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+                Book IV Drips
                 </button>
               </div>
 
               {/* <Image src={serv1} alt="service1" className="w-full h-full" /> */}
             </div>
-
-            <div className=" w-[600px] h-[360px] ">
+            <div className=" w-full md:w-1/2 lg:h-[360px] h-full ">
               <Image src={serv2} alt="service1" className="w-full h-full" />
             </div>
+            
           </div>
         </div>
 
-        <div className=" my-12 items-center w-[1218px] flex flex-col justify-center mx-auto">
-          <div className=" items-center w-full flex gap-8 justify-between mx-auto">
-            <div className=" w-[600px] h-[360px] ">
+        <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto">
+          <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
+            <div className=" w-full md:w-1/2 lg:h-[360px] h-full ">
               <Image src={serv4} alt="service1" className="w-full h-full" />
             </div>
-            <div className=" w-[600px] p-6 h-[360px] bg-[#F4B5D9] bg-opacity-50 ">
-              <div className="my-2">
-                <p className="font-montserrat  text-black text-3xl font-bold leading-7">
-                  Private Lymphatic Massages
+            <div className=" w-full md:w-1/2 p-2 lg:p-6 lg:h-[360px] h-auto bg-[#F4B5D9] bg-opacity-25 ">
+              <div className="lg:my-2">
+                <p className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
+                Private Lymphatic Massages
                 </p>
               </div>
-              <div className="  w-[540px] h-auto my-4 flex-shrink-0">
-                <p className="font-montserrat text-black text-base font-normal leading-6">
+              <div className="  w-full h-auto my-2 xl:my-4 flex-shrink-0">
+                <p className="font-montserrat text-black text-sm lg:text-[16px] xl:text-base font-normal leading-4 xl:leading-6">
                   Drip N Bodied is a concierge IV hydration and post-operative
                   care company that services clients in South Florida’s
                   tri-county area in the comfort of their home, office, or
@@ -309,12 +301,12 @@ const CustomerRecovery: React.FC = () => {
                   or in desperate need of a hang-over cure! We also provide
                   concierge post-operative services to clients having cosmetic
                   surgery such as Brazilian Butt Lifts, Mommy Makeovers, Lipo
-                  360, and more! At Drip N Bodied, we take pride in assistin.
+                  360, and more! At Drip N Bodied, we take pride in assisting.
                 </p>
               </div>
-              <div className="w-[200px] h-[43px]">
-                <button className=" text-black text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
-                  Book Massages
+              <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
+                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  rounded   hover:bg-pink-300 mt-2 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
+                Book Massages
                 </button>
               </div>
 
@@ -323,7 +315,9 @@ const CustomerRecovery: React.FC = () => {
           </div>
         </div>
 
-        <div className=" my-8 items-center w-[1218px] flex flex-col justify-center mx-auto">
+        
+
+        <div className=" my-8 items-center w-[90%] flex flex-col justify-center mx-auto">
           <p className="text-center font-montserrat text-[#3BAFBF] text-base font-bold leading-6 uppercase">
           View surgery recovery packages
           </p>
@@ -332,7 +326,7 @@ const CustomerRecovery: React.FC = () => {
       </div>
 
       <div className=" w-full">
-        <div className="my-6 items-center w-[1152px] flex   mx-auto">
+        <div className="my-6 items-center w-[88%] flex   mx-auto">
           <div className=" border-b-2 border-gray-300 w-1/2"></div>
           <div className=" border-b-4 border-[#3BAFBF] w-1/2"></div>
 
@@ -340,7 +334,7 @@ const CustomerRecovery: React.FC = () => {
         </div>
 
       <div className=" w-full mt-24">
-        <div className="my-6 items-center w-[800px] flex flex-col justify-center mx-auto">
+        <div className="my-6 items-center w-[60%] flex flex-col justify-center mx-auto">
           <p className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
           We Service The Miami Area
           </p>
@@ -351,9 +345,9 @@ const CustomerRecovery: React.FC = () => {
       </div>
 
       <div className=" w-full mt-24 items-center flex justify-center ">
-        <div className="my-6 items-center w-[1218px] flex justify-center  mx-auto gap-16">
-<div className="w-1/2 h-[760px]">
-  <div className="flex items-center gap-4 justify-center mx-auto border-b-[2px]">
+        <div className="my-6 items-center w-[90%] flex flex-col md:flex-row justify-center  mx-auto gap-8 lg:gap-16">
+<div className="w-full lg:w-1/2 h-auto md:h-[760px]">
+  <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4 justify-center mx-auto border-b-[2px]">
     <div className="px-4">
       <p className="text-black text-center font-Montserrat text-[24px] font-bold leading-normal">Monday - Saturday</p>
       <p className="text-black font-Montserrat text-[24px] font-normal leading-normal">8:00 AM - 7:00 PM</p>
@@ -383,11 +377,11 @@ const CustomerRecovery: React.FC = () => {
 
         </div>
       </div>
-      <div className="w-[560px] h-[440px]">
+      <div className="w-full xl:w-[560px] md:h-[50%] xl:h-[440px]">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114937.4046384566!2d-80.22254426588243!3d25.81037282058394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a6172bfeddb9%3A0x37be1741259463eb!2sMiami%20Beach%2C%20FL%2C%20USA!5e0!3m2!1sen!2s!4v1709544572684!5m2!1sen!2s"
-        width="600"
-        height="440"
+        width="100%"
+        height="100%"
         style={{ border: '0' }}
         allowFullScreen
         loading="lazy"
@@ -397,21 +391,21 @@ const CustomerRecovery: React.FC = () => {
       </div>
 
 </div>
-<div className="w-1/2   h-[760px]">
+<div className="w-full lg:w-1/2   h-auto md:h-[760px]">
   <Image src={cust}  alt='img' className="w-full h-full"/>
 </div>
         </div>
         </div>
 
         <div className="my-24 w-full">
-        <div className="my-6 items-center w-[1152px] flex   mx-auto">
+        <div className="my-6 items-center w-[88%] flex   mx-auto">
           <div className=" border-b-4 border-[#3BAFBF] w-1/2"></div>
           <div className=" border-b-2 border-gray-300 w-1/2"></div>
         </div>
       </div>
 
       <div className=" w-full my-8">
-        <div className="my-6 items-center w-[1218px] flex flex-col justify-center mx-auto">
+        <div className="my-6 items-center w-[90%] flex flex-col justify-center mx-auto">
           <p className=" py-2   leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
             Customer Reviews
           </p>
@@ -426,14 +420,15 @@ const CustomerRecovery: React.FC = () => {
           </p>
         </div>
       </div>
+        </div>
 
-      <div className="w-full flex bg-no-repeat bg-[url('../images/barbg.png')] h-[540px]"
+      <div className="w-full flex bg-repeat md:bg-no-repeat bg-[url('../images/barbg.png')] h-[540px]"
       style={{backgroundSize:'41%'}}>
-        <div className="  w-4/5 ml-auto mx-auto h-full">
+        <div className=" w-full md:w-4/5 ml-auto mx-auto h-full">
           <div className="slider-container">
-            <Slider {...settings} className="mt-14   gap-6 mx-28">
+            <Slider {...settings} className="mt-14   md:gap-6  lg:mx-28">
               <div>
-                <div className="gap-0 mt-10 p-6 border-2 border-[#F4B5D9] bg-white w-[360px] h-[305px]">
+                <div className="gap-0 mt-10 p-2 md:p-6 border-2 border-[#F4B5D9] bg-white w-full md:w-[360px] h-[305px]">
                   <div className=" flex justify-between">
                     <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
                       <Image src={barq1} alt="quote" />
@@ -470,7 +465,7 @@ const CustomerRecovery: React.FC = () => {
                     </div>
                     <div></div>
                   </div>
-                  <p className=" text-black font-montserrat text-base font-normal  w-[320px] h-180px]">
+                  <p className=" text-black font-montserrat text-base font-normal  w-full md:w-[320px] h-180px]">
                     Ashley and her team were incredibly caring and really made
                     sure I was comfortable post surgery. She communicated with
                     me through the whole process leading up to post op care, and
@@ -493,7 +488,7 @@ const CustomerRecovery: React.FC = () => {
                 </div>
               </div>
               <div>
-                <div className="gap-0 mt-10 p-6 border-2 border-[#F4B5D9] bg-white w-[360px] h-[305px]">
+                <div className="gap-0 mt-10 p-2 md:p-6 border-2 border-[#F4B5D9] bg-white w-full md:w-[360px] h-[305px]">
                   <div className=" flex justify-between">
                     <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
                       <Image src={barq1} alt="quote" />
@@ -530,7 +525,7 @@ const CustomerRecovery: React.FC = () => {
                     </div>
                     <div></div>
                   </div>
-                  <p className=" text-black font-montserrat text-base font-normal  w-[320px] h-180px]">
+                  <p className=" text-black font-montserrat text-base font-normal  w-full md:w-[320px] h-180px]">
                     Ashley and her team were incredibly caring and really made
                     sure I was comfortable post surgery. She communicated with
                     me through the whole process leading up to post op care, and
@@ -553,7 +548,7 @@ const CustomerRecovery: React.FC = () => {
                 </div>
               </div>
               <div>
-                <div className="gap-0 mt-10 p-6 border-2 border-[#F4B5D9] bg-white w-[360px] h-[305px]">
+                <div className="gap-0 mt-10 p-2 md:p-6 border-2 border-[#F4B5D9] bg-white w-full md:w-[360px] h-[305px]">
                   <div className=" flex justify-between">
                     <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
                       <Image src={barq1} alt="quote" />
@@ -590,7 +585,67 @@ const CustomerRecovery: React.FC = () => {
                     </div>
                     <div></div>
                   </div>
-                  <p className=" text-black font-montserrat text-base font-normal  w-[320px] h-180px]">
+                  <p className=" text-black font-montserrat text-base font-normal  w-full md:w-[320px] h-180px]">
+                    Ashley and her team were incredibly caring and really made
+                    sure I was comfortable post surgery. She communicated with
+                    me through the whole process leading up to post op care, and
+                    checked up on me after as well. I can’t recommend Drop N
+                    Bodied enough. You will be in the best hands with their
+                    care.
+                  </p>
+                  <div className="flex my-2 items-center justify-between w-full">
+                    <div className="flex items-center">
+                      <p className="font-montserrat text-black text-base font-bold leading-27">
+                        Jane Doe
+                      </p>
+                    </div>
+                    <div>
+                      <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
+                        <Image src={barq2} alt="quote" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="gap-0 mt-10 p-2 md:p-6 border-2 border-[#F4B5D9] bg-white w-full md:w-[360px] h-[305px]">
+                  <div className=" flex justify-between">
+                    <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
+                      <Image src={barq1} alt="quote" />
+                    </span>
+                    <div className="flex justify-center items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="90"
+                        height="18"
+                        viewBox="0 0 90 18"
+                        fill="none"
+                      >
+                        <path
+                          d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M27 0L29.0206 6.21885H35.5595L30.2694 10.0623L32.2901 16.2812L27 12.4377L21.7099 16.2812L23.7306 10.0623L18.4405 6.21885H24.9794L27 0Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M45 0L47.0206 6.21885H53.5595L48.2694 10.0623L50.2901 16.2812L45 12.4377L39.7099 16.2812L41.7306 10.0623L36.4405 6.21885H42.9794L45 0Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M63 0L65.0206 6.21885H71.5595L66.2694 10.0623L68.2901 16.2812L63 12.4377L57.7099 16.2812L59.7306 10.0623L54.4405 6.21885H60.9794L63 0Z"
+                          fill="#FFC700"
+                        />
+                        <path
+                          d="M81 0L83.0206 6.21885H89.5595L84.2694 10.0623L86.2901 16.2812L81 12.4377L75.7099 16.2812L77.7306 10.0623L72.4405 6.21885H78.9794L81 0Z"
+                          fill="#FFC700"
+                        />
+                      </svg>
+                    </div>
+                    <div></div>
+                  </div>
+                  <p className=" text-black font-montserrat text-base font-normal  w-full md:w-[320px] h-180px]">
                     Ashley and her team were incredibly caring and really made
                     sure I was comfortable post surgery. She communicated with
                     me through the whole process leading up to post op care, and
@@ -613,71 +668,12 @@ const CustomerRecovery: React.FC = () => {
                 </div>
               </div>
 
-              <div>
-                <div className="gap-0 mt-10 p-6 border-2 border-[#F4B5D9] bg-white w-[360px] h-[305px]">
-                  <div className=" flex justify-between">
-                    <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
-                      <Image src={barq1} alt="quote" />
-                    </span>
-                    <div className="flex justify-center items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="90"
-                        height="18"
-                        viewBox="0 0 90 18"
-                        fill="none"
-                      >
-                        <path
-                          d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
-                          fill="#FFC700"
-                        />
-                        <path
-                          d="M27 0L29.0206 6.21885H35.5595L30.2694 10.0623L32.2901 16.2812L27 12.4377L21.7099 16.2812L23.7306 10.0623L18.4405 6.21885H24.9794L27 0Z"
-                          fill="#FFC700"
-                        />
-                        <path
-                          d="M45 0L47.0206 6.21885H53.5595L48.2694 10.0623L50.2901 16.2812L45 12.4377L39.7099 16.2812L41.7306 10.0623L36.4405 6.21885H42.9794L45 0Z"
-                          fill="#FFC700"
-                        />
-                        <path
-                          d="M63 0L65.0206 6.21885H71.5595L66.2694 10.0623L68.2901 16.2812L63 12.4377L57.7099 16.2812L59.7306 10.0623L54.4405 6.21885H60.9794L63 0Z"
-                          fill="#FFC700"
-                        />
-                        <path
-                          d="M81 0L83.0206 6.21885H89.5595L84.2694 10.0623L86.2901 16.2812L81 12.4377L75.7099 16.2812L77.7306 10.0623L72.4405 6.21885H78.9794L81 0Z"
-                          fill="#FFC700"
-                        />
-                      </svg>
-                    </div>
-                    <div></div>
-                  </div>
-                  <p className=" text-black font-montserrat text-base font-normal  w-[320px] h-180px]">
-                    Ashley and her team were incredibly caring and really made
-                    sure I was comfortable post surgery. She communicated with
-                    me through the whole process leading up to post op care, and
-                    checked up on me after as well. I can’t recommend Drop N
-                    Bodied enough. You will be in the best hands with their
-                    care.
-                  </p>
-                  <div className="flex my-2 items-center justify-between w-full">
-                    <div className="flex items-center">
-                      <p className="font-montserrat text-black text-base font-bold leading-27">
-                        Jane Doe
-                      </p>
-                    </div>
-                    <div>
-                      <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
-                        <Image src={barq2} alt="quote" />
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
 
             </Slider>
           </div>
           <div className="flex my-8 justify-center items-center">
-          <p className="text-[#3BAFBF] text-center font-montserrat text-base font-normal leading-[27px]">
+          <p className="md:text-[#3BAFBF] text-center font-montserrat text-base font-bold md:font-normal leading-[27px]">
           See all of our Google reviews
           </p>
           </div>
