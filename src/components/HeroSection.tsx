@@ -92,7 +92,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="w-auto flex justify-end items-center">
-          <Image src={heroimg1} alt="Logo" className=" w-[606px] h-[580px]" />
+          <Image src={heroimg1} alt="Logo" className=" md:w-[606px] md:h-[580px]" />
         </div>
       </div>
       {/* <div className="w-full  ">
