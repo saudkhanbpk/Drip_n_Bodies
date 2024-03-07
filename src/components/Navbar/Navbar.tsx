@@ -72,11 +72,11 @@ const Navbar: React.FC = () => {
               IV Infusions
             
           </Link>
-          <Link href="#about" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+          <Link href="massage" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
               Massages & Treatments
           
           </Link>
-          <Link href="faq" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
+          <Link href="calendar" className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs">
               Calendar
            
           </Link>
