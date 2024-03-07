@@ -12,8 +12,8 @@ const AboutUs = () => {
   return (
     <>
       <div className="" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
-        <div className=" w-full md:flex  justify-between ">
-          <div className=" px-10 m-10 pt-16 ml-22">
+        <div className="border-4 w-full md:flex  justify-between ">
+          <div className="border-2 w-[100%] px-10 md:m-10 pt-16 ml-22">
             <div className="  md:flex flex-col gap-4 ">
               <p className="md:text-6xl text-3xl font-bold">Who Are </p>
               <p className="md:text-6xl text-3xl font-bold text-[#F4B5D9]">
@@ -22,7 +22,7 @@ const AboutUs = () => {
               <p className="md:text-6xl text-3xl font-bold text-[#F4B5D9]">Of Miami®</p>
             </div>
             <div className="my-10 w-auto h-[43px]">
-              <button className="font-montserrat text-white text-sm font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center   ">
+              <button className="font-montserrat text-white text-xs md:text-sm font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center   ">
                 Book Free Consultation
               </button>
             </div>
@@ -32,7 +32,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="w-full  relative -top-14 ">
-          <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+          <div className="px-4 py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center  items-center w-auto h-[27px]">
               <Image src={recoverynurses} alt="real" className="mix-blend-multiply  object-cover" />
             </div>
