@@ -66,7 +66,7 @@ const Policy = () => {
 
 
       <div className="w-full">
-        <div className="w-full md:w-3/4 lg:w-1/2 mx-auto">
+        <div className="w-full md:w-3/4 lg:w-1/2 mx-auto p-5">
           <div className="border-t border-t-gray-300"></div>
           <div className="bg-white px-0 py-4 rounded-md">
             {faqItems.map((item, index) => (
@@ -102,18 +102,18 @@ const Policy = () => {
           </div>
 
 
-          <div className='mb-10'>
+          <div className='mb-10 p-5'>
             <p className='pb-2 font-bold'>Overnight Parking Policy</p>
             <p>Clients who have packages that include overnight Recovery Assistant care are responsible for parking fees. At the conclusion of service, the client will be invoiced.</p>
           </div>
-          <div className='mb-10 text-sm font-bold flex justify-center text-md'>
+          <div className='mb-10 text-sm font-bold flex justify-center text-md p-5'>
             <p>Email Us Your Question</p>
           </div>
-          <div className='mb-10'>
+          <div className='mb-10 p-5'>
             <p className='pb-2 font-bold'>What is your question?</p>
             <input type="text" name="" id="" className='border border-gray-300 p-1 outline-none w-full' />
           </div>
-          <div className='mb-8'>
+          <div className='mb-8 p-5'>
             <p className='pb-2 font-bold mb-4'>Tell us more about your question.</p>
             <textarea name="" id="" placeholder='Enter your the details of your question' className='border border-gray-300 w-full h-[300px] outline-none mb-5 p-2 px-2'></textarea>
           </div>
