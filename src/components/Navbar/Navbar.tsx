@@ -107,6 +107,8 @@ const Navbar: React.FC = () => {
           )}
         </button>
       </div>
+      
+    
     </nav>
   );
 };

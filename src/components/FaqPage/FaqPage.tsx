@@ -53,13 +53,18 @@ const FaqPage = () => {
                 </div>
             </div>
 
-            <div className="w-full relative -top-24 ">
-                <div className="py-12 w-full h-[141px] bg-cover bg-no-repeat bg-center bg-[url('../images/realmiami.png')]">
-                    <div className="flex justify-center items-center w-auto h-[27px]">
-                        <Image src={therealtwo} alt="real" />
-                    </div>
-                </div>
+            
+            <div className="w-full relative md:-top-24 ">
+          <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+            <div className="flex justify-center items-center w-auto h-[27px]">
+              <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
+              Post Cosmetic Surgery Questions
+              </p>
             </div>
+          </div>
+        </div>
+        
+        
 
             <div className="w-full">
                 <div className="w-full md:w-1/2 mx-auto">
