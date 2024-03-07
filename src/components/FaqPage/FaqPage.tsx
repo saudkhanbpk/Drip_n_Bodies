@@ -72,9 +72,9 @@ const FaqPage = () => {
                         <p className="font-bold text-4xl text-[20px] leading-8 md:leading-29 tracking-normal text-left">Frequently Asked Questions</p>
                     </div>
                     <div className="border-t border-t-gray-300"></div>
-                    <div className="bg-white px-0 py-4 rounded-md">
+                    <div className="bg-white px-0 py-4  rounded-md">
                         {faqItems.map((item, index) => (
-                            <div key={index} className="mb-4">
+                            <div key={index} className="mb-4 p-4">
                                 <input
                                     type="checkbox"
                                     id={`item${index}`}
@@ -108,11 +108,11 @@ const FaqPage = () => {
                     <div className='mb-10 text-sm font-bold flex justify-center text-md'>
                         <p>Email Us Your Question</p>
                     </div>
-                    <div className='mb-10'>
+                    <div className='mb-10 p-5'>
                         <p className='pb-2 font-bold'>What is your question?</p>
                         <input type="text" name="" id="" className='border border-gray-300 p-1 outline-none w-full' />
                     </div>
-                    <div className='mb-14'>
+                    <div className='mb-14 p-5'>
                         <p className='pb-2 font-bold'>Tell us more about your question.</p>
                         <textarea name="" id="" className='border border-gray-300 w-full h-[300px] outline-none'  ></textarea>
                     </div>
