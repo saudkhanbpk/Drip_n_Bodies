@@ -12,8 +12,8 @@ const AboutUs = () => {
   return (
     <>
       <div className="" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
-        <div className="border-4 w-full md:flex  justify-between ">
-          <div className="border-2 w-[100%] px-10 md:m-10 pt-16 ml-22">
+        <div className=" w-full md:flex  justify-between ">
+          <div className=" w-[100%] px-10 md:m-10 pt-16 ml-22">
             <div className="  md:flex flex-col gap-4 ">
               <p className="md:text-6xl text-3xl font-bold">Who Are </p>
               <p className="md:text-6xl text-3xl font-bold text-[#F4B5D9]">

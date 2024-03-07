@@ -96,7 +96,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="w-full  ">
-        <div className="border-4 py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+        <div className=" py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
           <div className="flex justify-center items-center w-auto h-[27px]">
           <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
           The Real Nurses Of Miami
