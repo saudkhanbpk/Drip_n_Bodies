@@ -15,7 +15,7 @@ const OurServices = () => {
     <>
       <div className="my-12  w-[90%] mx-auto">
         <div className=" my-16 items-center w-full flex flex-col justify-center mx-auto">
-          <p className="text-center py-6 font-montserrat text-black text-3xl font-bold leading-normal text">
+          <p className="text-center py-2 md:py-6 font-montserrat text-black text-3xl font-bold leading-normal text">
             Our Services
           </p>
           <p className="w-full md:flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal md:h-[34px]">
