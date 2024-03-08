@@ -216,7 +216,7 @@ const CustomerRecovery: React.FC = () => {
             
             <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#FFC700] bg-opacity-25 ">
               <div className="lg:my-2">
-                <p className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
+                <p className="font-montserrat  text-black text-base xl:text-[28px] font-bold leading-7">
                 Cosmetic Surgery Recovery Services
                 </p>
               </div>
@@ -281,7 +281,7 @@ const CustomerRecovery: React.FC = () => {
         </div>
 
         <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto">
-          <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
+          <div className=" items-center w-full flex flex-col md:flex-row gap-2 md:gap-8 justify-between mx-auto">
             <div className=" w-full md:w-1/2 lg:h-[360px] h-full ">
               <Image src={serv4} alt="service1" className="w-full h-full" />
             </div>
@@ -326,16 +326,16 @@ const CustomerRecovery: React.FC = () => {
       </div>
 
       <div className=" w-full">
-        <div className="my-6 items-center w-[88%] flex   mx-auto">
+        <div className="my-2 md:my-6 items-center w-[88%] flex   mx-auto">
           <div className=" border-b-2 border-gray-300 w-1/2"></div>
           <div className=" border-b-4 border-[#3BAFBF] w-1/2"></div>
 
         </div>
         </div>
 
-      <div className=" w-full mt-24">
+      <div className=" w-full mt-8 md:mt-24">
         <div className="my-6 items-center w-[60%] flex flex-col justify-center mx-auto">
-          <p className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
+          <p className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[16px] md:text-[24px]">
           We Service The Miami Area
           </p>
           <p className="w-full flex justify-center text-center font-montserrat text-black text-base font-normal leading-normal ">
@@ -344,21 +344,21 @@ const CustomerRecovery: React.FC = () => {
         </div>
       </div>
 
-      <div className=" w-full mt-24 items-center flex justify-center ">
+      <div className=" w-full mt-4 md:mt-24 items-center flex justify-center ">
         <div className="my-6 items-center w-[90%] flex flex-col md:flex-row justify-center  mx-auto gap-8 lg:gap-16">
 <div className="w-full lg:w-1/2 h-auto md:h-[760px]">
   <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4 justify-center mx-auto border-b-[2px]">
     <div className="px-4">
-      <p className="text-black text-center font-Montserrat text-[24px] font-bold leading-normal">Monday - Saturday</p>
-      <p className="text-black font-Montserrat text-[24px] font-normal leading-normal">8:00 AM - 7:00 PM</p>
+      <p className="text-black text-center font-Montserrat text-[16px] md:text-[24px] font-bold leading-normal">Monday - Saturday</p>
+      <p className="text-black font-Montserrat text-[16px] md:text-[24px] text-center font-normal leading-normal">8:00 AM - 7:00 PM</p>
       <div className='flex flex-col items-center justify-center my-4'>
                     <span className='text-3xl mx-auto'>✉</span>
                     <p>booking@dripnbodied.com</p>
                   </div>
     </div>
     <div  className="px-4">
-      <p className="text-black text-center font-Montserrat text-[24px] font-bold leading-normal">After Hours:</p>
-      <p className="text-black font-Montserrat text-[24px] font-normal leading-normal"> By Request Only</p>
+      <p className="text-black text-center font-Montserrat text-[16px] md:text-[24px] font-bold leading-normal">After Hours:</p>
+      <p className="text-black font-Montserrat text-[16px] md:text-[24px] font-normal leading-normal"> By Request Only</p>
       <div className='flex flex-col items-center justify-center my-4'>
                     <span className='text-center text-3xl text-red-700 '>☎</span>
                     <p>(305) 908-9282</p>
@@ -371,7 +371,7 @@ const CustomerRecovery: React.FC = () => {
         <p className="w-full flex justify-center text-center font-montserrat text-black text-base font-normal leading-normal ">
           We service anyone within a
           </p>
-          <p className="pt-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
+          <p className="pt-2  leading-normal text text-black text-center font-montserrat font-bold text-[16px] md:text-[24px]">
           30 minute radius of Miami International Airport
           </p>
 
@@ -397,19 +397,19 @@ const CustomerRecovery: React.FC = () => {
         </div>
         </div>
 
-        <div className="my-24 w-full">
-        <div className="my-6 items-center w-[88%] flex   mx-auto">
+        <div className="my-8 md:my-24 w-full">
+        <div className="my-2 md:my-6 items-center w-[88%] flex   mx-auto">
           <div className=" border-b-4 border-[#3BAFBF] w-1/2"></div>
           <div className=" border-b-2 border-gray-300 w-1/2"></div>
         </div>
       </div>
 
-      <div className=" w-full my-8">
-        <div className="my-6 items-center w-[90%] flex flex-col justify-center mx-auto">
+      <div className=" w-full my-2 md:my-8">
+        <div className="my-2 md:my-6 items-center w-[90%] flex flex-col justify-center mx-auto">
           <p className=" py-2   leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
             Customer Reviews
           </p>
-          <p className="w-full py-10 flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
+          <p className="w-full py-3 md:py-10 flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
             Drip N Bodied is a concierge IV hydration and post-operative care
             company that services clients in South Florida’s tri-county area in
             the comfort of their home, office, or hotel. We are known for

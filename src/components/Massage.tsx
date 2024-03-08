@@ -128,11 +128,11 @@ const Massage = () => {
         </div>
       </div>
 
-        <div className=" flex justify-center gap-4 flex-col md:flex-row">
+        <div className=" flex justify-center items-center p-2 md:p-4 gap-4 flex-col md:flex-row ">
           {massagePackages.map((data: any, index: any) => (
             <div
               key={index}
-              className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4"
+              className="flex flex-col w-[300px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4"
             >
               <Image
                 src={data.imageSrc}
@@ -141,7 +141,7 @@ const Massage = () => {
                 height={100}
                 className="w-[270px] h-[142px] relative bottom-10"
               />
-              <p className="text-2xl font-bold">{data.title}</p>
+              <p className="text-[24px] leading-[27px] font-bold">{data.title}</p>
               <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
                 {data.price}
               </p>
@@ -172,10 +172,10 @@ const Massage = () => {
           </p>
         </div>
       </div>
-        <div className="w-full flex justify-center flex-col md:flex-row gap-8 px-8 pt-5">
+        <div className="w-full flex justify-center items-center flex-col md:flex-row gap-8 px-8 pt-5">
           {services.map((service, index) => (
             <>
-              <div className="px-4flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4 ">
+              <div className="px-4 flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4 ">
                 <Image
                   src={service.imageSrc}
                   alt={service.serviceName}

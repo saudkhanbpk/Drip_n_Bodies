@@ -42,10 +42,10 @@ const AboutUs = () => {
 
         <div className=" w-full">
           <div className=" items-center w-[88%]  md:flex flex-col justify-center mx-auto">
-            <p className="text-center py-2 font-montserrat text-black text-3xl font-bold leading-normal text">
+            <p className="text-center py-2 font-montserrat text-black text-[20px] md:text-3xl font-bold leading-normal text">
               About Drip N Bodied
             </p>
-            <p className="w-full my-8 flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
+            <p className="w-full my-3 md:my-8 flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
               Drip N Bodied is a concierge IV hydration and post-operative care
               company that services clients in South Florida’s tri-county area in
               the comfort of their home, office, or hotel. We are known for
@@ -60,9 +60,9 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className=" w-full my-16">
-          <div className=" items-center md:w-full  gap-12 md:flex  justify-center mx-auto">
-            <div className="md:w-[350px] ">
+        <div className=" w-full my-6 md:my-16">
+          <div className=" items-center w-[88%] gap-12 md:flex  justify-center mx-auto">
+            <div className="md:w-[350px] p-2 ">
               <p className=" text-black text-center font-montserrat text-16 font-bold leading-23">
                 Our Goal
               </p>
@@ -92,12 +92,12 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className=" w-full my-8">
+        <div className=" w-full my-3 md:my-8">
           <div className=" items-center md:w-full  md:flex flex-col  justify-center mx-auto">
-            <p className="text-center py-2 font-montserrat text-black text-3xl font-bold leading-normal text">
+            <p className="text-center py-2 font-montserrat text-black text-[22px] md:text-3xl font-bold leading-normal text">
               Meet Your Registered Nurses
             </p>
-            <p className="w-full  md:flex justify-center text-center font-montserrat text-black text-base font-normal leading-normal ">
+            <p className="w-full px-2  md:flex justify-center text-center font-montserrat text-black text-base font-normal leading-normal ">
               Our dedicated team of Registered Nurses help to ensure you have the
               best post operative experience possible.
             </p>

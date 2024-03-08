@@ -12,8 +12,8 @@ const HeroSection = () => {
   return (
     <>
       <div className="w-full flex flex-col lg:flex-row justify-between  ">
-        <div className="w-auto px-10  pt-16 ml-22">
-          <div className="  md:flex flex flex-col gap-8 ">
+        <div className="w-auto px-10  pt-6 md:pt-16 ml-22">
+          <div className="  md:flex flex flex-col gap-2 md:gap-8 ">
             <p className="md:text-7xl text-5xl font-bold">IV Therapy,</p>
             <p className="md:text-7xl text-5xl font-bold">Recovery Nurses.</p>
             <p className="md:text-7xl text-5xl font-bold text-[#3BAFBF]">Drip N Bodied</p>

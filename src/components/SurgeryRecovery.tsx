@@ -78,7 +78,7 @@ const SurgeryRecovery = () => {
           <div className=" items-center w-full flex xl:flex-row flex-col justify-center mx-auto gap-8">
             
             <div className="flex md:flex-row flex-col gap-6">
-            <div className="border border-[#3BAFBF] w-[300px] h-[720px] flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] w-[300px] h-[720px] hover:h-[760px] flex flex-col items-center justify-center p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   One Night Glam
@@ -95,7 +95,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
-                <button className="w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300   bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300   bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -121,7 +121,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
             </div>
-            <div className="border bg-[#3BAFBF] w-[300px] h-[760px] flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] w-[300px] h-[720px] hover:h-[760px] flex flex-col items-center justify-center p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Snatched!
@@ -129,7 +129,7 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
                   Perfrect for people
                 </p>
-                <p className="text-[#F4B5D9] my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
+                <p className=" text-blue-500 my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $800
                 </p>
                 <p className="mx-auto mt-10  h-[34px] w-[135px] text-black text-center font-montserrat text-xs font-normal leading-[17px]">
@@ -138,7 +138,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
-                <button className="w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-pink-300  bg-[#F4B5D9] text-center font-montserrat  ">
+                <button className="buton bg-[#3BAFBF] buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -159,7 +159,7 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat text-base font-normal leading-[17px]">
                   Complimentary transportation after surgery
                 </p>
-                <p className="text-white text-center font-montserrat text-sm font-normal leading-[17px] underline">
+                <p className="text-blue-500 text-center font-montserrat text-sm font-normal leading-[17px] underline">
                   View all services included
                 </p>
               </div>
@@ -168,7 +168,7 @@ const SurgeryRecovery = () => {
             </div>
 
             <div className="flex md:flex-row flex-col gap-6">
-            <div className="border border-[#3BAFBF] w-[300px] h-[720px] flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] w-[300px] h-[720px] hover:h-[760px] flex flex-col items-center justify-center p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   The Bougie Babe
@@ -185,7 +185,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div className="my-10 w-auto h-[43px] flex ">
-                <button className="w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300  bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300  bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -210,7 +210,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-[#3BAFBF] w-[300px] h-[720px] flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] w-[300px] h-[720px] hover:h-[760px] flex flex-col items-center justify-center p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Very Bougie!
@@ -227,7 +227,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div className="my-10 w-auto h-[43px] flex ">
-                <button className="w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300  bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300  bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -287,7 +287,7 @@ const SurgeryRecovery = () => {
 
         <div className=" w-full px-auto my-8">
           <div className=" items-center w-full flex md:flex-row flex-col justify-center mx-auto gap-8">
-            <div className="border border-[#3BAFBF] w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Snatched!
@@ -295,12 +295,12 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
                   Perfrect for people
                 </p>
-                <p className="text-[#3BAFBF] my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
+                <p className="text-blue-500 my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $2,200
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
-                <button className="w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300  bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300  bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -319,7 +319,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-[#3BAFBF] w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   The Bougie Babe
@@ -327,12 +327,12 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
                   Perfrect for people
                 </p>
-                <p className="text-[#3BAFBF] my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
+                <p className="text-blue-500 my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $3,200
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
-                <button className="w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300  bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  rounded hover:bg-blue-300  bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
               </div>

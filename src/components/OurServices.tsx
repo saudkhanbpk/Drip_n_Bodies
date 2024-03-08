@@ -87,7 +87,7 @@ const OurServices = () => {
                 </button>
               </div>
             </div>
-            <div className=" md:w-[540px] md:h-[360px] ">
+            <div className=" md:w-[600px] md:h-[360px] ">
               <Image src={serv2} alt="service1" className="md:w-full md:h-full" />
             </div>
           </div>
