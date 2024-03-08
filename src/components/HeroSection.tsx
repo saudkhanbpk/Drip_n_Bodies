@@ -104,7 +104,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:h-[810px]">
+      <div className="w-full h-full">
         <Image src={realnurses} alt='nurses' className="w-full h-full"/>
       </div>
       
