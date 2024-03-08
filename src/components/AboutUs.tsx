@@ -41,7 +41,7 @@ const AboutUs = () => {
         </div>
 
         <div className=" w-full">
-          <div className=" items-center md:w-full  md:flex flex-col justify-center mx-auto">
+          <div className=" items-center w-[88%]  md:flex flex-col justify-center mx-auto">
             <p className="text-center py-2 font-montserrat text-black text-3xl font-bold leading-normal text">
               About Drip N Bodied
             </p>
