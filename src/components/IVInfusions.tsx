@@ -427,9 +427,9 @@ export default function IVInfusions() {
       </div>
 
       <div className="w-full flex flex-col justify-center items-center p-10 ">
-        <div className="flex flex-col w-[50vw] items-center justify-center space-y-2 ">
+        <div className="flex flex-col w-full md:w-[50vw] items-center justify-center space-y-2 ">
           <p className="text-2xl font-bold">Premium Infusions</p>
-          <p className="text-base font-normal">
+          <p className="text-base font-normal text-center">
             Each cocktail has essential fluids, electrolytes, vitamins and
             antioxidants, to quickly remedy a variety of conditions.
           </p>
@@ -693,7 +693,7 @@ export default function IVInfusions() {
               </a>
             </div>
 
-            <div className="flex items-center justify-center  space-x-8">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8">
               <button className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
                 VIEW POST-OP DRIPS
               </button>
@@ -845,7 +845,7 @@ export default function IVInfusions() {
         </div>
         
 
-        <div className="flex items-center justify-center md:flex-row flex-col gap-6 md:space-x-8">
+        <div className="flex items-center justify-center md:flex-row flex-col gap-2 md:gap-8">
           <button className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
             VIEW POST-OP DRIPS
           </button>
