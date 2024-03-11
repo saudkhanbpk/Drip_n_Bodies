@@ -36,7 +36,7 @@ const FaqPage = () => {
 
     return (
         <>
-            <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start md:ml-22">
+            <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start md:ml-22" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
                 <div className="w-full md:w-auto p-8 text-center md:text-left">
                     <div className="flex flex-col  gap-4">
                         <p className="text-4xl md:text-7xl font-bold">Need Help</p>
@@ -49,22 +49,17 @@ const FaqPage = () => {
                 </div>
 
                 <div className="w-full md:w-auto mt-8 md:mt-0 md:ml-8">
-                    <Image src={tempImagewju} alt="Logo" className="w-full md:w-[606px] h-[580px] mix-blend-multiply" />
+                    <Image src={tempImagewju} alt="Logo" className="w-full md:w-[606px] h-[580px] mix-blend-multiply object-cover" />
                 </div>
             </div>
+            <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative md:-top-10">
+                <div className="flex justify-center  items-center w-auto h-[27px]">
+                    <p className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Post Cosmetic Surgery Questions</p>
+                </div>
 
-            
-            <div className="w-full relative md:-top-24 ">
-          <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
-            <div className="flex justify-center items-center w-auto h-[27px]">
-              <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
-              Post Cosmetic Surgery Questions
-              </p>
             </div>
-          </div>
-        </div>
-        
-        
+
+
 
             <div className="w-full">
                 <div className="w-full md:w-1/2 mx-auto">
@@ -72,7 +67,7 @@ const FaqPage = () => {
                         <p className="font-bold text-4xl text-[20px] leading-8 md:leading-29 tracking-normal text-left">Frequently Asked Questions</p>
                     </div>
                     <div className="border-t border-t-gray-300"></div>
-                    <div className="bg-white px-0 py-4  rounded-md">
+                    <div className="bg-white px-0 py-4  rounded-md ">
                         {faqItems.map((item, index) => (
                             <div key={index} className="mb-4 p-4">
                                 <input
@@ -83,7 +78,7 @@ const FaqPage = () => {
                                 />
                                 <label
                                     htmlFor={`item${index}`}
-                                    className="flex items-center justify-between cursor-pointer p-2 rounded-md gap-8"
+                                    className="flex items-center justify-between cursor-pointer p-2 rounded-md gap-8 hover:bg-pink-300/25"
                                     onClick={() => handleAccordionClick(index)}
                                 >
                                     <span className="font-bold text-4xl text-[20px] leading-8 md:leading-29 tracking-normal text-left">
@@ -96,25 +91,25 @@ const FaqPage = () => {
                                     )}
                                 </label>
                                 {accordionStates[index] && (
-                                    <div id={`accordion-item-${index + 1}`} className="p-4">
+                                    <div id={`accordion-item-${index + 1}`} className="px-2 py-4">
                                         <p>{item.answer}</p>
                                     </div>
                                 )}
-                                <div className="border-b border-b-gray-300"></div>
+                                <div className={`${index === faqItems.length - 1 ? '' : 'border-b border-b-gray-300 mt-3'}`}></div>
                             </div>
                         ))}
                     </div>
 
-                    <div className='mb-10 text-sm font-bold flex justify-center text-md'>
+                    <div className='mb-10 text-[24px] font-bold flex justify-center text-md'>
                         <p>Email Us Your Question</p>
                     </div>
                     <div className='mb-10 p-5'>
                         <p className='pb-2 font-bold'>What is your question?</p>
-                        <input type="text" name="" id="" className='border border-gray-300 p-1 outline-none w-full' />
+                        <input type="text" name="" id="" className='border border-black  outline-none w-full p-3 bg-white' />
                     </div>
                     <div className='mb-14 p-5'>
                         <p className='pb-2 font-bold'>Tell us more about your question.</p>
-                        <textarea name="" id="" className='border border-gray-300 w-full h-[300px] outline-none'  ></textarea>
+                        <textarea name="" id="" className='border border-black w-full h-[300px] outline-none p-3 '  ></textarea>
                     </div>
                 </div>
             </div>
