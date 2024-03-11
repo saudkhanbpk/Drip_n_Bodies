@@ -55,11 +55,12 @@ const Navbar: React.FC = () => {
               style={{ textShadow: "1px 1px 3px gray" }}
             >
               Calendar
+              
             </Link>
           </div>
 
           <Link href="customerrecovery" >
-            <button className="uppercase md:px-6 px-14 py-2 leading-none border rounded text-white hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat text-xs font-bold">
+            <button className="uppercase md:px-6 px-14 py-2 leading-none border  text-white hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat text-xs font-bold">
               Book Free Consult
             </button>
           </Link>

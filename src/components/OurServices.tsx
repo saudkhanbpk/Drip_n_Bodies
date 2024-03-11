@@ -9,10 +9,23 @@ import insta from "../images/insta.png";
 import tiktok from "../images/tiktok.png";
 import youtube from "../images/youtube.png";
 import fb from "../images/fb.png";
+import ourservvice from '../images/ourservvice.png'
 
 const OurServices = () => {
   return (
     <>
+      <div className="w-full  relative md:-top-14 ">
+        <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+          <div className="flex justify-center  items-center w-auto h-[27px]">
+            {/* <Image src={recoverynurses} alt="real" className="  object-cover" /> */}
+            <p className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > The Real Nurses Of Miami</p>
+          </div>
+
+        </div>
+        <div className=" w-1440 h-809.93 top-749">
+          <Image src={ourservvice} alt="service1" className="w-full h-full object-cover" />
+        </div>
+      </div>
       <div className="my-12  w-[90%] mx-auto">
         <div className=" my-16 items-center w-full flex flex-col justify-center mx-auto">
           <p className="text-center py-2 md:py-6 font-montserrat text-black text-3xl font-bold leading-normal text">
@@ -51,17 +64,17 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-black text-sm font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
+                <button className=" text-black text-sm font-bold leading-6 uppercase   px-4 py-2    hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
                   Book Free Consult
                 </button>
               </div>
 
-            </div>
+            </div>  
           </div>
         </div>
 
         <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
-          <div className=" items-center w-full flex lg:flex-row flex-col gap-8 justify-between mx-auto">
+          <div className=" items-center w-full gap-8 flex lg:flex-row  flex-col justify-between mx-auto">
             <div className=" md:w-[600px] p-6 md:h-[360px] bg-[#3BAFBF] bg-opacity-50 ">
               <div className="my-2">
                 <p className="font-montserrat  text-black text-3xl font-bold leading-7">
@@ -82,12 +95,12 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
                   Book IV Drips
                 </button>
               </div>
             </div>
-            <div className=" md:w-[600px] md:h-[360px] ">
+            <div className=" md:w-[600px]  md:h-[360px] ">
               <Image src={serv2} alt="service1" className="md:w-full md:h-full" />
             </div>
           </div>
@@ -117,7 +130,7 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-black text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
+                <button className=" text-black text-sm    font-bold leading-6 uppercase   px-4 py-2     hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
                   Book Massages
                 </button>
               </div>
@@ -147,7 +160,7 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-white text-sm    font-bold leading-6 uppercase   px-4 py-2  rounded   hover:bg-black-300 mt-4 lg:mt-0 bg-[#000000] text-center font-montserrat  ">
+                <button className=" text-white text-sm    font-bold leading-6 uppercase   px-4 py-2   hover:bg-black-300 mt-4 lg:mt-0 bg-[#000000] text-center font-montserrat  ">
                   Book Treatments
                 </button>
               </div>
