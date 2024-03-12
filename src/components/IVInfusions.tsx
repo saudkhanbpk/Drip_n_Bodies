@@ -369,11 +369,11 @@ export default function IVInfusions() {
               </a>
             </div>
           </div>
-          <div className=" w-full lg:w-[35%] flex relative md:overflow-clip ">
+          <div className="w-full md:w-[35%] flex relative md:overflow-clip ">
             <Image
               src={img2}
               alt="Logo"
-              className="w-full md:w-[80vw] absolute -top-12 left-0 h-[500px] lg:w-[656px]  lg:mix-blend-multiply object-cover "
+              className="w-full md:w-[80vw] md:absolute md:-top-12 h-full -left-10 md:h-[590px] lg:w-[656px]  lg:mix-blend-multiply object-cover "
             />
           </div>
         </div>
