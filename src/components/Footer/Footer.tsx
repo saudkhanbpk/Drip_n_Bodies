@@ -29,14 +29,14 @@ const Footer = () => {
   return (
     <>
       <div className='w-full md:w-4/5 mx-auto relative  md:-top-10'>
-        <div className='flex bg-[#F4B5D9] p-4 justify-center md:justify-between gap-4 items-center flex-col md:flex-row'>
-          <h1 className='text-xl font-bold text-center md:text-left md:self-center mb-4 md:mb-0'>Subscribe for special offers</h1>
+        <div className='flex bg-[#F4B5D9] px-8 py-6 justify-center md:justify-between items-center flex-col md:flex-row'>
+          <h1 className='text-xl font-bold text-center md:text-left md:self-center mb-4 md:mb-0 text-[24px]'>Subscribe for special offers</h1>
           <input
             type='text'
             placeholder='Enter your email'
             className='outline-none border border-black pl-2 p-2 w-full md:w-[500px] text-center md:text-left'
           />
-          <button className='bg-[#3BAFBF] text-white p-2'>SUBSCRIBE</button>
+          <button className='bg-[#3BAFBF] text-white p-2 px-6'>SUBSCRIBE</button>
         </div>
 
         <div className='pt-10  md:flex  md:gap-20'>
@@ -96,7 +96,7 @@ const Footer = () => {
       </div>
 
       <div className='w-full flex items-center justify-center bg-black mt-10'>
-        <span className='p-2 text-white text-sm'>Copyright 2024 | All Rights Reserved | Drip N Bodied</span>
+        <p className='p-2 text-white text-[16px]'>Copyright 2024 | All Rights Reserved | Drip N Bodied</p>
       </div>
     </>
   );

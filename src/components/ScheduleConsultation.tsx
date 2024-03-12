@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ScheduleConsultation = () => {
+const ScheduleConsultation = () => {    
     return (
         <>
             {/* <div className=" h-[450px] bg-[url('../images/Rectangle.png')]">
@@ -19,7 +19,7 @@ const ScheduleConsultation = () => {
                 </div>
 
             </div> */}
-            <div className="h-[450px] bg-[url('../images/Rectangle.png')]">
+            <div className="h-[450px] bg-[url('../images/Rectangle.png')] backgrou" >
                 <div className='flex justify-center items-center h-full'>
                     <div className='flex flex-col justify-center items-center'>
                         <h1 className='text-white text-2xl md:text-3xl lg:text-4xl mt-2 mb-4'>Talk To Your Nurse Babe</h1>
@@ -27,7 +27,7 @@ const ScheduleConsultation = () => {
                         <p className='px-2 pt-2 my-2 font-bold  text-white text-sm md:text-base'>Schedule A Free Consultation!</p>
                         <p className='px-2 pt-2 text-white text-sm md:text-base'>Talk one on one with your Drip N Bodied nurse babe!</p>
                         <p className='px-2 pt-2  text-white text-sm md:text-base'>We are ready and willing to answer questions related to surgery, nursing, or business start-ups.</p>
-                        <button className='px-4 p-2 mt-8 md:mt-12 text-white bg-[#3BAFBF]'>SCHEDULE A CONSULT CALL</button>
+                        <button className='px-6 p-2 font-bold text-[16px] mt-8 md:mt-12 text-white bg-[#3BAFBF]'>SCHEDULE A CONSULT CALL</button>
                     </div>
                 </div>
             </div>

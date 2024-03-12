@@ -69,7 +69,7 @@ const OurServices = () => {
                 </button>
               </div>
 
-            </div>  
+            </div>
           </div>
         </div>
 

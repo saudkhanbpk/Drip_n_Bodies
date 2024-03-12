@@ -52,8 +52,8 @@ const Policy = () => {
           <Image src={about1} alt="Logo" className="w-full md:w-[506px] lg:w-[606px] h-[480px] lg:h-[640px] mix-blend-multiply object-cover" />
         </div>
       </div>
-
-      {/* <div className="w-full relative md:-top-24 ">
+{/* 
+      <div className="w-full relative md:-top-24 ">
           <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center items-center w-auto h-[27px]">
               <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
@@ -62,12 +62,7 @@ const Policy = () => {
             </div>
           </div>
         </div> */}
-      <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative md:-top-20">
-        <div className="flex justify-center  items-center w-auto h-[27px]">
-          <p className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Drip N Bodied Policy</p>
-        </div>
-
-      </div>
+     
       <div className='mb-10 text-sm font-bold flex justify-center text-md'>
         <p className='text-[24px] font-bold'>Read our policy</p>
       </div>
@@ -123,7 +118,7 @@ const Policy = () => {
           </div>
           <div className='mb-8 p-5'>
             <p className='pb-2 font-bold mb-4'>Tell us more about your question.</p>
-            <textarea name="" id="" placeholder='Enter your the details of your question' className='border border-gray-300 w-full h-[300px] outline-none mb-5 p-3 px-2'></textarea>
+            <textarea name="" id="" placeholder='Enter your the details of your question' className='border border-gray-300 w-full h-[300px] outline-none mb-5 p-3 px-2 '></textarea>
           </div>
         </div>
       </div>

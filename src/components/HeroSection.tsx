@@ -95,7 +95,7 @@ const HeroSection = () => {
           <Image src={heroimg1} alt="Logo" className=" md:w-[606px] md:h-[580px]" />
         </div>
       </div>
-      <div className="w-full  ">
+      {/* <div className="w-full  ">
         <div className=" py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
           <div className="flex justify-center items-center w-auto h-[27px]">
           <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
@@ -103,10 +103,10 @@ const HeroSection = () => {
               </p>
           </div>
         </div>
-      </div>
-      <div className="w-full h-full">
+      </div> */}
+      {/* <div className="w-full h-full">
         <Image src={realnurses} alt='nurses' className="w-full h-full"/>
-      </div>
+      </div> */}
       
         
     </>
