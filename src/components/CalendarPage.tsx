@@ -13,40 +13,46 @@ import { IoIosMail } from "react-icons/io";
 const CalendarPage = () => {
   return (
     <>
-      <div className="">
-        <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
-          <div className="w-auto lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 ">
-            <div className="flex flex-col lg:gap-4">
-              <p className="text-4xl lg:text-7xl xl:text-7xl font-bold">
-                View Our{" "}
-              </p>
-              <p className="text-4xl lg:text-7xl font-bold ">Calendar For </p>
-              <p className="text-4xl lg:text-7xl font-bold  "> Your Big Day </p>
+     
+        <div className=" h-full md:h-[650px]">
+          <div className="w-full flex flex-col md:flex-row justify-between mx-auto ">
+            
+            <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22">
+              <div className="flex flex-col lg:leading-[100px]">
+                <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
+                  View Our{" "}
+                </p>
+                <p className="text-4xl lg:text-7xl  xl:text-8xl font-bold font-montserrat ">Calendar For </p>
+                <p className="text-4xl lg:text-7xl  xl:text-8xl font-bold font-montserrat  ">
+                  {" "}
+                  Your Big Day{" "}
+                </p>
+              </div>
+              <div className="my-6 md:my-5 lg:my-10 w-full lg:w-auto h-[43px] flex flex-col lg:flex-row">
+                <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
+                  Book a Consultation
+                </button>
+              </div>
             </div>
-            <div className="my-6 md:my-5 lg:my-10 w-full lg:w-auto h-[43px] flex flex-col lg:flex-row">
-              <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
-                Book a Consultation
-              </button>
+            <div className="  lg:w-[35%] flex ">
+              <Image
+                src={CalendarHeaderPic}
+                alt="Logo"
+                className="w-full md:w-[80vw] lg:w-[656px] lg:mix-blend-multiply object-cover "
+              />
             </div>
           </div>
-          <div className="  lg:w-auto flex ">
-            <Image
-              src={CalendarHeaderPic}
-              alt="Logo"
-              className="w-full md:w-[80vw] lg:w-[656px] lg:mix-blend-multiply object-cover "
-            />
+          <div className="w-full relative -top-12 md:-top-32 ">
+            <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+              <div className="flex justify-center items-center w-auto h-[27px]">
+              <p className="font-niconne text-3xl md:text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} >Drip N Bodied Calendar</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="w-full relative -top-12 md:-top-32 ">
-          <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
-            <div className="flex justify-center items-center w-auto h-[27px]">
-              <p className="text-[#3BAFBF] text-center font-niconne text-4xl lg:text-6xl font-normal">
-                Drip N Bodied Calendar
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        
+        
+      
       <div className="Main py-6 ">
         <div className="heading flex flex-col justify-center items-center">
           <p className="text-black text-center font-montserrat font-bold text-xl leading-normal">

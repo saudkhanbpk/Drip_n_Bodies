@@ -331,7 +331,7 @@
 import React from "react";
 import Image from "next/image";
 import img1 from "../images/fintness.png";
-import img2 from "../images/infusionhero.png";
+import img2 from "../images/infushero.png";
 import heroimg1 from "../images/heroimg1.png";
 import quote1 from "../images/quote1.svg";
 import quote2 from "../images/quote2.svg";
@@ -340,17 +340,19 @@ import thereal from "../images/TheReal.png";
 import cr1 from "../images/cr1.png";
 import realnurses from "../images/realnurses.svg";
 
+
 export default function IVInfusions() {
   return (
     <>
       <div className="">
         <div className="w-full flex flex-col md:flex-row justify-between ">
-          <div className=" lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-10 xl:pt-20 md:ml-8 xl:ml-12 ">
-            <div className="flex flex-col lg:gap-2">
-              <p className="text-4xl lg:text-7xl xl:text-7xl font-bold">Come</p>
+          {/* <div className=" lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-10 xl:pt-20 md:ml-8 xl:ml-12 "> */}
+          <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22">
+            <div className="flex flex-col lg:leading-[100px]">
+              <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">Come</p>
 
-              <p className="text-4xl lg:text-7xl font-bold ">Experience </p>
-              <p className="text-4xl lg:text-7xl font-bold flex flex-row ">
+              <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat ">Experience </p>
+              <p className="text-4xl lg:text-7xl xl:text-8xl font-bold flex flex-row font-montserrat ">
                 {" "}
                 The <span className="text-pink-300 ml-4">Drip Effect</span>{" "}
               </p>
@@ -367,20 +369,18 @@ export default function IVInfusions() {
               </a>
             </div>
           </div>
-          <div className="  lg:w-auto flex ">
+          <div className=" w-full lg:w-[35%] flex relative md:overflow-clip ">
             <Image
               src={img2}
               alt="Logo"
-              className="w-full md:w-[80vw] lg:w-[656px] lg:mix-blend-multiply object-cover "
+              className="w-full md:w-[80vw] absolute -top-12 left-0 h-[500px] lg:w-[656px]  lg:mix-blend-multiply object-cover "
             />
           </div>
         </div>
-        <div className="w-full relative -top-16 ">
+        <div className="w-full ">
           <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center items-center w-auto h-[27px]">
-              <p className="text-[#3BAFBF] text-center font-niconne text-4xl lg:text-6xl font-normal">
-                The Real Nurses of Miami
-              </p>
+            <p className="font-niconne text-3xl md:text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} >Miami IV Therapy and Post-Op Infusions</p>
             </div>
           </div>
         </div>

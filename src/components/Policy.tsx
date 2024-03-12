@@ -37,18 +37,18 @@ const Policy = () => {
   return (
     <>
       <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start ">
-        <div className="w-full md:w-auto p-4 md:p-8 text-center md:text-left">
-          <div className="flex flex-col gap-4">
-            <p className="text-2xl md:text-5xl font-bold">It’s All</p>
-            <p className="text-2xl md:text-5xl font-bold">About The </p>
-            <p className="text-2xl md:text-5xl font-bold ">Fine Print Babe</p>
+        <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
+          <div className="flex flex-col lg:leading-[100px]">
+            <p className="text-4xl lg:text-8xl font-bold font-montserrat">It’s All</p>
+            <p className="text-4xl lg:text-8xl font-bold font-montserrat">About The </p>
+            <p className="text-4xl lg:text-8xl font-bold font-montserrat ">Fine Print Babe</p>
           </div>
           <div className='flex justify-center md:justify-start mt-4 md:mt-8'>
             <button className='bg-[#3BAFBF] px-4 py-2 text-sm md:text-base font-bold text-white'>Book a Consultation</button>
           </div>
         </div>
 
-        <div className="w-full md:w-auto mt-4 md:mt-0 md:ml-4 lg:ml-8 relative">
+        <div className="w-full md:w-[35%] mt-4 md:mt-0 md:ml-4 lg:ml-8 relative">
           <Image src={about1} alt="Logo" className="w-full md:w-[506px] lg:w-[606px] h-[480px] lg:h-[640px] mix-blend-multiply object-cover" />
         </div>
       </div>
