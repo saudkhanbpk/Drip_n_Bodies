@@ -39,30 +39,35 @@ const Footer = () => {
           <button className='bg-[#3BAFBF] text-white p-2'>SUBSCRIBE</button>
         </div>
 
-        <div className='pt-10  md:flex'>
+        <div className='pt-10  md:flex  md:gap-20'>
           <div className='md:w-1/3 mb-4 md:mb-0'>
             <Image src={tempImageYIgr} width={100} height={80} className='w-full h-[340px]' alt='' />
           </div>
 
-          <div className='md:w-2/3'>
-          <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4 justify-center mx-auto border-b-[2px]">
-    <div className="px-4">
-      <p className="text-black text-center font-Montserrat text-[16px] md:text-[24px] font-bold leading-normal">Monday - Saturday</p>
-      <p className="text-black font-Montserrat text-[16px] md:text-[24px] text-center font-normal leading-normal">8:00 AM - 7:00 PM</p>
-      <div className='flex flex-col items-center justify-center my-4'>
-                    <span className='text-3xl mx-auto'>✉</span>
-                    <p>booking@dripnbodied.com</p>
+          <div className='md:w-2/3 '>
+            <div className='border-b border-b-slate-300 flex justify-around pb-4'>
+              <div className='flex flex-col items-center'>
+                <div className='font-bold text-center'>Monday - Saturday</div>
+                <p className='text-center'>8:00 AM - 7:00 PM</p>
+                <div className='flex pt-3 '>
+                  <div className='flex flex-col items-center'>
+                    <span className='text-3xl mx-auto '>✉</span>
+                    <p className='p-2'>booking@dripnbodied.com</p>
                   </div>
-    </div>
-    <div  className="px-4">
-      <p className="text-black text-center font-Montserrat text-[16px] md:text-[24px] font-bold leading-normal">After Hours:</p>
-      <p className="text-black font-Montserrat text-[16px] md:text-[24px] font-normal leading-normal"> By Request Only</p>
-      <div className='flex flex-col items-center justify-center my-4'>
-                    <span className='text-center text-3xl text-red-700 '>☎</span>
-                    <p>(305) 908-9282</p>
+                </div>
+              </div>
+              <div className='w-[.5px] border-l border-l-slate-300 h-20'></div>
+              <div className='flex flex-col  items-center'>
+                <span className='font-bold text-center'>After Hours:</span>
+                <p className='text-center'>By request only</p>
+                <div className='flex pt-3 '>
+                  <div className='flex flex-col items-center'>
+                    <span className='text-center text-2xl'>☎</span>
+                    <p className='p-2'>(305) 908-9282</p>
                   </div>
-    </div>
-  </div>
+                </div>
+              </div>
+            </div>
             <div className='flex text-center flex-col pt-2 border-b border-b-slate-300 pb-4'>
               <span>IV Hydration and Post Surgical Bar</span>
               <div className='pt-2'>
@@ -72,10 +77,9 @@ const Footer = () => {
             </div>
             <div className='text-center pt-2'>
               <p>Concierge and Mobile Services</p>
-              <p className='font-bold pt-2 px-2'>30-minute radius of Miami International Airport</p>
+              <p className='font-bold pt-2'>30-minute radius of Miami International Airport</p>
             </div>
           </div>
-          
         </div>
         <div className='flex flex-wrap md:px-0 px-2   md:flex-row justify-between gap-8 pt-8'>
           {sections.map((section, index) => (
@@ -98,4 +102,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;

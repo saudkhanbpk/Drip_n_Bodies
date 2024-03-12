@@ -76,7 +76,7 @@ const Massage = () => {
 
   return (
     <>
-      <div className="w-full">
+      <div className="w-full"  style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
         <div className="">
           <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
             <div className="w-[95%] lg:w-auto md:px-2 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 ">
@@ -88,10 +88,10 @@ const Massage = () => {
                 <p className="text-4xl lg:text-7xl font-bold  "> Snatched! </p>
               </div>
               <div className="my-6 md:my-5 lg:my-10 w-[95%] lg:w-[100%] xl:h-[43px] flex flex-col lg:flex-row">
-                <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold xl:leading-6 uppercase lg:px-4 py-2 rounded hover:bg-blue-300 my-1 lg:my-0 xl:mr-4 bg-[#3BAFBF] text-center font-montserrat">
+                <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold xl:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 xl:mr-4 bg-[#3BAFBF] text-center font-montserrat">
                   View Massages
                 </button>
-                <p className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat">
+                <p className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2  text-[#3BAFBF] text-center font-montserrat">
                   View Post-op Recovery Addons
                 </p>
               </div>
@@ -104,7 +104,7 @@ const Massage = () => {
               />
             </div>
           </div>
-          <div className="w-full relative md:-top-36 -top-12 ">
+          {/* <div className="w-full relative md:-top-36 -top-12 ">
             <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
               <div className="flex justify-center items-center w-auto h-[27px]">
                 <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
@@ -112,23 +112,30 @@ const Massage = () => {
                 </p>
               </div>
             </div>
+          </div> */}
+
+          <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative -top-20">
+            <div className="flex justify-center  items-center w-auto h-[27px]">
+              <p className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Miami Lymphatic Massages, Post-Op Treatments</p>
+            </div>
+
           </div>
         </div>
 
 
         <div className="w-full">
-        <div className="my-6 w-[90%]  mx-auto p-4">
-        <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
-        Physical Exam And Lymphatic Massages
+          <div className="my-6 w-[90%]  mx-auto p-4">
+            <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+              Physical Exam And Lymphatic Massages
             </p>
-          <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
-          Each cocktail has essential fluids, electrolytes, vitamins and
+            <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
+              Each cocktail has essential fluids, electrolytes, vitamins and
               antioxidants, to quickly remedy a variety of conditions.
-          </p>
+            </p>
+          </div>
         </div>
-      </div>
 
-        <div className=" flex justify-center items-center p-2 md:p-4 gap-4 flex-col md:flex-row ">
+        <div className=" flex justify-center gap-4 flex-col md:flex-row ">
           {massagePackages.map((data: any, index: any) => (
             <div
               key={index}
@@ -141,7 +148,7 @@ const Massage = () => {
                 height={100}
                 className="w-[270px] h-[142px] relative bottom-10"
               />
-              <p className="text-[24px] leading-[27px] font-bold">{data.title}</p>
+              <p className="text-xl font-bold">{data.title}</p>
               <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
                 {data.price}
               </p>
@@ -160,22 +167,22 @@ const Massage = () => {
             View Cosmetic Surgery Treatments
           </Link>
         </div>
-        
+
         <div className="w-full">
-        <div className="my-6 w-[90%]  mx-auto p-4">
-        <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
-        Post Cosmetic Surgery Treatments
+          <div className="my-6 w-[90%]  mx-auto p-4 ">
+            <p className="py-2 leading-normal  text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+              Post Cosmetic Surgery Treatments
             </p>
-          <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
-          Each cocktail has essential fluids, electrolytes, vitamins and
+            <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
+              Each cocktail has essential fluids, electrolytes, vitamins and
               antioxidants, to quickly remedy a variety of conditions.
-          </p>
+            </p>
+          </div>
         </div>
-      </div>
-        <div className="w-full flex justify-center items-center flex-col md:flex-row gap-8 px-8 pt-5">
+        <div className="w-full flex justify-center  flex-col md:flex-row gap-8 px-8 pt-5">
           {services.map((service, index) => (
             <>
-              <div className="px-4 flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4 ">
+              <div className="px-4flex flex-col w-[280px] border border-[#3BAFBF] items-center  space-y-2 p-4 ">
                 <Image
                   src={service.imageSrc}
                   alt={service.serviceName}

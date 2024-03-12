@@ -20,18 +20,17 @@ const ScheduleConsultation = () => {
 
             </div> */}
             <div className="h-[450px] bg-[url('../images/Rectangle.png')]">
-  <div className='flex justify-center items-center h-full'>
-    <div className='flex flex-col justify-center items-center'>
-      <h1 className='text-white text-2xl md:text-3xl lg:text-4xl mt-2 mb-4'>Talk To Your Nurse Babe</h1>
-      <div className='border-2 border-blue-300 h-1 w-[200px] md:w-[300px] mx-auto'></div>
-      <hr />
-      <p className='px-2 pt-2 my-2 text-white text-sm md:text-base'>Schedule A Free Consultation!</p>
-      <p className='px-2 pt-2 text-white text-sm md:text-base'>Talk one on one with your Drip N Bodied nurse babe!</p>
-      <p className='px-2 pt-2  text-white text-sm md:text-base text-center'>We are ready and willing to answer questions related to surgery, nursing, or business start-ups.</p>
-      <button className='p-2 mt-8 md:mt-12 text-white bg-[#3BAFBF]'>SCHEDULE A CONSULT CALL</button>
-    </div>
-  </div>
-</div>
+                <div className='flex justify-center items-center h-full'>
+                    <div className='flex flex-col justify-center items-center'>
+                        <h1 className='text-white text-2xl md:text-3xl lg:text-4xl mt-2 mb-4'>Talk To Your Nurse Babe</h1>
+                        <div className='border-4 border-[#3BAFBF] h-1 w-[200px] md:w-[300px] mx-auto'></div>
+                        <p className='px-2 pt-2 my-2 font-bold  text-white text-sm md:text-base'>Schedule A Free Consultation!</p>
+                        <p className='px-2 pt-2 text-white text-sm md:text-base'>Talk one on one with your Drip N Bodied nurse babe!</p>
+                        <p className='px-2 pt-2  text-white text-sm md:text-base'>We are ready and willing to answer questions related to surgery, nursing, or business start-ups.</p>
+                        <button className='px-4 p-2 mt-8 md:mt-12 text-white bg-[#3BAFBF]'>SCHEDULE A CONSULT CALL</button>
+                    </div>
+                </div>
+            </div>
 
         </>
     )

@@ -49,11 +49,11 @@ const Policy = () => {
         </div>
 
         <div className="w-full md:w-auto mt-4 md:mt-0 md:ml-4 lg:ml-8 relative">
-          <Image src={about1} alt="Logo" className="w-full md:w-[506px] lg:w-[606px] h-[480px] lg:h-[580px] mix-blend-multiply" />
+          <Image src={about1} alt="Logo" className="w-full md:w-[506px] lg:w-[606px] h-[480px] lg:h-[640px] mix-blend-multiply object-cover" />
         </div>
       </div>
 
-      <div className="w-full relative md:-top-24 ">
+      {/* <div className="w-full relative md:-top-24 ">
           <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center items-center w-auto h-[27px]">
               <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
@@ -61,9 +61,15 @@ const Policy = () => {
               </p>
             </div>
           </div>
+        </div> */}
+      <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative md:-top-20">
+        <div className="flex justify-center  items-center w-auto h-[27px]">
+          <p className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Drip N Bodied Policy</p>
         </div>
+
+      </div>
       <div className='mb-10 text-sm font-bold flex justify-center text-md'>
-        <p className='text-[18px]'>Read our policy</p>
+        <p className='text-[24px] font-bold'>Read our policy</p>
       </div>
 
 
@@ -72,7 +78,7 @@ const Policy = () => {
           <div className="border-t border-t-gray-300"></div>
           <div className="bg-white px-0 py-4 rounded-md">
             {faqItems.map((item, index) => (
-              <div key={index} className="mb-4">
+              <div key={index} className="mb-4 p-4 pb-4 hover:bg-pink-400">
                 <input
                   type="checkbox"
                   id={`item${index}`}
@@ -98,26 +104,26 @@ const Policy = () => {
                     <p>{item.answer}</p>
                   </div>
                 )}
-                <div className="border-b border-b-gray-300"></div>
+                <div className={`${index === faqItems.length - 1 ? '' : 'border-b border-b-gray-300'}`}></div>
               </div>
             ))}
           </div>
 
 
-          <div className='mb-10 p-5'>
-            <p className='pb-2 font-bold'>Overnight Parking Policy</p>
-            <p>Clients who have packages that include overnight Recovery Assistant care are responsible for parking fees. At the conclusion of service, the client will be invoiced.</p>
+          <div className='mb-10 p-2'>
+            <p className='pb-2 font-bold text-[20px] bg-pink-300/25 p-3'>Overnight Parking Policy</p>
+            <p className='pt-4'>Clients who have packages that include overnight Recovery Assistant care are responsible for parking fees. At the conclusion of service, the client will be invoiced.</p>
           </div>
-          <div className='mb-10 text-sm font-bold flex justify-center text-md p-5'>
+          <div className='mb-10 text-[24px] font-bold flex justify-center text-md p-5'>
             <p>Email Us Your Question</p>
           </div>
           <div className='mb-10 p-5'>
             <p className='pb-2 font-bold'>What is your question?</p>
-            <input type="text" name="" id="" className='border border-gray-300 p-1 outline-none w-full' />
+            <input type="text" name="" id="" className='border border-gray-300  outline-none w-full p-3' />
           </div>
           <div className='mb-8 p-5'>
             <p className='pb-2 font-bold mb-4'>Tell us more about your question.</p>
-            <textarea name="" id="" placeholder='Enter your the details of your question' className='border border-gray-300 w-full h-[300px] outline-none mb-5 p-2 px-2'></textarea>
+            <textarea name="" id="" placeholder='Enter your the details of your question' className='border border-gray-300 w-full h-[300px] outline-none mb-5 p-3 px-2'></textarea>
           </div>
         </div>
       </div>
