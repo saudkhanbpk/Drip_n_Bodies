@@ -98,7 +98,8 @@ const HeroSection = () => {
       <div className="w-full  ">
         <div className=" py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
           <div className="flex justify-center items-center w-auto h-[27px]">
-          <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
+          <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal "
+           style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }}>
           The Real Nurses Of Miami
               </p>
           </div>

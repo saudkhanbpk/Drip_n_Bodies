@@ -1,6 +1,7 @@
 import React from 'react';
 import tempImageYIgr from '../../images/tempImageYIgr.svg';
 import Image from 'next/image';
+import { IoIosMail } from 'react-icons/io';
 
 const Footer = () => {
   const sections = [
@@ -45,25 +46,26 @@ const Footer = () => {
           </div>
 
           <div className='md:w-2/3 '>
-            <div className='border-b border-b-slate-300 flex justify-around pb-4'>
+            <div className='border-b border-b-slate-300 flex flex-col md:flex-row  justify-around pb-4 '>
               <div className='flex flex-col items-center'>
                 <div className='font-bold text-center'>Monday - Saturday</div>
                 <p className='text-center'>8:00 AM - 7:00 PM</p>
                 <div className='flex pt-3 '>
                   <div className='flex flex-col items-center'>
-                    <span className='text-3xl mx-auto '>✉</span>
-                    <p className='p-2'>booking@dripnbodied.com</p>
+                    <p > <IoIosMail className='text-gray-400 text-opacity-65 w-[72px] h-[38px]' />
+</p>
+                    <p className=''>booking@dripnbodied.com</p>
                   </div>
                 </div>
               </div>
-              <div className='w-[.5px] border-l border-l-slate-300 h-20'></div>
-              <div className='flex flex-col  items-center'>
-                <span className='font-bold text-center'>After Hours:</span>
+              <div className=' border-l border-l-slate-300  h-14' ></div>
+              <div className='flex flex-col  items-center '>
+                <div className='font-bold text-center'>After Hours:</div>
                 <p className='text-center'>By request only</p>
                 <div className='flex pt-3 '>
                   <div className='flex flex-col items-center'>
-                    <span className='text-center text-2xl'>☎</span>
-                    <p className='p-2'>(305) 908-9282</p>
+                    <p className='text-center text-3xl text-red-600 text-[32px] mx-auto '>☎</p>
+                    <p className=' text-[16px] '>(305) 908-9282</p>
                   </div>
                 </div>
               </div>
