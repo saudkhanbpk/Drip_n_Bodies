@@ -151,13 +151,14 @@ const BarStore: React.FC = () => {
 
         <div className="">
         <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
-          <div className="w-auto lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 ">
-            <div className="flex flex-col lg:gap-2">
-              <p className="text-4xl lg:text-7xl xl:text-7xl font-bold">
+          {/* <div className="w-auto lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
+          <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
+            <div className="flex flex-col lg:leading-[100px]">
+              <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
               Get A{" "}
               </p>
-              <p className="text-4xl lg:text-7xl font-bold ">Drip At Our </p>
-              <p className="text-4xl lg:text-7xl font-bold text-[#3BAFBF] ">
+              <p className="text-4xl lg:text-8xl font-bold font-montserrat ">Drip At Our </p>
+              <p className="text-4xl lg:text-8xl font-bold text-[#3BAFBF] font-montserrat">
                 {" "}
                 Miami IV Bar{" "}
               </p>
@@ -171,7 +172,7 @@ const BarStore: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="  lg:w-auto flex ">
+          <div className="  lg:w-[35%] flex ">
             <Image
               src={barstore}
               alt="Logo"
@@ -179,12 +180,10 @@ const BarStore: React.FC = () => {
             />
           </div>
         </div>
-        <div className="w-full  relative -top-14">
+        <div className="w-full  relative ">
           <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center items-center w-auto h-[27px]">
-              <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal">
-              Miami IV Bar By Drip N Bodied
-              </p>
+            <p className="font-niconne text-3xl md:text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} >Miami IV Bar By Drip N Bodied</p>
             </div>
           </div>
         </div>

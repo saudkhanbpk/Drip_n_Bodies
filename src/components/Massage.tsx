@@ -79,13 +79,14 @@ const Massage = () => {
       <div className="w-full"  style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
         <div className="">
           <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
-            <div className="w-[95%] lg:w-auto md:px-2 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 ">
-              <div className="flex flex-col lg:gap-2">
-                <p className="text-4xl lg:text-7xl xl:text-7xl font-bold">
+            {/* <div className="w-[65%] lg:w-auto md:px-2 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
+            <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
+              <div className="flex flex-col lg:leading-[100px]">
+                <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
                   Let’s Get{" "}
                 </p>
-                <p className="text-4xl lg:text-7xl font-bold ">Those Curves </p>
-                <p className="text-4xl lg:text-7xl font-bold  "> Snatched! </p>
+                <p className="text-4xl lg:text-8xl font-bold font-montserrat ">Those Curves </p>
+                <p className="text-4xl lg:text-8xl font-bold font-montserrat "> Snatched! </p>
               </div>
               <div className="my-6 md:my-5 lg:my-10 w-[95%] lg:w-[100%] xl:h-[43px] flex flex-col lg:flex-row">
                 <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold xl:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 xl:mr-4 bg-[#3BAFBF] text-center font-montserrat">
@@ -96,7 +97,7 @@ const Massage = () => {
                 </p>
               </div>
             </div>
-            <div className="lg:w-auto flex ">
+            <div className="lg:w-[35%] flex ">
               <Image
                 src={massage11}
                 alt="Logo"

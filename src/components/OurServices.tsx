@@ -14,18 +14,7 @@ import ourservvice from '../images/ourservvice.png'
 const OurServices = () => {
   return (
     <>
-      <div className="w-full  relative md:-top-14 ">
-        <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
-          <div className="flex justify-center  items-center w-auto h-[27px]">
-            {/* <Image src={recoverynurses} alt="real" className="  object-cover" /> */}
-            <p className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > The Real Nurses Of Miami</p>
-          </div>
-
-        </div>
-        <div className=" w-1440 h-809.93 top-749">
-          <Image src={ourservvice} alt="service1" className="w-full h-full object-cover" />
-        </div>
-      </div>
+      
       <div className="my-12  w-[90%] mx-auto">
         <div className=" my-16 items-center w-full flex flex-col justify-center mx-auto">
           <p className="text-center py-2 md:py-6 font-montserrat text-black text-3xl font-bold leading-normal text">

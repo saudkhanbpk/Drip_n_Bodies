@@ -13,13 +13,13 @@ const AboutUs = () => {
     <>
       <div className="pb-20" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
         <div className=" w-full md:flex  justify-between ">
-          <div className=" px-10 m-10 pt-16 ml-22 w-full">
-            <div className="  md:flex flex-col gap-4 ">
-              <p className="md:text-6xl text-3xl font-bold">Who Are </p>
-              <p className="md:text-6xl  text-3xl font-bold text-[#F4B5D9]">
+          <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22 ">
+            <div className="  md:flex flex-col gap-2 md:leading-[100px] ">
+              <p className="md:text-8xl text-3xl font-bold font-montserrat">Who Are </p>
+              <p className="md:text-8xl  text-3xl font-bold text-[#F4B5D9]">
                 The Real Nurses
               </p>
-              <p className="md:text-6xl text-3xl font-bold text-[#F4B5D9]">Of Miami®</p>
+              <p className="md:text-8xl text-3xl font-bold text-[#F4B5D9] font-montserrat">Of Miami®</p>
             </div>
             <div className="my-10 w-auto h-[43px]">
               <button className="font-montserrat text-white text-sm font-bold leading-6 uppercase   px-4 py-2    hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center   ">
@@ -27,7 +27,7 @@ const AboutUs = () => {
               </button>
             </div>
           </div>
-          <div className=" md:w-full md:flex justify-end items-center">
+          <div className="md:w-[35%] w-full md:flex justify-end items-center">
             <Image src={about1} alt="Logo" className=" md:w-[606px] mix-blend-multiply md:h-[650px] object-cover" />
           </div>
         </div>
@@ -35,7 +35,7 @@ const AboutUs = () => {
           <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center  items-center w-auto h-[27px]">
               {/* <Image src={recoverynurses} alt="real" className="  object-cover" /> */}
-              <p className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{textShadow: "1px 1px 1px white,2px 2px 2px white"}} > Miami Cosmetic Recovery Nurses</p>
+              <p className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{textShadow: "1px 1px 1px white,2px 2px 2px white"}}  > Miami Cosmetic Recovery Nurses</p>
             </div>
 
           </div>
