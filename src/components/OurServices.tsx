@@ -9,12 +9,11 @@ import insta from "../images/insta.png";
 import tiktok from "../images/tiktok.png";
 import youtube from "../images/youtube.png";
 import fb from "../images/fb.png";
-import ourservvice from '../images/ourservvice.png'
+import ourservvice from "../images/ourservvice.png";
 
 const OurServices = () => {
   return (
     <>
-      
       <div className="my-12  w-[90%] mx-auto">
         <div className=" my-16 items-center w-full flex flex-col justify-center mx-auto">
           <p className="text-center py-2 md:py-6 font-montserrat text-black text-3xl font-bold leading-normal text">
@@ -57,8 +56,7 @@ const OurServices = () => {
                   Book Free Consult
                 </button>
               </div>
-
-            </div>  
+            </div>
           </div>
         </div>
 
@@ -90,7 +88,11 @@ const OurServices = () => {
               </div>
             </div>
             <div className=" md:w-[600px]  md:h-[360px] ">
-              <Image src={serv2} alt="service1" className="md:w-full md:h-full" />
+              <Image
+                src={serv2}
+                alt="service1"
+                className="md:w-full md:h-full"
+              />
             </div>
           </div>
         </div>
@@ -128,7 +130,6 @@ const OurServices = () => {
         </div>
         <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
           <div className=" items-center w-full flex lg:flex-row flex-col gap-8 justify-between mx-auto">
-
             <div className="w-full md:w-[600px] p-6 md:h-[360px] bg-[#000000] bg-opacity-25 ">
               <div className=" my-2">
                 <p className="font-montserrat  text-black text-3xl font-bold leading-7">
@@ -170,18 +171,28 @@ const OurServices = () => {
           </p>
         </div>
         <div className="my-8  gap-8  w-full md:flex  mx-auto">
-          <div className="">
-            <Image src={bbl} alt="bbl-img" />
+          <div className="w-full md:w-[70%]">
+            <iframe
+              className="w-full h-[440px]"
+              src="https://www.youtube.com/embed/videoseries?list=PLEk0KHcBzdt9YLJYgQpN0P71PglGs5pmy"
+              title="YouTube Video Playlist"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
-          <div className=" gap-8 md:flex flex-col justify-start items-start ">
+          <div className="w-full md:w-[30%] gap-8 md:flex flex-col justify-start items-start ">
             <div className="">
               <div className="flex items-center justify-normal">
                 <Image src={insta} alt="bbl-img" />
-                <p className="mx-2 text-[#3BAFBF]">@dripnbodied_recoverynurse</p>
+                <p className="mx-2 text-[#3BAFBF]">
+                  @dripnbodied_recoverynurse
+                </p>
               </div>
               <div className="flex items-center">
                 <Image src={tiktok} alt="bbl-img" />
-                <p className="mx-2 text-[#3BAFBF]">@dripnbodied_recoverynurse</p>
+                <p className="mx-2 text-[#3BAFBF]">
+                  @dripnbodied_recoverynurse
+                </p>
               </div>
               <div className="flex items-center justify-normal">
                 <Image src={youtube} alt="bbl-img" />

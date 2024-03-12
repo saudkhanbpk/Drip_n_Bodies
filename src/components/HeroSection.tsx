@@ -12,11 +12,11 @@ const HeroSection = () => {
   return (
     <>
       <div className="w-full flex flex-col lg:flex-row justify-between  ">
-        <div className="w-auto px-10  pt-6 md:pt-16 ml-22">
-          <div className="  md:flex flex flex-col gap-2 md:leading-[100px] ">
-            <p className="md:text-[82px] text-5xl font-bold font-montserrat">IV Therapy,</p>
-            <p className="md:text-[82px] text-5xl font-bold font-montserrat">Recovery Nurses.</p>
-            <p className="md:text-[82px] text-5xl font-bold text-[#3BAFBF] font-montserrat">Drip N Bodied</p>
+        <div className="w-full lg:w-[55%] px-10  pt-6 md:pt-16 ml-22">
+          <div className="  md:flex flex flex-col gap-2 md:gap-8 ">
+            <p className="md:text-7xl text-5xl font-bold">IV Therapy,</p>
+            <p className="md:text-7xl text-5xl font-bold">Recovery Nurses.</p>
+            <p className="md:text-7xl text-5xl font-bold text-[#3BAFBF]">Drip N Bodied</p>
           </div>
           <div className="my-8">
             {/* <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black text-center ">“</span>
@@ -91,18 +91,21 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="w-auto flex justify-end items-center ">
-          <Image src={heroimg1} alt="Logo" className=" md:w-[606px] md:h-[580px]" />
+        <div className="w-full lg:w-[45%]  flex justify-end items-center">
+          <Image src={heroimg1} alt="Logo" className="w-full h-full md:w-[606px] md:h-[580px]" />
         </div>
       </div>
       <div className="w-full  ">
-        <div className=" py-12 w-full h-[138px] bg-cover bg-[url('../images/realmiami.png')]">
+        <div className=" py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
           <div className="flex justify-center items-center w-auto h-[27px]">
-          <p className="font-niconne text-3xl md:text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} >The Real Nurses Of Miami</p>
+          <p className="text-blue-500 text-center font-niconne text-4xl lg:text-6xl font-normal "
+           style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }}>
+          The Real Nurses Of Miami
+              </p>
           </div>
         </div>
       </div>
-      <div className="w-full h-full relative top-16">
+      <div className="w-full h-full">
         <Image src={realnurses} alt='nurses' className="w-full h-full"/>
       </div>
       

@@ -7,49 +7,62 @@ import tempImagewju from "../../images/tempImagewju.png";
 import therealtwo from "../../images/therealtwo.png";
 import Polygon1 from "../../images/Polygon1.png";
 const faqItems = [
-  {
-    question:
-      "Do you offer lymphatic massages to clients that do not book a Bodied package?",
-    answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, animi?",
-  },
-  {
-    question:
-      "What if I need more assistance/care than what’s offered in your packages?",
-    answer: "Answer for the second question.",
-  },
-  {
-    question: "Are you a recovery house?",
-    answer: "Answer for the third question.",
-  },
-  {
-    question: "What do I need to bring with me for my recovery?",
-    answer: "Answer for the fourth question.",
-  },
+    {
+        question:
+            "Do you offer lymphatic massages to clients that do not book a Bodied package?",
+        answer:
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, animi?",
+    },
+    {
+        question:
+            "What if I need more assistance/care than what’s offered in your packages?",
+        answer: "Answer for the second question.",
+    },
+    {
+        question: "Are you a recovery house?",
+        answer: "Answer for the third question.",
+    },
+    {
+        question: "What do I need to bring with me for my recovery?",
+        answer: "Answer for the fourth question.",
+    },
+    {
+        question: "Do you travel out of state?",
+        answer: "We are based out of south Florida and primarily offer our services in Miami. However we do travel to Fort Lauderdale, and West Palm Beach (travel fees may apply). Email us to inquire about pricing for traveling out of the state/country.",
+    }
 ];
 
 const FaqPage = () => {
-  const [accordionStates, setAccordionStates] = useState([
-    false,
-    false,
-    false,
-    false,
-  ]);
+    const [accordionStates, setAccordionStates] = useState([
+        false,
+        false,
+        false,
+        false,
+    ]);
 
-  const handleAccordionClick = (index: any) => {
-    const newAccordionStates = [...accordionStates];
-    newAccordionStates[index] = !newAccordionStates[index];
-    setAccordionStates(newAccordionStates);
-  };
+    const handleAccordionClick = (index: any) => {
+        const newAccordionStates = [...accordionStates];
+        newAccordionStates[index] = !newAccordionStates[index];
+        setAccordionStates(newAccordionStates);
+    };
 
     return (
         <>
+<<<<<<< HEAD
             <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start md:ml-22" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
                 <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
                     <div className="flex flex-col  lg:leading-[100px]">
                         <p className="text-4xl lg:text-8xl font-bold font-montserrat ">Need Help</p>
                         <p className="text-4xl lg:text-8xl font-bold font-montserrat ">Completing </p>
                         <p className="text-4xl lg:text-8xl font-bold font-montserrat  ">Your Booking?</p>
+=======
+            <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start md:ml-22" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
+                <div className="w-full md:w-auto p-8 text-center md:text-left">
+                    <div className="flex flex-col  gap-4">
+                        <p className="text-4xl md:text-7xl font-bold">Need Help</p>
+                        <p className="text-4xl md:text-7xl font-bold">Completing </p>
+                        <p className="text-4xl md:text-7xl font-bold ">Your Booking?</p>
+>>>>>>> 4288a14f45432d3358c744ca0564a40a20c16a9f
                     </div>
                     <div className='flex justify-center md:justify-start mt-8 px-4'>
                         <button className='bg-[#3BAFBF] px-4 py-2 text-base font-bold text-white'>Book a Consultation</button>
@@ -71,8 +84,8 @@ const FaqPage = () => {
 
             <div className="w-full">
                 <div className="w-full md:w-1/2 mx-auto">
-                    <div className="mb-4 flex justify-center">
-                        <p className="font-bold text-4xl text-[20px] leading-8 md:leading-29 tracking-normal text-left">Frequently Asked Questions</p>
+                    <div className="md:mb-8 flex justify-center">
+                        <p className="font-bold text-4xl text-[24px] leading-8 md:leading-29 tracking-normal text-left">Frequently Asked Questions</p>
                     </div>
                     <div className="border-t border-t-gray-300"></div>
                     <div className="bg-white px-0 py-4  rounded-md ">
@@ -111,13 +124,13 @@ const FaqPage = () => {
                     <div className='mb-10 text-[24px] font-bold flex justify-center text-md'>
                         <p>Email Us Your Question</p>
                     </div>
-                    <div className='mb-10 p-5'>
-                        <p className='pb-2 font-bold'>What is your question?</p>
-                        <input type="text" name="" id="" className='border border-black  outline-none w-full p-3 bg-white' />
+                    <div className='mb-10 p-6'>
+                        <p className='pb-4 font-bold '>What is your question?</p>
+                        <input type="text" name="" id="" placeholder="Enter your the details of your question" className='border border-black  outline-none w-full p-3 bg-white' />
                     </div>
-                    <div className='mb-14 p-5'>
-                        <p className='pb-2 font-bold'>Tell us more about your question.</p>
-                        <textarea name="" id="" className='border border-black w-full h-[300px] outline-none p-3 '  ></textarea>
+                    <div className='mb-14 p-6'>
+                        <p className='pb-4 font-bold'>Tell us more about your question.</p>
+                        <textarea name="" id="" placeholder="Enter your the details of your question" className='border border-black w-full h-[300px] outline-none p-3 '></textarea>
                     </div>
                 </div>
             </div>
