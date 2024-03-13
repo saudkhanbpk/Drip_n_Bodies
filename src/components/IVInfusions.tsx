@@ -202,7 +202,7 @@
 //                     <div className='flex flex-col'>
 //                         <div className='flex justify-between  border-b p-2 '>
 //                             <div className='flex flex-col  '>
-//                                 <p className='text-2xl font-bold'>Biotin</p>
+//                                 <,p className='text-2xl font-bold'>Biotin</>
 //                                 <p className='text-base font-normal'>Help with this...</p>
 //                             </div>
 
@@ -356,12 +356,15 @@ export default function IVInfusions() {
               </p>
             </div>
             <div className="my-6 md:my-5 lg:my-10 w-[95%] lg:w-auto h-[43px] flex flex-col lg:flex-row">
-              <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2 rounded hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
+              <a href="#section" className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
                 VIEW POST-OP DRIPS
-              </button>
-              <p className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat">
+              </a>
+              {/* <a href="#section2" className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat">
                 View Post-Op Treatments
-              </p>
+              </a> */}
+              <a href="#section2" className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat">
+                View Premium Infusions
+              </a>
             </div>
           </div>
           <div className="  lg:w-auto flex ">
@@ -403,7 +406,7 @@ export default function IVInfusions() {
         <div className="w-full md:w-[330px] flex flex-col items-center justify-center space-y-2 ">
           <p className="font-thin text-7xl font-montserrat">1</p>
           <p className="text-base font-bold">Choose a Formula</p>
-          <p className="text-base font-normal">
+          <p className="text-base font-normal text-center">
             Are you feeling under the weather, hungover, or dehydrated? Choose
             one of our specialty cocktails tailored to your body&apos;s needs!
           </p>
@@ -411,7 +414,7 @@ export default function IVInfusions() {
         <div className="w-full md:w-[330px] flex flex-col items-center justify-center space-y-2 ">
           <p className="font-thin text-7xl font-montserrat">2</p>
           <p className="text-base font-bold">Schedule Your Appointment</p>
-          <p className="text-base font-normal">
+          <p className="text-base font-normal text-center">
             Select a time and date that is convenient for you. We&apos;ll send
             our drip expert wherever you are!
           </p>
@@ -419,58 +422,60 @@ export default function IVInfusions() {
         <div className="w-full md:w-[330px] flex flex-col items-center justify-center space-y-2 ">
           <p className="font-thin text-7xl font-montserrat">3</p>
           <p className="text-base font-bold">Enjoy your drip!</p>
-          <p className="text-base font-normal">
+          <p className="text-base font-normal text-center">
             Each drip infusion takes about 45 - 60 minutes. Start feeling better
             in no time in the convenience of your home or office!
           </p>
         </div>
       </div>
 
-      <div className="w-full flex flex-col justify-center items-center p-10 ">
+      <div  id="section" className="w-full flex flex-col justify-center items-center p-10 ">
         <div className="flex flex-col w-[50vw] items-center justify-center space-y-2 ">
           <p className="text-2xl font-bold">Premium Infusions</p>
-          <p className="text-base font-normal">
+          <p className="text-base font-normal text-center">
             Each cocktail has essential fluids, electrolytes, vitamins and
             antioxidants, to quickly remedy a variety of conditions.
           </p>
         </div>
 
         <div className="pt-10 flex justify-center flex-wrap gap-x-6 gap-y-20">
-          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4 ">
+        <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center gap-4 p-4">
+    <Image
+        src={img1}
+        alt="fitness"
+        className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
+    />
+    <p className="text-2xl font-bold">Athletic Recovery</p>
+    <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
+        $229
+    </p>
+    <button className="bg-[#3BAFBF] py-1 px-2 text-white">
+        SCHEDULE DRIP
+    </button>
+    <p className="text-center">
+        Working hard in the gym? This drip helps you perform better, have
+        more energy, and recover faster. These ingredients will su
+    </p>
+    <a href="" className="underline text-[#3BAFBF]">
+        Click here to read more
+    </a>
+</div>
+
+
+          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center gap-4 p-4">
             <Image
               src={img1}
               alt="fitness"
-              className="w-[270px] h-[142px] relative bottom-10"
-            />
-            <p className="text-2xl font-bold">Athletic Recovery</p>
-            <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
-              $229
-            </p>
-            <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-              SHEDULE DRIP
-            </button>
-            <p>
-              Working hard in the gym? This drip helps you perform better, have
-              more energy, and recover faster. These ingredients will su
-            </p>
-            <a href="" className="underline text-[#3BAFBF]">
-              Click here to read more
-            </a>
-          </div>
-          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4">
-            <Image
-              src={img1}
-              alt="fitness"
-              className="w-[270px] h-[142px] relative bottom-10"
+              className="w-[270px] h-[142px] relative bottom-10  image-with-shadow"
             />
             <p className="text-2xl font-bold">Baddie Drip</p>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
               $189
             </p>
             <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-              SHEDULE DRIP
+              SCHEDULE DRIP
             </button>
-            <p>
+            <p className="text-center">
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
@@ -478,20 +483,20 @@ export default function IVInfusions() {
               Click here to read more
             </a>
           </div>
-          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4">
+          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center gap-4 p-4">
             <Image
               src={img1}
               alt="fitness"
-              className="w-[270px] h-[142px] relative bottom-10"
+              className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
             />
             <p className="text-2xl font-bold">Miami Vice</p>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
               $199
             </p>
             <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-              SHEDULE DRIP
+              SCHEDULE DRIP
             </button>
-            <p>
+            <p className="text-center">
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
@@ -499,20 +504,20 @@ export default function IVInfusions() {
               Click here to read more
             </a>
           </div>
-          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4">
+          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center gap-4 p-4">
             <Image
               src={img1}
               alt="fitness"
-              className="w-[270px] h-[142px] relative bottom-10"
+              className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
             />
             <p className="text-2xl font-bold">Sober Me</p>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
               $229
             </p>
             <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-              SHEDULE DRIP
+              SCHEDULE DRIP
             </button>
-            <p>
+            <p className="text-center">
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
@@ -520,20 +525,20 @@ export default function IVInfusions() {
               Click here to read more
             </a>
           </div>
-          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4">
+          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center gap-4 p-4">
             <Image
               src={img1}
               alt="fitness"
-              className="w-[270px] h-[142px] relative bottom-10"
+              className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
             />
             <p className="text-2xl font-bold">High Dose Vitamin C</p>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
               $189
             </p>
             <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-              SHEDULE DRIP
+              SCHEDULE DRIP
             </button>
-            <p>
+            <p className="text-center">
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
@@ -541,20 +546,20 @@ export default function IVInfusions() {
               Click here to read more
             </a>
           </div>
-          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4">
+          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center gap-4 p-4">
             <Image
               src={img1}
               alt="fitness"
-              className="w-[270px] h-[142px] relative bottom-10"
+              className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
             />
             <p className="text-2xl font-bold">Immuno-boost</p>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
               $249
             </p>
             <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-              SHEDULE DRIP
+              SCHEDULE DRIP
             </button>
-            <p>
+            <p className="text-center">
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
@@ -562,20 +567,20 @@ export default function IVInfusions() {
               Click here to read more
             </a>
           </div>
-          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4">
+          <div className="flex flex-col w-[280px] border border-[#3BAFBF] items-center justify-center gap-4 p-4">
             <Image
               src={img1}
               alt="fitness"
-              className="w-[270px] h-[142px] relative bottom-10"
+              className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
             />
             <p className="text-2xl font-bold">Snatched & Skinny</p>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
               $199
             </p>
             <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-              SHEDULE DRIP
+              SCHEDULE DRIP
             </button>
-            <p>
+            <p className="text-center">
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
@@ -586,9 +591,9 @@ export default function IVInfusions() {
         </div>
 
         <div className="flex items-center justify-center pt-10 space-x-8">
-          <button className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
+          <a  className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
             VIEW POST-OP DRIPS
-          </button>
+          </a>
           <a href="" className="underline text-[#3BAFBF] text-base font-bold">
             View Infusion Addons
           </a>
@@ -596,30 +601,30 @@ export default function IVInfusions() {
       </div>
 
       <div className="pt-10">
-        <div className="w-full bg-[#F4B5D92B] flex flex-col items-center justify-center p-16 space-y-20 ">
+      <div id="section2" className=" w-full bg-gradient-to-b bg-[#F4B5D92B] from-#FFFFFF to-#FFFFFF bg-opacity-0 flex flex-col items-center justify-center p-16 space-y-20 ">
           <div className="flex flex-col w-[60vw] items-center justify-center space-y-2 ">
             <p className="text-2xl font-bold">
               Cosmetic Surgery Recovery Infusions
             </p>
-            <p className="text-base font-normal">
+            <p className="text-base font-normal text-center">
               Each cocktail has essential fluids, electrolytes, vitamins and
               antioxidants, to quickly remedy a variety of conditions.
             </p>
           </div>
 
           <div className=" flex justify-center flex-wrap gap-6 ">
-            <div className="flex flex-col w-[280px] border bg-white border-[#3BAFBF] items-center justify-center space-y-2 p-4">
+            <div className="flex flex-col w-[280px] border bg-white border-[#3BAFBF] items-center justify-center gap-4 p-4">
               <Image
                 src={img1}
                 alt="fitness"
-                className="w-[270px] h-[142px] relative bottom-10"
+                className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
               />
               <p className="text-2xl font-bold">Pre-Op Drip</p>
               <p className="text-5xl font-normal font-niconne text-[#3BAFBF]">
                 $149
               </p>
               <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-                SHEDULE DRIP
+                SCHEDULE DRIP
               </button>
               <p>
                 Working hard in the gym? This drip helps you perform better,
@@ -629,18 +634,18 @@ export default function IVInfusions() {
                 Click here to read more
               </a>
             </div>
-            <div className="flex flex-col w-[280px] border bg-white border-[#3BAFBF] items-center justify-center space-y-2 p-4">
+            <div className="flex flex-col w-[280px] border bg-white border-[#3BAFBF] items-center justify-center gap-4 p-4">
               <Image
                 src={img1}
                 alt="fitness"
-                className="w-[270px] h-[142px] relative bottom-10"
+                className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
               />
               <p className="text-2xl font-bold">Athletic Recovery</p>
               <p className="text-5xl font-normal font-niconne text-[#3BAFBF]">
                 $209
               </p>
               <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-                SHEDULE DRIP
+                SCHEDULE DRIP
               </button>
               <p>
                 Working hard in the gym? This drip helps you perform better,
@@ -650,18 +655,18 @@ export default function IVInfusions() {
                 Click here to read more
               </a>
             </div>
-            <div className="flex flex-col w-[280px] border bg-white border-[#3BAFBF] items-center justify-center space-y-2 p-4">
+            <div className="flex flex-col w-[280px] border bg-white border-[#3BAFBF] items-center justify-center gap-4 p-4">
               <Image
                 src={img1}
                 alt="fitness"
-                className="w-[270px] h-[142px] relative bottom-10"
+                className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
               />
               <p className="text-2xl font-bold">Iron Infusion</p>
               <p className="text-5xl font-normal font-niconne text-[#3BAFBF]">
                 $299
               </p>
               <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-                SHEDULE DRIP
+                SCHEDULE DRIP
               </button>
               <p>
                 Working hard in the gym? This drip helps you perform better,
@@ -671,18 +676,18 @@ export default function IVInfusions() {
                 Click here to read more
               </a>
             </div>
-            <div className="flex flex-col w-[280px] border bg-white border-[#3BAFBF] items-center justify-center space-y-2 p-4">
+            <div className="flex flex-col w-[280px] border bg-white border-[#3BAFBF] items-center justify-center gap-4 p-4">
               <Image
                 src={img1}
                 alt="fitness"
-                className="w-[270px] h-[142px] relative bottom-10"
+                className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
               />
               <p className="text-2xl font-bold">Hydration Me</p>
               <p className="text-5xl font-normal font-niconne text-[#3BAFBF] ">
                 $129
               </p>
               <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-                SHEDULE DRIP
+                SCHEDULE DRIP
               </button>
               <p>
                 Working hard in the gym? This drip helps you perform better,
@@ -694,9 +699,13 @@ export default function IVInfusions() {
             </div>
 
             <div className="flex items-center justify-center  space-x-8">
-              <button className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
+              {/* <a href="#section" className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
                 VIEW POST-OP DRIPS
-              </button>
+              </a> */}
+              <a href="#section" className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
+              VIEW PREMIUM INFUSIONS
+
+              </a>
               <a
                 href=""
                 className="underline text-[#3BAFBF] text-base font-bold"
@@ -721,7 +730,7 @@ export default function IVInfusions() {
             <div className="flex justify-between  border-b p-2 ">
               <div className="flex flex-col  ">
                 <p className="text-2xl font-bold">Biotin</p>
-                <p className="text-base font-normal">Help with this...</p>
+                <p className="text-base font-normal italic">Help with this...</p>
               </div>
 
               <div>
@@ -733,7 +742,7 @@ export default function IVInfusions() {
             <div className="l flex justify-between   border-b p-2 ">
               <div className="flex flex-col  ">
                 <p className="text-2xl font-bold">Pepcid</p>
-                <p>Help with this...</p>
+                <p className="italic">Help with this...</p>
               </div>
 
               <div>
@@ -745,7 +754,7 @@ export default function IVInfusions() {
             <div className="l flex justify-between   border-b p-2 ">
               <div className="flex flex-col  ">
                 <p className="text-2xl font-bold">Toradol</p>
-                <p>Help with this...</p>
+                <p className="italic">Help with this...</p>
               </div>
 
               <div>
@@ -757,7 +766,7 @@ export default function IVInfusions() {
             <div className="l flex justify-between   border-b p-2 ">
               <div className="flex flex-col  ">
                 <p className="text-2xl font-bold">Zofran</p>
-                <p>Help with this...</p>
+                <p className="italic">Help with this...</p>
               </div>
 
               <div>
@@ -766,10 +775,10 @@ export default function IVInfusions() {
                 </p>
               </div>
             </div>
-            <div className="l flex justify-between   border-b p-2 ">
+            <div className="l flex justify-between  p-2 ">
               <div className="flex flex-col w-[25vw]">
                 <p className="text-2xl font-bold">Extra Vitamin C</p>
-                <p>Help with this...</p>
+                <p className="italic">Help with this...</p>
               </div>
 
               <div>
@@ -784,7 +793,7 @@ export default function IVInfusions() {
             <div className=" flex justify-between  border-b p-2 ">
               <div className="flex flex-col w-[25vw] ">
                 <p className="text-2xl font-bold">Glutathione</p>
-                <p>Help with this...</p>
+                <p className="italic">Help with this...</p>
               </div>
 
               <div>
@@ -796,7 +805,7 @@ export default function IVInfusions() {
             <div className=" flex justify-between   border-b p-2 ">
               <div className="flex flex-col w-[25vw] ">
                 <p className="text-2xl font-bold">Extra B12</p>
-                <p>Help with this...</p>
+                <p className="italic">Help with this...</p>
               </div>
 
               <div>
@@ -808,7 +817,7 @@ export default function IVInfusions() {
             <div className=" flex justify-between   border-b p-2 ">
               <div className="flex flex-col w-[25vw] ">
                 <p className="text-2xl font-bold">Extra Fluid</p>
-                <p>Help with this...</p>
+                <p className="italic">Help with this...</p>
               </div>
 
               <div>
@@ -820,24 +829,24 @@ export default function IVInfusions() {
             <div className=" flex justify-between   border-b p-2 ">
               <div className="flex flex-col w-[25vw] ">
                 <p className="text-2xl font-bold">Semaglutide</p>
-                <p>Help with this...</p>
+                <p className="italic">Help with this...</p>
               </div>
 
               <div>
                 <p className="text-4xl font-normal text-[#3BAFBF] font-niconne">
-                  Enquire
+                  Inquire
                 </p>
               </div>
             </div>
-            <div className=" flex justify-between   border-b p-2 ">
+            <div className=" flex justify-between   p-2 ">
               <div className="flex flex-col w-[25vw] ">
                 <p className="text-2xl font-bold">NAD+ </p>
-                <p>Help with this...</p>
+                <p className="italic">Help with this...</p>
               </div>
 
               <div>
                 <p className="text-4xl font-normal text-[#3BAFBF] font-niconne">
-                  Enquire
+                  Inquire
                 </p>
               </div>
             </div>
