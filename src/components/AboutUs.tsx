@@ -13,7 +13,7 @@ const AboutUs = () => {
     <>
       <div className="pb-20" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
         <div className=" w-full md:flex  justify-between ">
-          <div className="w-full md:w-[62%] px-10  pt-6 md:pt-16 ml-22 ">
+          <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22 ">
             <div className="  md:flex flex-col gap-2 md:leading-[100px] ">
               <p className="md:text-8xl text-3xl font-bold font-montserrat">Who Are </p>
               <p className="md:text-8xl  text-3xl font-bold text-[#F4B5D9]">
@@ -27,11 +27,11 @@ const AboutUs = () => {
               </button>
             </div>
           </div>
-          <div className="md:w-[38%] w-full md:flex justify-end items-center">
+          <div className="md:w-[35%] w-full md:flex justify-end items-center">
             <Image src={about1} alt="Logo" className=" md:w-[606px] mix-blend-multiply md:h-[650px] object-cover" />
           </div>
         </div>
-        <div className="w-full  relative md:-top-14 ">
+        <div className="w-full  relative md:-top-20 ">
           <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center  items-center w-auto h-[27px]">
               {/* <Image src={recoverynurses} alt="real" className="  object-cover" /> */}

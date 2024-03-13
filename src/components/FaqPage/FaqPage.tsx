@@ -48,21 +48,12 @@ const FaqPage = () => {
 
     return (
         <>
-<<<<<<< HEAD
             <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start md:ml-22" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
                 <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
                     <div className="flex flex-col  lg:leading-[100px]">
                         <p className="text-4xl lg:text-8xl font-bold font-montserrat ">Need Help</p>
                         <p className="text-4xl lg:text-8xl font-bold font-montserrat ">Completing </p>
                         <p className="text-4xl lg:text-8xl font-bold font-montserrat  ">Your Booking?</p>
-=======
-            <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start md:ml-22" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
-                <div className="w-full md:w-auto p-8 text-center md:text-left">
-                    <div className="flex flex-col  gap-4">
-                        <p className="text-4xl md:text-7xl font-bold">Need Help</p>
-                        <p className="text-4xl md:text-7xl font-bold">Completing </p>
-                        <p className="text-4xl md:text-7xl font-bold ">Your Booking?</p>
->>>>>>> 4288a14f45432d3358c744ca0564a40a20c16a9f
                     </div>
                     <div className='flex justify-center md:justify-start mt-8 px-4'>
                         <button className='bg-[#3BAFBF] px-4 py-2 text-base font-bold text-white'>Book a Consultation</button>
@@ -73,9 +64,10 @@ const FaqPage = () => {
                     <Image src={tempImagewju} alt="Logo" className="w-full md:w-[606px] h-[580px] mix-blend-multiply object-cover" />
                 </div>
             </div>
-            <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative md:-top-10">
+            <div className=" relative md:-top-10 py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
                 <div className="flex justify-center  items-center w-auto h-[27px]">
-                    <p className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Post Cosmetic Surgery Questions</p>
+                    <p className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " 
+                    style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Post Cosmetic Surgery Questions</p>
                 </div>
 
             </div>

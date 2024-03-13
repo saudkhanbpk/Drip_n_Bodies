@@ -9,6 +9,7 @@ import DripsCalendar from "../images/Calendar/Drip N Bodied Calendar.png";
 import img1 from "../images/tele.png";
 import img2 from "../images/msg.png";
 import { IoIosMail } from "react-icons/io";
+import "react-calendar/dist/Calendar.css";
 
 const CalendarPage = () => {
   return (
@@ -125,7 +126,8 @@ const CalendarPage = () => {
               </p>
             </div>
             <div className="my-6">
-              <Calendar className="text-black font-montserrat text-base font-normal leading-normal" />
+              <Calendar className="react-calendar  text-black font-montserrat text-base font-normal leading-normal"
+               />
             </div>
           </div>
         </div>
