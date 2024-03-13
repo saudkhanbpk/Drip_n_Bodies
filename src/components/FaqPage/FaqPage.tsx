@@ -80,9 +80,9 @@ const FaqPage = () => {
                         <p className="font-bold text-4xl text-[24px] leading-8 md:leading-29 tracking-normal text-left">Frequently Asked Questions</p>
                     </div>
                     <div className="border-t border-t-gray-300"></div>
-                    <div className="bg-white px-0 py-4  rounded-md ">
+                    <div className="bg-white px-0   rounded-md ">
                         {faqItems.map((item, index) => (
-                            <div key={index} className="mb-4 p-4">
+                            <div key={index} className=" p-3 ">
                                 <input
                                     type="checkbox"
                                     id={`item${index}`}
@@ -91,7 +91,7 @@ const FaqPage = () => {
                                 />
                                 <label
                                     htmlFor={`item${index}`}
-                                    className="flex items-center justify-between cursor-pointer p-2 rounded-md gap-8 hover:bg-pink-300/25"
+                                    className="flex items-center justify-between cursor-pointer px-2 rounded-md gap-8 hover:bg-pink-300/25"
                                     onClick={() => handleAccordionClick(index)}
                                 >
                                     <span className="font-bold text-4xl text-[20px] leading-8 md:leading-29 tracking-normal text-left">
