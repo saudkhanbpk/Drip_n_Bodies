@@ -283,7 +283,7 @@ const SurgeryRecovery = () => {
 
         <div className=" w-full px-auto  bg-gradient-to-b bg-[#F4B5D92B] from-#FFFFFF to-#FFFFFF bg-opacity-0">
           <div className=" items-center w-full flex md:flex-row flex-col justify-center mx-auto gap-8">
-            <div className="border border-[#3BAFBF]  w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px]  w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Snatched!
@@ -291,7 +291,7 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
                   Perfrect for people
                 </p>
-                <p className="text-[#3BAFBF] my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
+                <p className="text-cyan-600 my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $2,200
                 </p>
               </div>
@@ -315,7 +315,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
             </div>
-            <div className="border border-[#3BAFBF]  w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px]  w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   The Bougie Babe
@@ -323,7 +323,7 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
                   Perfrect for people
                 </p>
-                <p className="text-[#3BAFBF] my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
+                <p className="text-cyan-600 my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $3,200
                 </p>
               </div>
