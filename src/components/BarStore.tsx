@@ -164,10 +164,10 @@ const BarStore: React.FC = () => {
               </p>
             </div>
             <div className="my-6 md:my-5 lg:my-10 w-full lg:w-auto h-[43px] flex flex-col lg:flex-row">
-              <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2 rounded hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
+              <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
                 Book an IV Drip
               </button>
-              <p className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat">
+              <p className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2  text-[#3BAFBF] text-center font-montserrat">
               View Recovery Services
               </p>
             </div>
@@ -232,7 +232,7 @@ const BarStore: React.FC = () => {
                 </p>
               </div>
               <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
-                <button className=" text-white text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  rounded   hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className=" text-white text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
                 Book IV Drips
                 </button>
               </div>
@@ -255,7 +255,7 @@ const BarStore: React.FC = () => {
             <div className=" w-full md:w-1/2 p-2 lg:p-6 lg:h-[360px] h-auto bg-[#F4B5D9] bg-opacity-55 ">
               <div className="lg:my-2">
                 <p className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
-                Private Lymphatic Massages
+                 Lymphatic Massages
                 </p>
               </div>
               <div className="  w-full h-auto my-2 xl:my-4 flex-shrink-0">
@@ -272,7 +272,7 @@ const BarStore: React.FC = () => {
                 </p>
               </div>
               <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
-                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  rounded   hover:bg-pink-300 mt-2 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
+                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-pink-300 mt-2 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
                 Book Massages
                 </button>
               </div>
@@ -304,7 +304,7 @@ const BarStore: React.FC = () => {
                 </p>
               </div>
               <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
-                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  rounded   hover:bg-blue-300 mt-2 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
+                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-blue-300 mt-2 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
                 Book Treatments
                 </button>
               </div>
@@ -320,7 +320,7 @@ const BarStore: React.FC = () => {
         
         <div className=" my-8 items-center w-[90%] flex flex-col justify-center mx-auto">
           <p className="text-center font-montserrat text-[#3BAFBF] text-base font-bold leading-6 uppercase">
-          View surgery recovery packages
+          View Cosmetic surgery recovery packages
           </p>
         </div>
 

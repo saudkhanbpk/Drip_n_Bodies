@@ -160,10 +160,10 @@ const CustomerRecovery: React.FC = () => {
               </p>
             </div>
             <div className="my-6 md:my-5 lg:my-10 w-full lg:w-auto h-[43px] flex flex-col lg:flex-row">
-              <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2 rounded hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
+              <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
                 Book an IV Drip
               </button>
-              <p className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat">
+              <p className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2  text-[#3BAFBF] text-center font-montserrat">
                 View Premium Infusions
               </p>
             </div>
@@ -233,7 +233,7 @@ const CustomerRecovery: React.FC = () => {
                 </p>
               </div>
               <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
-                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  rounded   hover:bg-yellow-300 mt-2 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
+                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-yellow-300 mt-2 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
                 Book A Package
                 </button>
               </div>
@@ -265,7 +265,7 @@ const CustomerRecovery: React.FC = () => {
                 </p>
               </div>
               <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
-                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  rounded   hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
                 Book IV Drips
                 </button>
               </div>
@@ -304,7 +304,7 @@ const CustomerRecovery: React.FC = () => {
                 </p>
               </div>
               <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
-                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  rounded   hover:bg-pink-300 mt-2 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
+                <button className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-pink-300 mt-2 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
                 Book Massages
                 </button>
               </div>

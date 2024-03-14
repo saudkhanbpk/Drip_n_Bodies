@@ -36,7 +36,7 @@ const Massage = () => {
       id: 1,
       title: "Single Massage",
       price: "$130",
-      buttonText: "SCHEDULE",
+      buttonText: "Book Massage",
       description:
         "Working hard in the gym? This drip helps you perform better, have more energy, and recover faster. These ingredients will support your fitness journey.",
       link: "#1",
@@ -46,7 +46,7 @@ const Massage = () => {
       id: 2,
       title: "3 Massage Package",
       price: "$290",
-      buttonText: "SCHEDULE",
+      buttonText: "Book Massage",
       description:
         "Working hard in the gym? This drip helps you perform better, have more energy, and recover faster. These ingredients will support your fitness journey.",
       link: "#2",
@@ -180,10 +180,10 @@ const Massage = () => {
             </p>
           </div>
         </div>
-        <div className="w-full flex justify-center  flex-col md:flex-row gap-8 px-8 pt-5">
+        <div className="w-full flex justify-center   flex-col md:flex-row gap-8 px-8 pt-5">
           {services.map((service, index) => (
             <>
-              <div className="px-4flex flex-col w-[280px] border border-[#3BAFBF] items-center  space-y-2 p-4 ">
+              <div className="px-4 flex flex-col w-[280px] border border-[#3BAFBF] items-center  gap-3 p-4 ">
                 <Image
                   src={service.imageSrc}
                   alt={service.serviceName}
@@ -196,7 +196,7 @@ const Massage = () => {
                 <button className="bg-[#3BAFBF] py-1 px-2 text-white">
                   SCHEDULE
                 </button>
-                <p>{service.description}</p>
+                <p className="text-center">{service.description}</p>
                 <a href={service.link} className="underline text-[#3BAFBF]">
                   Click here to read more
                 </a>

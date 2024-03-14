@@ -71,7 +71,7 @@ const SurgeryRecovery = () => {
           <div className=" items-center w-full flex xl:flex-row flex-col justify-center mx-auto gap-8">
             
             <div className="flex md:flex-row flex-col gap-6">
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[720px]  flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   One Night Glam
@@ -109,12 +109,12 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat text-base font-normal leading-[17px]">
                   Complimentary transportation after surgery
                 </p>
-                <a className="text-[#3BAFBF] text-center font-montserrat text-sm font-normal leading-[17px] underline">
+                <a className="link text-[#3BAFBF]   text-center font-montserrat text-sm font-normal leading-[17px] underline">
                   View all services included
                 </a>
               </div>
             </div>
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[720px]  flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Snatched!
@@ -123,7 +123,7 @@ const SurgeryRecovery = () => {
                   Perfrect for people
                 </p>
                 <p className=" text-cyan-600 my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
-                  $800
+                  $1,400
                 </p>
                 <p className="mx-auto mt-10  h-[34px] w-[135px] text-black text-center font-montserrat text-xs font-normal leading-[17px]">
                   Or 8 payments of $100 by{" "}
@@ -152,7 +152,7 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat text-base font-normal leading-[17px]">
                   Complimentary transportation after surgery
                 </p>
-                <a className="text-[#3BAFBF] text-center font-montserrat text-sm font-normal leading-[17px] underline">
+                <a className="link text-[#3BAFBF] text-center font-montserrat text-sm font-normal leading-[17px] underline">
                   View all services included
                 </a>
               </div>
@@ -161,7 +161,7 @@ const SurgeryRecovery = () => {
             </div>
 
             <div className="flex md:flex-row flex-col gap-6">
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[720px]  flex flex-col items-center justify-center p-4">
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   The Bougie Babe
@@ -172,12 +172,13 @@ const SurgeryRecovery = () => {
                 <p className="text-cyan-600 my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $1,900
                 </p>
-                <p className="mx-auto   h-[34px] w-[135px] text-black text-center font-montserrat text-xs font-normal leading-[17px]">
+                
+                <p className="mx-auto mt-10  h-[34px] w-[135px] text-black text-center font-montserrat text-xs font-normal leading-[17px]">
                   Or 8 payments of $100 by{" "}
                   <span className="font-bold">Afterpay</span>
                 </p>
               </div>
-              <div className="my-10 w-auto h-[43px] flex ">
+              <div className="my-6 w-auto h-[43px] flex ">
                 <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2   hover:bg-blue-300  bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
@@ -198,12 +199,13 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat text-base font-normal leading-[17px]">
                   Complimentary transportation after surgery
                 </p>
-                <a className="text-[#3BAFBF] text-center font-montserrat text-sm font-normal leading-[17px] underline">
+                <a className="link text-[#3BAFBF] text-center font-montserrat text-sm font-normal leading-[17px] underline">
                   View all services included
                 </a>
               </div>
             </div>
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[720px] flex flex-col items-center justify-center p-4">
+            
+            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px] flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Very Bougie!
@@ -214,12 +216,12 @@ const SurgeryRecovery = () => {
                 <p className="text-cyan-600 my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $2,700
                 </p>
-                <p className="mx-auto   h-[34px] w-[135px] text-black text-center font-montserrat text-xs font-normal leading-[17px]">
+                <p className="mx-auto mt-10  h-[34px] w-[135px] text-black text-center font-montserrat text-xs font-normal leading-[17px]">
                   Or 8 payments of $100 by{" "}
                   <span className="font-bold">Afterpay</span>
                 </p>
               </div>
-              <div className="my-10 w-auto h-[43px] flex ">
+              <div className="my-6 w-auto h-[43px] flex ">
                 <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2   hover:bg-blue-300  bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
@@ -241,11 +243,12 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat text-base font-normal leading-[17px]">
                   Complimentary transportation after surgery
                 </p>
-                <a className="text-[#3BAFBF] text-center font-montserrat text-sm font-normal leading-[17px] underline">
+                <a className="link text-[#3BAFBF] text-center font-montserrat text-sm font-normal leading-[17px] underline">
                   View all services included
                 </a>
               </div>
             </div>
+            
 
             </div>
           </div>
