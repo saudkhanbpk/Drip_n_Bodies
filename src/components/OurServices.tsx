@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { useRouter } from "next/router";
 import serv1 from "../images/serv1.png";
 import serv2 from "../images/serv2.png";
 import serv3 from "../images/serv3.png";
@@ -12,13 +13,18 @@ import fb from "../images/fb.png";
 import ourservvice from "../images/ourservvice.png";
 
 const OurServices = () => {
+  const router = useRouter();
+  const handleClick = (targetPage: any) => {
+    // Navigate to the desired page
+    router.push(targetPage);
+  };
   return (
     <>
       <div className="my-12  w-[90%] mx-auto">
         <div className=" my-16 items-center w-full flex flex-col justify-center mx-auto">
-          <p className="text-center py-2 md:py-6 font-montserrat text-black text-3xl font-bold leading-normal text">
+          <h2 className="text-center py-2 md:py-6 font-montserrat text-black text-3xl font-bold leading-normal text">
             Our Services
-          </p>
+          </h2>
           <p className="w-full md:flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal md:h-[34px]">
             Drip N Bodied is a concierge IV hydration and post-operative care
             company that services clients in South Florida. We offer mobile IV
@@ -34,9 +40,9 @@ const OurServices = () => {
             </div>
             <div className=" w-full md:w-[600px] p-6 md:h-[360px] bg-[#FFC700] bg-opacity-25 ">
               <div className="my-2">
-                <p className="font-montserrat  text-black text-3xl font-bold leading-7">
+                <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
                   Concierge Surgery Recovery
-                </p>
+                </h3>
               </div>
               <div className="  md:w-[540px] md:h-auto my-4 flex-shrink-0">
                 <p className="font-montserrat text-black text-base font-normal leading-6">
@@ -52,7 +58,8 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-black text-sm font-bold leading-6 uppercase   px-4 py-2    hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat  ">
+                <button className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat"
+                onClick={() => handleClick('/')}>
                   Book Free Consult
                 </button>
               </div>
@@ -64,9 +71,9 @@ const OurServices = () => {
           <div className=" items-center w-full gap-8 flex lg:flex-row  flex-col justify-between mx-auto">
             <div className=" md:w-[600px] p-6 md:h-[360px] bg-[#3BAFBF] bg-opacity-50 ">
               <div className="my-2">
-                <p className="font-montserrat  text-black text-3xl font-bold leading-7">
+                <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
                   IV Therapy and Drips
-                </p>
+                </h3>
               </div>
               <div className="  md:w-[540px] md:h-auto my-4 flex-shrink-0">
                 <p className="font-montserrat text-black text-base font-normal leading-6">
@@ -103,9 +110,9 @@ const OurServices = () => {
             </div>
             <div className=" md:w-[600px] p-6 md:h-[360px] bg-[#F4B5D9] bg-opacity-50 ">
               <div className="my-2">
-                <p className="font-montserrat  text-black text-3xl font-bold leading-7">
+                <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
                   Lymphatic Massages
-                </p>
+                </h3>
               </div>
               <div className="  md:w-[540px] h-auto my-4 flex-shrink-0">
                 <p className="font-montserrat text-black text-base font-normal leading-6">
@@ -132,9 +139,9 @@ const OurServices = () => {
           <div className=" items-center w-full flex lg:flex-row flex-col gap-8 justify-between mx-auto">
             <div className="w-full md:w-[600px] p-6 md:h-[360px] bg-[#000000] bg-opacity-25 ">
               <div className=" my-2">
-                <p className="font-montserrat  text-black text-3xl font-bold leading-7">
+                <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
                   Post Surgical Treatments
-                </p>
+                </h3>
               </div>
               <div className="  md:w-[540px] md:h-auto my-4 flex-shrink-0">
                 <p className="font-montserrat text-black text-base font-normal leading-6">
@@ -161,14 +168,14 @@ const OurServices = () => {
           </div>
         </div>
         <div className=" my-8 items-center w-full flex flex-col justify-center mx-auto">
-          <p className="text-center font-montserrat text-[#3BAFBF] text-base font-bold leading-6 uppercase">
-            View surgery recovery packages
-          </p>
+          <h3 className="text-center font-montserrat text-[#3BAFBF] text-base font-bold leading-6 uppercase">
+            LEARN MORE ABOUT BOOKING US
+          </h3>
         </div>
         <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto ">
-          <p className="text-center font-montserrat text-black text-xl md:text-3xl font-bold leading-5 ">
+          <h2 className="text-center font-montserrat text-black text-xl md:text-3xl font-bold leading-5 ">
             Follow Us On Social Media
-          </p>
+          </h2>
         </div>
         <div className="my-8  gap-8  w-full md:flex  mx-auto">
           <div className="w-full md:w-[70%]">
