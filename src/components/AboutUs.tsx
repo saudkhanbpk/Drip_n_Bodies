@@ -114,7 +114,7 @@ const AboutUs = () => {
                 <Image
                   src={about2}
                   alt="img here"
-                  className="md:w-full md:h-[650px] object-cover"
+                  className="md:w-full md:h-[650px] "
                 />
                 <div className=" p-4">
 
@@ -124,7 +124,7 @@ const AboutUs = () => {
                     <p className="py-4 text-black  md:ps-3 font-montserrat text-[24px] font-bold">
                       Registered Nurse, BS
                     </p>
-                    <p className="text-black text-start md:ps-3 font-montserrat text-[16px] font-normal leading-16 ">
+                    <p className="text-black text-start md:ps-3 font-montserrat  text-[24px] leading-normal font-normal ">
                       I have been a Registered Nurse for 4 years and received my
                       bachelor’s degree from Nova South Eastern University (NSU). My
                       area of specialty is in the cardiac Progressive Care Unit
@@ -146,7 +146,7 @@ const AboutUs = () => {
                 <Image
                   src={about3}
                   alt="img here"
-                  className="md:w-full h-[650px] object-cover "
+                  className="md:w-full h-[650px]  "
                 />
                 <div className=" p-4">
 
@@ -156,7 +156,7 @@ const AboutUs = () => {
                     <p className="py-4 text-black  md:ps-3 font-montserrat text-[24px] font-bold">
                       Registered Nurse, BS
                     </p>
-                    <p className="text-black text-start md:ps-3 font-montserrat text-[16px] font-normal leading-16 ">
+                    <p className="text-black text-start md:ps-3 font-montserrat  text-[24px] leading-normal font-normal ">
                       I have been a Registered Nurse for 4 years and received my
                       bachelor’s degree from Nova South Eastern University (NSU). My
                       area of specialty is in the cardiac Progressive Care Unit

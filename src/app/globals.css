@@ -29,6 +29,11 @@
   background-color: pink;
 
 }
+.border:hover .link {
+  color: white;
+  /* Change this to the pink color you desire */
+}
+
 
 .image-with-shadow {
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
