@@ -1,6 +1,14 @@
+"use client"
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const ScheduleConsultation = () => {
+  const router = useRouter();
+  const handleClick = () => {
+    // Navigate to the desired page
+    router.push("https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION");
+  };
+  
   return (
     <>
       {/* <div className=" h-[450px] bg-[url('../images/Rectangle.png')]">
@@ -38,7 +46,8 @@ const ScheduleConsultation = () => {
                 nursing, or business start-ups.
               </p>
             </div>
-            <button className="px-6 p-2 font-bold text-[16px] mt-8 md:mt-8 text-white bg-[#3BAFBF]">
+            <button className="px-6 p-2 font-bold text-[16px] mt-8 md:mt-8 text-white bg-[#3BAFBF]"
+            onClick={() => handleClick()}>
               SCHEDULE A CONSULT CALL
             </button>
           </div>

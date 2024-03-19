@@ -2,39 +2,56 @@ import React from "react";
 import tempImageYIgr from "../../images/tempImageYIgr.svg";
 import Image from "next/image";
 import { IoIosMail } from "react-icons/io";
+import Link from "next/link";
 
 const Footer = () => {
   const sections = [
     {
       title: "Concierge Services",
       links: [
-        "Cosmetic Surgery Recovery",
-        "Mobile IV Infusions",
-        "Mobile Lymphatic Massages",
+       { name: "Concierge Services", href: "/customerrecovery" },
+       { name: "Cosmetic Surgery Recovery", href: "/surgery" },
+        { name: "Mobile IV Infusions", href: "ivinfusion#section2" },
+        { name: "Mobile Lymphatic Massages", href: "/massage" },
       ],
     },
     {
       title: "IV Hydration & Post-Op Bar",
-      links: ["Post Surgical Treatments", "IV Infusions", "Lymphatic Massages"],
+      links: [
+        { name: "IV Hydration Bar", href: "/barstore" },
+        { name: "Post Surgical Treatments", href: "/massage#post-cosmetic-surgery-treatment" },
+        { name: "IV Infusions", href: "/ivinfusion" },
+        { name: "Lymphatic Massages", href: "/massage" },
+      ],
     },
     {
       title: "Drip N Bodied",
       links: [
-        "About Us",
-        "Concierge Service",
-        "IV Hydration Bar",
-        "Free Consult Call",
+        { name: "About Us", href: "/about" },
+        { name: "Contact US", href: "/about#Talk-to-your-nurse-babe" },
+        { name: "Free Consult Call", href: "https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION" },
       ],
     },
     {
       title: "Resources",
-      links: ["Contact Us", "Our Calendar", "FAQs", "Policies"],
+      links: [
+        { name: "Resource Hub", href: "/resourcehub" },
+        { name: "Our Calendar", href: "/our-calendar" },
+        { name: "FAQs", href: "/faqs" },
+        { name: "Policies", href: "/policies" },
+      ],
     },
     {
       title: "Social Media",
-      links: ["Facebook", "Instagram", "TikTok", "YouTube"],
+      links: [
+        { name: "Facebook", href: "https://www.facebook.com/Dripnbodied/" },
+        { name: "Instagram", href: "https://www.instagram.com/dripnbodied_recoverynurse/" },
+        { name: "TikTok", href: "https://www.tiktok.com/@dripnbodiedrecoverynurse" },
+        { name: "YouTube", href: "https://www.youtube.com/@dripnbodied_recoverynurse" },
+      ],
     },
   ];
+
 
   return (
     <>
@@ -123,7 +140,13 @@ const Footer = () => {
                       : "text-[#3BAFBF]"
                   }
                 >
-                  {link}
+                     <Link
+                href={link.href}
+            
+                 
+                >
+                  {link.name}
+                </Link>
                 </p>
               ))}
             </div>

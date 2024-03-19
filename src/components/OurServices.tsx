@@ -1,6 +1,8 @@
+"use client"
+
 import Image from "next/image";
 import React from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import serv1 from "../images/serv1.png";
 import serv2 from "../images/serv2.png";
 import serv3 from "../images/serv3.png";
@@ -11,6 +13,7 @@ import tiktok from "../images/tiktok.png";
 import youtube from "../images/youtube.png";
 import fb from "../images/fb.png";
 import ourservvice from "../images/ourservvice.png";
+import Link from "next/link";
 
 const OurServices = () => {
   const router = useRouter();
@@ -59,8 +62,8 @@ const OurServices = () => {
               </div>
               <div className="md:w-[200px] md:h-[43px]">
                 <button className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat"
-                onClick={() => handleClick('/')}>
-                  Book Free Consult
+                onClick={() => handleClick('/surgery')}>
+                  Book A Package
                 </button>
               </div>
             </div>
@@ -68,7 +71,7 @@ const OurServices = () => {
         </div>
 
         <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
-          <div className=" items-center w-full gap-8 flex lg:flex-row  flex-col justify-between mx-auto">
+          <div className=" items-center w-full gap-5 flex lg:flex-row  flex-col justify-between mx-auto">
             <div className=" md:w-[600px] p-6 md:h-[360px] bg-[#3BAFBF] bg-opacity-50 ">
               <div className="my-2">
                 <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
@@ -89,7 +92,9 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  "
+                onClick={() => handleClick('/ivinfusion')}                
+                >
                   Book IV Drips
                 </button>
               </div>
@@ -128,7 +133,9 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-black text-sm    font-bold leading-6 uppercase   px-4 py-2     hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  ">
+                <button className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat"
+                onClick={() => handleClick('/massage')}
+                >
                   Book Massages
                 </button>
               </div>
@@ -157,7 +164,8 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-white text-sm    font-bold leading-6 uppercase   px-4 py-2   hover:bg-black-300 mt-4 lg:mt-0 bg-[#000000] text-center font-montserrat  ">
+                <button className=" text-white text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-black-300 mt-4 lg:mt-0 bg-[#000000] text-center font-montserrat"
+                 onClick={() => handleClick('/surgery')}>
                   Book Treatments
                 </button>
               </div>
@@ -168,9 +176,9 @@ const OurServices = () => {
           </div>
         </div>
         <div className=" my-8 items-center w-full flex flex-col justify-center mx-auto">
-          <h3 className="text-center font-montserrat text-[#3BAFBF] text-base font-bold leading-6 uppercase">
+          <Link href='/resourcehub' className="text-center font-montserrat text-[#3BAFBF] text-base font-bold leading-6 uppercase">
             LEARN MORE ABOUT BOOKING US
-          </h3>
+          </Link>
         </div>
         <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto ">
           <h2 className="text-center font-montserrat text-black text-xl md:text-3xl font-bold leading-5 ">
@@ -191,23 +199,23 @@ const OurServices = () => {
             <div className="">
               <div className="flex items-center justify-normal">
                 <Image src={insta} alt="bbl-img" />
-                <p className="mx-2 text-[#3BAFBF]">
+                <Link href={"https://www.instagram.com/dripnbodied_recoverynurse/"} className="mx-2 text-[#3BAFBF]">
                   @dripnbodied_recoverynurse
-                </p>
+                </Link>
               </div>
               <div className="flex items-center">
                 <Image src={tiktok} alt="bbl-img" />
-                <p className="mx-2 text-[#3BAFBF]">
+                <Link href={"https://www.tiktok.com/@dripnbodiedrecoverynurse"} className="mx-2 text-[#3BAFBF]">
                   @dripnbodied_recoverynurse
-                </p>
+                </Link>
               </div>
               <div className="flex items-center justify-normal">
                 <Image src={youtube} alt="bbl-img" />
-                <p className="mx-2 text-[#3BAFBF]">Drip N Bodied</p>
+                <Link href={"https://www.youtube.com/@dripnbodied_recoverynurse"} className="mx-2 text-[#3BAFBF]">Drip N Bodied</Link>
               </div>
               <div className="flex items-center">
                 <Image src={fb} alt="bbl-img" />
-                <p className="mx-2 text-[#3BAFBF]">Drip N Bodied</p>
+                <Link href={"https://www.facebook.com/Dripnbodied/"} className="mx-2 text-[#3BAFBF]">Drip N Bodied</Link>
               </div>
             </div>
           </div>
