@@ -256,12 +256,12 @@ const Policy = () => {
       <div className="w-full relative md:-top-24">
         <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
           <div className="flex justify-center items-center w-auto h-[27px]">
-            <p
+            <h1
               className="text-[#3BAFBF] text-center font-niconne text-6xl lg:text-[64px] font-medium"
               style={{ textShadow: "2px 2px 2px white,2px 2px 2px white" }}
             >
               Drip N Bodied Policy
-            </p>
+            </h1>
           </div>
         </div>
       </div>
@@ -269,9 +269,9 @@ const Policy = () => {
       <div className="w-full ">
         <div className="w-full md:w-[1000px] mx-auto">
           <div className="md:mb-16 flex justify-center">
-            <p className="font-bold text-4xl text-[24px] leading-8 md:leading-29 tracking-normal text-center">
+            <h2 className="font-bold text-4xl text-[24px] leading-8 md:leading-29 tracking-normal text-center">
               Read Our Policy
-            </p>
+            </h2>
           </div>
           <div className="border-t border-t-gray-300"></div>
           <div className="bg-white px-0   rounded-md ">

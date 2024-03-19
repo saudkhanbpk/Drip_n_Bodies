@@ -183,7 +183,7 @@ const BarStore: React.FC = () => {
         <div className="w-full  relative ">
           <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center items-center w-auto h-[27px]">
-            <p className="font-niconne text-3xl md:text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} >Miami IV Bar By Drip N Bodied</p>
+            <h1 className="font-niconne text-3xl md:text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} >Miami IV Bar By Drip N Bodied</h1>
             </div>
           </div>
         </div>
@@ -192,9 +192,9 @@ const BarStore: React.FC = () => {
 
         <div className="w-full">
         <div className="my-6 w-[90%]  mx-auto p-4">
-        <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+        <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
         IV Hydration + Post-Op Bar Services
-            </p>
+            </h2>
           <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
           Drip N Bodied is a concierge IV hydration and post-operative care
               company that services clients in South Florida’s tri-county area
@@ -232,9 +232,9 @@ const BarStore: React.FC = () => {
                 </p>
               </div>
               <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
-                <button className=" text-white text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
+                <h3 className=" text-white text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  ">
                 Book IV Drips
-                </button>
+                </h3>
               </div>
 
               {/* <Image src={serv1} alt="service1" className="w-full h-full" /> */}
@@ -254,9 +254,9 @@ const BarStore: React.FC = () => {
             </div>
             <div className=" w-full md:w-1/2 p-2 lg:p-6 lg:h-[360px] h-auto bg-[#F4B5D9] bg-opacity-55 ">
               <div className="lg:my-2">
-                <p className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
+                <h3 className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
                  Lymphatic Massages
-                </p>
+                </h3>
               </div>
               <div className="  w-full h-auto my-2 xl:my-4 flex-shrink-0">
                 <p className="font-montserrat text-black text-sm lg:text-[16px] xl:text-base font-normal leading-4 xl:leading-6">
@@ -286,9 +286,9 @@ const BarStore: React.FC = () => {
           <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
           <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#FFC700] bg-opacity-25 ">
               <div className="lg:my-2">
-                <p className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
+                <h3 className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
                 Post Surgical Treatments
-                </p>
+                </h3>
               </div>
               <div className="  w-full h-auto my-2 xl:my-4 flex-shrink-0">
                 <p className="font-montserrat text-black text-sm lg:text-[16px] xl:text-base font-normal leading-4 xl:leading-6">
@@ -338,9 +338,9 @@ const BarStore: React.FC = () => {
 
       <div className=" w-full mt-24">
         <div className="my-6 items-center w-[60%] flex flex-col justify-center mx-auto">
-          <p className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
+          <h2 className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
           Meet Us At the Bar
-          </p>
+          </h2>
           <p className="w-full flex justify-center text-center font-montserrat text-black text-base font-normal leading-normal ">
           We also service those in the miami area
           </p>
@@ -414,9 +414,9 @@ Coral Gables, Florida
 
       <div className="w-full">
         <div className="my-6 w-[90%]  mx-auto p-4">
-        <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+        <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
         Customer Reviews
-            </p>
+            </h2>
           <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
           Drip N Bodied is a concierge IV hydration and post-operative care
               company that services clients in South Florida’s tri-county area

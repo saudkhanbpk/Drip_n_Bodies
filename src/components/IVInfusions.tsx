@@ -52,7 +52,7 @@ export default function IVInfusions() {
         <div className="w-full ">
           <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center items-center w-auto h-[27px]">
-            <p className="font-niconne text-3xl md:text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} >Miami IV Therapy and Post-Op Infusions</p>
+            <h1 className="font-niconne text-3xl md:text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} >Miami IV Therapy and Post-Op Infusions</h1>
             </div>
           </div>
         </div>
@@ -61,9 +61,9 @@ export default function IVInfusions() {
       
       <div className="w-full">
         <div className="my-6 w-[60%]  mx-auto p-4">
-          <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+          <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
             The Drip “3 Step” Process
-          </p>
+          </h2>
           <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
             Drip N Bodied offers IV hydration therapy directly to YOU in the
             comfort of your home, hotel, or office. We offer personalized IV
@@ -139,7 +139,7 @@ export default function IVInfusions() {
 
       <div  id="section" className="w-full flex flex-col justify-center items-center p-10 ">
         <div className="flex flex-col w-[50vw] items-center justify-center space-y-2 ">
-          <p className="text-2xl font-bold">Premium Infusions</p>
+          <h2 className="text-2xl font-bold">Premium Infusions</h2>
           <p className="text-base font-normal text-center">
             Each cocktail has essential fluids, electrolytes, vitamins and
             antioxidants, to quickly remedy a variety of conditions.
@@ -153,7 +153,7 @@ export default function IVInfusions() {
         alt="fitness"
         className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
     />
-    <p className="text-2xl font-bold">Athletic Recovery</p>
+    <h2 className="text-2xl font-bold">Athletic Recovery</h2>
     <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
         $229
     </p>
@@ -176,7 +176,7 @@ export default function IVInfusions() {
               alt="fitness"
               className="w-[270px] h-[142px] relative bottom-10  image-with-shadow"
             />
-            <p className="text-2xl font-bold">Baddie Drip</p>
+            <h3 className="text-2xl font-bold">Baddie Drip</h3>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
               $189
             </p>
@@ -197,7 +197,7 @@ export default function IVInfusions() {
               alt="fitness"
               className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
             />
-            <p className="text-2xl font-bold">Miami Vice</p>
+            <h3 className="text-2xl font-bold">Miami Vice</h3>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
               $199
             </p>
@@ -218,7 +218,7 @@ export default function IVInfusions() {
               alt="fitness"
               className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
             />
-            <p className="text-2xl font-bold">Sober Me</p>
+            <h3 className="text-2xl font-bold">Sober Me</h3>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
               $229
             </p>
@@ -239,7 +239,7 @@ export default function IVInfusions() {
               alt="fitness"
               className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
             />
-            <p className="text-2xl font-bold">High Dose Vitamin C</p>
+            <h3 className="text-2xl font-bold">High Dose Vitamin C</h3>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
               $189
             </p>
@@ -260,7 +260,7 @@ export default function IVInfusions() {
               alt="fitness"
               className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
             />
-            <p className="text-2xl font-bold">Immuno-boost</p>
+            <h3 className="text-2xl font-bold">Immuno-boost</h3>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
               $249
             </p>
@@ -281,7 +281,7 @@ export default function IVInfusions() {
               alt="fitness"
               className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
             />
-            <p className="text-2xl font-bold">Snatched & Skinny</p>
+            <h3 className="text-2xl font-bold">Snatched & Skinny</h3>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
               $199
             </p>
@@ -311,9 +311,9 @@ export default function IVInfusions() {
       <div className="pt-10">
       <div id="section2" className=" w-full bg-gradient-to-b bg-[#F4B5D92B] from-#FFFFFF to-#FFFFFF bg-opacity-0 flex flex-col items-center justify-center p-16 space-y-20 ">
           <div className="flex flex-col w-[60vw] items-center justify-center space-y-2 ">
-            <p className="text-2xl font-bold">
+            <h2 className="text-2xl font-bold">
               Cosmetic Surgery Recovery Infusions
-            </p>
+            </h2>
             <p className="text-base font-normal text-center">
               Each cocktail has essential fluids, electrolytes, vitamins and
               antioxidants, to quickly remedy a variety of conditions.
@@ -327,7 +327,7 @@ export default function IVInfusions() {
                 alt="fitness"
                 className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
               />
-              <p className="text-2xl font-bold">Pre-Op Drip</p>
+              <h3 className="text-2xl font-bold">Pre-Op Drip</h3>
               <p className="text-5xl font-normal font-niconne text-[#3BAFBF]">
                 $149
               </p>
@@ -348,7 +348,7 @@ export default function IVInfusions() {
                 alt="fitness"
                 className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
               />
-              <p className="text-2xl font-bold">Athletic Recovery</p>
+              <h3 className="text-2xl font-bold">Athletic Recovery</h3>
               <p className="text-5xl font-normal font-niconne text-[#3BAFBF]">
                 $209
               </p>
@@ -369,7 +369,7 @@ export default function IVInfusions() {
                 alt="fitness"
                 className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
               />
-              <p className="text-2xl font-bold">Iron Infusion</p>
+              <h3 className="text-2xl font-bold">Iron Infusion</h3>
               <p className="text-5xl font-normal font-niconne text-[#3BAFBF]">
                 $299
               </p>
@@ -390,7 +390,7 @@ export default function IVInfusions() {
                 alt="fitness"
                 className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
               />
-              <p className="text-2xl font-bold">Hydration Me</p>
+              <h3 className="text-2xl font-bold">Hydration Me</h3>
               <p className="text-5xl font-normal font-niconne text-[#3BAFBF] ">
                 $129
               </p>
@@ -427,7 +427,7 @@ export default function IVInfusions() {
 
       <div className="flex flex-col justify-center items-center p-4 md:p-20 space-y-10">
         <div className="flex flex-col  items-center justify-center md:space-y-2 ">
-          <p className="text-2xl font-bold">Infusion Addons</p>
+          <h2 className="text-2xl font-bold">Infusion Addons</h2>
           <p className="text-base font-normal">
             Can add these to a Premium Infusion or Post-Op Recovery Infusion
           </p>
@@ -437,7 +437,7 @@ export default function IVInfusions() {
           <div className="flex flex-col w-full p-2">
             <div className="flex justify-between  border-b p-2 ">
               <div className="flex flex-col  ">
-                <p className="text-2xl font-bold">Biotin</p>
+                <h3 className="text-2xl font-bold">Biotin</h3>
                 <p className="text-base font-normal italic">Help with this...</p>
               </div>
 
@@ -449,7 +449,7 @@ export default function IVInfusions() {
             </div>
             <div className=" flex justify-between   border-b p-2 ">
               <div className="flex flex-col  ">
-                <p className="text-2xl font-bold">Pepcid</p>
+                <h3 className="text-2xl font-bold">Pepcid</h3>
                 <p className="italic">Help with this...</p>
               </div>
 
@@ -461,7 +461,7 @@ export default function IVInfusions() {
             </div>
             <div className=" flex justify-between   border-b p-2 ">
               <div className="flex flex-col  ">
-                <p className="text-2xl font-bold">Toradol</p>
+                <h3 className="text-2xl font-bold">Toradol</h3>
                 <p className="italic">Help with this...</p>
               </div>
 
@@ -473,7 +473,7 @@ export default function IVInfusions() {
             </div>
             <div className=" flex justify-between   border-b p-2 ">
               <div className="flex flex-col  ">
-                <p className="text-2xl font-bold">Zofran</p>
+                <h3 className="text-2xl font-bold">Zofran</h3>
                 <p className="italic">Help with this...</p>
               </div>
 
@@ -485,7 +485,7 @@ export default function IVInfusions() {
             </div>
             <div className=" flex justify-between  p-2 ">
               <div className="flex flex-col w-[25vw]">
-                <p className="text-2xl font-bold">Extra Vitamin C</p>
+                <h3 className="text-2xl font-bold">Extra Vitamin C</h3>
                 <p className="italic">Help with this...</p>
               </div>
 
@@ -500,7 +500,7 @@ export default function IVInfusions() {
           <div className="flex flex-col w-full md:w-[90%]">
             <div className=" flex justify-between  border-b p-2 ">
               <div className="flex flex-col w-[25vw] ">
-                <p className="text-2xl font-bold">Glutathione</p>
+                <h3 className="text-2xl font-bold">Glutathione</h3>
                 <p className="italic">Help with this...</p>
               </div>
 
@@ -512,7 +512,7 @@ export default function IVInfusions() {
             </div>
             <div className=" flex justify-between   border-b p-2 ">
               <div className="flex flex-col w-[25vw] ">
-                <p className="text-2xl font-bold">Extra B12</p>
+                <h3 className="text-2xl font-bold">Extra B12</h3>
                 <p className="italic">Help with this...</p>
               </div>
 
@@ -524,7 +524,7 @@ export default function IVInfusions() {
             </div>
             <div className=" flex justify-between   border-b p-2 ">
               <div className="flex flex-col w-[25vw] ">
-                <p className="text-2xl font-bold">Extra Fluid</p>
+                <h3 className="text-2xl font-bold">Extra Fluid</h3>
                 <p className="italic">Help with this...</p>
               </div>
 
@@ -536,7 +536,7 @@ export default function IVInfusions() {
             </div>
             <div className=" flex justify-between   border-b p-2 ">
               <div className="flex flex-col w-[25vw] ">
-                <p className="text-2xl font-bold">Semaglutide</p>
+                <h3 className="text-2xl font-bold">Semaglutide</h3>
                 <p className="italic">Help with this...</p>
               </div>
 
@@ -548,7 +548,7 @@ export default function IVInfusions() {
             </div>
             <div className=" flex justify-between   p-2 ">
               <div className="flex flex-col w-[25vw] ">
-                <p className="text-2xl font-bold">NAD+ </p>
+                <h3 className="text-2xl font-bold">NAD+ </h3>
                 <p className="italic">Help with this...</p>
               </div>
 

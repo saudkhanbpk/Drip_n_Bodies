@@ -9,7 +9,7 @@ const ResourceHub = () => {
     return (
         <>
 
-            <div className="w-full  ">
+            <div className="w-full" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
                 <div className='md:flex flex-col md:flex-row justify-between items-center md:items-start relative'>
 
                     <div className=" px-12  pt-6 md:pt-16 ml-16">
@@ -26,14 +26,15 @@ const ResourceHub = () => {
                     </div>
 
                     <div className="w-full md:w-[34%] mt-4 md:mt-0 md:ml-4 lg:ml-8 relative">
-                        <Image src={heroimg} alt="Logo" className="w-full md:w-[506px] lg:w-[606px] h-[480px] lg:h-[640px] mix-blend-multiply object-cover " />
+                        <Image src={heroimg} alt="Logo" className="w-full md:w-[506px] lg:w-[606px] h-[480px] lg:h-[640px] mix-blend-multiply object-cover  " />
+                    </div>
+                    <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] absolute md:-bottom-24 ">
+                        <div className="flex justify-center  items-center w-auto h-[27px]">
+                            <h1 className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Cosmetic Surgery Recovery Resource Hub</h1>
+                        </div>
                     </div>
                 </div>
-                <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] absolute -bottom-24 ">
-                    <div className="flex justify-center  items-center w-auto h-[27px]">
-                        <p className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Cosmetic Surgery Recovery Resource Hub</p>
-                    </div>
-                </div>
+
             </div>
 
             <div className='w-full mx-auto text-white text-center font-montserrat text-lg font-italic text-[32px] bg-black mb-10 p-10 '>
@@ -41,7 +42,7 @@ const ResourceHub = () => {
                 <p> <span className='inline-block h-[20px] text-[#F4B5D9] text-center font-montserrat text-7xl italic font-normal leading-tight'>“</span>  Thank you for selecting us to be part of your post- <span className='inline-block h-[20px] text-[#F4B5D9] text-center font-montserrat text-7xl italic font-normal leading-tight'>”</span> <br /> operative recovery experience! We look forward to  <br /> getting you snatched and recovered! Feel free to reach <br /> out and schedule a complimentary consultation call if <br /> you have any questions about our services or just shoot <br /> us a text at 305-908-9282!</p>
             </div>
             <div className='mb-10'>
-                <p className=' text-black text-center font-montserrat text-[24px] font-bold leading-normal'>Frequently Asked Questions</p>
+                <h2 className=' text-black text-center font-montserrat text-[24px] font-bold leading-normal'>Frequently Asked Questions</h2>
             </div>
             <div className=' w-[80%] mx-auto md:flex justify-center p-2 md:p-10 gap-6 mb-10'>
 
@@ -86,9 +87,9 @@ const ResourceHub = () => {
                         <p className='text-white'> A $50 deposit is required to book IV hydration services. The full and remaining balance will be due at the time of service.</p>
                     </div>
                     <div className='border-r-2 border-[#3BAFBF] h-[250px] hidden md:flex my-auto'></div>
-                    <div className='md:w-1/2 mb-10 text-center p-2 md:p-10 '>
-                        <p className="text-white text-center font-montserrat text-3xl font-bold leading-normal">Uploads</p>
-                        <p className="text-white text-center font-montserrat text-base font-normal leading-5.75">PHOTO ID submission is required to book all services. Identification provided must match card used to book or deposit fee will be forfeited and appointment canceled</p>
+                    <div className='md:w-1/2 mb-[174px] text-center p-2 md:p-10 '>
+                        <p className="text-white text-center font-montserrat text-3xl font-bold leading-normal ">Uploads</p>
+                        <p className="text-white text-center font-montserrat pt-4 text-base font-normal leading-5.75">PHOTO ID submission is required to book all services. Identification provided must match card used to book or deposit fee will be forfeited and appointment canceled</p>
                         <Image src={liscence} alt="liscence" className='pt-4' />
 
                     </div>
@@ -149,10 +150,10 @@ const ResourceHub = () => {
                     CNA services.</p>
             </div>
             <div className='border-b-2 border-[#3BAFBF] w-[80%] mx-auto'><div className='border hidden md:block border-black/20 w-[40%]'></div></div>
-            <div className='md:w-[80%] my-2 md:my-0 mx-auto mb-10'>
-                <h2 className="text-black text-center font-montserrat font-bold text-3xl ">Pre-Op Call</h2>
+            <div className='md:w-[80%] my-2 md:my-0 mx-auto mb-10 '>
+                <h2 className="text-black text-center font-montserrat font-bold text-3xl pt-5 ">Pre-Op Call</h2>
             </div>
-            <div className='w-[80%] mx-auto text-center mb-10'>
+            <div className='w-[80%] mx-auto text-center mb-10 pt-5 pb-2'>
                 <p className='pb-1'>Once you've booked your post-operative recovery package, utilize the link in your confirmation email to schedule a pre-operative call. Make sure to schedule this call within 30 days of your surgery date. The call will involve a review of your medical background and more!</p>
             </div>
 

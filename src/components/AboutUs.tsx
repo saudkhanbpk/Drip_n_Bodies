@@ -16,9 +16,9 @@ const AboutUs = () => {
           <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22 ">
             <div className="  md:flex flex-col gap-2 md:leading-[100px] ">
               <p className="md:text-8xl text-3xl font-bold font-montserrat">Who Are </p>
-              <p className="md:text-8xl  text-3xl font-bold text-[#F4B5D9]">
+              <h1 className="md:text-8xl  text-3xl font-bold text-[#F4B5D9]">
                 The Real Nurses
-              </p>
+              </h1>
               <p className="md:text-8xl text-3xl font-bold text-[#F4B5D9] font-montserrat">Of Miami®</p>
             </div>
             <div className="my-3 md:my-10 w-auto h-[43px]">
@@ -35,7 +35,7 @@ const AboutUs = () => {
           <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center  items-center w-auto h-[27px]">
               {/* <Image src={recoverynurses} alt="real" className="  object-cover" /> */}
-              <p className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{textShadow: "1px 1px 1px white,2px 2px 2px white"}}  > Miami Cosmetic Recovery Nurses</p>
+              <p className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }}  > Miami Cosmetic Recovery Nurses</p>
             </div>
 
           </div>
@@ -44,9 +44,9 @@ const AboutUs = () => {
 
           <div className=" w-full">
             <div className=" items-center w-[88%]  md:flex flex-col justify-center mx-auto">
-              <p className="text-center py-2 font-montserrat text-black text-[20px] md:text-3xl font-bold leading-normal text">
+              <h2 className="text-center py-2 font-montserrat text-black text-[20px] md:text-3xl font-bold leading-normal text">
                 About Drip N Bodied
-              </p>
+              </h2>
               <p className="w-full my-8 flex justify-start  text-center font-montserrat text-black text-base font-normal leading-normal ">
                 Drip N Bodied is a concierge IV hydration and post-operative care
                 company that services clients in South Florida’s tri-county area in
@@ -97,9 +97,9 @@ const AboutUs = () => {
 
         <div className=" w-full my-3 md:my-8">
           <div className=" items-center md:w-full  md:flex flex-col  justify-center mx-auto">
-            <p className="text-center py-2 font-montserrat text-black text-[22px] md:text-3xl font-bold leading-normal text">
+            <h2 className="text-center py-2 font-montserrat text-black text-[22px] md:text-3xl font-bold leading-normal text">
               Meet Your Registered Nurses
-            </p>
+            </h2>
             <p className="w-full px-2  md:flex justify-center text-center font-montserrat text-black text-base font-normal leading-normal ">
               Our dedicated team of Registered Nurses help to ensure you have the
               best post operative experience possible.
@@ -119,7 +119,7 @@ const AboutUs = () => {
                 <div className=" p-4">
 
                   {/* <Image src={ashley} alt="img here" className="my-6 " /> */}
-                  <p className=" font-niconne text-5xl font-normal leading-16 tracking-normal text-left md:ps-3 text-[#3BAFBF]">Ashley Peters</p>
+                  <h2 className=" font-niconne text-5xl font-normal leading-16 tracking-normal text-left md:ps-3 text-[#3BAFBF]">Ashley Peters</h2>
                   <div className="md:w-full ">
                     <p className="py-4 text-black  md:ps-3 font-montserrat text-[24px] font-bold">
                       Registered Nurse, BS
@@ -151,7 +151,7 @@ const AboutUs = () => {
                 <div className=" p-4">
 
                   {/* <Image src={anika} alt="img here" className="my-6 " /> */}
-                  <p className="font-niconne text-5xl font-normal leading-16 tracking-normal text-left md:ps-3 text-[#3BAFBF]">Anika Davis</p>
+                  <h2 className="font-niconne text-5xl font-normal leading-16 tracking-normal text-left md:ps-3 text-[#3BAFBF]">Anika Davis</h2>
                   <div className="md:w-full ">
                     <p className="py-4 text-black  md:ps-3 font-montserrat text-[24px] font-bold">
                       Registered Nurse, BS

@@ -149,7 +149,7 @@ const Massage = () => {
                 height={100}
                 className="w-[270px] h-[142px] relative bottom-10"
               />
-              <p className="text-xl font-bold">{data.title}</p>
+              <h3 className="text-xl font-bold">{data.title}</h3>
               <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
                 {data.price}
               </p>
@@ -171,9 +171,9 @@ const Massage = () => {
 
         <div className="w-full">
           <div className="my-6 w-[90%]  mx-auto p-4 ">
-            <p className="py-2 leading-normal  text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+            <h2 className="py-2 leading-normal  text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
               Post Cosmetic Surgery Treatments
-            </p>
+            </h2>
             <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
               Each cocktail has essential fluids, electrolytes, vitamins and
               antioxidants, to quickly remedy a variety of conditions.

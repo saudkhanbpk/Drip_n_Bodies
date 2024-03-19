@@ -48,7 +48,7 @@ const FaqPage = () => {
 
     return (
         <>
-            <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start md:ml-22" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
+            <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start md:ml-22" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
                 <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
                     <div className="flex flex-col  lg:leading-[100px]">
                         <p className="text-4xl lg:text-8xl font-bold font-montserrat ">Need Help</p>
@@ -66,8 +66,8 @@ const FaqPage = () => {
             </div>
             <div className=" relative md:-top-[110px] py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
                 <div className="flex justify-center  items-center w-auto h-[27px]">
-                    <p className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " 
-                    style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Post Cosmetic Surgery Questions</p>
+                    <h1 className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] "
+                        style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Post Cosmetic Surgery Questions</h1>
                 </div>
 
             </div>
@@ -77,7 +77,7 @@ const FaqPage = () => {
             <div className="w-full ">
                 <div className="w-full md:w-[1000px] mx-auto">
                     <div className="md:mb-8 flex justify-center">
-                        <p className="font-bold text-4xl text-[24px] leading-8 md:leading-29 tracking-normal text-center">Frequently Asked Questions</p>
+                        <h2 className="font-bold text-4xl text-[24px] leading-8 md:leading-29 tracking-normal text-center">Frequently Asked Questions</h2>
                     </div>
                     <div className="border-t border-t-gray-300"></div>
                     <div className="bg-white px-0   rounded-md ">
@@ -114,23 +114,23 @@ const FaqPage = () => {
                     </div>
 
                 </div>
-<div className=" w-full flex justify-center bg-[#F4B5D9] bg-opacity-20">
-    <div className="w-[1000px] ">
-                    <div className='mt-12 text-[24px] font-bold flex justify-center text-md'>
-                        <p>Email Us Your Question</p>
-                    </div>
-                    <div className='mt-6 p-6'>
-                        <p className='pb-4 font-bold '>What is your question?</p>
-                        <input type="text" name="" id="" placeholder="Enter your the details of your question" className='border border-black  outline-none w-full p-3 bg-white' />
-                    </div>
-                    <div className=' p-6'>
-                        <p className='pb-4 font-bold'>Tell us more about your question.</p>
-                        <textarea name="" id="" placeholder="Enter your the details of your question" className='border border-black w-full h-[500px] outline-none p-3 '></textarea>
+                <div className=" w-full flex justify-center bg-[#F4B5D9] bg-opacity-20">
+                    <div className="w-[1000px] ">
+                        <div className='mt-12 text-[24px] font-bold flex justify-center text-md'>
+                            <h2>Email Us Your Question</h2>
+                        </div>
+                        <div className='mt-6 p-6'>
+                            <p className='pb-4 font-bold '>What is your question?</p>
+                            <input type="text" name="" id="" placeholder="Enter your the details of your question" className='border border-black  outline-none w-full p-3 bg-white' />
+                        </div>
+                        <div className=' p-6'>
+                            <p className='pb-4 font-bold'>Tell us more about your question.</p>
+                            <textarea name="" id="" placeholder="Enter your the details of your question" className='border border-black w-full h-[500px] outline-none p-3 '></textarea>
+                        </div>
+
                     </div>
 
-    </div>
-
-</div>
+                </div>
             </div>
         </>
     );
