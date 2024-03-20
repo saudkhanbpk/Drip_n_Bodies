@@ -17,7 +17,7 @@ const OurServices = () => {
 
       
         <div className="w-full  flex justify-center">
-          <video autoPlay loop controls className="w-full ">
+          <video autoPlay muted loop  className="w-full ">
             <source src="/video.mp4" type="video/mp4" />
           </video>
         </div>
