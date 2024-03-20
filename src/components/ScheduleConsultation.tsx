@@ -33,7 +33,7 @@ const ScheduleConsultation = () => {
             <h2 className=" mt-2 mb-4 text-white text-center font-montserrat text-[24px] font-semibold leading-[27px]">
               Talk To Your Nurse Babe
             </h2>
-            <div className="border-[4px] border-[#3BAFBF]  w-[200px] md:w-[200px] mx-auto"></div>
+            <div className="border-[3px] border-[#3BAFBF]  w-[200px] md:w-[200px] mx-auto"></div>
             <p className="px-2 pt-2   text-white text-center font-montserrat text-base font-bold leading-[27px]">
               Schedule A Free Consultation!
             </p>

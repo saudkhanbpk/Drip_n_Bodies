@@ -8,7 +8,6 @@ const ResourceHub = () => {
 
     return (
         <>
-
             <div className="w-full" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
                 <div className='md:flex flex-col md:flex-row justify-between items-center md:items-start relative'>
 
@@ -34,7 +33,6 @@ const ResourceHub = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div className='w-full mx-auto text-white text-center font-montserrat text-lg font-italic text-[32px] bg-black mb-10 p-10 '>
@@ -156,9 +154,6 @@ const ResourceHub = () => {
             <div className='w-[80%] mx-auto text-center mb-10 pt-5 pb-2'>
                 <p className='pb-1'>Once you've booked your post-operative recovery package, utilize the link in your confirmation email to schedule a pre-operative call. Make sure to schedule this call within 30 days of your surgery date. The call will involve a review of your medical background and more!</p>
             </div>
-
-
-
 
         </>
     )

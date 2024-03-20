@@ -44,7 +44,7 @@ const AboutUs = () => {
               </Link>
             </div>
           </div>
-          <div className="md:w-[35%] w-full md:flex justify-end items-center">
+          <div className="md:w-[35%] w-full md:flex justify-end">
             <Image
               src={about1}
               alt="Logo"

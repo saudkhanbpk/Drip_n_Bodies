@@ -96,7 +96,7 @@ const Massage = () => {
               "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
           }}
         >
-          <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
+          <div className="w-full flex flex-col md:flex-row justify-between mx-auto h-100">
             {/* <div className="w-[65%] lg:w-auto md:px-2 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
             <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
               <div className="flex flex-col lg:leading-[100px]">
@@ -144,7 +144,7 @@ const Massage = () => {
             </div>
           </div> */}
 
-          <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative -top-20">
+          <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative -top-32">
             <div className="flex justify-center  items-center w-auto h-[27px]">
               <h1
                 className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] "
@@ -157,7 +157,7 @@ const Massage = () => {
           </div>
         </div>
 
-        <div className="bg-white py-20">
+        <div className="bg-white py-20 mt-5">
           <div className="w-full " id="physical-exame-and-lymphatic-massages">
             <div className="my-6 w-[90%]  mx-auto p-4">
               <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">

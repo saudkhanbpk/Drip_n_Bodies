@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
 import Calendar from "react-calendar";
 import CalendarHeaderPic from "../images/Calendar/CalendarHeaderPic.png";
@@ -9,14 +10,26 @@ import DripsCalendar from "../images/Calendar/Drip N Bodied Calendar.png";
 import img1 from "../images/tele.png";
 import img2 from "../images/msg.png";
 import { IoIosMail } from "react-icons/io";
-import "react-calendar/dist/Calendar.css";
 import Link from "next/link";
+import './calender.css'
 
 const CalendarPage = () => {
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  const minDate = new Date(); // Minimum selectable date is today
+
+  const onChange = (date:any) => {
+    // Check if the selected date is not before the minimum date
+    if (date >= minDate) {
+      setSelectedDate(date);
+    } else {
+      // Do something (e.g., show an error message) to indicate the invalid selection
+      console.log("Please select a date from today or later.");
+    }
+  };
   return (
     <>
-      <div className=" h-full md:h-[650px]">
-        <div className="w-full flex flex-col md:flex-row justify-between mx-auto ">
+      <div className=" h-auto">
+        <div className="w-full flex flex-col md:flex-row justify-between mx-auto md:h-[600px] ">
           <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22">
             <div className="flex flex-col lg:leading-[100px]">
               <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
@@ -30,7 +43,7 @@ const CalendarPage = () => {
                 Your Big Day{" "}
               </p>
             </div>
-            <div className="my-6 md:my-5 lg:my-10 w-full lg:w-auto h-[43px] flex flex-col lg:flex-row">
+            <div className="my-6 md:my-5 lg:my-20 w-full lg:w-auto h-[43px] flex flex-col lg:flex-row">
               <Link
                 href="/surgery"
                 className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat"
@@ -39,7 +52,7 @@ const CalendarPage = () => {
               </Link>
               <Link
                 href="#calender-section"
-                className="text-[#3BAFBF] font-montserrat text-xl font-bold leading-[27px] uppercase"
+                className="text-[#3BAFBF] font-montserrat text-xl font-bold leading-[27px] uppercase mt-1"
               >
                 Book a recovery Package
               </Link>
@@ -53,7 +66,7 @@ const CalendarPage = () => {
             />
           </div>
         </div>
-        <div className="w-full relative -top-12 md:-top-32 ">
+        <div className="w-full relative -top-12 md:-top-20 ">
           <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
             <div className="flex justify-center items-center w-auto h-[27px]">
               <h1
@@ -129,18 +142,14 @@ const CalendarPage = () => {
               </button>
             </div>
           </div>
-          <div
-            className=" Calendar flex flex-col justify-between  p-6 h-64 md:h-[600px] md:w-[45%] lg:w-[35%] "
-            style={{ backgroundColor: "rgba(244, 181, 217, 0.17)" }}
-          >
-            <div className="h-34 flex justify-end items-end">
-              <p className="text-black text-right font-montserrat text-4xl font-normal ">
-                2024
-              </p>
-            </div>
-            <div className="my-6">
-              <Calendar className="react-calendar  text-black font-montserrat text-base font-normal leading-normal" />
-            </div>
+          <div >
+            <Calendar
+            onChange={onChange}
+            value={selectedDate}
+            minDate={minDate}
+            />
+
+
           </div>
         </div>
       </div>

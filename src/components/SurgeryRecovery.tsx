@@ -50,7 +50,7 @@ const SurgeryRecovery = () => {
   return (
     <>
       <div className="">
-        <div className="w-full flex flex-col md:flex-row justify-between mx-auto bg-pink-50">
+        <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
           {/* <div className="w-auto lg:w-auto md:px-10 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
           <div className="w-full md:w-[65%] px-10 pt-6 md:pt-16 ml-22">
             <div className="flex flex-col gap-2 md:leading-[100px]">
@@ -435,7 +435,7 @@ const SurgeryRecovery = () => {
             background:
               "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
           }}>
-        <div id="section2" className=" w-[70%] mx-auto p-4 space-y-3 ">
+        <div id="section2" className=" w-[70%] mx-auto p-4 space-y-6 ">
           <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
             Surgery Sisters
           </p>
