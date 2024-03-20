@@ -20,19 +20,21 @@
   border-radius: 4px;
 }
 
-.border:hover .text-cyan-600 {
+/* .border:hover .text-cyan-600 {
   color: #f4b5d9;
-  /* Change this to the pink color you desire */
+ 
 }
 
 .border:hover .buton {
   background-color: pink;
 
-}
-.border:hover .link {
+} */
+/* .border:hover .link {
   color: white;
-  /* Change this to the pink color you desire */
-}
+
+} */
+
+
 
 
 .image-with-shadow {

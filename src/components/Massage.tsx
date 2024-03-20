@@ -157,37 +157,6 @@ const Massage = () => {
           </div>
         </div>
 
-<<<<<<< HEAD
-
-        <div className="w-full">
-          <div className="my-6 w-[90%]  mx-auto p-4">
-            <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
-              Physical Exam And Lymphatic Massages
-            </p>
-            <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
-              Each cocktail has essential fluids, electrolytes, vitamins and
-              antioxidants, to quickly remedy a variety of conditions.
-            </p>
-          </div>
-        </div>
-
-        <div className=" flex justify-center gap-4 flex-col md:flex-row ">
-          {massagePackages.map((data: any, index: any) => (
-            <div
-              key={index}
-              className="flex flex-col w-[300px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4"
-            >
-              <Image
-                src={data.imageSrc}
-                alt="fitness"
-                width={100}
-                height={100}
-                className="w-[270px] h-[142px] relative bottom-10"
-              />
-              <h3 className="text-xl font-bold">{data.title}</h3>
-              <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
-                {data.price}
-=======
         <div className="bg-white py-20">
           <div className="w-full " id="physical-exame-and-lymphatic-massages">
             <div className="my-6 w-[90%]  mx-auto p-4">
@@ -197,16 +166,10 @@ const Massage = () => {
               <p className="text-center font-montserrat text-black text-base font-normal leading-normal w-[70%] mx-auto mb-5">
                 Each cocktail has essential fluids, electrolytes, vitamins and
                 antioxidants, to quickly remedy a variety of conditions.
->>>>>>> 65a5651b9aae966da7d043efa18e43f45f3cfd80
               </p>
             </div>
           </div>
 
-<<<<<<< HEAD
-        <div className="w-full">
-          <div className="my-6 w-[90%]  mx-auto p-4 ">
-            <h2 className="py-2 leading-normal  text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
-=======
           <div className=" flex justify-center gap-4 flex-col md:flex-row bg-white">
             {massagePackages.map((data: any, index: any) => (
               <div
@@ -260,9 +223,8 @@ const Massage = () => {
           <div className="my-6 w-[90%] mx-auto p-4"
           >
             <p className="py-2 leading-normal  text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
->>>>>>> 65a5651b9aae966da7d043efa18e43f45f3cfd80
               Post Cosmetic Surgery Treatments
-            </h2>
+            </p>
             <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
               Each cocktail has essential fluids, electrolytes, vitamins and
               antioxidants, to quickly remedy a variety of conditions.

@@ -365,7 +365,11 @@ const CustomerRecovery: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-[#F4B5D92B] text-center py-20">
+        <div className="text-center py-20"
+            style={{
+              background:
+                "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+            }}>
           <h2 className="text-black font-montserrat text-xl font-bold mb-2">
             Benefits of Having a Recovery Nurse
           </h2>

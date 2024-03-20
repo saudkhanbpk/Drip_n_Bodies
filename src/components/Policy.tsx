@@ -338,7 +338,11 @@ const Policy = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full flex justify-center bg-[#F4B5D9] bg-opacity-20">
+        <div className=" w-full flex justify-center"
+            style={{
+              background:
+                "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+            }}>
           <div className="w-[70%] mx-auto">
             <div className="mt-12 text-[24px] font-bold flex justify-center text-md">
               <p>Email Us Your Question</p>

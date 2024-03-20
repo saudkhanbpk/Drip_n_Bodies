@@ -50,7 +50,7 @@ const SurgeryRecovery = () => {
   return (
     <>
       <div className="">
-        <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
+        <div className="w-full flex flex-col md:flex-row justify-between mx-auto bg-pink-50">
           {/* <div className="w-auto lg:w-auto md:px-10 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
           <div className="w-full md:w-[65%] px-10 pt-6 md:pt-16 ml-22">
             <div className="flex flex-col gap-2 md:leading-[100px]">
@@ -151,9 +151,7 @@ const SurgeryRecovery = () => {
                   Schedule Pre-Op Consult Call
                 </h3>
                 <p className="font-montserrat text-black text-base font-normal leading-tight">
-                  Schedule a pre-op consult call using the link in your
-                  confirmation email. Schedule this call once you are completed
-                  your pre-op labs!
+                Schedule a pre-op consult call using the link in your confirmation email. Schedule this call once you've completed your pre-op labs!
                 </p>
               </div>
               <div className="text-center">
@@ -209,7 +207,7 @@ const SurgeryRecovery = () => {
       <div className=" w-full px-auto">
         <div className=" items-center w-full flex xl:flex-row flex-col justify-center mx-auto gap-8">
           <div className="flex md:flex-row flex-col gap-6">
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
+            <div className="border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   One Night Glam
@@ -226,7 +224,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
-                <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2   hover:bg-blue-300   bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2 bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -252,7 +250,7 @@ const SurgeryRecovery = () => {
                 </a>
               </div>
             </div>
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
+            <div className="border border-[#3BAFBF] bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Snatched!
@@ -260,7 +258,7 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
                   Perfrect for people
                 </p>
-                <p className=" text-cyan-600 my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
+                <p className=" text-[#f4b5d9] my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $1,400
                 </p>
                 <p className="mx-auto mt-10  h-[34px] w-[135px] text-black text-center font-montserrat text-xs font-normal leading-[17px]">
@@ -269,7 +267,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
-                <button className="buton bg-[#3BAFBF] buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  text-center font-montserrat  ">
+                <button className="buton bg-[#f4b5d9] buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -290,7 +288,7 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat text-base font-normal leading-[17px]">
                   Complimentary transportation after surgery
                 </p>
-                <a className="link text-[#3BAFBF] text-center font-montserrat text-sm font-normal leading-[17px] underline">
+                <a className="link text-white text-center font-montserrat text-sm font-normal leading-[17px] underline">
                   View all services included
                 </a>
               </div>
@@ -298,7 +296,12 @@ const SurgeryRecovery = () => {
           </div>
 
           <div className="flex md:flex-row flex-col gap-6">
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
+            <div className=".background-PinkLight border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4"
+             style={{
+              background:
+                "linear-gradient(180deg, rgba(244, 181, 217, 0.20) 0%, rgba(244, 181, 217, 0.00) 47.4%), #FFF",
+            }}
+              >
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   The Bougie Babe
@@ -342,7 +345,7 @@ const SurgeryRecovery = () => {
               </div>
             </div>
 
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px] flex flex-col items-center justify-start p-4">
+            <div className="border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px] flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Very Bougie!
@@ -427,8 +430,12 @@ const SurgeryRecovery = () => {
         </div>
       </div>
 
-      <div className="w-full bg-gradient-to-b bg-[#F4B5D92B] from-#FFFFFF to-#FFFFFF bg-opacity-0 pb-4">
-        <div id="section2" className=" w-[70%]  mx-auto p-4 ">
+      <div className="w-full space-y-9"
+          style={{
+            background:
+              "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+          }}>
+        <div id="section2" className=" w-[70%] mx-auto p-4 space-y-3 ">
           <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
             Surgery Sisters
           </p>
@@ -438,11 +445,12 @@ const SurgeryRecovery = () => {
             together stay together!
           </p>
         </div>
-      </div>
+     
 
-      <div className=" w-full px-auto  bg-gradient-to-b bg-[#F4B5D92B] from-#FFFFFF to-#FFFFFF bg-opacity-0">
+      <div className=" w-full px-auto"
+      >
         <div className=" items-center w-full flex md:flex-row flex-col justify-center mx-auto gap-8">
-          <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] bg-white w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
+          <div className="border border-[#3BAFBF] hover:mt-[-12px] bg-white w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
             <div className="flex flex-col gap-30">
               <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                 Snatched!
@@ -474,7 +482,7 @@ const SurgeryRecovery = () => {
               </p>
             </div>
           </div>
-          <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] bg-white hover:mt-[-12px]  w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
+          <div className="border border-[#3BAFBF]  bg-white hover:mt-[-12px]  w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
             <div className="flex flex-col gap-30">
               <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                 The Bougie Babe
@@ -537,7 +545,7 @@ const SurgeryRecovery = () => {
         </div>
       </div>
       </div>
-
+      </div>
 
       <div className=" w-full">
         <div

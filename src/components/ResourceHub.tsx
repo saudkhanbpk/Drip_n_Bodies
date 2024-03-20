@@ -28,7 +28,7 @@ const ResourceHub = () => {
                     <div className="w-full md:w-[34%] mt-4 md:mt-0 md:ml-4 lg:ml-8 relative">
                         <Image src={heroimg} alt="Logo" className="w-full md:w-[506px] lg:w-[606px] h-[480px] lg:h-[640px] mix-blend-multiply object-cover  " />
                     </div>
-                    <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] absolute md:-bottom-24 ">
+                    <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] absolute md:-bottom-0 ">
                         <div className="flex justify-center  items-center w-auto h-[27px]">
                             <h1 className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Cosmetic Surgery Recovery Resource Hub</h1>
                         </div>
@@ -164,4 +164,4 @@ const ResourceHub = () => {
     )
 }
 
-export default ResourceHub
+export default ResourceHub

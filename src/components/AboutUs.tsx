@@ -130,7 +130,11 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-pink-50">
+        <div 
+         style={{
+          background:
+            "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+        }}>
           <div className="w-full pt-20 " id="meet-your-regiseterd-nurses">
             <div className=" items-center md:w-full  md:flex flex-col  justify-center mx-auto">
               <h2 className="text-center py-2 font-montserrat text-black text-[22px] md:text-3xl font-bold leading-normal text">

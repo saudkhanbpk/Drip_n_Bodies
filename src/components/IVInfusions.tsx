@@ -312,7 +312,11 @@ export default function IVInfusions() {
       </div>
 
       <div className="pt-10">
-      <div id="section2" className=" w-full bg-gradient-to-b bg-[#F4B5D92B] from-#FFFFFF to-#FFFFFF bg-opacity-0 flex flex-col items-center justify-center p-16 space-y-20 ">
+      <div id="section2" className=" w-full flex flex-col items-center justify-center p-16 space-y-20 "
+          style={{
+            background:
+              "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+          }}>
           <div className="flex flex-col w-[60vw] items-center justify-center space-y-2 ">
             <h2 className="text-2xl font-bold">
               Cosmetic Surgery Recovery Infusions
