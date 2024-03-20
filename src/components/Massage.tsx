@@ -147,7 +147,7 @@ const Massage = () => {
           <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative -top-32">
             <div className="flex justify-center  items-center w-auto h-[27px]">
               <h1
-                className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] "
+                className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] "
                 style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }}
               >
                 {" "}
@@ -194,9 +194,9 @@ const Massage = () => {
                   {showFullDescription[index]
                     ? data.description
                     : `${data.description
-                        .split(" ")
-                        .slice(0, 10)
-                        .join(" ")}...`}
+                      .split(" ")
+                      .slice(0, 10)
+                      .join(" ")}...`}
                 </p>
                 <button
                   className="underline text-[#3BAFBF]"
@@ -216,10 +216,10 @@ const Massage = () => {
           </div>
         </div>
         <div className="w-full" id="post-cosmetic-surgery-treatment"
-         style={{
-          background:
-            "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
-        }}>
+          style={{
+            background:
+              "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+          }}>
           <div className="my-6 w-[90%] mx-auto p-4"
           >
             <p className="py-2 leading-normal  text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
@@ -230,48 +230,48 @@ const Massage = () => {
               antioxidants, to quickly remedy a variety of conditions.
             </p>
           </div>
-       
-        <div className="w-full flex justify-center flex-col md:flex-row gap-8 px-8 pt-5">
-          {services.map((service, index) => (
-            <>
-              <div className="px-4 flex flex-col w-[280px] h-auto border border-[#3BAFBF] items-center gap-3 p-4 bg-white">
-                <Image
-                  src={service.imageSrc}
-                  alt={service.serviceName}
-                  className="w-[270px] h-[142px] relative bottom-10"
-                />
-                <h3 className="text-2xl font-bold">{service.serviceName}</h3>
-                <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
-                  ${service.price}
-                </p>
-                <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-                  SCHEDULE
-                </button>
-                <p className="text-center">
-                  {showFullDescription[index]
-                    ? service.description
-                    : `${service.description
+
+          <div className="w-full flex justify-center flex-col md:flex-row gap-8 px-8 pt-5">
+            {services.map((service, index) => (
+              <>
+                <div className="px-4 flex flex-col w-[280px] h-auto border border-[#3BAFBF] items-center gap-3 p-4 bg-white">
+                  <Image
+                    src={service.imageSrc}
+                    alt={service.serviceName}
+                    className="w-[270px] h-[142px] relative bottom-10"
+                  />
+                  <h3 className="text-2xl font-bold">{service.serviceName}</h3>
+                  <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
+                    ${service.price}
+                  </p>
+                  <button className="bg-[#3BAFBF] py-1 px-2 text-white">
+                    SCHEDULE
+                  </button>
+                  <p className="text-center">
+                    {showFullDescription[index]
+                      ? service.description
+                      : `${service.description
                         .split(" ")
                         .slice(0, 10)
                         .join(" ")}...`}
-                </p>
-                <button
-                  className="underline text-[#3BAFBF]"
-                  onClick={() => toggleDescription(index)}
-                >
-                  {showFullDescription[index]
-                    ? "Show less"
-                    : "Click here to read more"}
-                </button>
-              </div>
-            </>
-          ))}
-        </div>
-        <div className="w-full flex justify-center my-20 pt-5">
-          <Link href="/massage#physical-exame-and-lymphatic-massages" className="text-[#3BAFBF] text-center font-montserrat text-xl font-bold underline">
-            View Lymphatic Massage
-          </Link>
-        </div>
+                  </p>
+                  <button
+                    className="underline text-[#3BAFBF]"
+                    onClick={() => toggleDescription(index)}
+                  >
+                    {showFullDescription[index]
+                      ? "Show less"
+                      : "Click here to read more"}
+                  </button>
+                </div>
+              </>
+            ))}
+          </div>
+          <div className="w-full flex justify-center my-20 pt-5">
+            <Link href="/massage#physical-exame-and-lymphatic-massages" className="text-[#3BAFBF] text-center font-montserrat text-xl font-bold underline">
+              View Lymphatic Massage
+            </Link>
+          </div>
         </div>
       </div>
     </>

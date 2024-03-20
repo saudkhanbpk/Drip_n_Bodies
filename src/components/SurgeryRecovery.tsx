@@ -111,7 +111,7 @@ const SurgeryRecovery = () => {
             </p>
             </div> 
           
-            <div className="flex justify-between pl-10 pr-28 mt-10 gap-20 ">
+            <div className="md:flex md:justify-between md:pl-10 pl-14 pr-28 mt-10  gap-20 ">
               <div className="text-center">
                 <h1 
                   style={{ 
@@ -123,9 +123,10 @@ const SurgeryRecovery = () => {
                     fontSize: '64px',
                     fontStyle: 'normal',
                     fontWeight: 400,
-                    lineHeight: '23px' 
+                    lineHeight: '23px', 
+                    
                   }}>1</h1>
-                <h3 className="font-montserrat text-black font-bold text-base leading-6 mt-5">
+                <h3 className="font-montserrat text-black font-bold text-base leading-6 mt-5 mb-3">
                   Choose a Package For Your Surgery Date
                 </h3>
                 <p className="font-montserrat text-black text-base font-normal leading-tight pl-12 text-start">
@@ -195,7 +196,8 @@ const SurgeryRecovery = () => {
             Cosmetic Surgery Recovery Packages
           </h2>
           <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
-            Drip N Bodied offers post operative care services to YOU in the
+            Drip N Bodied offers Post-Op Care & Assessment
+            operative care services to YOU in the
             comfort of your home or hotel. We gladly serve as an advocate for
             our clients as they navigate through the healthcare system in
             preparation for surgery. We take pride in assisting our clients with
@@ -398,10 +400,10 @@ const SurgeryRecovery = () => {
         <p className="text-center font-montserrat text-black text-base font-normal leading-6">
           We will help you manage your surgeon subscribed medication.
         </p>
-        <div className="grid grid-cols-4 gap-6 px-20 py-10">
+        <div className="md:grid grid-cols-4 gap-6 px-20 py-10">
           {perks.map((perk, index) => (
-            <div key={index} className="border border-[#3BAFBF] py-3 px-2">
-              <h4 className="text-center font-montserrat text-black text-[16px] font-bold leading-7 mt-2">
+            <div key={index} className="border border-[#3BAFBF]  px-2">
+              <h4 className="text-center font-montserrat text-black text-[16px]  font-bold leading-7 mt-2">
                 {perk.heading}
               </h4>
               <p className="text-center font-montserrat text-black text-base font-normal leading-7 px-2">

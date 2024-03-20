@@ -437,9 +437,9 @@ const BarStore: React.FC = () => {
 
       <div className="w-full">
         <div className="my-6 w-[90%]  mx-auto p-4">
-          <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
-            Customer Reviews
-          </h2>
+        <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+        Customer Reviews
+            </h2>
           <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
             Drip N Bodied is a concierge IV hydration and post-operative care
             company that services clients in South Florida’s tri-county area in
@@ -705,7 +705,7 @@ const BarStore: React.FC = () => {
             </Slider>
           </div>
           <div className="flex my-8 justify-center items-center">
-            <Link href='https://g.co/kgs/ARVoJJu' className="md:text-[#3BAFBF] text-center font-montserrat text-base font-bold md:font-normal leading-[27px]">
+            <Link href='https://g.co/kgs/ARVoJJu' className="text-[#3BAFBF] text-center font-montserrat text-base font-bold md:font-normal leading-[27px]">
               See all of our Google reviews
             </Link>
           </div>
