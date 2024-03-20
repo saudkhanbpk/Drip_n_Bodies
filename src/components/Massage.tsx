@@ -1,10 +1,22 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import massage11 from "../images/massage11.png";
 import Miami from "../images/Miami.png";
 import fintness from "../images/fintness.png";
 import Link from "next/link";
 const Massage = () => {
+  const [showFullDescription, setShowFullDescription] = useState<{
+    [key: number]: boolean;
+  }>({});
+
+  const toggleDescription = (index: number) => {
+    setShowFullDescription({
+      ...showFullDescription,
+      [index]: !showFullDescription[index],
+    });
+  };
+
   const services = [
     {
       imageSrc: fintness,
@@ -76,8 +88,14 @@ const Massage = () => {
 
   return (
     <>
-      <div className="w-full"  style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
-        <div className="">
+      <div className="w-full">
+        <div
+          className="h-[600px]"
+          style={{
+            background:
+              "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+          }}
+        >
           <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
             {/* <div className="w-[65%] lg:w-auto md:px-2 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
             <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
@@ -85,16 +103,27 @@ const Massage = () => {
                 <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
                   Let’s Get{" "}
                 </p>
-                <p className="text-4xl lg:text-8xl font-bold font-montserrat ">Those Curves </p>
-                <p className="text-4xl lg:text-8xl font-bold font-montserrat "> Snatched! </p>
+                <p className="text-4xl lg:text-8xl font-bold font-montserrat ">
+                  Those Curves{" "}
+                </p>
+                <p className="text-4xl lg:text-8xl font-bold font-montserrat ">
+                  {" "}
+                  Snatched!{" "}
+                </p>
               </div>
               <div className="my-6 md:my-5 lg:my-10 w-[95%] lg:w-[100%] xl:h-[43px] flex flex-col lg:flex-row">
-                <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold xl:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 xl:mr-4 bg-[#3BAFBF] text-center font-montserrat">
+                <Link
+                  href="/massage#physical-exame-and-lymphatic-massages"
+                  className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold xl:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 xl:mr-4 bg-[#3BAFBF] text-center font-montserrat"
+                >
                   View Massages
-                </button>
-                <p className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2  text-[#3BAFBF] text-center font-montserrat">
-                  View Post-op Recovery Addons
-                </p>
+                </Link>
+                <Link
+                  href="/massage#post-cosmetic-surgery-treatment"
+                  className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2  text-[#3BAFBF] text-center font-montserrat"
+                >
+                  View Post-op Treatments
+                </Link>
               </div>
             </div>
             <div className="lg:w-[35%] flex ">
@@ -117,12 +146,18 @@ const Massage = () => {
 
           <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative -top-20">
             <div className="flex justify-center  items-center w-auto h-[27px]">
-              <p className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Miami Lymphatic Massages, Post-Op Treatments</p>
+              <h1
+                className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] "
+                style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }}
+              >
+                {" "}
+                Miami Lymphatic Massages, Post-Op Treatments
+              </h1>
             </div>
-
           </div>
         </div>
 
+<<<<<<< HEAD
 
         <div className="w-full">
           <div className="my-6 w-[90%]  mx-auto p-4">
@@ -152,26 +187,80 @@ const Massage = () => {
               <h3 className="text-xl font-bold">{data.title}</h3>
               <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
                 {data.price}
+=======
+        <div className="bg-white py-20">
+          <div className="w-full " id="physical-exame-and-lymphatic-massages">
+            <div className="my-6 w-[90%]  mx-auto p-4">
+              <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+                Physical Exam And Lymphatic Massages
+              </h2>
+              <p className="text-center font-montserrat text-black text-base font-normal leading-normal w-[70%] mx-auto mb-5">
+                Each cocktail has essential fluids, electrolytes, vitamins and
+                antioxidants, to quickly remedy a variety of conditions.
+>>>>>>> 65a5651b9aae966da7d043efa18e43f45f3cfd80
               </p>
-              <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-                {data.buttonText}
-              </button>
-              <p>{data.description}</p>
-              <a href={data.link} className="underline text-[#3BAFBF]">
-                Click here to read more
-              </a>
             </div>
-          ))}
-        </div>
-        <div className="w-full flex justify-center items-center pb-5 pt-4 ">
-          <Link href="" className="underline text-blue-400">
-            View Cosmetic Surgery Treatments
-          </Link>
-        </div>
+          </div>
 
+<<<<<<< HEAD
         <div className="w-full">
           <div className="my-6 w-[90%]  mx-auto p-4 ">
             <h2 className="py-2 leading-normal  text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+=======
+          <div className=" flex justify-center gap-4 flex-col md:flex-row bg-white">
+            {massagePackages.map((data: any, index: any) => (
+              <div
+                key={index}
+                className="flex flex-col w-[300px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4"
+              >
+                <Image
+                  src={data.imageSrc}
+                  alt="fitness"
+                  // width={100}
+                  // height={100}
+                  className="w-[270px] h-[142px] relative bottom-10"
+                />
+                <h3 className="text-xl font-bold">{data.title}</h3>
+                <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
+                  {data.price}
+                </p>
+                <button className="bg-[#3BAFBF] py-1 px-2 text-white">
+                  {data.buttonText}
+                </button>
+                <p className="text-center">
+                  {showFullDescription[index]
+                    ? data.description
+                    : `${data.description
+                        .split(" ")
+                        .slice(0, 10)
+                        .join(" ")}...`}
+                </p>
+                <button
+                  className="underline text-[#3BAFBF]"
+                  onClick={() => toggleDescription(index)}
+                >
+                  {showFullDescription[index]
+                    ? "Show less"
+                    : "Click here to read more"}
+                </button>
+              </div>
+            ))}
+          </div>
+          <div className="w-full flex justify-center items-center pt-4 mt-5">
+            <Link href="/message#post-cosmetic-surgery-treatment" className="text-[#3BAFBF] text-center font-montserrat text-xl font-bold underline">
+              View Cosmetic Surgery Treatments
+            </Link>
+          </div>
+        </div>
+        <div className="w-full" id="post-cosmetic-surgery-treatment"
+         style={{
+          background:
+            "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+        }}>
+          <div className="my-6 w-[90%] mx-auto p-4"
+          >
+            <p className="py-2 leading-normal  text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+>>>>>>> 65a5651b9aae966da7d043efa18e43f45f3cfd80
               Post Cosmetic Surgery Treatments
             </h2>
             <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
@@ -179,36 +268,48 @@ const Massage = () => {
               antioxidants, to quickly remedy a variety of conditions.
             </p>
           </div>
-        </div>
-        <div className="w-full flex justify-center   flex-col md:flex-row gap-8 px-8 pt-5">
+       
+        <div className="w-full flex justify-center flex-col md:flex-row gap-8 px-8 pt-5">
           {services.map((service, index) => (
             <>
-              <div className="px-4 flex flex-col w-[280px] border border-[#3BAFBF] items-center  gap-3 p-4 ">
+              <div className="px-4 flex flex-col w-[280px] h-auto border border-[#3BAFBF] items-center gap-3 p-4 bg-white">
                 <Image
                   src={service.imageSrc}
                   alt={service.serviceName}
                   className="w-[270px] h-[142px] relative bottom-10"
                 />
-                <p className="text-2xl font-bold">{service.serviceName}</p>
+                <h3 className="text-2xl font-bold">{service.serviceName}</h3>
                 <p className="text-5xl font-normal text-[#3BAFBF] font-niconne ">
                   ${service.price}
                 </p>
                 <button className="bg-[#3BAFBF] py-1 px-2 text-white">
                   SCHEDULE
                 </button>
-                <p className="text-center">{service.description}</p>
-                <a href={service.link} className="underline text-[#3BAFBF]">
-                  Click here to read more
-                </a>
+                <p className="text-center">
+                  {showFullDescription[index]
+                    ? service.description
+                    : `${service.description
+                        .split(" ")
+                        .slice(0, 10)
+                        .join(" ")}...`}
+                </p>
+                <button
+                  className="underline text-[#3BAFBF]"
+                  onClick={() => toggleDescription(index)}
+                >
+                  {showFullDescription[index]
+                    ? "Show less"
+                    : "Click here to read more"}
+                </button>
               </div>
             </>
           ))}
         </div>
-
-        <div className="w-full flex justify-center my-8 pt-5">
-          <a href="" className="text-blue-400 underline">
+        <div className="w-full flex justify-center my-20 pt-5">
+          <Link href="/massage#physical-exame-and-lymphatic-massages" className="text-[#3BAFBF] text-center font-montserrat text-xl font-bold underline">
             View Lymphatic Massage
-          </a>
+          </Link>
+        </div>
         </div>
       </div>
     </>

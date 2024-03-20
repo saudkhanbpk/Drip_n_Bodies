@@ -184,33 +184,38 @@ import about1 from "../images/about1.png";
 import policyy from "../images/policyy.png";
 // import image1 from "../images/Rectangle.png"
 import ScheduleConsultation from "./ScheduleConsultation";
+import Link from "next/link";
 
-const faqItems = [
-  {
-    question: "Late exit from surgery policy",
-    answer:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, animi?",
-  },
-  {
-    question: "Refund/Cancellation Policy",
-    answer: "Answer for the second question.",
-  },
-  {
-    question: "Recovery Policy",
-    answer: "Answer for the third question.",
-  },
-  {
-    question: "Timing Policy",
-    answer: "Answer for the fourth question.",
-  },
-  {
-    question: "Overnight Parking Policy",
-    answer:
-      " Clients who have packages that include overnight Recovery Assistant care are responsible for parking fees. At the conclusion of service, the client will be invoiced.",
-  },
-];
 
 const Policy = () => {
+
+
+  const faqItems = [
+    {
+      question: "Late exit from surgery policy",
+      answer:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, animi?",
+    },
+    {
+      question: "Refund/Cancellation Policy",
+      answer: "Answer for the second question.",
+    },
+    {
+      question: "Recovery Policy",
+      answer: "Answer for the third question.",
+    },
+    {
+      question: "Timing Policy",
+      answer: "Answer for the fourth question.",
+    },
+    {
+      question: "Overnight Parking Policy",
+      answer:
+        " Clients who have packages that include overnight Recovery Assistant care are responsible for parking fees. At the conclusion of service, the client will be invoiced.",
+    },
+  ];
+
+
   const [accordionStates, setAccordionStates] = useState(
     Array.from({ length: faqItems.length }, () => false)
   );
@@ -237,10 +242,13 @@ const Policy = () => {
               Fine Print Babe
             </p>
           </div>
-          <div className="flex justify-center md:justify-start mt-4 md:mt-8">
-            <button className="bg-[#3BAFBF] px-4 py-2 text-sm md:text-base font-bold text-white">
-              Book a Consultation
-            </button>
+          <div className="flex justify-center md:justify-start mt-4 md:mt-8 gap-8">
+            <Link href='#read-our-policy' className="bg-[#3BAFBF] px-4 py-2 text-sm md:text-base font-bold text-white">
+            View Policies
+            </Link>
+            <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-lg font-bold leading-7 uppercase mt-1">
+            View our booking resource hub
+            </Link>
           </div>
         </div>
 
@@ -266,9 +274,9 @@ const Policy = () => {
         </div>
       </div>
 
-      <div className="w-full ">
+      <div className="w-full " id="read-our-policy">
         <div className="w-full md:w-[1000px] mx-auto">
-          <div className="md:mb-16 flex justify-center">
+          <div className="md:mb-16 flex justify-center" >
             <h2 className="font-bold text-4xl text-[24px] leading-8 md:leading-29 tracking-normal text-center">
               Read Our Policy
             </h2>
@@ -325,33 +333,49 @@ const Policy = () => {
                 ></div>
               </div>
             ))}
+            <div className="text-center my-5">
+              <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-md font-bold leading-[27px] uppercase">View our booking resource hub</Link>
+            </div>
           </div>
         </div>
         <div className=" w-full flex justify-center bg-[#F4B5D9] bg-opacity-20">
-          <div className="w-[1000px] ">
+          <div className="w-[70%] mx-auto">
             <div className="mt-12 text-[24px] font-bold flex justify-center text-md">
               <p>Email Us Your Question</p>
             </div>
             <div className="mt-6 p-6">
-              <p className="pb-4 font-bold ">What is your question?</p>
+              <p className="pb-4 font-bold ">How shall we address you?</p>
               <input
                 type="text"
                 name=""
                 id=""
-                placeholder="Enter your the details of your question"
+                placeholder="Enter your full name"
+                className="border border-black  outline-none w-full p-3 bg-white"
+              />
+            </div>
+            <div className="p-6">
+              <p className="pb-4 font-bold ">How can we contact you?</p>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter your email"
                 className="border border-black  outline-none w-full p-3 bg-white"
               />
             </div>
             <div className=" p-6">
               <p className="pb-4 font-bold">
-                Tell us more about your question.
+              Tell us about your question. (Please use 10 to 500 characters)
               </p>
               <textarea
                 name=""
                 id=""
-                placeholder="Enter your the details of your question"
-                className="border border-black w-full h-[500px] outline-none p-3 "
+                placeholder="Enter your question and any additional details"
+                className="border border-black w-full h-[300px] outline-none p-3 "
               ></textarea>
+            </div>
+            <div className="mb-20 ml-5">
+              <button className="text-white font-montserrat text-md font-semibold uppercase bg-[#3BAFBF] px-4 py-1">Submit</button>
             </div>
           </div>
         </div>

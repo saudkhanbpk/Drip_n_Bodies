@@ -10,55 +10,68 @@ import img1 from "../images/tele.png";
 import img2 from "../images/msg.png";
 import { IoIosMail } from "react-icons/io";
 import "react-calendar/dist/Calendar.css";
+import Link from "next/link";
 
 const CalendarPage = () => {
   return (
     <>
-     
-        <div className=" h-full md:h-[650px]">
-          <div className="w-full flex flex-col md:flex-row justify-between mx-auto ">
-            
-            <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22">
-              <div className="flex flex-col lg:leading-[100px]">
-                <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
-                  View Our{" "}
-                </p>
-                <p className="text-4xl lg:text-7xl  xl:text-8xl font-bold font-montserrat ">Calendar For </p>
-                <p className="text-4xl lg:text-7xl  xl:text-8xl font-bold font-montserrat  ">
-                  {" "}
-                  Your Big Day{" "}
-                </p>
-              </div>
-              <div className="my-6 md:my-5 lg:my-10 w-full lg:w-auto h-[43px] flex flex-col lg:flex-row">
-                <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
-                  Book a Consultation
-                </button>
-              </div>
+      <div className=" h-full md:h-[650px]">
+        <div className="w-full flex flex-col md:flex-row justify-between mx-auto ">
+          <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22">
+            <div className="flex flex-col lg:leading-[100px]">
+              <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
+                View Our{" "}
+              </p>
+              <p className="text-4xl lg:text-7xl  xl:text-8xl font-bold font-montserrat ">
+                Calendar For{" "}
+              </p>
+              <p className="text-4xl lg:text-7xl  xl:text-8xl font-bold font-montserrat  ">
+                {" "}
+                Your Big Day{" "}
+              </p>
             </div>
-            <div className="  lg:w-[35%] flex ">
-              <Image
-                src={CalendarHeaderPic}
-                alt="Logo"
-                className="w-full md:w-[80vw] lg:w-[656px] lg:mix-blend-multiply object-cover "
-              />
+            <div className="my-6 md:my-5 lg:my-10 w-full lg:w-auto h-[43px] flex flex-col lg:flex-row">
+              <Link
+                href="/surgery"
+                className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat"
+              >
+                View our calendar
+              </Link>
+              <Link
+                href="#calender-section"
+                className="text-[#3BAFBF] font-montserrat text-xl font-bold leading-[27px] uppercase"
+              >
+                Book a recovery Package
+              </Link>
             </div>
           </div>
-          <div className="w-full relative -top-12 md:-top-32 ">
-            <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
-              <div className="flex justify-center items-center w-auto h-[27px]">
-              <p className="font-niconne text-3xl md:text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} >Drip N Bodied Calendar</p>
-              </div>
+          <div className="  lg:w-[35%] flex ">
+            <Image
+              src={CalendarHeaderPic}
+              alt="Logo"
+              className="w-full md:w-[80vw] lg:w-[656px] lg:mix-blend-multiply object-cover "
+            />
+          </div>
+        </div>
+        <div className="w-full relative -top-12 md:-top-32 ">
+          <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+            <div className="flex justify-center items-center w-auto h-[27px]">
+              <h1
+                className="font-niconne text-3xl md:text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] "
+                style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }}
+              >
+                Drip N Bodied Calendar
+              </h1>
             </div>
           </div>
         </div>
-        
-        
-      
-      <div className="Main py-6 ">
+      </div>
+
+      <div className="Main py-6 " id="calender-section">
         <div className="heading flex flex-col justify-center items-center">
-          <p className="text-black text-center font-montserrat font-bold text-xl leading-normal">
+          <h2 className="text-black text-center font-montserrat font-bold text-xl leading-normal">
             Choose Your Booking Date
-          </p>
+          </h2>
           <p className="text-xs py-3">Use the calendar to book your date.</p>
         </div>
         <div className="MainContent w-full flex flex-col md:flex-row justify-center items-center my-4 ">
@@ -126,18 +139,23 @@ const CalendarPage = () => {
               </p>
             </div>
             <div className="my-6">
-              <Calendar className="react-calendar  text-black font-montserrat text-base font-normal leading-normal"
-               />
+              <Calendar className="react-calendar  text-black font-montserrat text-base font-normal leading-normal" />
             </div>
           </div>
         </div>
       </div>
-
-      <div className=" w-full mt-2">
-        <div className=" items-center w-[60%] flex flex-col justify-center mx-auto">
-          <p className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
-            Meet Us At the Bar
+        <div className="text-center my-2">
+          <p className="text-black font-montserrat text-base font-normal leading-[27px]">
+            Have questions about our booking process or your surgery date?
           </p>
+          <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-base font-normal leading-[27px]">Click here for our booking resource hub</Link>
+        </div>
+
+      <div className=" w-full mt-5">
+        <div className=" items-center w-[60%] flex flex-col justify-center mx-auto">
+          <h2 className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
+            Meet Us At the Bar
+          </h2>
           <p className="w-full flex justify-center text-center font-montserrat text-black text-base font-normal leading-normal ">
             We also service those in the miami area
           </p>
@@ -147,26 +165,30 @@ const CalendarPage = () => {
       <div className=" w-full mt-24 items-center flex justify-center ">
         <div className="my-6 items-center w-[86%] flex flex-col md:flex-row justify-center  mx-auto gap-8 lg:gap-16">
           <div className="w-full lg:w-1/2 h-auto md:h-[760px]">
-          <div className='border-b border-b-slate-300 flex flex-col md:flex-row  justify-around pb-4 '>
-              <div className='flex flex-col items-center'>
-                <div className='font-bold text-center'>Monday - Saturday</div>
-                <p className='text-center'>8:00 AM - 7:00 PM</p>
-                <div className='flex pt-3 '>
-                  <div className='flex flex-col items-center'>
-                    <p > <IoIosMail className='text-gray-400 text-opacity-65 w-[72px] h-[38px]' />
-</p>
-                    <p className=''>booking@dripnbodied.com</p>
+            <div className="border-b border-b-slate-300 flex flex-col md:flex-row  justify-around pb-4 ">
+              <div className="flex flex-col items-center">
+                <div className="font-bold text-center">Monday - Saturday</div>
+                <p className="text-center">8:00 AM - 7:00 PM</p>
+                <div className="flex pt-3 ">
+                  <div className="flex flex-col items-center">
+                    <p>
+                      {" "}
+                      <IoIosMail className="text-gray-400 text-opacity-65 w-[72px] h-[38px]" />
+                    </p>
+                    <p className="">booking@dripnbodied.com</p>
                   </div>
                 </div>
               </div>
-              <div className=' border-l border-l-slate-300  h-14' ></div>
-              <div className='flex flex-col  items-center '>
-                <div className='font-bold text-center'>After Hours:</div>
-                <p className='text-center'>By request only</p>
-                <div className='flex pt-3 '>
-                  <div className='flex flex-col items-center'>
-                    <p className='text-center text-3xl text-red-600 text-[32px] mx-auto '>☎</p>
-                    <p className=' text-[16px] '>(305) 908-9282</p>
+              <div className=" border-l border-l-slate-300  h-14"></div>
+              <div className="flex flex-col  items-center ">
+                <div className="font-bold text-center">After Hours:</div>
+                <p className="text-center">By request only</p>
+                <div className="flex pt-3 ">
+                  <div className="flex flex-col items-center">
+                    <p className="text-center text-3xl text-red-600 text-[32px] mx-auto ">
+                      ☎
+                    </p>
+                    <p className=" text-[16px] ">(305) 908-9282</p>
                   </div>
                 </div>
               </div>

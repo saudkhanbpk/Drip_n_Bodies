@@ -11,6 +11,7 @@ import realmiami from "../images/realmiami.png";
 import thereal from "../images/TheReal.png";
 import cr1 from "../images/cr1.png";
 import realnurses from "../images/realnurses.svg";
+import Link from "next/link";
 
 
 export default function IVInfusions() {
@@ -30,15 +31,15 @@ export default function IVInfusions() {
               </p>
             </div>
             <div className="my-6 md:my-5 lg:my-10 w-[95%] lg:w-auto h-[43px] flex flex-col lg:flex-row">
-              <a href="#section" className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
+              <Link href="#section" className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
                 VIEW POST-OP DRIPS
-              </a>
+              </Link>
               {/* <a href="#section2" className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat">
                 View Post-Op Treatments
               </a> */}
-              <a href="#section2" className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat">
+              <Link href="#section2" className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2 rounded text-[#3BAFBF] text-center font-montserrat">
                 View Premium Infusions
-              </a>
+              </Link>
             </div>
           </div>
           <div className="w-full md:w-[35%] flex relative md:overflow-clip ">
@@ -136,7 +137,9 @@ export default function IVInfusions() {
           </p>
         </div>
       </div>
-
+        <div className="text-center">
+          <Link href='resourcehub' className=" text-[#3BAFBF] font-sans text-base font-normal underline">Learn more about our booking process</Link>
+        </div>
       <div  id="section" className="w-full flex flex-col justify-center items-center p-10 ">
         <div className="flex flex-col w-[50vw] items-center justify-center space-y-2 ">
           <h2 className="text-2xl font-bold">Premium Infusions</h2>
@@ -153,7 +156,7 @@ export default function IVInfusions() {
         alt="fitness"
         className="w-[270px] h-[142px] relative bottom-10 image-with-shadow"
     />
-    <h2 className="text-2xl font-bold">Athletic Recovery</h2>
+    <h3 className="text-2xl font-bold">Athletic Recovery</h3>
     <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
         $229
     </p>
@@ -164,7 +167,7 @@ export default function IVInfusions() {
         Working hard in the gym? This drip helps you perform better, have
         more energy, and recover faster. These ingredients will su
     </p>
-    <a href="" className="underline text-[#3BAFBF]">
+    <a className="underline text-[#3BAFBF]">
         Click here to read more
     </a>
 </div>
@@ -187,7 +190,7 @@ export default function IVInfusions() {
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
-            <a href="" className="underline text-[#3BAFBF]">
+            <a className="underline text-[#3BAFBF]">
               Click here to read more
             </a>
           </div>
@@ -208,7 +211,7 @@ export default function IVInfusions() {
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
-            <a href="" className="underline text-[#3BAFBF]">
+            <a className="underline text-[#3BAFBF]">
               Click here to read more
             </a>
           </div>
@@ -229,7 +232,7 @@ export default function IVInfusions() {
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
-            <a href="" className="underline text-[#3BAFBF]">
+            <a className="underline text-[#3BAFBF]">
               Click here to read more
             </a>
           </div>
@@ -250,7 +253,7 @@ export default function IVInfusions() {
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
-            <a href="" className="underline text-[#3BAFBF]">
+            <a className="underline text-[#3BAFBF]">
               Click here to read more
             </a>
           </div>
@@ -292,7 +295,7 @@ export default function IVInfusions() {
               Working hard in the gym? This drip helps you perform better, have
               more energy, and recover faster. These ingredients will su
             </p>
-            <a href="" className="underline text-[#3BAFBF]">
+            <a className="underline text-[#3BAFBF]">
               Click here to read more
             </a>
           </div>
@@ -302,7 +305,7 @@ export default function IVInfusions() {
           <a  className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
             VIEW POST-OP DRIPS
           </a>
-          <a href="" className="underline text-[#3BAFBF] text-base font-bold">
+          <a href="#section3" className="underline text-[#3BAFBF] text-base font-bold">
             View Infusion Addons
           </a>
         </div>
@@ -338,7 +341,7 @@ export default function IVInfusions() {
                 Working hard in the gym? This drip helps you perform better,
                 have more energy, and recover faster. These ingredients will su
               </p>
-              <a href="" className="underline text-[#3BAFBF]">
+              <a  className="underline text-[#3BAFBF]">
                 Click here to read more
               </a>
             </div>
@@ -359,7 +362,7 @@ export default function IVInfusions() {
                 Working hard in the gym? This drip helps you perform better,
                 have more energy, and recover faster. These ingredients will su
               </p>
-              <a href="" className="underline text-[#3BAFBF]">
+              <a className="underline text-[#3BAFBF]">
                 Click here to read more
               </a>
             </div>
@@ -425,9 +428,9 @@ export default function IVInfusions() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center p-4 md:p-20 space-y-10">
+      <div className="flex flex-col justify-center items-center p-4 md:p-20 space-y-10" id="section3">
         <div className="flex flex-col  items-center justify-center md:space-y-2 ">
-          <h2 className="text-2xl font-bold">Infusion Addons</h2>
+          <p className="text-2xl font-bold" id="infusion-addon">Infusion Addons</p>
           <p className="text-base font-normal">
             Can add these to a Premium Infusion or Post-Op Recovery Infusion
           </p>
@@ -563,10 +566,10 @@ export default function IVInfusions() {
         
 
         <div className="flex items-center justify-center md:flex-row flex-col gap-2 md:gap-8">
-          <button className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
+          <Link href='#section2' className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
             VIEW POST-OP DRIPS
-          </button>
-          <a href="" className="underline text-[#3BAFBF] text-base font-bold">
+          </Link>
+          <a href="#section" className="underline text-[#3BAFBF] text-base font-bold">
             View Premium Infusions
           </a>
         </div>

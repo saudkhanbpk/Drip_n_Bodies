@@ -1,22 +1,33 @@
+"use client"
+//@ts-ignore  
+import React from "next";
 import Image from "next/image";
-import React from "react";
 import heroimg1 from "../images/heroimg1.png";
 import quote1 from "../images/quote1.svg";
 import quote2 from "../images/quote2.svg";
-import realmiami from "../images/realmiami.png";
 import thereal from "../images/TheReal.png";
 import realnurses from "../images/realnurses.svg";
 import { IoStar } from "react-icons/io5";
-// import video from "../video/video.mp4";
+import { useRouter } from "next/navigation";
+
+
+
 const HeroSection = () => {
+  const router = useRouter();
+  const handleClick = () => {
+    // Navigate to the desired page
+    router.push("https://g.co/kgs/wLxut7X");
+  };
   return (
     <>
       <div className="w-full flex flex-col lg:flex-row justify-between  ">
         <div className="w-full lg:w-[55%] px-10  pt-6 md:pt-16 ml-22">
           <div className="  md:flex flex flex-col gap-2 md:gap-8 ">
-            <p className="md:text-7xl text-5xl font-bold">IV Therapy,</p>
-            <p className="md:text-7xl text-5xl font-bold">Recovery Nurses.</p>
-            <p className="md:text-7xl text-5xl font-bold text-[#3BAFBF]">Drip N Bodied</p>
+            <h2 className="md:text-7xl text-5xl font-bold">IV Therapy,</h2>
+            <h2 className="md:text-7xl text-5xl font-bold">Recovery Nurses.</h2>
+            <h2 className="md:text-7xl text-5xl font-bold text-[#3BAFBF]">
+              Drip N Bodied
+            </h2>
           </div>
           <div className="my-8">
             {/* <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black text-center ">“</span>
@@ -26,8 +37,8 @@ const HeroSection = () => {
             </p> */}
             <div className="">
               <div className=" py-2">
-                <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
-                  <Image src={quote1} alt="quote" />
+                <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black h-auto ">
+                  <Image src={quote1} alt="quote" className="mb-3" />
                 </span>
                 <p className="font-montserrat text-base font-normal md:w-[500px] leading-normal flex flex-col">
                   <span>Drip N Bodied absolutely amazing.</span>
@@ -36,7 +47,6 @@ const HeroSection = () => {
                 <div className="md:flex items-center justify-between md:w-[450px]">
                   <div className="md:flex items-center">
                     <div className="flex">
-
                       <p className="font-montserrat text-black text-lg font-bold leading-27">
                         5.0
                       </p>
@@ -47,6 +57,7 @@ const HeroSection = () => {
     <IoStar className="text-yellow-400 text-[34px] h-[34px]" /> */}
                       <div className="mx-4">
                         <svg
+
                           xmlns="http://www.w3.org/2000/svg"
                           width="120"
                           height="24"
@@ -75,9 +86,9 @@ const HeroSection = () => {
                           />
                         </svg>
                       </div>
-
                     </div>
-                    <p className=" mt-1 md:text-center font-montserrat text-blue-500 text-lg font-normal leading-27">
+                    <p className=" mt-1 md:text-center font-montserrat text-blue-500 text-lg font-normal leading-27 cursor-pointer"
+                      onClick={() => handleClick()}>
                       47 Google reviews
                     </p>
                   </div>
@@ -92,26 +103,31 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="w-full lg:w-[45%]  flex justify-end items-center">
-          <Image src={heroimg1} alt="Logo" className="w-full h-full md:w-[606px] md:h-[580px]" />
+          <Image
+            src={heroimg1}
+            alt="Logo"
+            className="w-full h-full md:w-[606px] md:h-[580px]"
+          />
         </div>
       </div>
       <div className="w-full  ">
-        <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] absolute md:-bottom-24 ">
-          <div className="flex justify-center  items-center w-auto h-[27px]">
-            <h1 className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > The Real Nurses Of Miami</h1>
+        <div className="border-[1px] py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+          <div className="flex justify-center items-center w-auto h-[27px]">
+            <h1
+              className="text-[#3BAFBF] text-center font-niconne text-4xl lg:text-6xl font-normal "
+              style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }}
+            >
+              The Real Nurses Of Miami
+            </h1>
           </div>
         </div>
       </div>
+      {/* <div className="w-[500px] h-[500px]">
+        <ReactPlayer url="../../public/videos/videoplayback.mp4" width="100%" height="auto" controls />
+      </div> */}
       {/* <div className="w-full h-full">
         <Image src={realnurses} alt='nurses' className="w-full h-full" />
       </div> */}
-     
-        
-    
-
-      
-
-
     </>
   );
 };

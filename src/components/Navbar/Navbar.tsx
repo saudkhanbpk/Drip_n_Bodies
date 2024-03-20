@@ -4,8 +4,15 @@ import tempImagefaFymn from "../../images/tempImagefaFymn.png";
 import Image from "next/image";
 import Link from "next/link";
 import { CiMenuBurger } from "react-icons/ci";
+import { useRouter } from "next/navigation";
 
 const Navbar: React.FC = () => {
+
+  const router = useRouter();
+  const handleClick = () => {
+    // Navigate to the desired page
+    router.push('/');
+  };
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,54 +20,56 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-white p-6">
+    <nav className="flex items-center justify-between flex-wrap bg-white p-6 sticky top-0">
       <div className="flex items-center w-full">
         <div className="flex items-center flex-shrink-0 text-black mr-6">
-          <Image src={tempImagefaFymn} alt="Logo" className="h-12 w-16" />
+          <Image src={tempImagefaFymn} alt="Logo" className="h-12 w-16 cursor-pointer" 
+          onClick={() => handleClick()}/>
         </div>
 
         <div className={`w-full  items-center md:flex hidden `}>
           <div className="text-sm flex-grow flex justify-end">
             <Link
               href="about"
-              className="block bg-tr uppercase  mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-              style={{ textShadow: "1px 1px 3px gray" }}
+              className="block bg-tr uppercase  mt-4 lg:inline-block lg:mt-0 font-bold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-md"
+              // style={{ textShadow: "1px 1px 3px gray" }}
             >
               About Us
             </Link>
             <Link
               href="surgery"
-              className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-              style={{ textShadow: "1px 1px 3px gray" }}
+              className="block uppercase mt-4 lg:inline-block lg:mt-0 font-bold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-md"
+              // style={{ textShadow: "1px 1px 3px gray" }}
             >
               Surgery Recovery
             </Link>
             <Link
               href="ivinfusion"
-              className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-              style={{ textShadow: "1px 1px 3px gray" }}
+              className="block uppercase mt-4 lg:inline-block lg:mt-0 font-bold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-md"
+              // style={{ textShadow: "1px 1px 3px gray" }}
             >
               IV Infusions
             </Link>
             <Link
               href="massage"
-              className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-              style={{ textShadow: "1px 1px 3px gray" }}
+              className="block uppercase mt-4 lg:inline-block lg:mt-0 font-bold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-md"
+              // style={{ textShadow: "1px 1px 3px gray" }}
             >
               Massages & Treatments
             </Link>
             <Link
               href="calendar"
-              className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-              style={{ textShadow: "1px 1px 3px gray" }}
+              className="block uppercase mt-4 lg:inline-block lg:mt-0 font-bold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-md"
+              // style={{ textShadow: "1px 1px 3px gray" }}
             >
               Calendar
               
             </Link>
           </div>
 
-          <Link href="customerrecovery" >
-            <button className="uppercase md:px-6 px-14 py-2 leading-none border  text-white hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat text-xs font-bold">
+          <Link href="https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION" >
+            <button className="uppercase md:px-6 px-14 py-2 leading-none border  text-white hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat text-md font-bold"
+            >
               Book Free Consult
             </button>
           </Link>
@@ -76,41 +85,43 @@ const Navbar: React.FC = () => {
           <Link
             href="about"
             className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-            style={{ textShadow: "1px 1px 3px gray" }}
+            // style={{ textShadow: "1px 1px 3px gray" }}
           >
             About Us
           </Link>
           <Link
             href="surgery"
             className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-            style={{ textShadow: "1px 1px 3px gray" }}
+            // style={{ textShadow: "1px 1px 3px gray" }}
           >
             Surgery Recovery
           </Link>
           <Link
             href="ivinfusion"
             className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-            style={{ textShadow: "1px 1px 3px gray" }}
+            // style={{ textShadow: "1px 1px 3px gray" }}
           >
             IV Infusions
           </Link>
           <Link
             href="massage"
             className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-            style={{ textShadow: "1px 1px 3px gray" }}
+            // style={{ textShadow: "1px 1px 3px gray" }}
           >
             Massages & Treatments
           </Link>
           <Link
             href="calendar"
             className="block uppercase mt-4 lg:inline-block lg:mt-0 font-semibold hover:text-gray-500 text-black mr-4 text-center font-montserrat text-xs"
-            style={{ textShadow: "1px 1px 3px gray" }}
+            // style={{ textShadow: "1px 1px 3px gray" }}
           >
             Calendar
           </Link>
         </div>
 
-        <Link href="customerrecovery" >
+        <Link href="https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION"
+        //  onClick={()=>handleClick("https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION")}
+         >
           <button className="uppercase md:px-6 block mx-auto px-14 py-2 leading-none border rounded text-white hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat text-xs font-bold">
             Book Free Consult
           </button>

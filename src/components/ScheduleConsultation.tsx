@@ -1,6 +1,14 @@
+"use client"
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const ScheduleConsultation = () => {
+  const router = useRouter();
+  const handleClick = () => {
+    // Navigate to the desired page
+    router.push("https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION");
+  };
+  
   return (
     <>
       {/* <div className=" h-[450px] bg-[url('../images/Rectangle.png')]">
@@ -22,9 +30,9 @@ const ScheduleConsultation = () => {
       <div className="h-[450px] bg-[url('../images/Rectangle.png')] backgrou">
         <div className="flex justify-center items-center h-full">
           <div className="flex flex-col justify-center items-center gap-4">
-            <p className=" mt-2 mb-4 text-white text-center font-montserrat text-[24px] font-semibold leading-[27px]">
+            <h2 className=" mt-2 mb-4 text-white text-center font-montserrat text-[24px] font-semibold leading-[27px]">
               Talk To Your Nurse Babe
-            </p>
+            </h2>
             <div className="border-[4px] border-[#3BAFBF]  w-[200px] md:w-[200px] mx-auto"></div>
             <p className="px-2 pt-2   text-white text-center font-montserrat text-base font-bold leading-[27px]">
               Schedule A Free Consultation!
@@ -38,7 +46,8 @@ const ScheduleConsultation = () => {
                 nursing, or business start-ups.
               </p>
             </div>
-            <button className="px-6 p-2 font-bold text-[16px] mt-8 md:mt-8 text-white bg-[#3BAFBF]">
+            <button className="px-6 p-2 font-bold text-[16px] mt-8 md:mt-8 text-white bg-[#3BAFBF]"
+            onClick={() => handleClick()}>
               SCHEDULE A CONSULT CALL
             </button>
           </div>
