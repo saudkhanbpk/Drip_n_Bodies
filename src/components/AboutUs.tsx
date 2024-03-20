@@ -14,7 +14,7 @@ const AboutUs = () => {
     <>
       <div
         className="pb-20"
-        // style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}
+      // style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}
       >
         <div className=" w-full md:flex justify-between bg-pink-50">
           <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22 ">
@@ -29,19 +29,25 @@ const AboutUs = () => {
                 Of Miami®
               </p>
             </div>
-            <div className="my-3 md:my-10 w-auto h-[43px] space-x-8">
-              <Link
-                href="#meet-your-regiseterd-nurses"
-                className="font-montserrat text-white text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center   "
-              >
-                VIEW OUR TEAM
-              </Link>
-              <Link
-                className="font-bold text-[16px] text-[#3BAFBF] font-montserrat"
-                href="/surgery"
-              >
-                Book A RECOVERY PACKAGE
-              </Link>
+            <div className=" md:flex items-center my-3 :my-10 space-x-8 ">
+              <div>
+
+                <Link
+                  href="#meet-your-regiseterd-nurses"
+                  className="font-montserrat text-white text-sm font-bold leading-6 uppercase px-4 py-2 pb-2 hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center   "
+                >
+                  VIEW OUR TEAM
+                </Link>
+              </div>
+              <div className="mt-2 me-5 ">
+
+                <Link
+                  className="font-bold text-[16px] text-[#3BAFBF] font-montserrat "
+                  href="/surgery"
+                >
+                  Book A RECOVERY PACKAGE
+                </Link>
+              </div>
             </div>
           </div>
           <div className="md:w-[35%] w-full md:flex justify-end items-center">

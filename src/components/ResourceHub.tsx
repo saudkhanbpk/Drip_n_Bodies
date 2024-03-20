@@ -19,8 +19,8 @@ const ResourceHub = () => {
                             <p className="text-4xl lg:text-8xl text-[#3BAFBF] font-bold font-montserrat ">Resource Hub
                             </p>
                         </div>
-                        <div className='md:flex justify-center items-center gap-6 md:justify-start mt-4 md:mt-8 mb-10'>
-                            <button className='bg-[#3BAFBF] px-4 py-2 ms-2 text-sm md:text-base font-bold text-white'>Book a Consultation</button>
+                        <div className='md:flex justify-center items-center gap-6 md:justify-start mt-4 mr-6 md:mt-8 mb-10'>
+                            <button className='bg-[#3BAFBF] px-6 py-2 ms-2 text-sm md:text-base font-bold text-white'>Book a Consult</button>
                             <p className='font-montserrat text-base font-bold leading-27 text-center text-[#3BAFBF]'>View Our Packages</p>
                         </div>
                     </div>
@@ -28,9 +28,9 @@ const ResourceHub = () => {
                     <div className="w-full md:w-[34%] mt-4 md:mt-0 md:ml-4 lg:ml-8 relative">
                         <Image src={heroimg} alt="Logo" className="w-full md:w-[506px] lg:w-[606px] h-[480px] lg:h-[640px] mix-blend-multiply object-cover  " />
                     </div>
-                    <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] absolute md:-bottom-24 ">
+                    <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] absolute md:-bottom-0 ">
                         <div className="flex justify-center  items-center w-auto h-[27px]">
-                            <h1 className="font-niconne text-6xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Cosmetic Surgery Recovery Resource Hub</h1>
+                            <h1 className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] " style={{ textShadow: "1px 1px 1px white,2px 2px 2px white" }} > Cosmetic Surgery Recovery Resource Hub</h1>
                         </div>
                     </div>
                 </div>
@@ -39,12 +39,12 @@ const ResourceHub = () => {
 
             <div className='w-full mx-auto text-white text-center font-montserrat text-lg font-italic text-[32px] bg-black mb-10 p-10 '>
                 <p>Hey Bodied Babe...</p>
-                <p> <span className='inline-block h-[20px] text-[#F4B5D9] text-center font-montserrat text-7xl italic font-normal leading-tight'>“</span>  Thank you for selecting us to be part of your post- <span className='inline-block h-[20px] text-[#F4B5D9] text-center font-montserrat text-7xl italic font-normal leading-tight'>”</span> <br /> operative recovery experience! We look forward to  <br /> getting you snatched and recovered! Feel free to reach <br /> out and schedule a complimentary consultation call if <br /> you have any questions about our services or just shoot <br /> us a text at 305-908-9282!</p>
+                <p> <span className='md:inline-block  h-[20px] text-[#F4B5D9] text-center font-montserrat md:text-7xl text-2xl italic font-normal leading-tight'>“</span>  Thank you for selecting us to be part of your post- <span className='md:inline-block  h-[20px] text-[#F4B5D9] text-center font-montserrat md:text-7xl text-2xl italic font-normal leading-tight'>”</span> <br /> operative recovery experience! We look forward to  <br /> getting you snatched and recovered! Feel free to reach <br /> out and schedule a complimentary consultation call if <br /> you have any questions about our services or just shoot <br /> us a text at 305-908-9282!</p>
             </div>
-            <div className='mb-10'>
+            <div className=''>
                 <h2 className=' text-black text-center font-montserrat text-[24px] font-bold leading-normal'>Frequently Asked Questions</h2>
             </div>
-            <div className=' w-[80%] mx-auto md:flex justify-center p-2 md:p-10 gap-6 mb-10'>
+            <div className=' w-[80%] mx-auto md:flex justify-center p-2 md:p-10 gap-6 '>
 
                 <div className='md:w-1/2 mb-10'>
                     <div className='md:px-8'>
@@ -67,11 +67,15 @@ const ResourceHub = () => {
                         <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-6 text-end">Do you offer transportation?</p>
                         <p>Each recovery package comes with complimentary transportation from the surgical center to your
                             accommodation. Transportation to surgery and to post-op appointments can be arranged for an additional cost.</p>
-                        <p className="text-[#3BAFBF] md:text-right font-montserrat text-base font-bold leading-5.75 uppercase">Let’s Chat!</p>
-                        <p className=" md:text-right font-montserrat text-base font-bold leading-5.75 uppercase">305-908-9282</p>
-                        <p className="md:text-right font-montserrat text-base font-bold leading-5.75 uppercase">booking@dripnbodied.com</p>
+                        <p className="text-[#3BAFBF] md:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">Let’s Chat!</p>
+                        <p className=" md:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">305-908-9282</p>
+                        <p className="md:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">booking@dripnbodied.com</p>
                     </div>
                 </div>
+
+            </div>
+            <div className='text-center mb-5'>
+                <a href="" className='text-[#3BAFBF] font-[400px]'>See all frequently asked questions</a>
             </div>
             <div className='w-[80%] mx-auto bg-black gap-6 mb-10'>
                 <div className='w-[80%] mx-auto md:flex justify-center items-center '>
@@ -88,9 +92,9 @@ const ResourceHub = () => {
                     </div>
                     <div className='border-r-2 border-[#3BAFBF] h-[250px] hidden md:flex my-auto'></div>
                     <div className='md:w-1/2 mb-[174px] text-center p-2 md:p-10 '>
-                        <p className="text-white text-center font-montserrat text-3xl font-bold leading-normal ">Uploads</p>
-                        <p className="text-white text-center font-montserrat pt-4 text-base font-normal leading-5.75">PHOTO ID submission is required to book all services. Identification provided must match card used to book or deposit fee will be forfeited and appointment canceled</p>
-                        <Image src={liscence} alt="liscence" className='pt-4' />
+                        <p className="text-white text-center font-montserrat text-3xl font-bold leading-normal pt-6">Uploads</p>
+                        <p className="text-white text-center  font-montserrat pt-4 text-base font-normal leading-5.75">PHOTO ID submission is required to book all services. Identification provided must match card used to book or deposit fee will be forfeited and appointment canceled</p>
+                        <Image src={liscence} alt="liscence" className='pt-10' />
 
                     </div>
                 </div>
@@ -108,13 +112,13 @@ const ResourceHub = () => {
 
             </div>
             <div className='border-b border-b-black/10 w-[80%] mx-auto '> <div className='border border-[#3BAFBF] w-[40%] ms-auto'>  </div> </div>
-            <div className='w-[80%] mx-auto text-center mb-10 pt-6 p-5'>
+            <div className='w-[80%] mx-auto text-center mb-10 mt-10 p-5'>
                 <h2 className="text-black text-center font-montserrat text-3xl font-bold leading-normal mb-10">Cancellation Policy</h2>
                 <p >If your full payment for the package is settled and you decide to cancel more than 7 days prior to your scheduled service date, you will receive a refund of the entire amount paid, excluding the non-refundable deposit.</p>
                 <p className='pt-5'> However, if you've paid in full and choose to cancel 7 days or less before your scheduled service date, a partial refund will be issued. Your refund will be reduced by the non-refundable deposit, and an additional $100 fee for each night a CNA was assigned to your package will also be deducted from the balance.</p>
             </div>
-            <div className='w-[80%] mx-auto mb-10 p-5 text-center'>
-                <h2 className="text-black text-center font-montserrat text-3xl  font-bold leading-normal ">IV Drips</h2>
+            <div className='w-[80%] mx-auto  p-5  text-center'>
+                <h2 className="text-black text-center font-montserrat text-3xl  font-bold leading-normal  pb-5 ">IV Drips</h2>
                 <p className='text-[#3BAFBF]'>Post-Op Drip: Schedule your appointment on your surgery day.</p>
                 <p>Please be aware that the designated time slot for your drip is merely a placeholder. Kindly send us a text with your surgery time on pre-op day to provide us with a rough estimate of when your surgery will conclude. Additionally, have your companion to notify us once your surgery is finished so that we can arrange for your infusion. (305) 908-9282 </p>
                 <div className='py-5'>
@@ -133,9 +137,9 @@ const ResourceHub = () => {
                 <div className='border-r-2 border-r-[#3BAFBF] hidden md:block h-[150px] my-auto'></div>
                 <div className='md:w-[80%] mx-auto mb-10 p-5 '>
                     <h3 className="text-[#3BAFBF] text-center font-montserrat font-bold text-base pb-4">Room Type</h3>
-                    <p >We would like to emphasize that booking a studio-type room is not acceptable for our overnight CNA services.</p>
-                    <p className='py-5'>Please be advised that only a suite with a l-bedroom setup, including a separate living room, will meet our requirements.</p>
-                    <p>Any reservation for a studio-type room will result in the cancellation of overnight CNA services. Your attention to this matter is appreciated.</p>
+                    <p className='pl-3'>We would like to emphasize that booking a studio-type room is not acceptable for our overnight CNA services.</p>
+                    <p className='py-5 pl-3'>Please be advised that only a suite with a l-bedroom setup, including a separate living room, will meet our requirements.</p>
+                    <p className='pl-3'>Any reservation for a studio-type room will result in the cancellation of overnight CNA services. Your attention to this matter is appreciated.</p>
                 </div>
             </div>
             <div className='md:w-[80%] mx-auto mb-10 text-xl md:text-3xl font-bold font-montserrat'>
@@ -150,8 +154,8 @@ const ResourceHub = () => {
                     CNA services.</p>
             </div>
             <div className='border-b-2 border-[#3BAFBF] w-[80%] mx-auto'><div className='border hidden md:block border-black/20 w-[40%]'></div></div>
-            <div className='md:w-[80%] my-2 md:my-0 mx-auto mb-10 '>
-                <h2 className="text-black text-center font-montserrat font-bold text-3xl pt-5 ">Pre-Op Call</h2>
+            <div className='md:w-[80%] my-2 md:my-0 mx-auto '>
+                <h2 className="text-black text-center font-montserrat font-bold text-3xl pt-10 ">Pre-Op Call</h2>
             </div>
             <div className='w-[80%] mx-auto text-center mb-10 pt-5 pb-2'>
                 <p className='pb-1'>Once you've booked your post-operative recovery package, utilize the link in your confirmation email to schedule a pre-operative call. Make sure to schedule this call within 30 days of your surgery date. The call will involve a review of your medical background and more!</p>

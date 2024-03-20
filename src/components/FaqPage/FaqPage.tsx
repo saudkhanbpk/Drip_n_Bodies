@@ -11,44 +11,44 @@ import Link from "next/link";
 
 const FaqPage = () => {
 
-    const faqItems = [
-        {
-          question:
-            "Do you offer lymphatic massages to clients that do not book a Bodied package?",
-          answer:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, animi?",
-        },
-        {
-          question:
-            "What if I need more assistance/care than what’s offered in your packages?",
-          answer: "Answer for the second question.",
-        },
-        {
-          question: "Are you a recovery house?",
-          answer: "Answer for the third question.",
-        },
-        {
-          question: "What do I need to bring with me for my recovery?",
-          answer: "Answer for the fourth question.",
-        },
-        {
-          question: "Do you travel out of state?",
-          answer:
-            "We are based out of south Florida and primarily offer our services in Miami. However we do travel to Fort Lauderdale, and West Palm Beach (travel fees may apply). Email us to inquire about pricing for traveling out of the state/country.",
-        },
-      ];
+  const faqItems = [
+    {
+      question:
+        "Do you offer lymphatic massages to clients that do not book a Bodied package?",
+      answer:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, animi?",
+    },
+    {
+      question:
+        "What if I need more assistance/care than what’s offered in your packages?",
+      answer: "Answer for the second question.",
+    },
+    {
+      question: "Are you a recovery house?",
+      answer: "Answer for the third question.",
+    },
+    {
+      question: "What do I need to bring with me for my recovery?",
+      answer: "Answer for the fourth question.",
+    },
+    {
+      question: "Do you travel out of state?",
+      answer:
+        "We are based out of south Florida and primarily offer our services in Miami. However we do travel to Fort Lauderdale, and West Palm Beach (travel fees may apply). Email us to inquire about pricing for traveling out of the state/country.",
+    },
+  ];
 
 
-    const [accordionStates, setAccordionStates] = useState(
-        Array.from({ length: faqItems.length }, () => false)
-      );
-    
-      const handleAccordionClick = (index: any) => {
-        const newAccordionStates = accordionStates.map((state, i) =>
-          i === index ? !state : false
-        );
-        setAccordionStates(newAccordionStates);
-      };
+  const [accordionStates, setAccordionStates] = useState(
+    Array.from({ length: faqItems.length }, () => false)
+  );
+
+  const handleAccordionClick = (index: any) => {
+    const newAccordionStates = accordionStates.map((state, i) =>
+      i === index ? !state : false
+    );
+    setAccordionStates(newAccordionStates);
+  };
 
   return (
     <>
@@ -71,12 +71,12 @@ const FaqPage = () => {
               Your Booking?
             </p>
           </div>
-          <div className="flex justify-center md:justify-start mt-4 md:mt-8 gap-8">
-            <Link href='/faq#Frequently-asked-Questions' className="bg-[#3BAFBF] px-4 py-2 text-sm md:text-base font-bold text-white uppercase">
-            View FAQ
+          <div className="md:flex justify-center md:justify-start mt-4 md:mt-8 gap-8">
+            <Link href='/faq#Frequently-asked-Questions' className="bg-[#3BAFBF] px-6 flex py-3 text-sm md:text-base font-bold text-white uppercase">
+              View FAQ
             </Link>
             <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-lg font-bold leading-7 uppercase mt-1">
-            View our booking resource hub
+              View our booking resource hub
             </Link>
           </div>
         </div>
@@ -152,15 +152,14 @@ const FaqPage = () => {
                   </div>
                 )}
                 <div
-                  className={`${
-                    index === faqItems.length - 1
+                  className={`${index === faqItems.length - 1
                       ? ""
                       : "border-b border-b-gray-300 mt-3"
-                  }`}
+                    }`}
                 ></div>
               </div>
             ))}
-              <div className="text-center my-5">
+            <div className="text-center my-5">
               <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-md font-bold leading-[27px] uppercase">View our booking resource hub</Link>
             </div>
           </div>
@@ -192,7 +191,7 @@ const FaqPage = () => {
             </div>
             <div className=" p-6">
               <p className="pb-4 font-bold">
-              Tell us about your question. (Please use 10 to 500 characters)
+                Tell us about your question. (Please use 10 to 500 characters)
               </p>
               <textarea
                 name=""
