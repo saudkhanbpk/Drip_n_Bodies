@@ -71,11 +71,11 @@ const FaqPage = () => {
               Your Booking?
             </p>
           </div>
-          <div className="md:flex justify-center md:justify-start mt-4 md:mt-8 gap-8">
-            <Link href='/faq#Frequently-asked-Questions' className="bg-[#3BAFBF] px-6 flex py-3 text-sm md:text-base font-bold text-white uppercase">
+          <div className="md:flex justify-center items-center md:justify-start mt-4 md:mt-8 gap-8">
+            <Link href='/faq#Frequently-asked-Questions' className="bg-[#3BAFBF] px-8 flex p-2 text-sm md:text-base font-bold text-white uppercase">
               View FAQ
             </Link>
-            <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-lg font-bold leading-7 uppercase mt-1">
+            <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-[16px] font-bold leading-7 uppercase mt-1">
               View our booking resource hub
             </Link>
           </div>

@@ -14,7 +14,7 @@ const AboutUs = () => {
     <>
       <div
         className="pb-20"
-      // style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}
+      style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}
       >
         <div className=" w-full md:flex justify-between bg-pink-50">
           <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22 ">

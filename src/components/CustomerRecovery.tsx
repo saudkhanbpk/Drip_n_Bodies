@@ -155,8 +155,8 @@ const CustomerRecovery: React.FC = () => {
   };
   return (
     <>
-      <div className="">
-        <div className="">
+      <div className="" >
+        <div className="" >
           <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
             {/* <div className="w-auto lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
             <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
@@ -273,6 +273,9 @@ const CustomerRecovery: React.FC = () => {
           <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto">
             <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
               <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#3BAFBF] bg-opacity-25 ">
+                <div className="block md:hidden w-full md:w-1/2 lg:h-[360px] h-full ">
+                  <Image src={serv2} alt="service1" className="w-full h-full" />
+                </div>
                 <div className="lg:my-2">
                   <h3 className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
                     Mobile IV Infusions
@@ -301,7 +304,7 @@ const CustomerRecovery: React.FC = () => {
                   </Link>
                 </div>
 
-                {/* <Image src={serv1} alt="service1" className="w-full h-full" /> */}
+
               </div>
               <div className=" w-full md:w-1/2 lg:h-[360px] h-full ">
                 <Image src={serv2} alt="service1" className="w-full h-full" />
@@ -337,7 +340,7 @@ const CustomerRecovery: React.FC = () => {
                 <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
                   <Link
                     href="/massage"
-                    className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-pink-300 mt-2 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  "
+                    className=" text-black text-sm font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  hover:bg-pink-300 mt-2 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  "
                   >
                     Book Massages
                   </Link>
@@ -358,18 +361,18 @@ const CustomerRecovery: React.FC = () => {
           </div>
         </div>
 
-        <div className=" w-full">
+        <div className=" w-full" >
           <div className="my-2 md:my-6 items-center w-[88%] flex   mx-auto">
             <div className=" border-b-2 border-gray-300 w-1/2"></div>
             <div className=" border-b-4 border-[#3BAFBF] w-1/2"></div>
           </div>
         </div>
 
-        <div className="text-center py-20"
-            style={{
-              background:
-                "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
-            }}>
+        <div className="text-center py-20 "
+          style={{
+            background:
+              "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+          }}>
           <h2 className="text-black font-montserrat text-xl font-bold mb-2">
             Benefits of Having a Recovery Nurse
           </h2>
@@ -378,8 +381,8 @@ const CustomerRecovery: React.FC = () => {
             faster recovery process and provides clients with a solid support
             system.
           </p>
-          <div className="px-28 pb-5 flex justify-between">
-            <div className="w-1/2">
+          <div className="px-28 pb-5 flex justify-between" >
+            <div className="w-1/2" >
               <Image src={recoveryNurse} alt="" className="" />
               <p className="text-black font-montserrat text-base font-normal leading-6 w-[70%] text-start">
                 A fundamental part of the surgical experience takes place
@@ -402,7 +405,7 @@ const CustomerRecovery: React.FC = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8 text-center">
+                <div className="mt-8 text-center" >
                   <Link
                     href="/surgery"
                     className="text-black font-montserrat text-lg uppercase font-bold bg-white p-2"
@@ -414,8 +417,7 @@ const CustomerRecovery: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <div className=" w-full mt-8 md:mt-24">
+        <div className=" w-full mt-8 md:mt-24" >
           <div className="my-6 items-center w-[60%] flex flex-col justify-center mx-auto">
             <h2 className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[16px] md:text-[24px]">
               We Service The Miami Area
@@ -425,7 +427,6 @@ const CustomerRecovery: React.FC = () => {
             </p>
           </div>
         </div>
-
         <div className=" w-full mt-4 md:mt-24 items-center flex justify-center ">
           <div className="my-6 items-center w-[90%] flex flex-col md:flex-row justify-center  mx-auto gap-8 lg:gap-16">
             <div className="w-full lg:w-1/2 h-auto md:h-[760px]">

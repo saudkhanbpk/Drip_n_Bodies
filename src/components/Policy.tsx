@@ -65,11 +65,11 @@ const Policy = () => {
               Fine Print Babe 
             </p>
           </div>
-          <div className="flex justify-center md:justify-start mt-4 md:mt-8 gap-8">
-            <Link href='#read-our-policy' className="bg-[#3BAFBF] px-4 py-2 text-sm md:text-base font-bold text-white">
+          <div className="flex justify-center items-center md:justify-start mt-4 md:mt-8 gap-8">
+            <Link href='#read-our-policy' className="bg-[#3BAFBF] px-4 py-2 text-[16px] md:text-base font-semibold uppercase  text-white">
               View Policies
             </Link>
-            <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-lg font-bold leading-7 uppercase mt-1">
+            <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-[16px] font-bold leading-7 uppercase mt-1">
               View our booking resource hub
             </Link>
           </div>
@@ -167,7 +167,7 @@ const Policy = () => {
             }}>
           <div className="w-[70%] mx-auto">
             <div className="mt-12 text-[24px]  font-bold flex justify-center text-md">
-              <p className="pl-10">Email Us Your Question</p>
+              <h2 className="pl-10">Email Us Your Question</h2>
             </div>
             <div className="mt-6 p-6">
               <p className="pb-4 font-bold ">How shall we address you?</p>

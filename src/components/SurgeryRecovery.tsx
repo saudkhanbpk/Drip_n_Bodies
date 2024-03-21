@@ -50,10 +50,10 @@ const SurgeryRecovery = () => {
   return (
     <>
       <div className="">
-        <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
+        <div className="w-full flex flex-col md:flex-row justify-between mx-auto"  style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
           {/* <div className="w-auto lg:w-auto md:px-10 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
           <div className="w-full md:w-[65%] px-10 pt-6 md:pt-16 ml-22">
-            <div className="flex flex-col gap-2 md:leading-[100px]">
+            <div className="flex flex-col gap-2 md:leading-[100px]" >
               <h1 className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
                 Where{" "}
               </h1>
@@ -111,8 +111,8 @@ const SurgeryRecovery = () => {
             </p>
             </div> 
           
-            <div className="md:flex md:justify-between md:pl-10 pl-14 pr-28 mt-10  gap-20 ">
-              <div className="text-center">
+            <div className="md:flex md:justify-between items-center md:pl-10 pl-14 pr-28 mt-10  gap-20 ">
+              <div className="text-center pt-5">
                 <h1 
                   style={{ 
                     color: '#FFF',
@@ -135,7 +135,7 @@ const SurgeryRecovery = () => {
                   surgery date and pay the $250 deposit.
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center pt-5">
                 <h1 
                   style={{ 
                     color: '#FFF',
@@ -155,7 +155,7 @@ const SurgeryRecovery = () => {
                 Schedule a pre-op consult call using the link in your confirmation email. Schedule this call once you&apos;ve completed your pre-op labs!
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center p-5">
                 <h1 className=""
                   style={{ 
                     color: '#FFF',
@@ -576,7 +576,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $300
                 </p>
               </div>
@@ -591,7 +591,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $379
                 </p>
               </div>
@@ -606,7 +606,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $299
                 </p>
               </div>
@@ -621,7 +621,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $200
                 </p>
               </div>
@@ -636,7 +636,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $199
                 </p>
               </div>
@@ -653,7 +653,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $140
                 </p>
               </div>
@@ -668,7 +668,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $229
                 </p>
               </div>
@@ -683,7 +683,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $189
                 </p>
               </div>
@@ -693,7 +693,7 @@ const SurgeryRecovery = () => {
                 <h3 className=" py-2 text-black font-Montserrat text-[16px] md:text-[24px] font-bold  leading-[27px] ">
                   Lymphatic Massages
                 </h3>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   starts at $130
                 </p>
               </div>
@@ -708,7 +708,7 @@ const SurgeryRecovery = () => {
                 <h3 className=" py-2 text-black font-Montserrat text-[16px] md:text-[24px] font-bold  leading-[27px] ">
                   Surgery Sisters
                 </h3>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   see above
                 </p>
               </div>

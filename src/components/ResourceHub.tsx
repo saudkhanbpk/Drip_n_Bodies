@@ -59,15 +59,15 @@ const ResourceHub = () => {
                 <div className='md:w-1/2 mb-10'>
                     <div className='md:px-8'>
 
-                        <p className="text-[#3BAFBF] md:text-end font-montserrat text-base font-bold leading-6">What time should I book? I don&apos;t know
-                            <p className='md:text-end text-center'>my surgery time yet!</p> </p>
-                        <p className="text-black font-montserrat text-base font-normal leading-6">Please book all packages for your ACTUAL surgery date. When booking a post-op recovery package, please select any me available on the calendar. We will service you according to your scheduled surgery time assigned by your surgery center.</p>
-                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-6 text-end">Do you offer transportation?</p>
-                        <p>Each recovery package comes with complimentary transportation from the surgical center to your
+                        <p className="text-[#3BAFBF] text-end font-montserrat text-base font-bold leading-6">What time should I book? I don&apos;t know
+                            <p className='text-end '>my surgery time yet!</p> </p>
+                        <p className="text-black text-right md:text-left font-montserrat text-base font-normal leading-6">Please book all packages for your ACTUAL surgery date. When booking a post-op recovery package, please select any me available on the calendar. We will service you according to your scheduled surgery time assigned by your surgery center.</p>
+                        <p className="text-[#3BAFBF] text-right font-montserrat  font-bold leading-6 ">Do you offer transportation?</p>
+                        <p className='text-right md:text-left'>Each recovery package comes with complimentary transportation from the surgical center to your
                             accommodation. Transportation to surgery and to post-op appointments can be arranged for an additional cost.</p>
-                        <p className="text-[#3BAFBF] md:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">Let’s Chat!</p>
-                        <p className=" md:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">305-908-9282</p>
-                        <p className="md:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">booking@dripnbodied.com</p>
+                        <p className="text-[#3BAFBF] text-right  font-montserrat text-base font-bold pt-1 pb-1 leading-5.75 uppercase">Let’s Chat!</p>
+                        <p className=" text-right  font-montserrat text-base font-bold leading-5.75 pt-1 pb-1 uppercase">305-908-9282</p>
+                        <p className="text-right  font-montserrat text-base font-bold leading-5.75 pt-1 pb-1 lowercase">booking@dripnbodied.com</p>
                     </div>
                 </div>
 
@@ -117,10 +117,10 @@ const ResourceHub = () => {
             </div>
             <div className='w-[80%] mx-auto  p-5  text-center'>
                 <h2 className="text-black text-center font-montserrat text-3xl  font-bold leading-normal  pb-5 ">IV Drips</h2>
-                <p className='text-[#3BAFBF]'>Post-Op Drip: Schedule your appointment on your surgery day.</p>
+                <p className='text-[#3BAFBF] font-bold'>Post-Op Drip: Schedule your appointment on your surgery day.</p>
                 <p>Please be aware that the designated time slot for your drip is merely a placeholder. Kindly send us a text with your surgery time on pre-op day to provide us with a rough estimate of when your surgery will conclude. Additionally, have your companion to notify us once your surgery is finished so that we can arrange for your infusion. (305) 908-9282 </p>
                 <div className='py-5'>
-                    <a href="#" className='text-[#3BAFBF]  '>Book an IV Drip</a>
+                    <a href="#" className='text-[#3BAFBF] underline '>Book an IV Drip</a>
                 </div>
             </div>
             <div className='md:w-[80%] mx-auto'>
@@ -151,7 +151,8 @@ const ResourceHub = () => {
                 <p className='pt-5'>Also please note that booking a STUDIO type room is not acceptable and will result in the cancellation of overnight
                     CNA services.</p>
             </div>
-            <div className='border-b-2 border-[#3BAFBF] w-[80%] mx-auto'><div className='border hidden md:block border-black/20 w-[40%]'></div></div>
+            {/* <div className='border-b border-b-black/10 w-[80%] mx-auto '> <div className='border border-[#3BAFBF] w-[40%] ms-auto'>  </div> </div> */}
+            <div className='border-b-4 border-b-[#3BAFBF] w-[40%]'> </div><div className=' border-b-2 border-b-[#000000]/20% w-full'></div>
             <div className='md:w-[80%] my-2 md:my-0 mx-auto '>
                 <h2 className="text-black text-center font-montserrat font-bold text-3xl pt-10 ">Pre-Op Call</h2>
             </div>
@@ -163,4 +164,4 @@ const ResourceHub = () => {
     )
 }
 
-export default ResourceHub
+export default ResourceHub
