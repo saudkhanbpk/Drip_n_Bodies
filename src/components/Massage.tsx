@@ -96,9 +96,9 @@ const Massage = () => {
               "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
           }}
         >
-          <div className="w-full flex flex-col md:flex-row justify-between mx-auto h-100">
+          <div className="w-full flex flex-col md:flex-row justify-between mx-auto h-[40rem]">
             {/* <div className="w-[65%] lg:w-auto md:px-2 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
-            <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
+            <div className="w-[65%] px-10 mb-4 h-100 pt-6 md:pt-16 ml-22">
               <div className="flex flex-col lg:leading-[100px]">
                 <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
                   Let’s Get{" "}
@@ -157,9 +157,9 @@ const Massage = () => {
           </div>
         </div>
 
-        <div className="bg-white py-20 mt-5">
+        <div className="bg-white py-20 mt-5 2xl:mt-40">
           <div className="w-full " id="physical-exame-and-lymphatic-massages">
-            <div className="my-6 w-[90%]  mx-auto p-4">
+            <div className="my-6 w-[90%] mx-auto p-4">
               <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
                 Physical Exam And Lymphatic Massages
               </h2>
@@ -215,7 +215,7 @@ const Massage = () => {
             </Link>
           </div>
         </div>
-        <div className="w-full" id="post-cosmetic-surgery-treatment"
+        <div className="w-full py-6" id="post-cosmetic-surgery-treatment"
           style={{
             background:
               "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",

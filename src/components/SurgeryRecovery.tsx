@@ -400,7 +400,7 @@ const SurgeryRecovery = () => {
         <p className="text-center font-montserrat text-black text-base font-normal leading-6">
           We will help you manage your surgeon subscribed medication.
         </p>
-        <div className="md:grid grid-cols-4 gap-6 px-20 py-10">
+        <div className="grid md:grid-cols-4 gap-6 px-20 py-10">
           {perks.map((perk, index) => (
             <div key={index} className="border border-[#3BAFBF]  px-2">
               <h4 className="text-center font-montserrat text-black text-[16px]  font-bold leading-7 mt-2">
