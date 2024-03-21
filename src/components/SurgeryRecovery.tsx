@@ -152,7 +152,7 @@ const SurgeryRecovery = () => {
                   Schedule Pre-Op Consult Call
                 </h3>
                 <p className="font-montserrat text-black text-base font-normal leading-tight">
-                Schedule a pre-op consult call using the link in your confirmation email. Schedule this call once you've completed your pre-op labs!
+                Schedule a pre-op consult call using the link in your confirmation email. Schedule this call once you&apos;ve completed your pre-op labs!
                 </p>
               </div>
               <div className="text-center">
