@@ -36,9 +36,9 @@ const Footer = () => {
       title: "Resources",
       links: [
         { name: "Resource Hub", href: "/resourcehub" },
-        { name: "Our Calendar", href: "/our-calendar" },
-        { name: "FAQs", href: "/faqs" },
-        { name: "Policies", href: "/policies" },
+        { name: "Our Calendar", href: "/calendar" },
+        { name: "FAQs", href: "/faq" },
+        { name: "Policies", href: "/policy" },
       ],
     },
     {
@@ -61,7 +61,7 @@ const Footer = () => {
             Subscribe for special offers
           </p>
           <input
-            type="text"
+            type="email"
             placeholder="Enter your email"
             className="outline-none border border-black pl-2 p-2 w-full md:w-[500px] text-center md:text-left"
           />

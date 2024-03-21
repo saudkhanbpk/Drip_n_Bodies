@@ -16,11 +16,7 @@ import ourservvice from "../images/ourservvice.png";
 import Link from "next/link";
 
 const OurServices = () => {
-  const router = useRouter();
-  const handleClick = (targetPage: any) => {
-    // Navigate to the desired page
-    router.push(targetPage);
-  };
+
   return (
     <>
 
@@ -68,10 +64,10 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat"
-                onClick={() => handleClick('/surgery')}>
+                <a href="/surgery" className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat"
+               >
                   Book A Package
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -100,11 +96,10 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  "
-                onClick={() => handleClick('/ivinfusion')}                
+                <a href="/ivinfusion" className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  "               
                 >
                   Book IV Drips
-                </button>
+                </a>
               </div>
             </div>
             <div className=" md:w-1/2 md:h-auto ">
@@ -142,11 +137,10 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat"
-                onClick={() => handleClick('/massage')}
+                <a href="/massage" className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat"
                 >
                   Book Massages
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -174,10 +168,10 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-white text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-black-300 mt-4 lg:mt-0 bg-[#000000] text-center font-montserrat"
-                 onClick={() => handleClick('/surgery')}>
+                <a href="/surgery" className=" text-white text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-black-300 mt-4 lg:mt-0 bg-[#000000] text-center font-montserrat"
+               >
                   Book Treatments
-                </button>
+                </a>
               </div>
             </div>
             <div className="w-full md:w-1/2 md:h-auto ">
