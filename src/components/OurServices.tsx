@@ -39,7 +39,7 @@ const OurServices = () => {
         </div>
 
         {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
-          <div className="w-full h-auto flex lg:flex-row flex-col gap-8 mx-auto px-20">
+          <div className="w-full h-auto flex lg:flex-row flex-col gap-8 mx-auto md:px-20">
             <div className="md:w-1/2 flex justify-end md:h-auto ">
               <Image src={serv1} alt="service1" className="w-full h-full ml-auto" />
             </div>
@@ -75,7 +75,7 @@ const OurServices = () => {
         {/* </div> */}
 
         {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
-          <div className="my-12 w-full gap-8 flex lg:flex-row flex-col mx-auto px-20">
+          <div className="my-12 w-full gap-8 flex lg:flex-row flex-col max-md:flex-col-reverse mx-auto md:px-20">
             <div className=" md:w-1/2 justify-end p-6 md:h-auto bg-[#3BAFBF] bg-opacity-50 ">
               <div className="my-2">
                 <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
@@ -112,7 +112,7 @@ const OurServices = () => {
           </div>
         {/* </div> */}
         {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
-          <div className="my-12 w-full flex lg:flex-row flex-col gap-8 mx-auto px-20">
+          <div className="my-12 w-full flex lg:flex-row flex-col gap-8 mx-auto md:px-20">
             <div className=" md:w-1/2 md:h-auto ">
               <Image src={serv4} alt="service1" className="w-full h-full" />
             </div>
@@ -147,7 +147,7 @@ const OurServices = () => {
           </div>
         {/* </div> */}
         {/* <div className="  items-center w-full flex flex-col justify-center mx-auto"> */}
-          <div className="my-12 w-full flex lg:flex-row flex-col gap-8 mx-auto px-20">
+          <div className="my-12 w-full flex lg:flex-row flex-col max-md:flex-col-reverse gap-8 mx-auto md:px-20">
             <div className="w-full md:w-1/2 p-6 md:h-auto bg-[#000000] bg-opacity-25 ">
               <div className=" my-2">
                 <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
