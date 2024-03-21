@@ -42,18 +42,19 @@ const OurServices = () => {
           </p>
         </div>
 
-        <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
-          <div className="items-center w-full flex lg:flex-row flex-col gap-8 justify-between mx-auto">
-            <div className=" md:w-[600px] md:h-[360px] ">
-              <Image src={serv1} alt="service1" className="w-full h-full" />
+        {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
+          <div className="w-full h-auto flex lg:flex-row flex-col gap-8 mx-auto px-20">
+            <div className="md:w-1/2 flex justify-end md:h-auto ">
+              <Image src={serv1} alt="service1" className="w-full h-full ml-auto" />
             </div>
-            <div className=" w-full md:w-[600px] p-6 md:h-[360px] bg-[#FFC700] bg-opacity-25 ">
+            <div className=" w-full md:w-1/2 p-6 h-auto bg-[#FFC700] bg-opacity-25 ">
+              <div className="w-[95%] flex flex-col justify-start">
               <div className="my-2">
                 <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
                   Concierge Surgery Recovery
                 </h3>
               </div>
-              <div className="  md:w-[540px] md:h-auto my-4 flex-shrink-0">
+              <div className="md:h-auto my-4 flex-grow">
                 <p className="font-montserrat text-black text-base font-normal leading-6">
                   Drip N Bodied is a concierge IV hydration and post-operative
                   care company that services clients in South Florida’s
@@ -74,17 +75,18 @@ const OurServices = () => {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        {/* </div> */}
 
-        <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
-          <div className=" items-center w-full gap-5 flex lg:flex-row  flex-col justify-between mx-auto">
-            <div className=" md:w-[600px] p-6 md:h-[360px] bg-[#3BAFBF] bg-opacity-50 ">
+        {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
+          <div className="my-12 w-full gap-8 flex lg:flex-row flex-col mx-auto px-20">
+            <div className=" md:w-1/2 justify-end p-6 md:h-auto bg-[#3BAFBF] bg-opacity-50 ">
               <div className="my-2">
                 <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
                   IV Therapy and Drips
                 </h3>
               </div>
-              <div className="  md:w-[540px] md:h-auto my-4 flex-shrink-0">
+              <div className="  md:h-auto my-4 flex-shrink-0">
                 <p className="font-montserrat text-black text-base font-normal leading-6">
                   Drip N Bodied is a concierge IV hydration and post-operative
                   care company that services clients in South Florida’s
@@ -105,7 +107,7 @@ const OurServices = () => {
                 </button>
               </div>
             </div>
-            <div className=" md:w-[600px]  md:h-[360px] ">
+            <div className=" md:w-1/2 md:h-auto ">
               <Image
                 src={serv2}
                 alt="service1"
@@ -113,19 +115,20 @@ const OurServices = () => {
               />
             </div>
           </div>
-        </div>
-        <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
-          <div className=" items-center w-full flex lg:flex-row flex-col gap-8 justify-between mx-auto">
-            <div className=" md:w-[600px] md:h-[360px] ">
+        {/* </div> */}
+        {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
+          <div className="my-12 w-full flex lg:flex-row flex-col gap-8 mx-auto px-20">
+            <div className=" md:w-1/2 md:h-auto ">
               <Image src={serv4} alt="service1" className="w-full h-full" />
             </div>
-            <div className=" md:w-[600px] p-6 md:h-[360px] bg-[#F4B5D9] bg-opacity-50 ">
+            <div className=" md:w-1/2 p-6 md:h-auto bg-[#F4B5D9] bg-opacity-50 ">
+              <div className="w-[95%] flex flex-col justify-start">
               <div className="my-2">
                 <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
                   Lymphatic Massages
                 </h3>
               </div>
-              <div className="  md:w-[540px] h-auto my-4 flex-shrink-0">
+              <div className="h-auto my-4 flex-shrink-0">
                 <p className="font-montserrat text-black text-base font-normal leading-6">
                   Drip N Bodied is a concierge IV hydration and post-operative
                   care company that services clients in South Florida’s
@@ -147,16 +150,17 @@ const OurServices = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto">
-          <div className=" items-center w-full flex lg:flex-row flex-col gap-8 justify-between mx-auto">
-            <div className="w-full md:w-[600px] p-6 md:h-[360px] bg-[#000000] bg-opacity-25 ">
+          </div>
+        {/* </div> */}
+        {/* <div className="  items-center w-full flex flex-col justify-center mx-auto"> */}
+          <div className="my-12 w-full flex lg:flex-row flex-col gap-8 mx-auto px-20">
+            <div className="w-full md:w-1/2 p-6 md:h-auto bg-[#000000] bg-opacity-25 ">
               <div className=" my-2">
                 <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
                   Post Surgical Treatments
                 </h3>
               </div>
-              <div className="  md:w-[540px] md:h-auto my-4 flex-shrink-0">
+              <div className=" md:h-auto my-4 flex-shrink-0">
                 <p className="font-montserrat text-black text-base font-normal leading-6">
                   Drip N Bodied is a concierge IV hydration and post-operative
                   care company that services clients in South Florida’s
@@ -176,11 +180,11 @@ const OurServices = () => {
                 </button>
               </div>
             </div>
-            <div className="w-full md:w-[600px] md:h-[360px] ">
+            <div className="w-full md:w-1/2 md:h-auto ">
               <Image src={serv4} alt="service1" className="w-full h-full" />
             </div>
           </div>
-        </div>
+        {/* </div> */}
         <div className=" my-8 items-center w-full flex flex-col justify-center mx-auto">
           <Link href='/resourcehub' className="text-center font-montserrat text-[#3BAFBF] text-base font-bold leading-6 uppercase">
             LEARN MORE ABOUT BOOKING US

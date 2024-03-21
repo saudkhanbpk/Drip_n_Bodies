@@ -14,7 +14,7 @@ const AboutUs = () => {
     <>
       <div
         className="pb-20"
-      // style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}
+      style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}
       >
         <div className=" w-full md:flex justify-between bg-pink-50">
           <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22 ">
@@ -50,7 +50,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-[35%] w-full md:flex justify-end items-center">
+          <div className="md:w-[35%] w-full md:flex justify-end">
             <Image
               src={about1}
               alt="Logo"
@@ -136,7 +136,11 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-pink-50">
+        <div 
+         style={{
+          background:
+            "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+        }}>
           <div className="w-full pt-20 " id="meet-your-regiseterd-nurses">
             <div className=" items-center md:w-full  md:flex flex-col  justify-center mx-auto">
               <h2 className="text-center py-2 font-montserrat text-black text-[22px] md:text-3xl font-bold leading-normal text">

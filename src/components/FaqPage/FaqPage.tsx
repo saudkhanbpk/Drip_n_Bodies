@@ -75,7 +75,7 @@ const FaqPage = () => {
             <Link href='/faq#Frequently-asked-Questions' className="bg-[#3BAFBF] px-8 flex p-2 text-sm md:text-base font-bold text-white uppercase">
               View FAQ
             </Link>
-            <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-lg font-bold leading-7 uppercase mt-1">
+            <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-[16px] font-bold leading-7 uppercase mt-1">
               View our booking resource hub
             </Link>
           </div>
@@ -164,7 +164,11 @@ const FaqPage = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full flex justify-center bg-[#F4B5D9] bg-opacity-20">
+        <div className=" w-full flex justify-center"
+         style={{
+          background:
+            "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+        }}>
           <div className="w-[70%] mx-auto">
             <div className="mt-12 text-[24px] font-bold flex justify-center text-md">
               <p>Email Us Your Question</p>

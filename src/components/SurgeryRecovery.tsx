@@ -50,10 +50,10 @@ const SurgeryRecovery = () => {
   return (
     <>
       <div className="">
-        <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
+        <div className="w-full flex flex-col md:flex-row justify-between mx-auto"  style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
           {/* <div className="w-auto lg:w-auto md:px-10 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
           <div className="w-full md:w-[65%] px-10 pt-6 md:pt-16 ml-22">
-            <div className="flex flex-col gap-2 md:leading-[100px]">
+            <div className="flex flex-col gap-2 md:leading-[100px]" >
               <h1 className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
                 Where{" "}
               </h1>
@@ -151,10 +151,8 @@ const SurgeryRecovery = () => {
                 <h3 className="font-montserrat text-black font-bold text-base leading-6 mt-5">
                   Schedule Pre-Op Consult Call
                 </h3>
-                <p className="font-montserrat text-black text-base pb-3 font-normal leading-tight">
-                  Schedule a pre-op consult call using the link in your
-                  confirmation email. Schedule this call once you are completed
-                  your pre-op labs!
+                <p className="font-montserrat text-black text-base font-normal leading-tight">
+                Schedule a pre-op consult call using the link in your confirmation email. Schedule this call once you&apos;ve completed your pre-op labs!
                 </p>
               </div>
               <div className="text-center p-5">
@@ -211,7 +209,7 @@ const SurgeryRecovery = () => {
       <div className=" w-full px-auto">
         <div className=" items-center w-full flex xl:flex-row flex-col justify-center mx-auto gap-8">
           <div className="flex md:flex-row flex-col gap-6">
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
+            <div className="border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   One Night Glam
@@ -228,7 +226,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
-                <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2   hover:bg-blue-300   bg-[#3BAFBF] text-center font-montserrat  ">
+                <button className="buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2 bg-[#3BAFBF] text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -254,7 +252,7 @@ const SurgeryRecovery = () => {
                 </a>
               </div>
             </div>
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
+            <div className="border border-[#3BAFBF] bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Snatched!
@@ -262,7 +260,7 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
                   Perfrect for people
                 </p>
-                <p className=" text-cyan-600 my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
+                <p className=" text-[#f4b5d9] my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $1,400
                 </p>
                 <p className="mx-auto mt-10  h-[34px] w-[135px] text-black text-center font-montserrat text-xs font-normal leading-[17px]">
@@ -271,7 +269,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
-                <button className="buton bg-[#3BAFBF] buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  text-center font-montserrat  ">
+                <button className="buton bg-[#f4b5d9] buton w-[146px]  text-white text-sm font-bold leading-6 uppercase px-4 py-2  text-center font-montserrat  ">
                   Book
                 </button>
               </div>
@@ -292,7 +290,7 @@ const SurgeryRecovery = () => {
                 <p className="text-black text-center font-montserrat text-base font-normal leading-[17px]">
                   Complimentary transportation after surgery
                 </p>
-                <a className="link text-[#3BAFBF] text-center font-montserrat text-sm font-normal leading-[17px] underline">
+                <a className="link text-white text-center font-montserrat text-sm font-normal leading-[17px] underline">
                   View all services included
                 </a>
               </div>
@@ -300,7 +298,12 @@ const SurgeryRecovery = () => {
           </div>
 
           <div className="flex md:flex-row flex-col gap-6">
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
+            <div className=".background-PinkLight border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4"
+             style={{
+              background:
+                "linear-gradient(180deg, rgba(244, 181, 217, 0.20) 0%, rgba(244, 181, 217, 0.00) 47.4%), #FFF",
+            }}
+              >
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   The Bougie Babe
@@ -344,7 +347,7 @@ const SurgeryRecovery = () => {
               </div>
             </div>
 
-            <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px] flex flex-col items-center justify-start p-4">
+            <div className="border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px] flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Very Bougie!
@@ -397,7 +400,7 @@ const SurgeryRecovery = () => {
         <p className="text-center font-montserrat text-black text-base font-normal leading-6">
           We will help you manage your surgeon subscribed medication.
         </p>
-        <div className="md:grid grid-cols-4 gap-6 px-20 py-10">
+        <div className="grid md:grid-cols-4 gap-6 px-20 py-10">
           {perks.map((perk, index) => (
             <div key={index} className="border border-[#3BAFBF]  px-2">
               <h4 className="text-center font-montserrat text-black text-[16px]  font-bold leading-7 mt-2">
@@ -429,8 +432,12 @@ const SurgeryRecovery = () => {
         </div>
       </div>
 
-      <div className="w-full bg-gradient-to-b bg-[#F4B5D92B] from-#FFFFFF to-#FFFFFF bg-opacity-0 pb-4">
-        <div id="section2" className=" w-[70%]  mx-auto p-4 ">
+      <div className="w-full space-y-9"
+          style={{
+            background:
+              "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+          }}>
+        <div id="section2" className=" w-[70%] mx-auto p-4 space-y-6 ">
           <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
             Surgery Sisters
           </p>
@@ -440,11 +447,12 @@ const SurgeryRecovery = () => {
             together stay together!
           </p>
         </div>
-      </div>
+     
 
-      <div className=" w-full px-auto  bg-gradient-to-b bg-[#F4B5D92B] from-#FFFFFF to-#FFFFFF bg-opacity-0">
+      <div className=" w-full px-auto"
+      >
         <div className=" items-center w-full flex md:flex-row flex-col justify-center mx-auto gap-8">
-          <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] hover:mt-[-12px] bg-white w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
+          <div className="border border-[#3BAFBF] hover:mt-[-12px] bg-white w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
             <div className="flex flex-col gap-30">
               <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                 Snatched!
@@ -476,7 +484,7 @@ const SurgeryRecovery = () => {
               </p>
             </div>
           </div>
-          <div className="border border-[#3BAFBF] hover:bg-[#3BAFBF] bg-white hover:mt-[-12px]  w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
+          <div className="border border-[#3BAFBF]  bg-white hover:mt-[-12px]  w-[300px] h-[505px] flex flex-col items-center justify-center p-4">
             <div className="flex flex-col gap-30">
               <p className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                 The Bougie Babe
@@ -539,7 +547,7 @@ const SurgeryRecovery = () => {
         </div>
       </div>
       </div>
-
+      </div>
 
       <div className=" w-full">
         <div
@@ -568,7 +576,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $300
                 </p>
               </div>
@@ -583,7 +591,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $379
                 </p>
               </div>
@@ -598,7 +606,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $299
                 </p>
               </div>
@@ -613,7 +621,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $200
                 </p>
               </div>
@@ -628,7 +636,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $199
                 </p>
               </div>
@@ -645,7 +653,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $140
                 </p>
               </div>
@@ -660,7 +668,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $229
                 </p>
               </div>
@@ -675,7 +683,7 @@ const SurgeryRecovery = () => {
                 </p>
               </div>
               <div>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   $189
                 </p>
               </div>
@@ -685,7 +693,7 @@ const SurgeryRecovery = () => {
                 <h3 className=" py-2 text-black font-Montserrat text-[16px] md:text-[24px] font-bold  leading-[27px] ">
                   Lymphatic Massages
                 </h3>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   starts at $130
                 </p>
               </div>
@@ -700,7 +708,7 @@ const SurgeryRecovery = () => {
                 <h3 className=" py-2 text-black font-Montserrat text-[16px] md:text-[24px] font-bold  leading-[27px] ">
                   Surgery Sisters
                 </h3>
-                <p className="text-teal-400 text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
+                <p className="text-[#3BAFBF] text-right font-niconne text-[32px] md:text-[48px] flex justify-center items-center font-normal leading-[27px]">
                   see above
                 </p>
               </div>

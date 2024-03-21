@@ -8,7 +8,6 @@ const ResourceHub = () => {
 
     return (
         <>
-
             <div className="w-full" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
                 <div className='md:flex flex-col md:flex-row justify-between items-center md:items-start relative'>
 
@@ -34,7 +33,6 @@ const ResourceHub = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div className='w-full mx-auto text-white text-center font-montserrat text-lg font-italic text-[32px] bg-black mb-10 p-10 '>
@@ -49,11 +47,11 @@ const ResourceHub = () => {
                 <div className='md:w-1/2 mb-10'>
                     <div className='md:px-8'>
 
-                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-6">OMG! 😱 I don't see my surgery date available online! Are you guys booked?</p>
+                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-6">OMG! 😱 I don&apos;t see my surgery date available online! Are you guys booked?</p>
                         <p className="text-black font-montserrat text-base font-normal leading-6">If your surgery date is unavailable on the calendar, please text us to confirm</p>
                         <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-6">What area do you service?</p>
                         <p>Our central location for services is any residency within 10 miles of the Miami International Airport. If your lodging is beyond this 10-mile limit from the airport, regrettably, your services will be canceled. Please note that we do not provide services to locations including Miami Beach, Cutler Bay, or the vicinity of the Miami</p>
-                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-5.75">I'm traveling alone! Can I book your services?</p>
+                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-5.75">I&apos;m traveling alone! Can I book your services?</p>
                         <p className="text-black font-montserrat text-base font-normal leading-5.75">We HIGHLY recommend bringing a companion! If you are planning to travel alone you must get prior approval AND pay for additional CNA care ($300) during the day post-op day 1.</p>
                     </div>
                 </div>
@@ -61,15 +59,15 @@ const ResourceHub = () => {
                 <div className='md:w-1/2 mb-10'>
                     <div className='md:px-8'>
 
-                        <p className="text-[#3BAFBF] md:text-end font-montserrat text-base font-bold leading-6">What time should I book? I don't know
-                            <p className='md:text-end text-center'>my surgery time yet!</p> </p>
-                        <p className="text-black font-montserrat text-base font-normal leading-6">Please book all packages for your ACTUAL surgery date. When booking a post-op recovery package, please select any me available on the calendar. We will service you according to your scheduled surgery time assigned by your surgery center.</p>
-                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-6 text-end">Do you offer transportation?</p>
-                        <p>Each recovery package comes with complimentary transportation from the surgical center to your
+                        <p className="text-[#3BAFBF] text-end font-montserrat text-base font-bold leading-6">What time should I book? I don&apos;t know
+                            <p className='text-end '>my surgery time yet!</p> </p>
+                        <p className="text-black text-right md:text-left font-montserrat text-base font-normal leading-6">Please book all packages for your ACTUAL surgery date. When booking a post-op recovery package, please select any me available on the calendar. We will service you according to your scheduled surgery time assigned by your surgery center.</p>
+                        <p className="text-[#3BAFBF] text-right font-montserrat  font-bold leading-6 ">Do you offer transportation?</p>
+                        <p className='text-right md:text-left'>Each recovery package comes with complimentary transportation from the surgical center to your
                             accommodation. Transportation to surgery and to post-op appointments can be arranged for an additional cost.</p>
-                        <p className="text-[#3BAFBF] md:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">Let’s Chat!</p>
-                        <p className=" md:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">305-908-9282</p>
-                        <p className="md:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">booking@dripnbodied.com</p>
+                        <p className="text-[#3BAFBF] text-right  font-montserrat text-base font-bold pt-1 pb-1 leading-5.75 uppercase">Let’s Chat!</p>
+                        <p className=" text-right  font-montserrat text-base font-bold leading-5.75 pt-1 pb-1 uppercase">305-908-9282</p>
+                        <p className="text-right  font-montserrat text-base font-bold leading-5.75 pt-1 pb-1 lowercase">booking@dripnbodied.com</p>
                     </div>
                 </div>
 
@@ -115,14 +113,14 @@ const ResourceHub = () => {
             <div className='w-[80%] mx-auto text-center mb-10 mt-10 p-5'>
                 <h2 className="text-black text-center font-montserrat text-3xl font-bold leading-normal mb-10">Cancellation Policy</h2>
                 <p >If your full payment for the package is settled and you decide to cancel more than 7 days prior to your scheduled service date, you will receive a refund of the entire amount paid, excluding the non-refundable deposit.</p>
-                <p className='pt-5'> However, if you've paid in full and choose to cancel 7 days or less before your scheduled service date, a partial refund will be issued. Your refund will be reduced by the non-refundable deposit, and an additional $100 fee for each night a CNA was assigned to your package will also be deducted from the balance.</p>
+                <p className='pt-5'> However, if you&apos;ve paid in full and choose to cancel 7 days or less before your scheduled service date, a partial refund will be issued. Your refund will be reduced by the non-refundable deposit, and an additional $100 fee for each night a CNA was assigned to your package will also be deducted from the balance.</p>
             </div>
             <div className='w-[80%] mx-auto  p-5  text-center'>
                 <h2 className="text-black text-center font-montserrat text-3xl  font-bold leading-normal  pb-5 ">IV Drips</h2>
-                <p className='text-[#3BAFBF]'>Post-Op Drip: Schedule your appointment on your surgery day.</p>
+                <p className='text-[#3BAFBF] font-bold'>Post-Op Drip: Schedule your appointment on your surgery day.</p>
                 <p>Please be aware that the designated time slot for your drip is merely a placeholder. Kindly send us a text with your surgery time on pre-op day to provide us with a rough estimate of when your surgery will conclude. Additionally, have your companion to notify us once your surgery is finished so that we can arrange for your infusion. (305) 908-9282 </p>
                 <div className='py-5'>
-                    <a href="#" className='text-[#3BAFBF]  '>Book an IV Drip</a>
+                    <a href="#" className='text-[#3BAFBF] underline '>Book an IV Drip</a>
                 </div>
             </div>
             <div className='md:w-[80%] mx-auto'>
@@ -148,21 +146,19 @@ const ResourceHub = () => {
             <div className='w-[80%] mx-auto mb-10 text-center'>
                 <p>We HIGHLY recommend Provident Grand Luxury Short Term Residences Doral, Provident Doral at the Blue, Marriott Villas Doral, Homewood Suites Miami, Staybridge Doral, or Staybridge Miami International Airport as a choice of lodging. These places are very surgery-friendly and have suites that are spacious.
                 </p>
-                <p className='pt-5'>Provident Grand Luxury: Located in downtown Doral, this lodging is about a 15-20 mins drive to all the major surgery centers. This location has a luxury Airbnb condo feel with hotel amenities. This can be booked directly through the building's website or third-party sites. They have spacious and modern one and two-bedroom options, Staybridge Doral: This lodging is close to all the major surgery centers. They have one-bedroom or two-bedroom suites available. Do not book a studio room.</p>
+                <p className='pt-5'>Provident Grand Luxury: Located in downtown Doral, this lodging is about a 15-20 mins drive to all the major surgery centers. This location has a luxury Airbnb condo feel with hotel amenities. This can be booked directly through the building&apos;s website or third-party sites. They have spacious and modern one and two-bedroom options, Staybridge Doral: This lodging is close to all the major surgery centers. They have one-bedroom or two-bedroom suites available. Do not book a studio room.</p>
                 <p className='pt-5 '>Feel free to text us pictures of your choice of lodging for approval if you have any concerns.</p>
                 <p className='pt-5'>Also please note that booking a STUDIO type room is not acceptable and will result in the cancellation of overnight
                     CNA services.</p>
             </div>
-            <div className='border-b-2 border-[#3BAFBF] w-[80%] mx-auto'><div className='border hidden md:block border-black/20 w-[40%]'></div></div>
+            {/* <div className='border-b border-b-black/10 w-[80%] mx-auto '> <div className='border border-[#3BAFBF] w-[40%] ms-auto'>  </div> </div> */}
+            <div className='border-b-4 border-b-[#3BAFBF] w-[40%]'> </div><div className=' border-b-2 border-b-[#000000]/20% w-full'></div>
             <div className='md:w-[80%] my-2 md:my-0 mx-auto '>
                 <h2 className="text-black text-center font-montserrat font-bold text-3xl pt-10 ">Pre-Op Call</h2>
             </div>
             <div className='w-[80%] mx-auto text-center mb-10 pt-5 pb-2'>
-                <p className='pb-1'>Once you've booked your post-operative recovery package, utilize the link in your confirmation email to schedule a pre-operative call. Make sure to schedule this call within 30 days of your surgery date. The call will involve a review of your medical background and more!</p>
+                <p className='pb-1'>Once you&apos;ve booked your post-operative recovery package, utilize the link in your confirmation email to schedule a pre-operative call. Make sure to schedule this call within 30 days of your surgery date. The call will involve a review of your medical background and more!</p>
             </div>
-
-
-
 
         </>
     )

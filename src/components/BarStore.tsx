@@ -147,10 +147,10 @@ const BarStore: React.FC = () => {
     <>
       <div
         className=""
-        // style={{
-        //   background:
-        //     "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
-        // }}
+      // style={{
+      //   background:
+      //     "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+      // }}
       >
         <div className="">
           <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
@@ -224,6 +224,9 @@ const BarStore: React.FC = () => {
 
         <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto">
           <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
+          <div className="block md:hidden w-full md:w-1/2 lg:h-[360px] h-full ">
+              <Image src={serv2} alt="service1" className="w-full h-full" />
+            </div>
             <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#3BAFBF] bg-opacity-25 ">
               <div className="lg:my-2">
                 <h3 className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
@@ -246,7 +249,7 @@ const BarStore: React.FC = () => {
               <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
                 <Link
                   href="/ivinfusion"
-                  className=" text-white text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  "
+                  className=" text-white text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  "
                 >
                   Book IV Drips
                 </Link>
@@ -254,7 +257,7 @@ const BarStore: React.FC = () => {
 
               {/* <Image src={serv1} alt="service1" className="w-full h-full" /> */}
             </div>
-            <div className=" w-full md:w-1/2 lg:h-[360px] h-full ">
+            <div className="md:block hidden w-full md:w-1/2 lg:h-[360px] h-full ">
               <Image src={serv2} alt="service1" className="w-full h-full" />
             </div>
           </div>
@@ -300,6 +303,9 @@ const BarStore: React.FC = () => {
 
         <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto">
           <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
+          <div className="md:hidden block w-full md:w-1/2 lg:h-[360px] h-full ">
+              <Image src={serv2} alt="service1" className="w-full h-full" />
+            </div>
             <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#FFC700] bg-opacity-25 ">
               <div className="lg:my-2">
                 <h3 className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
@@ -327,10 +333,8 @@ const BarStore: React.FC = () => {
                   Book Treatments
                 </Link>
               </div>
-
-              {/* <Image src={serv1} alt="service1" className="w-full h-full" /> */}
             </div>
-            <div className=" w-full md:w-1/2 lg:h-[360px] h-full ">
+            <div className="hidden md:block w-full md:w-1/2 lg:h-[360px] h-full ">
               <Image src={serv2} alt="service1" className="w-full h-full" />
             </div>
           </div>
@@ -370,12 +374,12 @@ const BarStore: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4 justify-center mx-auto border-b-[2px]">
               <div className="px-4">
                 <div className="border-r-2 border-gray-300 pr-10">
-                <h2 className="text-black text-center font-Montserrat text-[24px] font-bold leading-normal">
-                  Monday - Saturday
-                </h2>
-                <p className="text-black font-Montserrat text-[24px] font-normal leading-normal">
-                  8:00 AM - 7:00 PM
-                </p>
+                  <h2 className="text-black text-center font-Montserrat text-[24px] font-bold leading-normal">
+                    Monday - Saturday
+                  </h2>
+                  <p className="text-black font-Montserrat text-[24px] font-normal leading-normal">
+                    8:00 AM - 7:00 PM
+                  </p>
                 </div>
                 <div className="flex flex-col items-center justify-center my-4">
                   <span className="text-3xl mx-auto">✉</span>
@@ -383,9 +387,9 @@ const BarStore: React.FC = () => {
                 </div>
               </div>
               <div className="px-4">
-                <h2 className="text-black text-center font-Montserrat text-[24px] font-bold leading-normal">
+                <p className="text-black text-center font-Montserrat text-[24px] font-bold leading-normal">
                   After Hours:
-                </h2>
+                </p>
                 <p className="text-black font-Montserrat text-[24px] font-normal leading-normal">
                   {" "}
                   By Request Only
@@ -400,8 +404,9 @@ const BarStore: React.FC = () => {
             <div className=" w-full ">
               <div className="my-6 items-center flex flex-col justify-center mx-auto">
                 <p className="pt-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
-                  1001 Ponce de Leon, Suite A Coral Gables, Florida
+                  1001 Ponce de Leon, Suite A 
                 </p>
+                <p className="pt-2  leading-normal text text-black text-center font-montserrat font-bold text-[24px]">Coral Gables, Florida</p>
               </div>
             </div>
             <div className="w-full xl:w-[560px] md:h-[50%] xl:h-[440px]">
@@ -437,9 +442,9 @@ const BarStore: React.FC = () => {
 
       <div className="w-full">
         <div className="my-6 w-[90%]  mx-auto p-4">
-        <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
-        Customer Reviews
-            </h2>
+          <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+            Customer Reviews
+          </h2>
           <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
             Drip N Bodied is a concierge IV hydration and post-operative care
             company that services clients in South Florida’s tri-county area in
