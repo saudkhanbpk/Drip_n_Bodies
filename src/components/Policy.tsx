@@ -65,7 +65,7 @@ const Policy = () => {
               Fine Print Babe 
             </p>
           </div>
-          <div className="flex justify-center md:justify-start mt-4 md:mt-8 gap-8">
+          <div className="flex justify-center items-center md:justify-start mt-4 md:mt-8 gap-8">
             <Link href='#read-our-policy' className="bg-[#3BAFBF] px-4 py-2 text-sm md:text-base font-bold text-white">
               View Policies
             </Link>

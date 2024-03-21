@@ -111,8 +111,8 @@ const SurgeryRecovery = () => {
             </p>
             </div> 
           
-            <div className="md:flex md:justify-between md:pl-10 pl-14 pr-28 mt-10  gap-20 ">
-              <div className="text-center">
+            <div className="md:flex md:justify-between items-center md:pl-10 pl-14 pr-28 mt-10  gap-20 ">
+              <div className="text-center pt-5">
                 <h1 
                   style={{ 
                     color: '#FFF',
@@ -135,7 +135,7 @@ const SurgeryRecovery = () => {
                   surgery date and pay the $250 deposit.
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center pt-5">
                 <h1 
                   style={{ 
                     color: '#FFF',
@@ -151,13 +151,13 @@ const SurgeryRecovery = () => {
                 <h3 className="font-montserrat text-black font-bold text-base leading-6 mt-5">
                   Schedule Pre-Op Consult Call
                 </h3>
-                <p className="font-montserrat text-black text-base font-normal leading-tight">
+                <p className="font-montserrat text-black text-base pb-3 font-normal leading-tight">
                   Schedule a pre-op consult call using the link in your
                   confirmation email. Schedule this call once you are completed
                   your pre-op labs!
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center p-5">
                 <h1 className=""
                   style={{ 
                     color: '#FFF',
