@@ -9,15 +9,16 @@ import thereal from "../images/TheReal.png";
 import realnurses from "../images/realnurses.svg";
 import { IoStar } from "react-icons/io5";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 
 
 const HeroSection = () => {
   const router = useRouter();
-  const handleClick = () => {
-    // Navigate to the desired page
-    router.push("https://g.co/kgs/wLxut7X");
-  };
+  // const handleClick = () => {
+  //   // Navigate to the desired page
+  //   router.push("https://g.co/kgs/wLxut7X");
+  // };
   return (
     <>
       <div className="w-full flex flex-col lg:flex-row justify-between  ">
@@ -87,9 +88,10 @@ const HeroSection = () => {
                         </svg>
                       </div>
                     </div>
-                    <p className=" mt-1 md:text-center font-montserrat text-blue-500 text-lg font-normal leading-27 cursor-pointer"
-                      onClick={() => handleClick()}>
+                    <p className=" mt-1 md:text-center font-montserrat text-blue-500 text-lg font-normal leading-27 cursor-pointer">
+                      <a href="https://g.co/kgs/wLxut7X" >
                       47 Google reviews
+                      </a>
                     </p>
                   </div>
                   <div>

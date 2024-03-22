@@ -32,13 +32,13 @@ const CalendarPage = () => {
         <div className="w-full flex flex-col md:flex-row justify-between mx-auto md:h-[600px] ">
           <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22">
             <div className="flex flex-col lg:leading-[100px]">
-              <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
+              <p className="text-5xl md:text-7xl xl:text-8xl font-bold font-montserrat">
                 View Our{" "}
               </p>
-              <p className="text-4xl lg:text-7xl  xl:text-8xl font-bold font-montserrat ">
+              <p className="text-5xl md:text-7xl xl:text-8xl   font-bold font-montserrat ">
                 Calendar For{" "}
               </p>
-              <p className="text-4xl lg:text-7xl  xl:text-8xl font-bold font-montserrat  ">
+              <p className="text-5xl md:text-7xl xl:text-8xl   font-bold font-montserrat  ">
                 {" "}
                 Your Big Day{" "}
               </p>

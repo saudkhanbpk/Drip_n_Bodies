@@ -161,13 +161,13 @@ const CustomerRecovery: React.FC = () => {
             {/* <div className="w-auto lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
             <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
               <div className="flex flex-col lg:leading-[100px]">
-                <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
+                <p className="text-5xl md::text-7xl xl:text-8xl font-bold font-montserrat">
                   Custom{" "}
                 </p>
-                <p className="text-4xl lg:text-8xl font-bold font-montserrat ">
+                <p className="text-5xl  md:text-7xl xl:text-8xl font-bold font-montserrat ">
                   Recovery{" "}
                 </p>
-                <p className="text-4xl lg:text-8xl font-bold text-[#3BAFBF] font-montserrat ">
+                <p className="text-5xl md:text-7xl xl:text-8xl font-bold text-[#3BAFBF] font-montserrat ">
                   {" "}
                   Experience!{" "}
                 </p>

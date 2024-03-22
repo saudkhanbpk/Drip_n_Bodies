@@ -119,10 +119,10 @@ export default function IVInfusions() {
                 Come
               </p>
 
-              <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat ">
+              <p className="text-5xl md::text-7xl xl:text-8xl font-bold font-montserrat ">
                 Experience{" "}
               </p>
-              <p className="text-4xl lg:text-7xl xl:text-8xl font-bold flex flex-row font-montserrat ">
+              <p className="text-5xl md:text-7xl xl:text-8xl font-bold flex flex-row font-montserrat ">
                 {" "}
                 The <span className="text-pink-300 ml-4">Drip Effect</span>{" "}
               </p>
@@ -274,12 +274,12 @@ export default function IVInfusions() {
           {dripsData.map((drip, index) => (
             <div
               key={index}
-              className="border text-center border-[#3BAFBF]  p-2 px-2 space-y-3 my-10 "
+              className="border text-center -z-20 border-[#3BAFBF]  p-2 px-2 space-y-3 my-10 "
             >
               <Image
                 src={img1}
                 alt=""
-                className="w-[95%] mx-auto h-[142px]  relative bottom-10 image-with-shadow"
+                className="w-[95%] mx-auto h-[142px] -z-10  relative bottom-10 image-with-shadow"
               />
               <h3 className="text-2xl font-bold">{drip.title}</h3>
               <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
@@ -307,7 +307,7 @@ export default function IVInfusions() {
         </div>
 
         <div className="flex items-center justify-center space-x-8">
-          <a className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
+          <a href="/surgery" className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
             VIEW POST-OP DRIPS
           </a>
           <a
@@ -357,10 +357,19 @@ export default function IVInfusions() {
                   <button className="bg-[#3BAFBF] py-1 px-2 text-white">
                     SCHEDULE DRIP
                   </button>
-                  <p>{drip.description}</p>
-                  <a className="underline text-[#3BAFBF] cursor-pointer">
-                    Click here to read more
-                  </a>
+                  <p> {showFullDescription[index]
+                    ? drip.description
+                    : `${drip.description.split(" ").slice(0, 15).join(" ")}...`}
+                  </p>
+                  <a
+                className="underline text-[#3BAFBF] cursor-pointer"
+                onClick={() => toggleDescription(index)}
+              >
+                {" "}
+                {showFullDescription[index]
+                  ? "Show less"
+                  : "Click here to read more"}
+              </a>
                 </div>
               ))}
             </div>
@@ -527,7 +536,7 @@ export default function IVInfusions() {
 
         <div className="flex items-center justify-center md:flex-row flex-col gap-2 md:gap-8">
           <Link
-            href="#section2"
+            href="/surgery"
             className="bg-[#F4B5D9] px-2 py-1 text-base font-bold"
           >
             VIEW POST-OP DRIPS

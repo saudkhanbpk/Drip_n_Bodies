@@ -13,9 +13,9 @@ const ResourceHub = () => {
 
                     <div className=" px-12  pt-6 md:pt-16 ml-16">
                         <div className="md:flex flex-col lg:leading-[100px]">
-                            <p className="text-4xl lg:text-8xl font-bold font-montserrat">Your</p>
-                            <p className="text-4xl lg:text-8xl font-bold font-montserrat">Booking </p>
-                            <p className="text-4xl lg:text-8xl text-[#3BAFBF] font-bold font-montserrat ">Resource Hub
+                            <p className="text-5xl md:text-7xl xl:text-8xl font-bold font-montserrat">Your</p>
+                            <p className="text-5xl md:text-7xl xl:text-8xl font-bold font-montserrat">Booking </p>
+                            <p className="text-5xl md:text-7xl xl:text-8xl text-[#3BAFBF] font-bold font-montserrat ">Resource Hub
                             </p>
                         </div>
                         <div className='md:flex justify-center items-center gap-6 md:justify-start mt-4 mr-6 md:mt-8 mb-10'>

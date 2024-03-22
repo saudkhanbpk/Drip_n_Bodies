@@ -55,13 +55,13 @@ const Policy = () => {
       <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start ">
         <div className="w-[66%] px-10  pt-6 md:pt-16 ml-22">
           <div className="flex flex-col lg:leading-[100px]">
-            <p className="text-4xl lg:text-8xl font-bold font-montserrat">
+            <p className="text-5xl md:text-7xl xl:text-8xl font-bold font-montserrat">
               It’s All
             </p>
-            <p className="text-4xl lg:text-8xl font-bold font-montserrat">
+            <p className="text-5xl md:text-7xl xl:text-8xl font-bold font-montserrat">
               About The{" "}
             </p>
-            <p className="text-4xl lg:text-8xl font-bold font-montserrat ">
+            <p className="text-5xl md:text-7xl xl:text-8xl font-bold font-montserrat ">
               Fine Print Babe 
             </p>
           </div>

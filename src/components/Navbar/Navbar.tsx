@@ -9,10 +9,10 @@ import { useRouter } from "next/navigation";
 const Navbar: React.FC = () => {
 
   const router = useRouter();
-  const handleClick = () => {
-    // Navigate to the desired page
-    router.push('/');
-  };
+  // const handleClick = () => {
+  //   // Navigate to the desired page
+  //   router.push('/');
+  // };
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -20,11 +20,12 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-white p-6 sticky top-0">
+    <nav className="flex items-center justify-between flex-wrap z-10 bg-white p-6 sticky top-0">
       <div className="flex items-center w-full">
         <div className="flex items-center flex-shrink-0 text-black mr-6">
-          <Image src={tempImagefaFymn} alt="Logo" className="h-12 w-16 cursor-pointer" 
-          onClick={() => handleClick()}/>
+        <a href="/">
+          <Image src={tempImagefaFymn} alt="Logo" className="h-12 w-16 cursor-pointer" />
+          </a>
         </div>
 
         <div className={`w-full  items-center md:flex hidden `}>

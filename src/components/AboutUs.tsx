@@ -19,13 +19,13 @@ const AboutUs = () => {
         <div className=" w-full md:flex justify-between bg-pink-50">
           <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22 ">
             <div className="  md:flex flex-col gap-2 md:leading-[100px] ">
-              <p className="md:text-8xl text-3xl font-bold font-montserrat">
+              <p className="md:text-7xl text-5xl xl:text-8xl  font-bold font-montserrat">
                 Who Are{" "}
               </p>
-              <p className="md:text-8xl  text-3xl font-bold text-[#F4B5D9]">
+              <p className="md:text-7xl  text-5xl xl:text-8xl  font-bold text-[#F4B5D9]">
                 The Real Nurses
               </p>
-              <p className="md:text-8xl text-3xl font-bold text-[#F4B5D9] font-montserrat">
+              <p className="md:text-7xl text-5xl xl:text-8xl  font-bold text-[#F4B5D9] font-montserrat">
                 Of Miami®
               </p>
             </div>
