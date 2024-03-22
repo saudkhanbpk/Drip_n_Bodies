@@ -18,18 +18,18 @@ const AboutUs = () => {
       >
         <div className=" w-full md:flex justify-between bg-pink-50">
           <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22 ">
-            <div className="  md:flex flex-col gap-2 md:leading-[100px] ">
-              <p className="md:text-8xl text-3xl font-bold font-montserrat">
+            <div className="  md:flex flex-col gap-2 mb-5 md:leading-[100px] ">
+              <p className="md:text-7xl text-5xl xl:text-8xl font-bold font-montserrat">
                 Who Are{" "}
               </p>
-              <p className="md:text-8xl  text-3xl font-bold text-[#F4B5D9]">
+              <p className="md:text-7xl text-5xl xl:text-8xl font-bold text-[#F4B5D9]">
                 The Real Nurses
               </p>
-              <p className="md:text-8xl text-3xl font-bold text-[#F4B5D9] font-montserrat">
+              <p className="md:text-7xl text-5xl xl:text-8xl font-bold text-[#F4B5D9] font-montserrat">
                 Of Miami®
               </p>
             </div>
-            <div className=" md:flex items-center my-3 :my-10 space-x-8 ">
+            <div className="flex flex-row max-md:flex-col items-start my-3 md:my-10 md:gap-8 gap-4 ">
               <div>
 
                 <Link
@@ -39,7 +39,7 @@ const AboutUs = () => {
                   VIEW OUR TEAM
                 </Link>
               </div>
-              <div className="mt-2 me-5 ">
+              <div className="me-5 ">
 
                 <Link
                   className="font-bold text-[16px] text-[#3BAFBF] font-montserrat "
@@ -73,13 +73,13 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="bg-white">
-          <div className="w-[90%] mx-auto pb-10">
+          <div className="w-[90%] mx-auto py-10">
             <div className=" w-full ">
               <div className=" items-center w-[88%] md:flex flex-col justify-center mx-auto mb-3">
-                <h2 className="text-center py-2 font-montserrat text-black text-[20px] md:text-3xl font-bold leading-normal text">
+                <h2 className="text-center md:py-2 font-montserrat text-black text-[20px] md:text-3xl font-bold leading-normal text">
                   About Drip N Bodied
                 </h2>
-                <p className="w-full my-8 flex justify-start  text-center font-montserrat text-black text-base font-normal leading-normal ">
+                <p className="w-full my-4 md:my-8 flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
                   Drip N Bodied is a concierge IV hydration and post-operative
                   care company that services clients in South Florida’s
                   tri-county area in the comfort of their home, office, or
@@ -141,7 +141,7 @@ const AboutUs = () => {
           background:
             "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
         }}>
-          <div className="w-full pt-20 " id="meet-your-regiseterd-nurses">
+          <div className="w-full pt-3 md:pt-20 " id="meet-your-regiseterd-nurses">
             <div className=" items-center md:w-full  md:flex flex-col  justify-center mx-auto">
               <h2 className="text-center py-2 font-montserrat text-black text-[22px] md:text-3xl font-bold leading-normal text">
                 Meet Your Registered Nurses

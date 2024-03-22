@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
          /></Link>
         </div>
 
-        <div className={`w-full  items-center md:flex hidden `}>
+        <div className={`w-full items-center md:flex hidden `}>
           <div className="text-sm flex-grow flex justify-end">
             <Link
               href="about"
@@ -118,9 +118,9 @@ const Navbar: React.FC = () => {
         <Link href="https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION"
         //  onClick={()=>handleClick("https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION")}
          >
-          <button className="uppercase md:px-6 block mx-auto px-14 py-2 leading-none border rounded text-white hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat text-xs font-bold">
+          <a className="uppercase md:px-6 block mx-auto px-14 py-2 leading-none border rounded text-white hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat text-xs font-bold">
             Book Free Consult
-          </button>
+          </a>
         </Link>
       </div>
 

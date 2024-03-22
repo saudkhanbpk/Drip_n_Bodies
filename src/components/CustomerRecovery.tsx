@@ -23,7 +23,7 @@ import Slider from "react-slick";
 import { MdNavigateNext } from "react-icons/md";
 import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
-import newrecovery from '../images/newrecovery.png'
+import newrecovery from "../images/newrecovery.png";
 
 interface SliderArrowProps {
   onClick?: () => void;
@@ -156,19 +156,19 @@ const CustomerRecovery: React.FC = () => {
   };
   return (
     <>
-      <div className="" >
+      <div className="">
         <div className="">
           <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
             {/* <div className="w-auto lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
             <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
               <div className="flex flex-col lg:leading-[100px]">
-                <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
+                <p className="text-5xl md::text-7xl xl:text-8xl font-bold font-montserrat">
                   Custom{" "}
                 </p>
-                <p className="text-4xl lg:text-8xl font-bold font-montserrat ">
+                <p className="text-5xl  md:text-7xl xl:text-8xl font-bold font-montserrat ">
                   Recovery{" "}
                 </p>
-                <p className="text-4xl lg:text-8xl font-bold text-[#3BAFBF] font-montserrat ">
+                <p className="text-5xl md:text-7xl xl:text-8xl font-bold text-[#3BAFBF] font-montserrat ">
                   {" "}
                   Experience!{" "}
                 </p>
@@ -265,8 +265,6 @@ const CustomerRecovery: React.FC = () => {
                     Book A Package
                   </Link>
                 </div>
-
-               
               </div>
             </div>
           </div>
@@ -275,7 +273,11 @@ const CustomerRecovery: React.FC = () => {
             <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
               <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#3BAFBF] bg-opacity-25 ">
                 <div className="block md:hidden w-full md:w-1/2 lg:h-[360px] h-full ">
-                  <Image src={newrecovery} alt="service1" className="w-full h-full" />
+                  <Image
+                    src={newrecovery}
+                    alt="service1"
+                    className="w-full h-full"
+                  />
                 </div>
                 <div className="lg:my-2">
                   <h3 className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
@@ -299,13 +301,11 @@ const CustomerRecovery: React.FC = () => {
                 <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
                   <Link
                     href="/ivinfusion"
-                    className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  "
+                    className=" text-black text-sm font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2 hover:bg-blue-300 mt-2 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat"
                   >
                     Book IV Drips
                   </Link>
                 </div>
-
-
               </div>
               <div className=" w-full md:w-1/2 lg:h-[360px] h-full ">
                 <Image src={serv2} alt="service1" className="w-full h-full" />
@@ -320,11 +320,11 @@ const CustomerRecovery: React.FC = () => {
               </div>
               <div className=" w-full md:w-1/2 p-2 lg:p-6 lg:h-[360px] h-auto bg-[#F4B5D9] bg-opacity-25 ">
                 <div className="lg:my-2">
-                  <h3 className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
+                  <h3 className="font-montserrat text-black text-base xl:text-3xl font-bold leading-7">
                     Private Lymphatic Massages
                   </h3>
                 </div>
-                <div className="  w-full h-auto my-2 xl:my-4 flex-shrink-0">
+                <div className="w-full h-auto my-2 xl:my-4 flex-shrink-0">
                   <p className="font-montserrat text-black text-sm lg:text-[16px] xl:text-base font-normal leading-4 xl:leading-6">
                     Drip N Bodied is a concierge IV hydration and post-operative
                     care company that services clients in South Florida’s
@@ -341,7 +341,7 @@ const CustomerRecovery: React.FC = () => {
                 <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
                   <Link
                     href="/massage"
-                    className=" text-black text-sm font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2  hover:bg-pink-300 mt-2 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat  "
+                    className=" text-black text-sm font-bold leading-3 lg:leading-6 uppercase p-2 lg:px-4 xl:py-2 hover:bg-pink-300 mt-2 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat"
                   >
                     Book Massages
                   </Link>
@@ -362,18 +362,20 @@ const CustomerRecovery: React.FC = () => {
           </div>
         </div>
 
-        <div className=" w-full" >
+        <div className=" w-full">
           <div className="my-2 md:my-6 items-center w-[88%] flex   mx-auto">
             <div className=" border-b-2 border-gray-300 w-1/2"></div>
             <div className=" border-b-4 border-[#3BAFBF] w-1/2"></div>
           </div>
         </div>
 
-        <div className="text-center py-20 "
+        <div
+          className="text-center py-20 "
           style={{
             background:
               "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
-          }}>
+          }}
+        >
           <h2 className="text-black font-montserrat text-xl font-bold mb-2">
             Benefits of Having a Recovery Nurse
           </h2>
@@ -382,10 +384,10 @@ const CustomerRecovery: React.FC = () => {
             faster recovery process and provides clients with a solid support
             system.
           </p>
-          <div className="px-28 pb-5 flex justify-between" >
-            <div className="w-1/2" >
+          <div className=" max-md:w-[90%] px-6 lg:px-28 pb-5 flex max-md:flex-col justify-between">
+            <div className=" md:w-1/2 w-full p-3 ">
               <Image src={recoveryNurse} alt="" className="" />
-              <p className="text-black font-montserrat text-base font-normal leading-6 w-[70%] text-start">
+              <p className="text-black font-montserrat text-base font-normal leading-6 md:w-[70%] text-center md:text-start">
                 A fundamental part of the surgical experience takes place
                 outside the operating room. Hiring a Drip N Bodied Nurse will
                 protect your investment by assuring you have excellent post
@@ -393,9 +395,9 @@ const CustomerRecovery: React.FC = () => {
                 ACLS Certified Registered Nurse.
               </p>
             </div>
-            <div className="border-r-[5px] border-[#F4B5D9] h-60 my-auto"></div>
-            <div className="w-1/2 text-start  ">
-              <div className="bg-[#F4B5D9E5] p-8 w-[60%] mx-auto mt-20">
+            <div className="border-r-[5px] border-[#F4B5D9] h-60 my-auto max-md:hidden"></div>
+            <div className="md:w-1/2 text-start w-full  ">
+              <div className="bg-[#F4B5D9E5] p-8 w-[90%] lg:w-[60%] mx-auto mt-20">
                 <ul className="list-disc pl-6 space-y-5">
                   {points.map((point, index) => (
                     <li
@@ -406,7 +408,7 @@ const CustomerRecovery: React.FC = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8 text-center" >
+                <div className="mt-8 text-center">
                   <Link
                     href="/surgery"
                     className="text-black font-montserrat text-lg uppercase font-bold bg-white p-2"
@@ -418,7 +420,7 @@ const CustomerRecovery: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full mt-8 md:mt-24" >
+        <div className=" w-full mt-8 md:mt-24">
           <div className="my-6 items-center w-[60%] flex flex-col justify-center mx-auto">
             <h2 className=" py-2  leading-normal text text-black text-center font-montserrat font-bold text-[16px] md:text-[24px]">
               We Service The Miami Area
@@ -508,7 +510,7 @@ const CustomerRecovery: React.FC = () => {
 
         <div className=" w-full my-2 md:my-8">
           <div className="my-2 md:my-6 items-center w-[90%] flex flex-col justify-center mx-auto">
-            <h2 className=" py-2   leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
+            <h2 className=" py-2 leading-normal text text-black text-center font-montserrat font-bold text-[24px]">
               Customer Reviews
             </h2>
             <p className="w-full py-3 md:py-10 flex justify-start text-center font-montserrat text-black text-base font-normal leading-normal ">
@@ -595,7 +597,7 @@ const CustomerRecovery: React.FC = () => {
               <div>
                 <div className="gap-0 mt-10 p-2 md:p-6 border-2 border-[#F4B5D9] bg-white w-full md:w-[360px] h-[305px]">
                   <div className=" flex justify-between">
-                    <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
+                    <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black h-auto">
                       <Image src={barq1} alt="quote" />
                     </span>
                     <div className="flex justify-center items-center">
@@ -775,7 +777,10 @@ const CustomerRecovery: React.FC = () => {
             </Slider>
           </div>
           <div className="flex my-8 justify-center items-center">
-            <Link href='https://g.co/kgs/ARVoJJu' className="md:text-[#3BAFBF] text-center font-montserrat text-base font-bold md:font-normal leading-[27px]">
+            <Link
+              href="https://g.co/kgs/ARVoJJu"
+              className="md:text-[#3BAFBF] text-center font-montserrat text-base font-bold md:font-normal leading-[27px]"
+            >
               See all of our Google reviews
             </Link>
           </div>

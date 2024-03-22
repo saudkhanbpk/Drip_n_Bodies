@@ -13,6 +13,11 @@ import Link from "next/link";
 
 
 const HeroSection = () => {
+
+  // const handleClick = () => {
+  //   // Navigate to the desired page
+  //   router.push("https://g.co/kgs/wLxut7X");
+  // };
   return (
     <>
       <div className="w-full flex flex-col lg:flex-row justify-between  ">
@@ -114,6 +119,7 @@ const HeroSection = () => {
             >
               The Real Nurses Of Miami
             </h1>
+            
           </div>
         </div>
       </div>

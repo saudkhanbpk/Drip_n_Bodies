@@ -16,7 +16,6 @@ import ourservvice from "../images/ourservvice.png";
 import Link from "next/link";
 import newrecovery from '../images/newrecovery.png'
 const OurServices = () => {
-
   return (
     <>
 

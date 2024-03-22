@@ -4,10 +4,10 @@ import React from "react";
 
 const ScheduleConsultation = () => {
   const router = useRouter();
-  const handleClick = () => {
-    // Navigate to the desired page
-    router.push("https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION");
-  };
+  // const handleClick = () => {
+  //   // Navigate to the desired page
+  //   router.push("https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION");
+  // };
   
   return (
     <>
@@ -46,10 +46,10 @@ const ScheduleConsultation = () => {
                 nursing, or business start-ups.
               </p>
             </div>
-            <button className="px-6 p-2 font-bold text-[16px] mt-8 md:mt-8 text-white bg-[#3BAFBF]"
-            onClick={() => handleClick()}>
+            <a  href="https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION" className="px-6 p-2 font-bold text-[16px] mt-8 md:mt-8 text-white bg-[#3BAFBF]">
+            
               SCHEDULE A CONSULT CALL
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -90,23 +90,24 @@ const Massage = () => {
     <>
       <div className="w-full">
         <div
-          className="h-[600px]"
+          className="md:h-[600px] h-full"
           style={{
             background:
               "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+            paddingBottom:"0px"  
           }}
         >
-          <div className="w-full flex flex-col md:flex-row justify-between mx-auto h-[40rem]">
+          <div className="w-full flex flex-col md:flex-row justify-between mx-auto h-auto lg:h-[40rem]">
             {/* <div className="w-[65%] lg:w-auto md:px-2 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
-            <div className="w-[65%] px-10 mb-4 h-100 pt-6 md:pt-16 ml-22">
-              <div className="flex flex-col lg:leading-[100px]">
-                <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
+            <div className="w-full md:w-[65%] px-10 h-100 pt-6 md:pt-16 ml-22">
+              <div className="flex flex-col gap-2 md:leading-[100px]">
+                <p className="text-5xl md:text-7xl  font-bold font-montserrat">
                   Let’s Get{" "}
                 </p>
-                <p className="text-4xl lg:text-8xl font-bold font-montserrat ">
+                <p className="text-5xl md:text-7xl font-bold font-montserrat ">
                   Those Curves{" "}
                 </p>
-                <p className="text-4xl lg:text-8xl font-bold font-montserrat ">
+                <p className="text-5xl md:text-7xl font-bold font-montserrat ">
                   {" "}
                   Snatched!{" "}
                 </p>
@@ -144,7 +145,8 @@ const Massage = () => {
             </div>
           </div> */}
 
-          <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative -top-32">
+        </div>
+          <div className="py-12 md:w-full md:h-[141px] bg-cover bg-[url('../images/realmiami.png')] relative -top-20">
             <div className="flex justify-center  items-center w-auto h-[27px]">
               <h1
                 className="font-niconne md:text-6xl text-3xl font-normal leading-7 tracking-normal text-center text-[#3BAFBF] "
@@ -155,9 +157,8 @@ const Massage = () => {
               </h1>
             </div>
           </div>
-        </div>
 
-        <div className="bg-white py-20 mt-5 2xl:mt-40">
+        <div className="bg-white pb-20 mt-5 2xl:mt-40">
           <div className="w-full " id="physical-exame-and-lymphatic-massages">
             <div className="my-6 w-[90%] mx-auto p-4">
               <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
@@ -170,11 +171,11 @@ const Massage = () => {
             </div>
           </div>
 
-          <div className=" flex justify-center gap-4 flex-col md:flex-row bg-white">
+          <div className=" flex justify-center items-center gap-4  flex-col md:flex-row bg-white">
             {massagePackages.map((data: any, index: any) => (
               <div
                 key={index}
-                className="flex flex-col w-[300px] border border-[#3BAFBF] items-center justify-center space-y-2 p-4"
+                className="flex flex-col w-[300px] border border-[#3BAFBF] items-center justify-center space-y-2 my-3 md:my-0 p-4"
               >
                 <Image
                   src={data.imageSrc}
@@ -231,7 +232,7 @@ const Massage = () => {
             </p>
           </div>
 
-          <div className="w-full flex justify-center flex-col md:flex-row gap-8 px-8 pt-5">
+          <div className="w-full flex justify-center items-center flex-col md:flex-row gap-8 px-8 pt-5">
             {services.map((service, index) => (
               <>
                 <div className="px-4 flex flex-col w-[280px] h-auto border border-[#3BAFBF] items-center gap-3 p-4 bg-white">

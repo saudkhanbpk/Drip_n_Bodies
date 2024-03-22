@@ -70,7 +70,7 @@ const Footer = () => {
           </button>
         </div>
 
-        <div className="pt-10  md:flex  md:gap-20">
+        <div className="pt-10  md:flex  md:gap-20 ">
           <div className="md:w-1/3 mb-4 md:mb-0">
             <Image
               src={tempImageYIgr}
@@ -92,7 +92,7 @@ const Footer = () => {
                       {" "}
                       <IoIosMail className="text-gray-400 text-opacity-65 w-[72px] h-[38px]" />
                     </p>
-                    <p className="">booking@dripnbodied.com</p>
+                    <a href="mailto:booking@dripnbodied.com" className="">booking@dripnbodied.com</a>
                   </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@ const Footer = () => {
                     <p className="text-center text-3xl text-red-600 text-[32px] mx-auto ">
                       ☎
                     </p>
-                    <p className=" text-[16px] ">(305) 908-9282</p>
+                    <a href="tel:+13059089282" className=" text-[16px] ">(305) 908-9282</a>
                   </div>
                 </div>
               </div>
@@ -125,7 +125,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap md:px-0 px-2   md:flex-row justify-between gap-8 pt-8">
+        <div className=" md:flex flex-wrap md:px-0 px-2   md:flex-row  md:justify-between gap-8 pt-8">
           {sections.map((section, index) => (
             <div key={index} className="p-2">
               <p className={index === 2 ? "font-light " : ""}>
