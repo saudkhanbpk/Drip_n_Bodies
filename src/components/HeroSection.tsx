@@ -8,16 +8,11 @@ import quote2 from "../images/quote2.svg";
 import thereal from "../images/TheReal.png";
 import realnurses from "../images/realnurses.svg";
 import { IoStar } from "react-icons/io5";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 
 
 const HeroSection = () => {
-  const router = useRouter();
-  const handleClick = () => {
-    // Navigate to the desired page
-    router.push("https://g.co/kgs/wLxut7X");
-  };
   return (
     <>
       <div className="w-full flex flex-col lg:flex-row justify-between  ">
@@ -87,10 +82,10 @@ const HeroSection = () => {
                         </svg>
                       </div>
                     </div>
-                    <p className=" mt-1 md:text-center font-montserrat text-blue-500 text-lg font-normal leading-27 cursor-pointer"
-                      onClick={() => handleClick()}>
+                    <Link className=" mt-1 md:text-center font-montserrat text-blue-500 text-lg font-normal leading-27 cursor-pointer"
+                     href='https://g.co/kgs/wLxut7X' >
                       47 Google reviews
-                    </p>
+                    </Link>
                   </div>
                   <div>
                     <span className="font-niconn text-[50px] font-normal text-opacity-50 text-black  h-auto ">
@@ -111,7 +106,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="w-full  ">
-        <div className="border-[1px] py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
+        <div className="py-12 w-full h-[141px] bg-cover bg-[url('../images/realmiami.png')]">
           <div className="flex justify-center items-center w-auto h-[27px]">
             <h1
               className="text-[#3BAFBF] text-center font-niconne text-4xl lg:text-6xl font-normal "

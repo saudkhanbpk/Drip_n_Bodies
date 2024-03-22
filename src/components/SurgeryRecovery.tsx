@@ -733,8 +733,8 @@ const SurgeryRecovery = () => {
                 View Packages
               </a>
               <a
-                href="#section3"
-                className="mx-6  text-sm font-bold leading-6   uppercase   px-4 py-2  text-[#3BAFBF] text-center font-montserrat  "
+                href="#section2"
+                className="mx-6  text-sm font-bold leading-6 uppercase px-4 py-2  text-[#3BAFBF] text-center font-montserrat  "
               >
                 View Group Packages
               </a>

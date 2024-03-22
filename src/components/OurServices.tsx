@@ -16,11 +16,7 @@ import ourservvice from "../images/ourservvice.png";
 import Link from "next/link";
 
 const OurServices = () => {
-  const router = useRouter();
-  const handleClick = (targetPage: any) => {
-    // Navigate to the desired page
-    router.push(targetPage);
-  };
+
   return (
     <>
 
@@ -43,7 +39,7 @@ const OurServices = () => {
         </div>
 
         {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
-          <div className="w-full h-auto flex lg:flex-row flex-col gap-8 mx-auto px-20">
+          <div className="w-full h-auto flex lg:flex-row flex-col gap-8 mx-auto md:px-20">
             <div className="md:w-1/2 flex justify-end md:h-auto ">
               <Image src={serv1} alt="service1" className="w-full h-full ml-auto" />
             </div>
@@ -68,10 +64,10 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat"
-                onClick={() => handleClick('/surgery')}>
+                <a href="/surgery" className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat"
+               >
                   Book A Package
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -79,7 +75,7 @@ const OurServices = () => {
         {/* </div> */}
 
         {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
-          <div className="my-12 w-full gap-8 flex lg:flex-row flex-col mx-auto px-20">
+          <div className="my-12 w-full gap-8 flex lg:flex-row flex-col max-md:flex-col-reverse mx-auto md:px-20">
             <div className=" md:w-1/2 justify-end p-6 md:h-auto bg-[#3BAFBF] bg-opacity-50 ">
               <div className="my-2">
                 <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
@@ -100,11 +96,10 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  "
-                onClick={() => handleClick('/ivinfusion')}                
+                <a href="/ivinfusion" className=" text-white text-sm font-bold leading-6 uppercase   px-4 py-2   hover:bg-blue-300 mt-4 lg:mt-0 bg-[#3BAFBF] text-center font-montserrat  "               
                 >
                   Book IV Drips
-                </button>
+                </a>
               </div>
             </div>
             <div className=" md:w-1/2 md:h-auto ">
@@ -117,7 +112,7 @@ const OurServices = () => {
           </div>
         {/* </div> */}
         {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
-          <div className="my-12 w-full flex lg:flex-row flex-col gap-8 mx-auto px-20">
+          <div className="my-12 w-full flex lg:flex-row flex-col gap-8 mx-auto md:px-20">
             <div className=" md:w-1/2 md:h-auto ">
               <Image src={serv4} alt="service1" className="w-full h-full" />
             </div>
@@ -142,18 +137,17 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat"
-                onClick={() => handleClick('/massage')}
+                <a href="/massage" className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-pink-300 mt-4 lg:mt-0 bg-[#F4B5D9] text-center font-montserrat"
                 >
                   Book Massages
-                </button>
+                </a>
               </div>
             </div>
           </div>
           </div>
         {/* </div> */}
         {/* <div className="  items-center w-full flex flex-col justify-center mx-auto"> */}
-          <div className="my-12 w-full flex lg:flex-row flex-col gap-8 mx-auto px-20">
+          <div className="my-12 w-full flex lg:flex-row flex-col max-md:flex-col-reverse gap-8 mx-auto md:px-20">
             <div className="w-full md:w-1/2 p-6 md:h-auto bg-[#000000] bg-opacity-25 ">
               <div className=" my-2">
                 <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
@@ -174,10 +168,10 @@ const OurServices = () => {
                 </p>
               </div>
               <div className="md:w-[200px] md:h-[43px]">
-                <button className=" text-white text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-black-300 mt-4 lg:mt-0 bg-[#000000] text-center font-montserrat"
-                 onClick={() => handleClick('/surgery')}>
+                <a href="/surgery" className=" text-white text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-black-300 mt-4 lg:mt-0 bg-[#000000] text-center font-montserrat"
+               >
                   Book Treatments
-                </button>
+                </a>
               </div>
             </div>
             <div className="w-full md:w-1/2 md:h-auto ">
