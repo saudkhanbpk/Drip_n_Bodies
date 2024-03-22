@@ -394,7 +394,7 @@ const SurgeryRecovery = () => {
         </div>
       </div>
       <div className="text-center mt-20">
-        <h3 className="text-center font-montserrat text-black text-base font-bold leading-normal">
+        <h3 className="text-center pb-3 font-montserrat text-black text-base font-bold leading-normal">
           Our “Bodied Perks”
         </h3>
         <p className="text-center font-montserrat text-black text-base font-normal leading-6">
@@ -437,7 +437,7 @@ const SurgeryRecovery = () => {
             background:
               "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
           }}>
-            {/* <div className="absolute bottom-0  left-0 w-full h-[30px]" style={{ background: 'linear-gradient(to bottom,  rgba(244, 181, 217, 0.17) , transparent)' }}></div> */}
+            <div className="absolute bottom-0  left-0 w-full h-[30px]" style={{ background: 'linear-gradient(to bottom,  rgba(244, 181, 217, 0.17) , transparent)' }}></div>
 
         <div id="section2" className=" w-[70%] mx-auto p-4 space-y-6 ">
           <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
@@ -733,8 +733,8 @@ const SurgeryRecovery = () => {
                 View Packages
               </a>
               <a
-                href="#section2"
-                className="mx-6  text-sm font-bold leading-6 uppercase px-4 py-2  text-[#3BAFBF] text-center font-montserrat  "
+                href="#section3"
+                className="mx-6  text-sm font-bold leading-6   uppercase   px-4 py-2  text-[#3BAFBF] text-center font-montserrat  "
               >
                 View Group Packages
               </a>

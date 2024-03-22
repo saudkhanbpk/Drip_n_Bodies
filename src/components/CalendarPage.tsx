@@ -17,7 +17,7 @@ const CalendarPage = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const minDate = new Date(); // Minimum selectable date is today
 
-  const onChange = (date:any) => {
+  const onChange = (date: any) => {
     // Check if the selected date is not before the minimum date
     if (date >= minDate) {
       setSelectedDate(date);
@@ -87,7 +87,7 @@ const CalendarPage = () => {
           </h2>
           <p className="text-xs py-3">Use the calendar to book your date.</p>
         </div>
-        <div className="MainContent w-full flex flex-col md:flex-row justify-center items-center my-4 ">
+        <div className="MainContent w-full flex flex-col-reverse md:flex-row justify-center items-center my-4 ">
           <div className="BookingAction md:w-[45%] lg:w-[25%]  h-[600px] flex flex-col bg-[#3BAFBF] gap-2 p-3">
             <div className="p-1">
               <p className=" text-white font-montserrat text-base font-normal leading-normal uppercase">
@@ -142,23 +142,23 @@ const CalendarPage = () => {
               </button>
             </div>
           </div>
-          <div >
+          <div className="md:h-[600px] h-[400px] ">
             <Calendar
-            onChange={onChange}
-            value={selectedDate}
-            minDate={minDate}
+              onChange={onChange}
+              value={selectedDate}
+              minDate={minDate}
             />
 
 
           </div>
         </div>
       </div>
-        <div className="text-center my-2">
-          <p className="text-black font-montserrat text-base font-normal leading-[27px]">
-            Have questions about our booking process or your surgery date?
-          </p>
-          <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-base font-normal leading-[27px]">Click here for our booking resource hub</Link>
-        </div>
+      <div className="text-center my-2">
+        <p className="text-black font-montserrat text-base font-normal leading-[27px]">
+          Have questions about our booking process or your surgery date?
+        </p>
+        <Link href='/resourcehub' className="text-[#3BAFBF] font-montserrat text-base font-normal leading-[27px]">Click here for our booking resource hub</Link>
+      </div>
 
       <div className=" w-full mt-5">
         <div className=" items-center w-[60%] flex flex-col justify-center mx-auto">

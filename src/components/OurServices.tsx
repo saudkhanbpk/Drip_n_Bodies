@@ -14,7 +14,7 @@ import youtube from "../images/youtube.png";
 import fb from "../images/fb.png";
 import ourservvice from "../images/ourservvice.png";
 import Link from "next/link";
-
+import newrecovery from '../images/newrecovery.png'
 const OurServices = () => {
 
   return (
@@ -175,7 +175,7 @@ const OurServices = () => {
               </div>
             </div>
             <div className="w-full md:w-1/2 md:h-auto ">
-              <Image src={serv4} alt="service1" className="w-full h-full" />
+              <Image src={newrecovery} alt="service1" className="w-full h-full" />
             </div>
           </div>
         {/* </div> */}

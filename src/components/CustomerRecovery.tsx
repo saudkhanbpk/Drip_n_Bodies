@@ -23,6 +23,7 @@ import Slider from "react-slick";
 import { MdNavigateNext } from "react-icons/md";
 import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
+import newrecovery from '../images/newrecovery.png'
 
 interface SliderArrowProps {
   onClick?: () => void;
@@ -156,7 +157,7 @@ const CustomerRecovery: React.FC = () => {
   return (
     <>
       <div className="" >
-        <div className="" >
+        <div className="">
           <div className="w-full flex flex-col md:flex-row justify-between mx-auto">
             {/* <div className="w-auto lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-14 xl:pt-20 md:ml-8 xl:ml-16 "> */}
             <div className="w-[65%] px-10  pt-6 md:pt-16 ml-22">
@@ -265,7 +266,7 @@ const CustomerRecovery: React.FC = () => {
                   </Link>
                 </div>
 
-                {/* <Image src={serv1} alt="service1" className="w-full h-full" /> */}
+               
               </div>
             </div>
           </div>
@@ -274,7 +275,7 @@ const CustomerRecovery: React.FC = () => {
             <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
               <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#3BAFBF] bg-opacity-25 ">
                 <div className="block md:hidden w-full md:w-1/2 lg:h-[360px] h-full ">
-                  <Image src={serv2} alt="service1" className="w-full h-full" />
+                  <Image src={newrecovery} alt="service1" className="w-full h-full" />
                 </div>
                 <div className="lg:my-2">
                   <h3 className="font-montserrat  text-black text-base xl:text-3xl font-bold leading-7">
