@@ -115,7 +115,7 @@ export default function IVInfusions() {
           {/* <div className=" lg:w-auto md:px-5 lg:pl-8 m-3 md:m-5 lg:m-10 xl:pt-20 md:ml-8 xl:ml-12 "> */}
           <div className="w-full md:w-[65%] px-10  pt-6 md:pt-16 ml-22">
             <div className="flex flex-col lg:leading-[100px]">
-              <p className="text-4xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
+              <p className="text-5xl lg:text-7xl xl:text-8xl font-bold font-montserrat">
                 Come
               </p>
 
@@ -271,40 +271,26 @@ export default function IVInfusions() {
         </div>
 
         <div className="grid md:grid-cols-4 p-4 my-10 gap-4 w-full mx-auto">
-          {dripsData.map((drip, index) => (
-            <div
-              key={index}
-              className="border text-center -z-20 border-[#3BAFBF]  p-2 px-2 space-y-3 my-10 "
+        {dripsData.map((drip, index) => (
+          <div key={index} className="border text-center border-[#3BAFBF] p-2 px-2 space-y-3 my-10">
+            <img src={img1.src} alt="" className="w-[95%] mx-auto h-[142px] relative bottom-10 image-with-shadow" />
+            <h3 className="text-2xl font-bold">{drip.title}</h3>
+            <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">{drip.price}</p>
+            <button className="bg-[#3BAFBF] py-1 px-2 text-white">SCHEDULE DRIP</button>
+            <p>
+              {showFullDescription[index]
+                ? drip.description
+                : `${drip.description.split(' ').slice(0, 10).join(' ')}...`}
+            </p>
+            <a
+              className="underline text-[#3BAFBF] cursor-pointer"
+              onClick={() => toggleDescription(index)}
             >
-              <Image
-                src={img1}
-                alt=""
-                className="w-[95%] mx-auto h-[142px] -z-10  relative bottom-10 image-with-shadow"
-              />
-              <h3 className="text-2xl font-bold">{drip.title}</h3>
-              <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">
-                {drip.price}
-              </p>
-              <button className="bg-[#3BAFBF] py-1 px-2 text-white">
-                SCHEDULE DRIP
-              </button>
-              <p className="text-start w-[95%] mx-auto">
-                {showFullDescription[index]
-                  ? drip.description
-                  : `${drip.description.split(" ").slice(0, 10).join(" ")}...`}
-              </p>
-              <a
-                className="underline text-[#3BAFBF] cursor-pointer"
-                onClick={() => toggleDescription(index)}
-              >
-                {" "}
-                {showFullDescription[index]
-                  ? "Show less"
-                  : "Click here to read more"}
-              </a>
-            </div>
-          ))}
-        </div>
+              {showFullDescription[index] ? 'Show less' : 'Click here to read more'}
+            </a>
+          </div>
+        ))}
+      </div>
 
         <div className="flex items-center justify-center space-x-8">
           <a href="/surgery" className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
@@ -359,7 +345,7 @@ export default function IVInfusions() {
                   </button>
                   <p> {showFullDescription[index]
                     ? drip.description
-                    : `${drip.description.split(" ").slice(0, 15).join(" ")}...`}
+                    : `${drip.description.split(" ").slice(0, 10).join(" ")}...`}
                   </p>
                   <a
                 className="underline text-[#3BAFBF] cursor-pointer"
