@@ -21,7 +21,7 @@ import Slider from "react-slick";
 import { MdNavigateNext } from "react-icons/md";
 import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
-
+import newrecovery from '../images/newrecovery.png'
 interface SliderArrowProps {
   onClick?: () => void;
 }
@@ -335,7 +335,7 @@ const BarStore: React.FC = () => {
               </div>
             </div>
             <div className="hidden md:block w-full md:w-1/2 lg:h-[360px] h-full ">
-              <Image src={serv2} alt="service1" className="w-full h-full" />
+              <Image src={newrecovery} alt="service1" className="w-full h-full" />
             </div>
           </div>
         </div>

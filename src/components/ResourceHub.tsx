@@ -42,32 +42,32 @@ const ResourceHub = () => {
             <div className=''>
                 <h2 className=' text-black text-center font-montserrat text-[24px] font-bold leading-normal'>Frequently Asked Questions</h2>
             </div>
-            <div className=' w-[80%] mx-auto md:flex justify-center p-2 md:p-10 gap-6 '>
+            <div className=' w-[80%] mx-auto lg:flex justify-center p-2 lg:p-10 gap-6 '>
 
-                <div className='md:w-1/2 mb-10'>
-                    <div className='md:px-8'>
+                <div className='lg:w-1/2 mb-10'>
+                    <div className='lg:px-8 p-2'>
 
-                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-6">OMG! 😱 I don&apos;t see my surgery date available online! Are you guys booked?</p>
-                        <p className="text-black font-montserrat text-base font-normal leading-6">If your surgery date is unavailable on the calendar, please text us to confirm</p>
-                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-6">What area do you service?</p>
+                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-6 ">OMG! 😱 I don&apos;t see my surgery date available online! Are you guys booked?</p>
+                        <p className="text-black font-montserrat text-base font-normal leading-6 pt-4">If your surgery date is unavailable on the calendar, please text us to confirm</p>
+                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-6 pt-3">What area do you service?</p>
                         <p>Our central location for services is any residency within 10 miles of the Miami International Airport. If your lodging is beyond this 10-mile limit from the airport, regrettably, your services will be canceled. Please note that we do not provide services to locations including Miami Beach, Cutler Bay, or the vicinity of the Miami</p>
-                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-5.75">I&apos;m traveling alone! Can I book your services?</p>
+                        <p className="text-[#3BAFBF] font-montserrat text-base font-bold leading-5.75 pt-4 pb-2">I&apos;m traveling alone! Can I book your services?</p>
                         <p className="text-black font-montserrat text-base font-normal leading-5.75">We HIGHLY recommend bringing a companion! If you are planning to travel alone you must get prior approval AND pay for additional CNA care ($300) during the day post-op day 1.</p>
                     </div>
                 </div>
-                <div className='border-r-2 border-[#3BAFBF] h-[300px]  hidden md:flex my-auto'></div>
-                <div className='md:w-1/2 mb-10'>
-                    <div className='md:px-8'>
+                <div className='border-r-2 border-[#3BAFBF] h-[300px]  hidden lg:flex my-auto'></div>
+                <div className='lg:w-1/2 mb-10'>
+                    <div className='lg:px-8 p-2'>
 
-                        <p className="text-[#3BAFBF] text-end font-montserrat text-base font-bold leading-6">What time should I book? I don&apos;t know
-                            <p className='text-end '>my surgery time yet!</p> </p>
-                        <p className="text-black text-right md:text-left font-montserrat text-base font-normal leading-6">Please book all packages for your ACTUAL surgery date. When booking a post-op recovery package, please select any me available on the calendar. We will service you according to your scheduled surgery time assigned by your surgery center.</p>
-                        <p className="text-[#3BAFBF] text-right font-montserrat  font-bold leading-6 ">Do you offer transportation?</p>
-                        <p className='text-right md:text-left'>Each recovery package comes with complimentary transportation from the surgical center to your
+                        <p className="text-[#3BAFBF] lg:text-end text-start font-montserrat text-base font-bold leading-6 pb-2">What time should I book? I don&apos;t know
+                            <p className='lg:text-end text-start '>my surgery time yet!</p> </p>
+                        <p className="text-black text-start lg:text-end font-montserrat text-base font-normal leading-6">Please book all packages for your ACTUAL surgery date. When booking a post-op recovery package, please select any me available on the calendar. We will service you according to your scheduled surgery time assigned by your surgery center.</p>
+                        <p className="text-[#3BAFBF] lg:text-right text-start font-montserrat  font-bold leading-6 pt-4 md:pt-4">Do you offer transportation?</p>
+                        <p className='text-start lg:text-left '>Each recovery package comes with complimentary transportation from the surgical center to your
                             accommodation. Transportation to surgery and to post-op appointments can be arranged for an additional cost.</p>
-                        <p className="text-[#3BAFBF] text-right  font-montserrat text-base font-bold pt-1 pb-1 leading-5.75 uppercase">Let’s Chat!</p>
-                        <p className=" text-right  font-montserrat text-base font-bold leading-5.75 pt-1 pb-1 uppercase">305-908-9282</p>
-                        <p className="text-right  font-montserrat text-base font-bold leading-5.75 pt-1 pb-1 lowercase">booking@dripnbodied.com</p>
+                        <p className="text-[#3BAFBF] lg:text-right text-start  font-montserrat text-base font-bold pt-4 pb-1 leading-5.75 uppercase">Let’s Chat!</p>
+                        <p className=" lg:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">305-908-9282</p>
+                        <p className="lg:text-right text-start  font-montserrat text-base font-bold leading-5.75 lowercase">booking@dripnbodied.com</p>
                     </div>
                 </div>
 
@@ -76,7 +76,7 @@ const ResourceHub = () => {
                 <a href="" className='text-[#3BAFBF] font-[400px]'>See all frequently asked questions</a>
             </div>
             <div className='w-[80%] mx-auto bg-black gap-6 mb-10'>
-                <div className='w-[80%] mx-auto md:flex justify-center items-center '>
+                <div className='w-[80%] mx-auto md:flex justify-center  '>
                     <div className='md:w-1/2 mb-10 text-center p-2 md:p-10 '>
                         <h2 className="text-white text-center font-montserrat text-3xl font-bold leading-normal">Deposits</h2>
                         <h3 className="text-[#3BAFBF] font-montserrat text-base text-[24px] font-bold leading-6 pt-4">ALL DEPOSITS ARE NON-REFUNDABLE</h3>
@@ -90,7 +90,7 @@ const ResourceHub = () => {
                     </div>
                     <div className='border-r-2 border-[#3BAFBF] h-[250px] hidden md:flex my-auto'></div>
                     <div className='md:w-1/2 mb-[174px] text-center p-2 md:p-10 '>
-                        <p className="text-white text-center font-montserrat text-3xl font-bold leading-normal pt-6">Uploads</p>
+                        <p className="text-white text-center font-montserrat text-3xl font-bold leading-normal ">Uploads</p>
                         <p className="text-white text-center  font-montserrat pt-4 text-base font-normal leading-5.75">PHOTO ID submission is required to book all services. Identification provided must match card used to book or deposit fee will be forfeited and appointment canceled</p>
                         <Image src={liscence} alt="liscence" className='pt-10' />
 
@@ -152,7 +152,10 @@ const ResourceHub = () => {
                     CNA services.</p>
             </div>
             {/* <div className='border-b border-b-black/10 w-[80%] mx-auto '> <div className='border border-[#3BAFBF] w-[40%] ms-auto'>  </div> </div> */}
-            <div className='border-b-4 border-b-[#3BAFBF] w-[40%]'> </div><div className=' border-b-2 border-b-[#000000]/20% w-full'></div>
+            <div className='w-[80%] mx-auto'>
+
+            <div className=' border-b-4 border-b-[#3BAFBF] w-[40%]'> </div><div className=' border-b-2 border-b-[#000000]/20% w-full'></div>
+            </div>
             <div className='md:w-[80%] my-2 md:my-0 mx-auto '>
                 <h2 className="text-black text-center font-montserrat font-bold text-3xl pt-10 ">Pre-Op Call</h2>
             </div>

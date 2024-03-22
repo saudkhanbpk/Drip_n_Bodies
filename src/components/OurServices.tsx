@@ -14,7 +14,7 @@ import youtube from "../images/youtube.png";
 import fb from "../images/fb.png";
 import ourservvice from "../images/ourservvice.png";
 import Link from "next/link";
-
+import newrecovery from '../images/newrecovery.png'
 const OurServices = () => {
 
   return (
