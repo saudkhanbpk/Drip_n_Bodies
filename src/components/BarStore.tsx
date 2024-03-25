@@ -169,9 +169,9 @@ const BarStore: React.FC = () => {
                 </p>
               </div>
               <div className="my-6 md:my-5 lg:my-10 w-full lg:w-auto h-[43px] flex flex-col lg:flex-row">
-                <button className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
+                <a  href='#section9' className="w-full lg:w-auto text-white text-xs lg:text-sm xl:text-base font-bold lg:leading-6 uppercase lg:px-4 py-2  hover:bg-blue-300 my-1 lg:my-0 lg:mr-4 bg-[#3BAFBF] text-center font-montserrat">
                   VIEW BAR SERVICES
-                </button>
+                </a>
                 <Link
                   href="./ivinfusion"
                   className="w-full lg:w-auto text-xs lg:text-sm xl:text-base font-bold leading-6 uppercase px-4 py-2  text-[#3BAFBF] text-center font-montserrat"
@@ -204,7 +204,7 @@ const BarStore: React.FC = () => {
 
         <div className="w-full">
           <div className="my-6 w-[90%]  mx-auto p-4">
-            <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+            <h2 id="section9" className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
               IV Hydration + Post-Op Bar Services
             </h2>
             <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
@@ -304,7 +304,7 @@ const BarStore: React.FC = () => {
         <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto">
           <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
           <div className="md:hidden block w-full md:w-1/2 lg:h-[360px] h-full ">
-              <Image src={serv2} alt="service1" className="w-full h-full" />
+              <Image src={newrecovery} alt="service1" className="w-full h-full" />
             </div>
             <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#FFC700] bg-opacity-25 ">
               <div className="lg:my-2">
@@ -327,7 +327,7 @@ const BarStore: React.FC = () => {
               </div>
               <div className="lg:w-[200px] w-auto py-2 h-auto lg:h-[43px]">
                 <Link
-                  href=""
+                  href="/massage#section8"
                   className=" text-black text-sm    font-bold leading-3 lg:leading-6 uppercase p-2  lg:px-4 xl:py-2     hover:bg-blue-300 mt-2 lg:mt-0 bg-[#FFC700] text-center font-montserrat  "
                 >
                   Book Treatments

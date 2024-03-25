@@ -24,7 +24,7 @@ const OurServices = () => {
             <source src="/video.mp4" type="video/mp4" />
           </video>
 </div>
-      <div className="my-12  w-[90%] mx-auto">
+      <div className="my-12 w-[90%] mx-auto">
         <div className=" my-16 items-center w-full flex flex-col justify-center mx-auto">
           <h2 className="text-center py-2 md:py-6 font-montserrat text-black text-3xl font-bold leading-normal text">
             Our Services
@@ -71,9 +71,6 @@ const OurServices = () => {
             </div>
           </div>
           </div>
-        {/* </div> */}
-
-        {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
           <div className="my-12 w-full gap-8 flex lg:flex-row flex-col max-md:flex-col-reverse mx-auto md:px-20">
             <div className=" lg:w-1/2 justify-end p-6 md:h-auto bg-[#3BAFBF] bg-opacity-50 ">
               <div className="my-2">
@@ -109,8 +106,6 @@ const OurServices = () => {
               />
             </div>
           </div>
-        {/* </div> */}
-        {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
           <div className="my-12 w-full flex lg:flex-row flex-col gap-8 mx-auto md:px-20">
             <div className=" lg:w-1/2 md:h-auto ">
               <Image src={serv4} alt="service1" className="w-full h-full" />
@@ -144,6 +139,11 @@ const OurServices = () => {
             </div>
           </div>
           </div>
+        {/* </div> */}
+
+        {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
+        {/* </div> */}
+        {/* <div className=" my-12 items-center w-full flex flex-col justify-center mx-auto"> */}
         {/* </div> */}
         {/* <div className="  items-center w-full flex flex-col justify-center mx-auto"> */}
           <div className="my-12 w-full flex lg:flex-row flex-col max-md:flex-col-reverse gap-8 mx-auto md:px-20">
@@ -218,7 +218,7 @@ const OurServices = () => {
               </div>
               <div className="flex items-center">
                 <Image src={fb} alt="bbl-img" />
-                <Link href={"https://www.facebook.com/Dripnbodied/"} className="mx-2 text-[#3BAFBF]">Drip N Bodied</Link>
+                <Link href={"https://www.facebook.com/Dripnbodied/"} className="mx-2 text-[#3BAFBF]">/Dripnbodied</Link>
               </div>
             </div>
           </div>

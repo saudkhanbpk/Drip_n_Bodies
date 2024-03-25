@@ -223,7 +223,7 @@ const Massage = () => {
           }}>
           <div className="my-6 w-[90%] mx-auto p-4"
           >
-            <p className="py-2 leading-normal  text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+            <p id="section8"  className="py-2 leading-normal  text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
               Post Cosmetic Surgery Treatments
             </p>
             <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">

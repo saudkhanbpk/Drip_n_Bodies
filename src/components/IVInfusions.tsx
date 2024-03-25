@@ -370,7 +370,7 @@ export default function IVInfusions() {
             >
               VIEW PREMIUM INFUSIONS
             </a>
-            <a href="" className="underline text-[#3BAFBF] text-base font-bold">
+            <a href="#section7" className="underline text-[#3BAFBF] text-base font-bold">
               View Post-op Recovery Addons
             </a>
           </div>
@@ -379,10 +379,10 @@ export default function IVInfusions() {
 
       <div
         className="flex flex-col justify-center items-center p-4 md:p-20 space-y-10"
-        id="section3"
+       
       >
         <div className="flex flex-col  items-center justify-center md:space-y-2 ">
-          <p className="text-2xl font-bold" id="infusion-addon">
+          <p id='section7' className="text-2xl font-bold">
             Infusion Addons
           </p>
           <p className="text-base font-normal">

@@ -130,7 +130,7 @@ const SurgeryRecovery = () => {
                   Choose a Package For Your Surgery Date
                 </h3>
                 <p className="font-montserrat text-black text-base font-normal leading-tight pl-12 text-start">
-                  Select the cosmetic surgery or surgery sister package that
+                  Select the cosmetic surgery or surgery surgery sister package that
                   best fits your needs. Book this package for your scheduled
                   surgery date and pay the $250 deposit.
                 </p>
@@ -206,8 +206,8 @@ const SurgeryRecovery = () => {
         </div>
       </div>
 
-      <div className=" w-full px-auto">
-        <div className=" items-center w-full flex xl:flex-row flex-col justify-center mx-auto gap-8">
+      <div className=" w-full px-auto ">
+        <div className=" items-center w-full flex xl:flex-row flex-col justify-center mx-auto gap-8 ">
           <div className="flex md:flex-row flex-col gap-6">
             <div className="abc border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
@@ -265,7 +265,7 @@ const SurgeryRecovery = () => {
                 </p>
                 <p className="mx-auto mt-10  h-[34px] w-[135px] text-center font-montserrat text-xs font-normal leading-[17px]">
                   Or 4 payments of $100 by{" "}
-                  <span className="font-bold">Afterpay</span>
+                  <span className="font-bold text-white">Afterpay</span>
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
@@ -434,7 +434,7 @@ const SurgeryRecovery = () => {
             background:
               "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
           }}>
-            <div className="absolute bottom-0  left-0 w-full h-[30px]" style={{ background: 'linear-gradient(to bottom,  rgba(244, 181, 217, 0.17) , transparent)' }}></div>
+            <div className="absolute bottom-0  left-0 w-full h-[30px]" ></div>
 
         <div id="section2" className=" w-[70%] mx-auto p-4 space-y-6 ">
           <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
@@ -730,7 +730,7 @@ const SurgeryRecovery = () => {
                 View Packages
               </a>
               <a
-                href="#section3"
+                href="#section2"
                 className="mx-6  text-sm font-bold leading-6   uppercase   px-4 py-2  text-[#3BAFBF] text-center font-montserrat  "
               >
                 View Group Packages
