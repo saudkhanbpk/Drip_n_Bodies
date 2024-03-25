@@ -371,7 +371,7 @@ const CustomerRecovery: React.FC = () => {
 
         <div
           className="text-center py-20 "
-          style={{
+          style={{  
             background:
               "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
           }}
@@ -397,7 +397,7 @@ const CustomerRecovery: React.FC = () => {
             </div>
             <div className="border-r-[5px] border-[#F4B5D9] h-60 my-auto max-md:hidden"></div>
             <div className="md:w-1/2 text-start w-full  ">
-              <div className="bg-[#F4B5D9E5] p-8 w-[90%] lg:w-[60%] mx-auto mt-20">
+              <div className="bg-[#F4B5D9] p-8 w-[90%] lg:w-[60%] mx-auto mt-20">
                 <ul className="list-disc pl-6 space-y-5">
                   {points.map((point, index) => (
                     <li

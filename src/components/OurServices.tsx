@@ -214,11 +214,11 @@ const OurServices = () => {
               </div>
               <div className="flex items-center justify-normal">
                 <Image src={youtube} alt="bbl-img" />
-                <Link href={"https://www.youtube.com/@dripnbodied_recoverynurse"} className="mx-2 text-[#3BAFBF]">Drip N Bodied</Link>
+                <Link href={"https://www.youtube.com/@dripnbodied_recoverynurse"} className="mx-2 text-[#3BAFBF]">@dripnbodied_recoverynurse</Link>
               </div>
               <div className="flex items-center">
                 <Image src={fb} alt="bbl-img" />
-                <Link href={"https://www.facebook.com/Dripnbodied/"} className="mx-2 text-[#3BAFBF]">Drip N Bodied</Link>
+                <Link href={"https://www.facebook.com/Dripnbodied/"} className="mx-2 text-[#3BAFBF]">/Dripnbodied</Link>
               </div>
             </div>
           </div>

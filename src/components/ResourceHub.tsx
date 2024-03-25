@@ -3,9 +3,10 @@ import Image from 'next/image'
 import heroimg from '../images/heroimg.png'
 import liscence from '../images/liscence.png'
 import afterpay from '../images/afterpay.png'
+import Link from 'next/link'
 
 const ResourceHub = () => {
-
+    
     return (
         <>
             <div className="w-full" style={{ background: 'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)' }}>
@@ -40,7 +41,7 @@ const ResourceHub = () => {
                 <p> <span className='md:inline-block  h-[20px] text-[#F4B5D9] text-center font-montserrat md:text-7xl text-2xl italic font-normal leading-tight'>“</span>  Thank you for selecting us to be part of your post- <span className='md:inline-block  h-[20px] text-[#F4B5D9] text-center font-montserrat md:text-7xl text-2xl italic font-normal leading-tight'>”</span> <br /> operative recovery experience! We look forward to  <br /> getting you snatched and recovered! Feel free to reach <br /> out and schedule a complimentary consultation call if <br /> you have any questions about our services or just shoot <br /> us a text at 305-908-9282!</p>
             </div>
             <div className=''>
-                <h2 className=' text-black text-center font-montserrat text-[24px] font-bold leading-normal'>Frequently Asked Questions</h2>
+                <h2 id='section2' className=' text-black text-center font-montserrat text-[24px] font-bold leading-normal'>Frequently Asked Questions</h2>
             </div>
             <div className=' w-[80%] mx-auto lg:flex justify-center p-2 lg:p-10 gap-6 '>
 
@@ -63,8 +64,15 @@ const ResourceHub = () => {
                             <p className='lg:text-end text-start '>my surgery time yet!</p> </p>
                         <p className="text-black text-start lg:text-end font-montserrat text-base font-normal leading-6">Please book all packages for your ACTUAL surgery date. When booking a post-op recovery package, please select any me available on the calendar. We will service you according to your scheduled surgery time assigned by your surgery center.</p>
                         <p className="text-[#3BAFBF] lg:text-right text-start font-montserrat  font-bold leading-6 pt-4 md:pt-4">Do you offer transportation?</p>
-                        <p className='text-start lg:text-left '>Each recovery package comes with complimentary transportation from the surgical center to your
-                            accommodation. Transportation to surgery and to post-op appointments can be arranged for an additional cost.</p>
+                        {/* <p className='text-start lg:text-left ps-10'>Each recovery package comes with complimentary transportation from the surgical center to your
+                            accommodation. Transportation to surgery and to post-op appointments can be arranged for an additional cost.</p> */}
+                        <div className='lg:ms-8  '>
+                            <p className='text-start lg:text-left'>Each recovery package comes with complimentar</p>
+                            <p className='lg:ps-8 text-start lg:text-left'>transportation from the surgical center to your</p>
+                            <p>accommodation. Transportation to surgery and to </p>
+                            <p className='lg:ps-6 text-start lg:text-left'> post-op appointments can be arranged for an </p>
+                            <p className='lg:text-end text-start'>additional cost.</p>
+                        </div>
                         <p className="text-[#3BAFBF] lg:text-right text-start  font-montserrat text-base font-bold pt-4 pb-1 leading-5.75 uppercase">Let’s Chat!</p>
                         <p className=" lg:text-right text-start font-montserrat text-base font-bold leading-5.75 uppercase">305-908-9282</p>
                         <p className="lg:text-right text-start  font-montserrat text-base font-bold leading-5.75 lowercase">booking@dripnbodied.com</p>
@@ -73,7 +81,7 @@ const ResourceHub = () => {
 
             </div>
             <div className='text-center mb-5'>
-                <a href="" className='text-[#3BAFBF] font-[400px]'>See all frequently asked questions</a>
+                <a href="#section2" className='text-[#3BAFBF] font-[400px]'>See all frequently asked questions</a>
             </div>
             <div className='w-[80%] mx-auto bg-black gap-6 mb-10'>
                 <div className='w-[80%] mx-auto md:flex justify-center  '>
@@ -120,7 +128,7 @@ const ResourceHub = () => {
                 <p className='text-[#3BAFBF] font-bold'>Post-Op Drip: Schedule your appointment on your surgery day.</p>
                 <p>Please be aware that the designated time slot for your drip is merely a placeholder. Kindly send us a text with your surgery time on pre-op day to provide us with a rough estimate of when your surgery will conclude. Additionally, have your companion to notify us once your surgery is finished so that we can arrange for your infusion. (305) 908-9282 </p>
                 <div className='py-5'>
-                    <a href="#" className='text-[#3BAFBF] underline '>Book an IV Drip</a>
+                    <Link href="/ivinfusion" className='text-[#3BAFBF] underline '>Book an IV Drip</Link>
                 </div>
             </div>
             <div className='md:w-[80%] mx-auto'>
@@ -154,7 +162,7 @@ const ResourceHub = () => {
             {/* <div className='border-b border-b-black/10 w-[80%] mx-auto '> <div className='border border-[#3BAFBF] w-[40%] ms-auto'>  </div> </div> */}
             <div className='w-[80%] mx-auto'>
 
-            <div className=' border-b-4 border-b-[#3BAFBF] w-[40%]'> </div><div className=' border-b-2 border-b-[#000000]/20% w-full'></div>
+                <div className=' border-b-4 border-b-[#3BAFBF] w-[40%]'> </div><div className=' border-b-2 border-b-[#000000]/20% w-full'></div>
             </div>
             <div className='md:w-[80%] my-2 md:my-0 mx-auto '>
                 <h2 className="text-black text-center font-montserrat font-bold text-3xl pt-10 ">Pre-Op Call</h2>

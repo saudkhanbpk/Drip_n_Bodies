@@ -130,7 +130,7 @@ const SurgeryRecovery = () => {
                   Choose a Package For Your Surgery Date
                 </h3>
                 <p className="font-montserrat text-black text-base font-normal leading-tight pl-12 text-start">
-                  Select the cosmetic surgery or surgery sister package that
+                  Select the cosmetic surgery or surgery surgery sister package that
                   best fits your needs. Book this package for your scheduled
                   surgery date and pay the $250 deposit.
                 </p>
@@ -206,8 +206,8 @@ const SurgeryRecovery = () => {
         </div>
       </div>
 
-      <div className=" w-full px-auto">
-        <div className=" items-center w-full flex xl:flex-row flex-col justify-center mx-auto gap-8">
+      <div className=" w-full px-auto ">
+        <div className=" items-center w-full flex xl:flex-row flex-col justify-center mx-auto gap-8 ">
           <div className="flex md:flex-row flex-col gap-6">
             <div className="border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
@@ -253,19 +253,20 @@ const SurgeryRecovery = () => {
               </div>
             </div>
             <div className="border border-[#3BAFBF] bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
-              <div className="flex flex-col gap-30">
-                <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
+              <div className="flex flex-col gap-30 text-white">
+             
+                <h3 className="text-white text-center font-montserrat  font-bold text-[24px]  leading-[27px]">
                   Snatched!
                 </h3>
-                <p className="text-black text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
+                <p className="text-white text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
                   Perfrect for people
                 </p>
                 <p className=" text-[#f4b5d9] my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $1,400
                 </p>
-                <p className="mx-auto mt-10  h-[34px] w-[135px] text-black text-center font-montserrat text-xs font-normal leading-[17px]">
+                <p className="mx-auto mt-10   text-[#f4b5d9] h-[34px] w-[135px]  text-center font-montserrat text-xs font-normal leading-[17px]">
                   Or 4 payments of $100 by{" "}
-                  <span className="font-bold">Afterpay</span>
+                  <span className="font-bold text-white">Afterpay</span>
                 </p>
               </div>
               <div className="my-6 w-auto h-[43px] flex ">
@@ -274,20 +275,20 @@ const SurgeryRecovery = () => {
                 </button>
               </div>
               <div className="flex flex-col gap-[30px]">
-                <p className="text-black text-center font-montserrat text-base font-normal leading-[17px] w-[270px] h-[68px]">
+                <p className="text-white text-center font-montserrat text-base font-normal leading-[17px] w-[270px] h-[68px]">
                   Hands-on care, medication management, assessment and education
                   by RN on day of surgery
                 </p>
-                <p className="text-black text-center font-montserrat text-base font-normal leading-[17px] w-[270px]">
+                <p className="text-white text-center font-montserrat text-base font-normal leading-[17px] w-[270px]">
                   Up to 8 hours of CNA care during the day on the day of surgery
                 </p>
-                <p className="text-black text-center font-montserrat text-base font-bold leading-[17px] w-[270px]">
+                <p className="text-white text-center font-montserrat text-base font-bold leading-[17px] w-[270px]">
                   2 - 4 hours of private care the day after surgery
                 </p>
-                <p className="text-black text-center font-montserrat text-base font-normal leading-[17px]">
+                <p className="text-white text-center font-montserrat text-base font-normal leading-[17px]">
                   RN on call the day after surgery
                 </p>
-                <p className="text-black text-center font-montserrat text-base font-normal leading-[17px]">
+                <p className="text-white text-center font-montserrat text-base font-normal leading-[17px]">
                   Complimentary transportation after surgery
                 </p>
                 <a className="link text-white text-center font-montserrat text-sm font-normal leading-[17px] underline">
@@ -437,7 +438,7 @@ const SurgeryRecovery = () => {
             background:
               "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
           }}>
-            <div className="absolute bottom-0  left-0 w-full h-[30px]" style={{ background: 'linear-gradient(to bottom,  rgba(244, 181, 217, 0.17) , transparent)' }}></div>
+            <div className="absolute bottom-0  left-0 w-full h-[30px]" ></div>
 
         <div id="section2" className=" w-[70%] mx-auto p-4 space-y-6 ">
           <p className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
@@ -733,7 +734,7 @@ const SurgeryRecovery = () => {
                 View Packages
               </a>
               <a
-                href="#section3"
+                href="#section2"
                 className="mx-6  text-sm font-bold leading-6   uppercase   px-4 py-2  text-[#3BAFBF] text-center font-montserrat  "
               >
                 View Group Packages
