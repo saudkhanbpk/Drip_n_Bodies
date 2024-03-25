@@ -231,13 +231,41 @@ const CustomerRecovery: React.FC = () => {
         </div>
 
         <div className="w-full">
-          <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto">
-            <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
-              <div className=" w-full md:w-1/2 lg:h-[360px] h-full ">
+          {/* <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto"> */}
+            <div className="my-6 items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
+              <div className=" w-full md:w-1/2 md:h-auto ">
                 <Image src={serv1} alt="service1" className="w-full h-full" />
               </div>
+              <div className=" w-full lg:w-1/2 p-6 h-auto bg-[#FFC700] bg-opacity-25 ">
+              <div className="w-[95%] flex flex-col justify-start">
+              <div className="my-2">
+                <h3 className="font-montserrat  text-black text-3xl font-bold leading-7">
+                  Concierge Surgery Recovery
+                </h3>
+              </div>
+              <div className="md:h-auto my-4 flex-grow">
+                <p className="font-montserrat text-black text-base font-normal leading-6">
+                  Drip N Bodied is a concierge IV hydration and post-operative
+                  care company that services clients in South Florida’s
+                  tri-county area in the comfort of their home, office, or
+                  hotel. We are known for providing luxury IV therapy for
+                  clients that want to feel rehydrated, build up their immunity,
+                  or in desperate need of a hang-over cure! We also provide
+                  concierge post-operative services to clients having cosmetic
+                  surgery such as Brazilian Butt Lifts, Mommy Makeovers, Lipo
+                  360, and more! At Drip N Bodied, we take pride in assisting.
+                </p>
+              </div>
+              <div className="md:w-[200px] md:h-[43px]">
+                <a href="/surgery" className=" text-black text-sm font-bold leading-6 uppercase px-4 py-2 hover:bg-blue-300 mt-4 lg:mt-0 bg-[#FFC700] text-center font-montserrat"
+               >
+                  Book A Package
+                </a>
+              </div>
+            </div>
+          </div>
 
-              <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#FFC700] bg-opacity-25 ">
+              {/* <div className=" w-full md:w-1/2 p-2 lg:p-6 2xl:h-[360px] h-auto bg-[#FFC700] bg-opacity-25 ">
                 <div className="lg:my-2">
                   <h3 className="font-montserrat  text-black text-base xl:text-[28px] font-bold leading-7">
                     Cosmetic Surgery Recovery Services
@@ -265,9 +293,9 @@ const CustomerRecovery: React.FC = () => {
                     Book A Package
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
-          </div>
+          {/* </div> */}
 
           <div className=" my-12 items-center w-[90%] flex flex-col justify-center mx-auto">
             <div className=" items-center w-full flex flex-col md:flex-row gap-8 justify-between mx-auto">
@@ -324,7 +352,7 @@ const CustomerRecovery: React.FC = () => {
                     Private Lymphatic Massages
                   </h3>
                 </div>
-                <div className="w-full h-auto my-2 xl:my-4 flex-shrink-0">
+                <div className=" h-auto my-2 xl:my-4 flex-shrink-0">
                   <p className="font-montserrat text-black text-sm lg:text-[16px] xl:text-base font-normal leading-4 xl:leading-6">
                     Drip N Bodied is a concierge IV hydration and post-operative
                     care company that services clients in South Florida’s

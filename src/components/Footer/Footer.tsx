@@ -1,10 +1,43 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 import tempImageYIgr from "../../images/tempImageYIgr.svg";
 import Image from "next/image";
 import { IoIosMail } from "react-icons/io";
 import Link from "next/link";
 
 const Footer = () => {
+
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        console.log('Email sent successfully');
+        // Handle success
+      } else {
+        console.error('Failed to send email');
+        // Handle failure
+      }
+    } catch (error) {
+      console.error('Failed to send email', error);
+      // Handle failure
+    }
+  };
+
+
+
+
   const sections = [
     {
       title: "Concierge Services",
@@ -65,7 +98,8 @@ const Footer = () => {
             placeholder="Enter your email"
             className="outline-none border border-black pl-2 p-2 w-full md:w-[500px] text-center md:text-left"
           />
-          <button className="bg-[#3BAFBF] text-white p-2 px-6">
+          <button className="bg-[#3BAFBF] text-white p-2 px-6"
+          onClick={handleSubmit}>
             SUBSCRIBE
           </button>
         </div>

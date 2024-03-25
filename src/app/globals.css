@@ -34,7 +34,9 @@
 
 } */
 
-
+.abc:hover {
+  background: linear-gradient(180deg, rgba(244, 181, 217, 0.20) 0%, rgba(244, 181, 217, 0.00) 47.4%), #FFF;
+}
 
 
 .image-with-shadow {
