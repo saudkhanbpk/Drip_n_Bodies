@@ -46,7 +46,7 @@ const ScheduleConsultation = () => {
                 nursing, or business start-ups.
               </p>
             </div>
-            <a  href="https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION" className="px-6 p-2 font-bold text-[16px] mt-8 md:mt-8 text-white bg-[#3BAFBF]">
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=category:CONSULTATION" className="px-6 p-2 font-bold text-[16px] mt-8 md:mt-8 text-white bg-[#3BAFBF]">
             
               SCHEDULE A CONSULT CALL
             </a>

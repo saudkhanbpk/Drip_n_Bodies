@@ -209,7 +209,7 @@ const SurgeryRecovery = () => {
       <div className=" w-full px-auto ">
         <div className=" items-center w-full flex xl:flex-row flex-col justify-center mx-auto gap-8 ">
           <div className="flex md:flex-row flex-col gap-6">
-            <div className="border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
+            <div className="abc border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   One Night Glam
@@ -252,19 +252,18 @@ const SurgeryRecovery = () => {
                 </a>
               </div>
             </div>
-            <div className="border border-[#3BAFBF] bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
-              <div className="flex flex-col gap-30 text-white">
-             
-                <h3 className="text-white text-center font-montserrat  font-bold text-[24px]  leading-[27px]">
+            <div className=" text-white bg-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4">
+              <div className="flex flex-col gap-30">
+                <h3 className=" text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Snatched!
                 </h3>
-                <p className="text-white text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
+                <p className="text-center font-montserrat my-4 font-normal text-[16px] leading-[27px]">
                   Perfrect for people
                 </p>
                 <p className=" text-[#f4b5d9] my-6 text-center font-niconne text-8xl font-normal leading-[27px]">
                   $1,400
                 </p>
-                <p className="mx-auto mt-10   text-[#f4b5d9] h-[34px] w-[135px]  text-center font-montserrat text-xs font-normal leading-[17px]">
+                <p className="mx-auto mt-10  h-[34px] w-[135px] text-center font-montserrat text-xs font-normal leading-[17px]">
                   Or 4 payments of $100 by{" "}
                   <span className="font-bold text-white">Afterpay</span>
                 </p>
@@ -275,20 +274,20 @@ const SurgeryRecovery = () => {
                 </button>
               </div>
               <div className="flex flex-col gap-[30px]">
-                <p className="text-white text-center font-montserrat text-base font-normal leading-[17px] w-[270px] h-[68px]">
+                <p className=" text-center font-montserrat text-base font-normal leading-[17px] w-[270px] h-[68px]">
                   Hands-on care, medication management, assessment and education
                   by RN on day of surgery
                 </p>
-                <p className="text-white text-center font-montserrat text-base font-normal leading-[17px] w-[270px]">
+                <p className=" text-center font-montserrat text-base font-normal leading-[17px] w-[270px]">
                   Up to 8 hours of CNA care during the day on the day of surgery
                 </p>
-                <p className="text-white text-center font-montserrat text-base font-bold leading-[17px] w-[270px]">
+                <p className=" text-center font-montserrat text-base font-bold leading-[17px] w-[270px]">
                   2 - 4 hours of private care the day after surgery
                 </p>
-                <p className="text-white text-center font-montserrat text-base font-normal leading-[17px]">
+                <p className=" text-center font-montserrat text-base font-normal leading-[17px]">
                   RN on call the day after surgery
                 </p>
-                <p className="text-white text-center font-montserrat text-base font-normal leading-[17px]">
+                <p className="text-center font-montserrat text-base font-normal leading-[17px]">
                   Complimentary transportation after surgery
                 </p>
                 <a className="link text-white text-center font-montserrat text-sm font-normal leading-[17px] underline">
@@ -299,11 +298,8 @@ const SurgeryRecovery = () => {
           </div>
 
           <div className="flex md:flex-row flex-col gap-6">
-            <div className=".background-PinkLight border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4"
-             style={{
-              background:
-                "linear-gradient(180deg, rgba(244, 181, 217, 0.20) 0%, rgba(244, 181, 217, 0.00) 47.4%), #FFF",
-            }}
+            <div className="abc border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px]  flex flex-col items-center justify-start p-4"
+          
               >
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
@@ -348,7 +344,7 @@ const SurgeryRecovery = () => {
               </div>
             </div>
 
-            <div className="border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px] flex flex-col items-center justify-start p-4">
+            <div className="abc border border-[#3BAFBF] hover:mt-[-12px] transition-all w-[300px] h-[730px] flex flex-col items-center justify-start p-4">
               <div className="flex flex-col gap-30">
                 <h3 className="text-black text-center font-montserrat font-bold text-[24px] leading-[27px]">
                   Very Bougie!
@@ -515,7 +511,7 @@ const SurgeryRecovery = () => {
               The Bougie Babe recovery care for 2
               </h2>
               <p className="text-black text-center font-montserrat text-base font-normal leading-[17px]">
-                Add a 3rd for $600 (total discount of $1,100)
+                Add a 3rd for $1,100 (total discount of $1,401)
               </p>
             </div>
           </div>
