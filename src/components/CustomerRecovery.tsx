@@ -396,16 +396,16 @@ const CustomerRecovery: React.FC = () => {
               </p>
             </div>
             <div className="border-r-[5px] border-[#F4B5D9] h-60 my-auto max-md:hidden"></div>
-            <div className="md:w-1/2 text-start w-full  ">
-              <div className="bg-[#F4B5D9] p-8 w-[90%] lg:w-[60%] mx-auto mt-20">
-                <ul className="list-disc pl-6 space-y-5">
+            <div className="md:w-1/2 text-start w-full   ">
+              <div style={{boxShadow: "15px 15px 10px  gray"}} className="bg-[#F4B5D9] p-8 w-[90%] lg:w-[60%] mx-auto mt-20 " >
+                <ul className="list-disc pl-6 space-y-5 ">
                   {points.map((point, index) => (
                     <li
                       key={index}
                       className="text-black font-montserrat text-xl font-bold "
                     >
                       {point}
-                    </li>
+                    </li>                               
                   ))}
                 </ul>
                 <div className="mt-8 text-center">
