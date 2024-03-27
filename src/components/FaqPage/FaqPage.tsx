@@ -10,6 +10,29 @@ import Link from "next/link";
 
 
 const FaqPage = () => {
+  const [question, setQuestion] = useState("");
+  const [questionError, setQuestionError] = useState("");
+
+
+  const handleQuestionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const value = e.target.value;
+    setQuestion(value);
+    if (value.length < 10 || value.length > 500) {
+      setQuestionError("Question must be between 10 and 500 characters long.");
+    } else {
+      setQuestionError("");
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (question.length < 10 || question.length > 500) {
+      setQuestionError("Question must be between 10 and 500 characters long.");
+      return;
+    }
+    // Proceed with form submission
+    console.log("Form submitted successfully");
+  };
 
   const faqItems = [
     {
@@ -120,7 +143,7 @@ const FaqPage = () => {
                 />
                 <label
                   htmlFor={`item${index}`}
-                  className="flex items-center justify-between cursor-pointer p-2 rounded-md ga-4 md:gap-8 hover:bg-pink-300/25"
+                  className="flex items-center justify-between cursor-pointer p-2 rounded-md ga-4 md:gap-8 hover: -300/25"
                   onClick={() => handleAccordionClick(index)}
                 >
                   <span className="text-black font-montserrat text-base font-bold">
@@ -173,6 +196,7 @@ const FaqPage = () => {
             <div className="mt-12 text-[24px] font-bold flex justify-center text-md">
               <p>Email Us Your Question</p>
             </div>
+            <form onSubmit={handleSubmit}>
             <div className="mt-6 p-6">
               <p className="pb-4 font-bold ">How shall we address you?</p>
               <input
@@ -198,15 +222,19 @@ const FaqPage = () => {
                 Tell us about your question. (Please use 10 to 500 characters)
               </p>
               <textarea
-                name=""
-                id=""
-                placeholder="Enter your question and any additional details"
-                className="border border-black w-full h-[300px] outline-none p-3 "
-              ></textarea>
+          id="question"
+          name="question"
+          placeholder="Enter your question and any additional details"
+          value={question}
+          onChange={handleQuestionChange}
+          className={`border ${questionError ? "border-red-500" : "border-black"} w-full h-[300px] outline-none p-3`}
+        />
+        {questionError && <p className="text-red-500">{questionError}</p>}
             </div>
             <div className="mb-20 ml-5">
               <button className="text-white font-montserrat text-md font-semibold uppercase bg-[#3BAFBF] px-4 py-1">Submit</button>
             </div>
+            </form>
           </div>
         </div>
       </div>

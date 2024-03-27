@@ -1,49 +1,74 @@
 'use client'
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import tempImageYIgr from "../../images/tempImageYIgr.svg";
 import Image from "next/image";
 import { IoIosMail } from "react-icons/io";
 import Link from "next/link";
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Footer = () => {
-
+  const form = useRef<HTMLFormElement | null>(null); // Explicitly specify the type of the ref
   const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+  const[verified, setVerified]=useState(false);
+  function onChange() {
+    setVerified(true);
+  }
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      setError('Please enter a valid email address');
+      return;
+    }
 
-    try {
-      const response = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
+
+    emailjs.sendForm('service_2amws0d', 'template_xhk8ddz', form.current, 'V3m6c5qimGtsOA6yF')
+      .then((result: any) => {
+        console.log(result.text);
+      }, (error: any) => {
+        console.log(error.text);
       });
 
-      if (response.ok) {
-        console.log('Email sent successfully');
-        // Handle success
-      } else {
-        console.error('Failed to send email');
-        // Handle failure
-      }
-    } catch (error) {
-      console.error('Failed to send email', error);
-      // Handle failure
-    }
+    setEmail("")
+
+    // try {
+    //   const response = await fetch('/api/subscribe', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({ email }),
+    //   });
+
+    //   if (response.ok) {
+    //     console.log('Email sent successfully');
+    //     // Handle success
+    //   } else {
+    //     console.error('Failed to send email');
+    //     // Handle failure
+    //   }
+    // } catch (error) {
+    //   console.error('Failed to send email', error);
+    //   // Handle failure
+    // }
   };
 
-
+  const handleEmailChange = (e: any) => {
+    setError('');
+    setEmail(e.target.value);
+  };
 
 
   const sections = [
     {
       title: "Concierge Services",
       links: [
-       { name: "Concierge Services", href: "/customerrecovery" },
-       { name: "Cosmetic Surgery Recovery", href: "/surgery" },
+        { name: "Concierge Services", href: "/customerrecovery" },
+        { name: "Cosmetic Surgery Recovery", href: "/surgery" },
         { name: "Mobile IV Infusions", href: "ivinfusion#section2" },
         { name: "Mobile Lymphatic Massages", href: "/massage" },
       ],
@@ -88,20 +113,33 @@ const Footer = () => {
 
   return (
     <>
-      <div className="w-full md:w-4/5 mx-auto relative md:-top-10 ">
+      <div className="md:w-[90%] md:w-4/2 mx-auto relative md:-top-10 ">
         <div className="flex bg-[#F4B5D9] px-8 py-6 justify-center gap-8 items-center flex-col md:flex-row">
           <p className=" mb-4 md:mb-0  text-black font-montserrat text-lg lg:text-xl font-bold leading-[27px]">
             Subscribe for special offers
           </p>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="outline-none border border-black pl-2 p-2 w-full md:w-[500px] text-center md:text-left"
+          <form ref={form}>
+            <input
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+              name="email"
+              placeholder="Enter your email"
+              className="outline-none border border-black pl-2 p-2 w-full md:w-[500px] text-center md:text-left"
+            />
+
+          </form>
+          <ReCAPTCHA
+            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            onChange={onChange}
           />
-          <button className="bg-[#3BAFBF] text-white p-2 px-6"
-          onClick={handleSubmit}>
+
+          <button disabled={!verified} className={`  text-white p-2 px-6 ${verified === false ? "bg-slate-600" : "bg-[#3BAFBF]"}`}
+            onClick={handleSubmit}   >
             SUBSCRIBE
           </button>
+          {error && <p className="text-red-500">{error}</p>}
+
         </div>
 
         <div className="pt-10  md:flex  md:gap-20 ">
@@ -174,13 +212,13 @@ const Footer = () => {
                       : "text-[#3BAFBF]"
                   }
                 >
-                     <Link
-                href={link.href}
-            
-                 
-                >
-                  {link.name}
-                </Link>
+                  <Link
+                    href={link.href}
+
+
+                  >
+                    {link.name}
+                  </Link>
                 </p>
               ))}
             </div>
