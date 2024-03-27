@@ -12,10 +12,11 @@ const Footer = () => {
   const form = useRef<HTMLFormElement | null>(null); // Explicitly specify the type of the ref
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
-  const[verified, setVerified]=useState(false);
+  const [verified, setVerified] = useState(false);
   function onChange() {
     setVerified(true);
   }
+  
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -113,9 +114,10 @@ const Footer = () => {
 
   return (
     <>
-      <div className="md:w-[90%] md:w-4/2 mx-auto relative md:-top-10 ">
-        <div className="flex bg-[#F4B5D9] px-8 py-6 justify-center gap-8 items-center flex-col md:flex-row">
-          <p className=" mb-4 md:mb-0  text-black font-montserrat text-lg lg:text-xl font-bold leading-[27px]">
+      <div className="w-[80%] lg:w-4/2 mx-auto relative lg:-top-10 ">
+
+        <div className="flex bg-[#F4B5D9] px-8 py-6 justify-center gap-8 items-center flex-col lg:flex-row">
+          <p className=" mb-4 lg:mb-0  text-black font-montserrat text-lg lg:text-xl font-bold leading-[27px]">
             Subscribe for special offers
           </p>
           <form ref={form}>
@@ -125,14 +127,11 @@ const Footer = () => {
               onChange={handleEmailChange}
               name="email"
               placeholder="Enter your email"
-              className="outline-none border border-black pl-2 p-2 w-full md:w-[500px] text-center md:text-left"
+              className="outline-none border border-black pl-2 p-2 w-full lg:w-[500px] text-center lg:text-left"
             />
 
           </form>
-          <ReCAPTCHA
-            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-            onChange={onChange}
-          />
+
 
           <button disabled={!verified} className={`  text-white p-2 px-6 ${verified === false ? "bg-slate-600" : "bg-[#3BAFBF]"}`}
             onClick={handleSubmit}   >
@@ -141,9 +140,15 @@ const Footer = () => {
           {error && <p className="text-red-500">{error}</p>}
 
         </div>
+        <div className="flex justify-center">
 
-        <div className="pt-10  md:flex  md:gap-20 ">
-          <div className="md:w-1/3 mb-4 md:mb-0">
+          <ReCAPTCHA
+            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            onChange={onChange}
+          />
+        </div>
+        <div className="pt-10  lg:flex  lg:gap-20 ">
+          <div className="lg:w-1/3 mb-4 lg:mb-0">
             <Image
               src={tempImageYIgr}
               width={100}
@@ -153,8 +158,8 @@ const Footer = () => {
             />
           </div>
 
-          <div className="md:w-2/3 ">
-            <div className="border-b border-b-slate-300 flex flex-col md:flex-row  justify-around pb-4 ">
+          <div className="lg:w-2/3 ">
+            <div className="border-b border-b-slate-300 flex flex-col lg:flex-row  justify-around pb-4">
               <div className="flex flex-col items-center">
                 <div className="font-bold text-center">Monday - Saturday</div>
                 <p className="text-center">8:00 AM - 7:00 PM</p>
@@ -197,7 +202,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=" md:flex flex-wrap md:px-0 px-2   md:flex-row  md:justify-between gap-8 pt-8">
+        <div className=" lg:flex flex-wrap lg:px-0 px-2   lg:flex-row  lg:justify-between gap-8 pt-8">
           {sections.map((section, index) => (
             <div key={index} className="p-2">
               <p className={index === 2 ? "font-light " : ""}>

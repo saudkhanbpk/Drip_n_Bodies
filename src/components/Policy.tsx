@@ -12,7 +12,52 @@ import Link from "next/link";
 
 const Policy = () => {
 
+  const [question, setQuestion] = useState("");
+  const [questionError, setQuestionError] = useState("");
+  const [name, setName] = useState('');
+  const [nameError, setNameError] = useState('');
+  const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState('');
 
+  const handleNameChange = (e: any) => {
+    setName(e.target.value)
+  }
+  const handleEmail = (e: any) => {
+    setName(e.target.value)
+  }
+
+
+
+  const handleQuestionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const value = e.target.value;
+    setQuestion(value);
+    if (value.length < 10 || value.length > 500) {
+      setQuestionError("Question must be between 10 and 500 characters long.");
+    } else {
+      setQuestionError("");
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("the vlaue of field are shown here : ",name,email,ques);
+    
+    if (question.length < 10 || question.length > 500) {
+      setQuestionError("Question must be between 10 and 500 characters long.");
+      return;
+    }
+    if (!name.trim()) {
+      setNameError("Please enter your name")
+      return
+    }
+    setNameError('');
+
+    if (!email.trim()) {
+      setEmailError("Please enter your Email")
+      return
+    }
+    setEmailError('');
+  };
   const faqItems = [
     {
       question: "Late exit from surgery policy",
@@ -62,7 +107,7 @@ const Policy = () => {
               About The{" "}
             </p>
             <p className="text-5xl md:text-7xl xl:text-8xl font-bold font-montserrat ">
-              Fine Print Babe 
+              Fine Print Babe
             </p>
           </div>
           <div className="flex justify-center items-center md:justify-start mt-4 md:mt-8 gap-8">
@@ -149,8 +194,8 @@ const Policy = () => {
                 )}
                 <div
                   className={`${index === faqItems.length - 1
-                      ? ""
-                      : "border-b border-b-gray-300 mt-3"
+                    ? ""
+                    : "border-b border-b-gray-300 mt-3"
                     }`}
                 ></div>
               </div>
@@ -161,15 +206,15 @@ const Policy = () => {
           </div>
         </div>
         <div className=" w-full flex justify-center"
-            style={{
-              background:
-                "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
-            }}>
+          style={{
+            background:
+              "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 8.33%), rgba(244, 181, 217, 0.17)",
+          }}>
           <div className="w-[70%] mx-auto">
             <div className="mt-12 text-[24px]  font-bold flex justify-center text-md">
               <h2 className="pl-10">Email Us Your Question</h2>
             </div>
-            <div className="mt-6 p-6">
+            {/* <div className="mt-6 p-6">
               <p className="pb-4 font-bold ">How shall we address you?</p>
               <input
                 type="text"
@@ -178,8 +223,22 @@ const Policy = () => {
                 placeholder="Enter your full name"
                 className="border border-black  outline-none w-full p-3 bg-white"
               />
-            </div>
-            <div className="p-6">
+            </div> */}
+            <form onSubmit={handleSubmit}>
+              <div className="mt-6 p-6">
+                <p className="pb-4 font-bold ">How shall we address you?</p>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  value={name}
+                  placeholder="Enter your full name"
+                  className="border border-black  outline-none w-full p-3 bg-white"
+                  onChange={handleNameChange}
+                />
+                {nameError && <p className="text-red-500">{nameError}</p>}
+              </div>
+              {/* <div className="p-6">
               <p className="pb-4 font-bold ">How can we contact you?</p>
               <input
                 type="text"
@@ -188,8 +247,21 @@ const Policy = () => {
                 placeholder="Enter your email"
                 className="border border-black  outline-none w-full p-3 bg-white"
               />
-            </div>
-            <div className=" p-6">
+            </div> */}
+              <div className="p-6">
+                <p className="pb-4 font-bold ">How can we contact you?</p>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  value={email}
+                  placeholder="Enter your email"
+                  className="border border-black  outline-none w-full p-3 bg-white"
+                  onChange={handleEmail}
+                />
+                {emailError && <p className="text-red-500">{emailError}</p>}
+              </div>
+              {/* <div className=" p-6">
               <p className="pb-4 font-bold">
                 Tell us about your question. (Please use 10 to 500 characters)
               </p>
@@ -199,7 +271,22 @@ const Policy = () => {
                 placeholder="Enter your question and any additional details"
                 className="border border-black w-full h-[300px] outline-none p-3 "
               ></textarea>
-            </div>
+            </div> */}
+              <div className=" p-6">
+                <p className="pb-4 font-bold">
+                  Tell us about your question. (Please use 10 to 500 characters)
+                </p>
+                <textarea
+                  id="question"
+                  name="question"
+                  placeholder="Enter your question and any additional details"
+                  value={question}
+                  onChange={handleQuestionChange}
+                  className={`border ${questionError ? "border-red-500" : "border-black"} w-full h-[300px] outline-none p-3`}
+                />
+                {questionError && <p className="text-red-500">{questionError}</p>}
+              </div>
+            </form>
             <div className="mb-20 ml-5">
               <button className="text-white font-montserrat text-md font-semibold uppercase bg-[#3BAFBF] px-4 py-1">Submit</button>
             </div>
