@@ -157,7 +157,7 @@ const FaqPage = () => {
       <div className="w-full " id="Frequently-asked-Questions">
         <div className="w-full md:w-[1000px] mx-auto">
           <div className="md:mb-8 flex justify-center">
-            <h2 className="font-bold text-4xl text-[24px] leading-8 md:leading-29 tracking-normal text-center">
+            <h2 id='section2' className="font-bold text-4xl text-[24px] leading-8 md:leading-29 tracking-normal text-center">
               Frequently Asked Questions
             </h2>
           </div>

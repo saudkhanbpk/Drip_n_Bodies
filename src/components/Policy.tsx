@@ -1,17 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import Polygon from "../images/Polygon.png";
 import Polygon1 from "../images/Polygon1.png";
 import about1 from "../images/about1.png";
-import policyy from "../images/policyy.png";
-// import image1 from "../images/Rectangle.png"
-import ScheduleConsultation from "./ScheduleConsultation";
 import Link from "next/link";
-
+import emailjs from '@emailjs/browser';
 
 const Policy = () => {
-
+  const form = useRef<HTMLFormElement | null>(null);
   const [question, setQuestion] = useState("");
   const [questionError, setQuestionError] = useState("");
   const [name, setName] = useState('');
@@ -19,14 +16,13 @@ const Policy = () => {
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
 
-  const handleNameChange = (e: any) => {
-    setName(e.target.value)
-  }
-  const handleEmail = (e: any) => {
-    setName(e.target.value)
-  }
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+  };
 
-
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
 
   const handleQuestionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
@@ -38,25 +34,41 @@ const Policy = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    console.log("the vlaue of field are shown here : ",name,email,ques);
-    
-    if (question.length < 10 || question.length > 500) {
-      setQuestionError("Question must be between 10 and 500 characters long.");
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      setEmailError('Please enter a valid email address');
       return;
     }
     if (!name.trim()) {
-      setNameError("Please enter your name")
-      return
+      setNameError("Please enter your name");
+      return;
     }
     setNameError('');
 
     if (!email.trim()) {
-      setEmailError("Please enter your Email")
-      return
+      setEmailError("Please enter your Email");
+      return;
     }
     setEmailError('');
+
+    if (question.length < 10 || question.length > 500) {
+      setQuestionError("Question must be between 10 and 500 characters long.");
+      return;
+    }
+
+    console.log("the value of fields are shown here : ", name, email, question);
+    // Additional form submission logic
+
+    emailjs.sendForm('service_2amws0d', 'template_xhk8ddz', form.current!, 'V3m6c5qimGtsOA6yF')
+      .then((result: any) => {
+        console.log(result.text);
+      }, (error: any) => {
+        console.log(error.text);
+      });
+
+    setEmail("")
   };
   const faqItems = [
     {
@@ -88,7 +100,7 @@ const Policy = () => {
     Array.from({ length: faqItems.length }, () => false)
   );
 
-  const handleAccordionClick = (index: any) => {
+  const handleAccordionClick = (index: number) => {
     const newAccordionStates = accordionStates.map((state, i) =>
       i === index ? !state : false
     );
@@ -214,65 +226,30 @@ const Policy = () => {
             <div className="mt-12 text-[24px]  font-bold flex justify-center text-md">
               <h2 className="pl-10">Email Us Your Question</h2>
             </div>
-            {/* <div className="mt-6 p-6">
-              <p className="pb-4 font-bold ">How shall we address you?</p>
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Enter your full name"
-                className="border border-black  outline-none w-full p-3 bg-white"
-              />
-            </div> */}
-            <form onSubmit={handleSubmit}>
+            <form ref={form}>
               <div className="mt-6 p-6">
                 <p className="pb-4 font-bold ">How shall we address you?</p>
                 <input
                   type="text"
-                  name=""
-                  id=""
                   value={name}
                   placeholder="Enter your full name"
-                  className="border border-black  outline-none w-full p-3 bg-white"
+                  className="border border-black outline-none w-full p-3 bg-white"
                   onChange={handleNameChange}
                 />
                 {nameError && <p className="text-red-500">{nameError}</p>}
               </div>
-              {/* <div className="p-6">
-              <p className="pb-4 font-bold ">How can we contact you?</p>
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Enter your email"
-                className="border border-black  outline-none w-full p-3 bg-white"
-              />
-            </div> */}
               <div className="p-6">
                 <p className="pb-4 font-bold ">How can we contact you?</p>
                 <input
                   type="text"
-                  name=""
-                  id=""
                   value={email}
                   placeholder="Enter your email"
-                  className="border border-black  outline-none w-full p-3 bg-white"
-                  onChange={handleEmail}
+                  className="border border-black outline-none w-full p-3 bg-white"
+                  onChange={handleEmailChange}
                 />
                 {emailError && <p className="text-red-500">{emailError}</p>}
               </div>
-              {/* <div className=" p-6">
-              <p className="pb-4 font-bold">
-                Tell us about your question. (Please use 10 to 500 characters)
-              </p>
-              <textarea
-                name=""
-                id=""
-                placeholder="Enter your question and any additional details"
-                className="border border-black w-full h-[300px] outline-none p-3 "
-              ></textarea>
-            </div> */}
-              <div className=" p-6">
+              <div className="p-6">
                 <p className="pb-4 font-bold">
                   Tell us about your question. (Please use 10 to 500 characters)
                 </p>
@@ -286,10 +263,10 @@ const Policy = () => {
                 />
                 {questionError && <p className="text-red-500">{questionError}</p>}
               </div>
+              <div className="mb-20 ml-5">
+                <button onClick={handleSubmit} className="text-white font-montserrat text-md font-semibold uppercase bg-[#3BAFBF] px-4 py-1">Submit</button>
+              </div>
             </form>
-            <div className="mb-20 ml-5">
-              <button className="text-white font-montserrat text-md font-semibold uppercase bg-[#3BAFBF] px-4 py-1">Submit</button>
-            </div>
           </div>
         </div>
       </div>

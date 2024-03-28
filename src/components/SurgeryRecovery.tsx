@@ -191,11 +191,11 @@ const SurgeryRecovery = () => {
       </div>
 
       <div className="w-full">
-        <div id="section" className="my-6 w-[60%]  mx-auto p-4">
-          <h2 className="py-2 leading-normal text text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
+        <div  className="my-6 w-[60%]  mx-auto p-4 text-center">
+          <a id="section" className="py-2  leading-normal text  text-black text-center font-montserrat font-bold text-xl lg:text-2xl">
             Cosmetic Surgery Recovery Packages
-          </h2>
-          <p className="w-full text-center font-montserrat text-black text-base font-normal leading-normal">
+          </a>
+          <p className="w-full text-center font-montserrat text-black pt-3 text-base font-normal leading-normal">
             Drip N Bodied offers Post-Op Care & Assessment
             operative care services to YOU in the
             comfort of your home or hotel. We gladly serve as an advocate for

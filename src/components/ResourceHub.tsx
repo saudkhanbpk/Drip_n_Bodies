@@ -41,7 +41,7 @@ const ResourceHub = () => {
                 <p> <span className='md:inline-block  h-[20px] text-[#F4B5D9] text-center font-montserrat md:text-7xl text-2xl italic font-normal leading-tight'>“</span>  Thank you for selecting us to be part of your post- <span className='md:inline-block  h-[20px] text-[#F4B5D9] text-center font-montserrat md:text-7xl text-2xl italic font-normal leading-tight'>”</span> <br /> operative recovery experience! We look forward to  <br /> getting you snatched and recovered! Feel free to reach <br /> out and schedule a complimentary consultation call if <br /> you have any questions about our services or just shoot <br /> us a text at 305-908-9282!</p>
             </div>
             <div className=''>
-                <h2 id='section2' className=' text-black text-center font-montserrat text-[24px] font-bold leading-normal'>Frequently Asked Questions</h2>
+                <h2  className=' text-black text-center font-montserrat text-[24px] font-bold leading-normal'>Frequently Asked Questions</h2>
             </div>
             <div className=' w-[80%] mx-auto lg:flex justify-center p-2 lg:p-10 gap-6 '>
 
@@ -81,7 +81,7 @@ const ResourceHub = () => {
 
             </div>
             <div className='text-center mb-5'>
-                <a href="#section2" className='text-[#3BAFBF] font-[400px]'>See all frequently asked questions</a>
+                <Link href="/faq#section2" className='text-[#3BAFBF] font-[400px]'>See all frequently asked questions</Link>
             </div>
             <div className='w-[80%] mx-auto bg-black gap-6 mb-10'>
                 <div className='w-[80%] mx-auto md:flex justify-center  '>

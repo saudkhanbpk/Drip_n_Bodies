@@ -72,7 +72,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white">
+        <div className="">
           <div className="w-[90%] mx-auto py-10">
             <div className=" w-full ">
               <div className=" items-center w-[88%] md:flex flex-col justify-center mx-auto mb-3">

@@ -293,7 +293,7 @@ export default function IVInfusions() {
       </div>
 
         <div className="flex items-center justify-center space-x-8">
-          <a href="/surgery" className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
+          <a href="/surgery#section" className="bg-[#F4B5D9] px-2 py-1 text-base font-bold">
             VIEW POST-OP DRIPS
           </a>
           <a
@@ -522,13 +522,13 @@ export default function IVInfusions() {
 
         <div className="flex items-center justify-center md:flex-row flex-col gap-2 md:gap-8">
           <Link
-            href="/surgery"
+            href="/ivinfusion#section"
             className="bg-[#F4B5D9] px-2 py-1 text-base font-bold"
           >
             VIEW POST-OP DRIPS
           </Link>
           <a
-            href="#section"
+            
             className="underline text-[#3BAFBF] text-base font-bold"
           >
             View Premium Infusions
