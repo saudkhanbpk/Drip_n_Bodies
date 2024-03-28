@@ -276,7 +276,10 @@ export default function IVInfusions() {
             <img src={img1.src} alt="" className="w-[95%] mx-auto h-[142px] relative bottom-10 image-with-shadow" />
             <h3 className="text-2xl font-bold">{drip.title}</h3>
             <p className="text-5xl font-normal text-[#3BAFBF] font-niconne">{drip.price}</p>
-            <button className="bg-[#3BAFBF] py-1 px-2 text-white">SCHEDULE DRIP</button>
+            <button className="bg-[#3BAFBF] py-1 px-2 text-white"> <a href="https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=25006167" >
+
+            SCHEDULE DRIP
+            </a></button>
             <p>
               {showFullDescription[index]
                 ? drip.description
@@ -340,9 +343,13 @@ export default function IVInfusions() {
                   <p className="text-5xl font-normal font-niconne text-[#3BAFBF]">
                     {drip.price}
                   </p>
-                  <button className="bg-[#3BAFBF] py-1 px-2 text-white">
+                  <button  className="bg-[#3BAFBF] py-1 px-2 text-white">
+                  <a href="https://app.acuityscheduling.com/schedule.php?owner=21324387&appointmentType=25006167" >
+
                     SCHEDULE DRIP
+                    </a>
                   </button>
+                
                   <p> {showFullDescription[index]
                     ? drip.description
                     : `${drip.description.split(" ").slice(0, 10).join(" ")}...`}
